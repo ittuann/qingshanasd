@@ -11,7 +11,10 @@ const QuestionResult = ({ scores, result, showModal, onClose }) => {
       <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4 relative z-10">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-xl font-semibold text-gray-900">量表结果</h3>
-          <button className="text-gray-400 hover:text-gray-500" onClick={onClose}>
+          <button
+            className="text-gray-400 hover:text-gray-500"
+            onClick={onClose}
+          >
             <i className="ri-close-line text-xl"></i>
           </button>
         </div>
@@ -35,7 +38,9 @@ const QuestionResult = ({ scores, result, showModal, onClose }) => {
           <div className="bg-yellow-50 p-4 rounded-lg">
             <div className="flex items-center mb-2">
               <i className="ri-information-line text-yellow-500 mr-2"></i>
-              <span className="text-sm font-medium text-yellow-800">注意事项</span>
+              <span className="text-sm font-medium text-yellow-800">
+                注意事项
+              </span>
             </div>
             <div className="text-sm text-yellow-700 space-y-1">
               <p>* 本测试仅供参考，不能作为诊断依据</p>

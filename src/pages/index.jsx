@@ -46,7 +46,7 @@ const scales = [
     title: "Aspie-Quiz 测试量表",
     description: "本测试的目的是检验成人的神经多样性神经典型性特点",
     tags: ["孤独症", "量表", "在线测试", "AQ", "成人测试"],
-    link: "/quotients/adhd",
+    link: "https://www.rdos.net/china/index.php",
   },
   {
     icon: "ri-hearts-line",

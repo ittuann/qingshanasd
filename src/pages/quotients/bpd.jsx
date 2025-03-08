@@ -91,7 +91,7 @@ class BPD extends Component {
             {/* 信息 */}
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">
-              边缘人格障碍表现量表 BSL-23
+                边缘人格障碍表现量表 BSL-23
               </h1>
               <p className="text-gray-500 mt-2">焦虑抑郁等都可能造成分值偏高</p>
               <p className="text-sm text-gray-500 mt-2">
@@ -115,7 +115,7 @@ class BPD extends Component {
               <div className="space-y-6">
                 {this.getQuestionDetail().map((question) => (
                   <QuestionItem
-                    key={`bpd_${question.id}`}
+                    key={`quotients_${question.id}`}
                     question={question}
                     degree={["频繁", "没有"]}
                     onAnswerChange={this.handleRadioChange}
@@ -137,8 +137,8 @@ class BPD extends Component {
               {
                 title: "分数（总分4.0）",
                 subtitle: "得分",
-                score: this.state.score
-              }
+                score: this.state.score,
+              },
             ]}
             result={this.state.result}
             showModal={this.state.showModal}

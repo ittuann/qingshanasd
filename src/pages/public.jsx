@@ -30,7 +30,7 @@ const resources = [
     tags: ["手册", "指南", "PDF"],
     link: "https://qingshanasd.cn",
   },
-]
+];
 
 export default function Resources() {
   return (

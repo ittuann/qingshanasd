@@ -57,7 +57,7 @@ class ADHD extends Component {
   calculateScores() {
     // 计算A部分（1-9题）和B部分（10-18题）的得分
     let scoreA = 0,
-    scoreB = 0;
+      scoreB = 0;
     Object.entries(this.state.answers).forEach(([questionId, value]) => {
       const id = parseInt(questionId);
       if (id >= 1 && id <= 9) {
@@ -157,7 +157,7 @@ class ADHD extends Component {
               <div className="space-y-6">
                 {this.getQuestionDetail().map((question) => (
                   <QuestionItem
-                    key={`adhd_${question.id}`}
+                    key={`quotients_${question.id}`}
                     question={question}
                     degree={["经常这样", "从来没有"]}
                     onAnswerChange={this.handleRadioChange}
@@ -179,13 +179,13 @@ class ADHD extends Component {
               {
                 title: "A部分",
                 subtitle: "注意力障碍",
-                score: this.state.scoreA
+                score: this.state.scoreA,
               },
               {
                 title: "B部分",
                 subtitle: "多动/冲动障碍",
-                score: this.state.scoreB
-              }
+                score: this.state.scoreB,
+              },
             ]}
             result={this.state.result}
             showModal={this.state.showModal}
