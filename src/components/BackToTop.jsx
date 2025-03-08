@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import "remixicon/fonts/remixicon.css";
 
 class BackToTop extends Component {
   state = {
     visible: false,
-    progress: 0
+    progress: 0,
   };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll = () => {
@@ -20,7 +20,7 @@ class BackToTop extends Component {
 
     // 计算滚动进度
     if (isShowProgress) {
-      const footer = document.querySelector('footer');
+      const footer = document.querySelector("footer");
       let scrolled = 0;
       if (footer) {
         const winScroll = window.scrollY;
@@ -52,7 +52,7 @@ class BackToTop extends Component {
   scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 

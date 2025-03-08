@@ -32,7 +32,7 @@ class ADHD extends Component {
     e.preventDefault();
     const answeredQuestions = Object.keys(this.state.answers).length;
     const requiredQuestions = questionData.questionADHD.filter(
-      (q) => q.id !== 0
+      (q) => q.id !== 0,
     ).length;
     if (answeredQuestions < requiredQuestions) {
       alert("请完成量表所有问题的作答");
@@ -40,7 +40,8 @@ class ADHD extends Component {
     }
 
     // 计算A部分（1-9题）和B部分（10-18题）的得分
-    let scoreA = 0, scoreB = 0;
+    let scoreA = 0,
+      scoreB = 0;
     Object.entries(this.state.answers).forEach(([questionId, value]) => {
       const id = parseInt(questionId);
       if (id >= 1 && id <= 9) {
@@ -62,51 +63,51 @@ class ADHD extends Component {
 
   CalResultADHD(ResultA, ResultB) {
     const ADHD = {
-      "A": {
-          "A": "您不太可能有ADHD"
+      A: {
+        A: "您不太可能有ADHD",
       },
-      "B": {
-          "A": "您很有可能有ADHD-I（注意力缺失为主）",
-          "B": "您非常有可能有ADHD-I（注意力缺失为主）"
+      B: {
+        A: "您很有可能有ADHD-I（注意力缺失为主）",
+        B: "您非常有可能有ADHD-I（注意力缺失为主）",
       },
-      "C": {
-          "A": "您很有可能有ADHD-H（多动/冲动障碍为主）",
-          "B": "您非常有可能有ADHD-H（多动/冲动障碍为主）"
+      C: {
+        A: "您很有可能有ADHD-H（多动/冲动障碍为主）",
+        B: "您非常有可能有ADHD-H（多动/冲动障碍为主）",
       },
-      "D": {
-          "A": "您很有可能有ADHD-C（注意力缺失与多动/冲动障碍混合）",
-          "B": "您非常有可能有ADHD-C（注意力缺失与多动/冲动障碍混合）"
+      D: {
+        A: "您很有可能有ADHD-C（注意力缺失与多动/冲动障碍混合）",
+        B: "您非常有可能有ADHD-C（注意力缺失与多动/冲动障碍混合）",
       },
-      "E": {
-          "A": "您很有可能有ADHD-C（注意力缺失与多动/冲动障碍混合，其中多动/冲动障碍比较严重）",
-          "B": "您很有可能有ADHD-C（注意力缺失与多动/冲动障碍混合，其中注意力缺失比较严重）"
+      E: {
+        A: "您很有可能有ADHD-C（注意力缺失与多动/冲动障碍混合，其中多动/冲动障碍比较严重）",
+        B: "您很有可能有ADHD-C（注意力缺失与多动/冲动障碍混合，其中注意力缺失比较严重）",
       },
-  };
+    };
 
     let type, subType;
     if (ResultA <= 16) {
       if (ResultB <= 16) {
-        type = "A", subType = "A";
+        (type = "A"), (subType = "A");
       } else if (ResultB <= 23) {
-        type = "C", subType = "A";
+        (type = "C"), (subType = "A");
       } else {
-        type = "C", subType = "B";
+        (type = "C"), (subType = "B");
       }
     } else if (ResultA <= 23) {
       if (ResultB <= 16) {
-        type = "B", subType = "A";
+        (type = "B"), (subType = "A");
       } else if (ResultB <= 23) {
-        type = "D", subType = "A";
+        (type = "D"), (subType = "A");
       } else {
-        type = "E", subType = "A";
+        (type = "E"), (subType = "A");
       }
     } else {
       if (ResultB <= 16) {
-        type = "B", subType = "B";
+        (type = "B"), (subType = "B");
       } else if (ResultB <= 23) {
-        type = "E", subType = "B";
+        (type = "E"), (subType = "B");
       } else {
-        type = "D", subType = "B";
+        (type = "D"), (subType = "B");
       }
     }
     return ADHD[type][subType];
@@ -126,8 +127,19 @@ class ADHD extends Component {
                 成人 ADHD 自填量表 (ASRS)
               </h1>
               <p className="text-gray-500 mt-2">焦虑抑郁等都可能造成分值偏高</p>
+              <p className="text-sm text-gray-500 mt-2">
+                *本量表仅供参考，不能作为诊断依据。
+              </p>
               <p className="text-sm text-gray-400 mt-1">
-                18Q-Chinese-Traditional.pdf
+                本量表参考文献：
+                <a
+                  href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/18Q_Chinese%20(Traditional)_final.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-600 underline"
+                >
+                  18Q-Chinese-Traditional.pdf
+                </a>
               </p>
             </div>
 
