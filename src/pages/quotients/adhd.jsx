@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import QuestionItem from "@/components/QuestionItem";
 import QuestionResult from "@/components/QuestionResult";
 import questionData from "@/data/questionADHD.json";
+import BackToTop from "@/components/BackToTop";
 
 class ADHD extends Component {
   state = {
@@ -159,6 +160,8 @@ class ADHD extends Component {
             showModal={this.state.showModal}
             onClose={this.closeModal}
           />
+
+          <BackToTop isShowButton={true} isShowProgress={true} />
         </main>
       </Layout>
     );

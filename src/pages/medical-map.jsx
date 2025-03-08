@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Layout from "@/components/Layout";
 import dynamic from "next/dynamic";
 import MapInfo, { MapInfoNav } from "@/components/MapInfo";
+import BackToTop from "@/components/BackToTop";
 
 const MapChart = dynamic(() => import("@/components/MapChart"), {
   ssr: false,
@@ -83,6 +84,8 @@ class MedicalMap extends Component {
               {/* 信息区域 */}
               <MapInfo />
             </div>
+
+            <BackToTop isShowButton={true} isShowProgress={false} />
           </div>
         </main>
       </Layout>
