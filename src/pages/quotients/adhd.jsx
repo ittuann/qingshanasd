@@ -160,6 +160,7 @@ class ADHD extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={["经常这样", "从来没有"]}
+                    scores={[4, 3, 2, 1, 0]}
                     onAnswerChange={this.handleRadioChange}
                   />
                 ))}

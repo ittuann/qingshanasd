@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class QuestionItem extends Component {
   render() {
-    const { question, degree, onAnswerChange } = this.props;
+    const { question, degree, onAnswerChange, scores } = this.props;
     return (
       <div className="question-item">
         <p className="text-gray-800">
@@ -13,7 +13,7 @@ class QuestionItem extends Component {
             {degree[0]}
           </div>
           <div className="flex gap-4 md:gap-8">
-            {[4, 3, 2, 1, 0].map((val) => (
+            {scores.map((val) => (
               <label className="radio-label" key={val}>
                 <input
                   type="radio"

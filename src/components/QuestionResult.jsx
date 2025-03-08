@@ -8,7 +8,7 @@ const QuestionResult = ({ scores, result, showModal, onClose }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="fixed inset-0 bg-black/60" onClick={onClose}></div>
-      <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4 relative z-10">
+      <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4 relative z-10 max-h-[90vh] overflow-y-auto">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-xl font-semibold text-gray-900">量表结果</h3>
           <button

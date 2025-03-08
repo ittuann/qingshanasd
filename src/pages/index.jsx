@@ -19,7 +19,7 @@ const scales = [
     title: "孤独商儿童测试量表",
     description: "孤独商儿童测试量表，用于测试儿童的孤独症商数",
     tags: ["孤独症", "量表", "在线测试", "AQ", "儿童测试"],
-    link: "/quotients/adhd",
+    link: "/quotients/aq-c",
   },
   {
     icon: "ri-heart-pulse-line",
