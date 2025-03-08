@@ -31,7 +31,7 @@ class ADHD extends Component {
     // 检查提交前是否所有问题都已经回答
     e.preventDefault();
     const answeredQuestions = Object.keys(this.state.answers).length;
-    const requiredQuestions = questionData.questionADHD.filter(
+    const requiredQuestions = this.getQuestionDetail().filter(
       (q) => q.id !== 0,
     ).length;
     if (answeredQuestions < requiredQuestions) {
@@ -39,19 +39,8 @@ class ADHD extends Component {
       return;
     }
 
-    // 计算A部分（1-9题）和B部分（10-18题）的得分
-    let scoreA = 0,
-      scoreB = 0;
-    Object.entries(this.state.answers).forEach(([questionId, value]) => {
-      const id = parseInt(questionId);
-      if (id >= 1 && id <= 9) {
-        scoreA += value;
-      } else if (id >= 10 && id <= 18) {
-        scoreB += value;
-      }
-    });
-
-    const result = this.CalResultADHD(scoreA, scoreB);
+    const { scoreA, scoreB } = this.calculateScores();
+    const result = this.calculateResult(scoreA, scoreB);
 
     this.setState({
       scoreA,
@@ -61,7 +50,27 @@ class ADHD extends Component {
     });
   };
 
-  CalResultADHD(scoreA, scoreB) {
+  getQuestionDetail() {
+    return questionData.questionADHD;
+  }
+
+  calculateScores() {
+    // 计算A部分（1-9题）和B部分（10-18题）的得分
+    let scoreA = 0,
+    scoreB = 0;
+    Object.entries(this.state.answers).forEach(([questionId, value]) => {
+      const id = parseInt(questionId);
+      if (id >= 1 && id <= 9) {
+        scoreA += value;
+      } else if (id >= 10 && id <= 18) {
+        scoreB += value;
+      }
+    });
+
+    return { scoreA, scoreB };
+  }
+
+  calculateResult(scoreA, scoreB) {
     const resultADHD = {
       A: {
         A: "您不太可能有ADHD",
@@ -146,7 +155,7 @@ class ADHD extends Component {
             <form className="space-y-8" onSubmit={this.handleSubmit}>
               {/* 量表问题 */}
               <div className="space-y-6">
-                {questionData.questionADHD.map((question) => (
+                {this.getQuestionDetail().map((question) => (
                   <QuestionItem
                     key={`adhd_${question.id}`}
                     question={question}
@@ -166,8 +175,18 @@ class ADHD extends Component {
           </div>
 
           <QuestionResult
-            scoreA={this.state.scoreA}
-            scoreB={this.state.scoreB}
+            scores={[
+              {
+                title: "A部分",
+                subtitle: "注意力障碍",
+                score: this.state.scoreA
+              },
+              {
+                title: "B部分",
+                subtitle: "多动/冲动障碍",
+                score: this.state.scoreB
+              }
+            ]}
             result={this.state.result}
             showModal={this.state.showModal}
             onClose={this.closeModal}

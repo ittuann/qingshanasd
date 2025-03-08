@@ -31,7 +31,7 @@ class BPD extends Component {
     // 检查提交前是否所有问题都已经回答
     e.preventDefault();
     const answeredQuestions = Object.keys(this.state.answers).length;
-    const requiredQuestions = questionData.questionBPD.filter(
+    const requiredQuestions = this.getQuestionDetail().filter(
       (q) => q.id !== 0,
     ).length;
     if (answeredQuestions < requiredQuestions) {
@@ -39,16 +39,8 @@ class BPD extends Component {
       return;
     }
 
-    // 计算得分
-    let score = 0;
-    Object.entries(this.state.answers).forEach(([questionId, value]) => {
-      score += value;
-    });
-    console.log(score);
-    score = Number((score / 23.0).toFixed(2));
-    console.log(score);
-
-    const result = this.CalResultBPD(score);
+    const score = this.calculateScores();
+    const result = this.calculateResult(score);
 
     this.setState({
       score,
@@ -57,7 +49,20 @@ class BPD extends Component {
     });
   };
 
-  CalResultBPD(score) {
+  getQuestionDetail() {
+    return questionData.questionBPD;
+  }
+
+  calculateScores() {
+    let score = 0;
+    Object.entries(this.state.answers).forEach(([questionId, value]) => {
+      score += value;
+    });
+    score = Number((score / 23.0).toFixed(2));
+    return score;
+  }
+
+  calculateResult(score) {
     if (score < 0.3) {
       return "None/Low 您不太可能有BPD";
     } else if (score < 1.1) {
@@ -108,7 +113,7 @@ class BPD extends Component {
             <form className="space-y-8" onSubmit={this.handleSubmit}>
               {/* 量表问题 */}
               <div className="space-y-6">
-                {questionData.questionBPD.map((question) => (
+                {this.getQuestionDetail().map((question) => (
                   <QuestionItem
                     key={`bpd_${question.id}`}
                     question={question}
@@ -128,8 +133,13 @@ class BPD extends Component {
           </div>
 
           <QuestionResult
-            scoreA={this.state.score}
-            scoreB={this.state.score}
+            scores={[
+              {
+                title: "分数（总分4.0）",
+                subtitle: "得分",
+                score: this.state.score
+              }
+            ]}
             result={this.state.result}
             showModal={this.state.showModal}
             onClose={this.closeModal}

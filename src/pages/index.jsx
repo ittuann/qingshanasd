@@ -28,7 +28,7 @@ const scales = [
     title: "边缘人格障碍表现量表(BSL-23)",
     description: "边缘人格障碍表现量表 BSL-23",
     tags: ["量表", "在线测试", "BSL-23"],
-    link: "/quotients/adhd",
+    link: "/quotients/bpd",
   },
   {
     icon: "ri-user-heart-line",
