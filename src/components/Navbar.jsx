@@ -16,7 +16,7 @@ class Navbar extends Component {
 
   isActive = (path) => {
     return this.props.router.pathname === path
-      ? "text-green-600 font-medium"
+      ? "text-green-600 font-medium border-b-2 border-green-500"
       : "text-gray-500 hover:text-purple-400";
   };
 
@@ -67,7 +67,7 @@ class Navbar extends Component {
               <Link href="/res" className={this.isActive("/res")}>
                 资源引索
               </Link>
-              <Link href="#" className={this.isActive("/terms")}>
+              <Link href="/term" className={this.isActive("/term")}>
                 使用条款
               </Link>
             </div>
@@ -102,8 +102,8 @@ class Navbar extends Component {
                   资源引索
                 </Link>
                 <Link
-                  href="#"
-                  className={`block px-3 py-2 rounded-md ${this.isActive("/terms")}`}
+                  href="/term"
+                  className={`block px-3 py-2 rounded-md ${this.isActive("/term")}`}
                 >
                   使用条款
                 </Link>

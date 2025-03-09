@@ -67,13 +67,13 @@ class MedicalMap extends Component {
             {/* 提示区域 */}
             <div className="bg-white rounded-xl shadow-lg p-6 my-8 border-l-4 border-green-500 bg-gradient-to-r from-green-500/5 to-transparent">
               <p className="text-gray-600 mb-4">
-                由于就诊地图的统计难免有疏漏，部分可诊断adhd/asd的医院可能并没有收收录。建议先在自己本地二甲医院尝试就诊。
+                由于就诊地图的统计难免有疏漏，部分可诊断ADHD/ASD的医院可能并没有被收录。建议先在自己本地三甲医院尝试就诊。
               </p>
               <p className="text-gray-600 mb-4">
-                一种可以判断某医院是否可以就诊adhd的方法是，直询该医院的药物价格公示，如果里面有p2或者tmxt，那该医院一定能诊断adhd（但不一定能诊断成人ADHD）
+                一种可以判断某医院是否可以就诊ADHD的方法是，直询该医院的药物价格公示，如果里面有p2或者tmxt等ADHD药物，那该医院一定能诊断ADHD（但不一定能诊断成人ADHD）。
               </p>
               <p className="text-gray-600">
-                如果药物价格公示中不含pjz和tmxt，不代表该一定医院诊断不了adhd（因为有的医院药物价格公示没有及时更新。几年前没有pjz和tmxt，不代表现在也没有）
+                如果药物价格公示中不含pjz和tmxt，不代表该一定医院诊断不了ADHD（因为有的医院药物价格公示没有及时更新。几年前没有pjz和tmxt，不代表现在也没有）
               </p>
             </div>
 

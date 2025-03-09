@@ -68,7 +68,7 @@ class Footer extends Component {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/term"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
                     使用条款

@@ -136,14 +136,14 @@ class About extends Component {
               </h2>
               <div className="max-w-3xl mx-auto">
                 <p className="text-gray-600 mb-8 text-center text-lg leading-relaxed">
-                  青衫Neuro始终坚持公开透明的财务管理原则。我们定期发布财务报告，确保每一笔资金的使用都能得到合理说明。
+                  青衫Neuro始终秉持公开透明的财务管理原则，定期发布资产负债表和资金池报告，以确保所有资金的使用都能得到合理说明。
                 </p>
                 <div className="flex justify-center">
                   <a
-                    href="#"
+                    href="https://www.zhihu.com/pin/1866410059749277697"
                     className="group inline-flex items-center px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition duration-300"
                   >
-                    <span>查看详细财务报告</span>
+                    <span>查看财务报告</span>
                     <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform"></i>
                   </a>
                 </div>
