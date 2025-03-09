@@ -57,6 +57,15 @@ const scales = [
     tags: ["述情障碍", "量表", "在线测试", "OAQ"],
     link: "/quotients/oaq",
   },
+  {
+    icon: "ri-guide-line",
+    iconColor: "text-teal-500",
+    iconBg: "bg-teal-100",
+    title: "共情商测试量表 (Empathy Quotient)",
+    description: "本量表效度存在争议，仅供参考",
+    tags: ["共情商", "量表", "在线测试", "EQ", "成人测试"],
+    link: "/quotients/eq60",
+  },
 ];
 
 export default class Index extends Component {

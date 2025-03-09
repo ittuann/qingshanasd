@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import Layout from "@/components/Layout";
 import QuestionItem from "@/components/QuestionItem";
 import QuestionResult from "@/components/QuestionResult";
-import questionData from "@/data/questionAQA.json";
+import questionData from "@/data/questionEQ60.json";
 import BackToTop from "@/components/BackToTop";
 
-class AQA extends Component {
+class EQ60 extends Component {
   state = {
     answers: {},
     showModal: false,
@@ -49,7 +49,7 @@ class AQA extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.questionAQA;
+    return questionData.questionEQ60;
   }
 
   calculateScores() {
@@ -61,34 +61,29 @@ class AQA extends Component {
   }
 
   calculateResult(score) {
-    if (score <= 21) {
-      return "非孤独症谱系";
-    } else if (score <= 25) {
-      return "您有一些孤独症谱系的特质";
-    } else if (score <= 31) {
-      return "您可能有高功能孤独症谱系障碍";
+    if (score <= 30) {
+      return "您不太可能有ASD";
     } else {
-      return "您非常可能有高功能孤独症谱系障碍";
+      return "您可能有ASD";
     }
   }
 
   render() {
     return (
       <Layout
-        title="孤独商成人测试量表 | 青衫 Neuro"
-        description="孤独商成人测试量表，用于测试成年人的孤独症商数"
+        title="共情商测试量表 (Empathy Quotient) | 青衫 Neuro"
+        description="本量表效度存在争议，仅供参考"
       >
         <main className="max-w-3xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-8">
             {/* 信息 */}
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">
-                成人ASD筛查量表
+              共情商测试量表 (Empathy Quotient)
               </h1>
               <p className="text-gray-500 mt-2">
-                焦虑抑郁等都可能造成分值偏高
+                本量表效度存在争议，仅供参考
               </p>
-              <p className="text-gray-500 mt-2">最终确诊需要结合儿童时期的情况</p>
               <p className="text-sm text-gray-500 mt-2">
                 *本量表仅供参考，不能作为诊断依据。
               </p>
@@ -96,7 +91,14 @@ class AQA extends Component {
                 <p>本量表参考文献：</p>
                 <ul className="list-disc pl-4 space-y-1">
                   <li>
-                  Simon Baron-Cohen, et al. The Autism-Spectrum Quotient (AQ): Evidence from Asperger Syndrome/High-Functioning Autism, Malesand Females, Scientists and Mathematicians. 31: J Autism Dev Disord 5-17. 2001.
+                    <a
+                      href="https://pubmed.ncbi.nlm.nih.gov/15162935/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-gray-600"
+                    >
+                      The Empathy Quotient: An Investigation of Adults with Asperger Syndrome or High Functioning Autism, and Normal Sex Differences
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -109,8 +111,8 @@ class AQA extends Component {
                   <QuestionItem
                     key={`quotients_${question.id}`}
                     question={question}
-                    degree={["赞同", "反对"]}
-                    scores={[1, 1, 0, 0]}
+                    degree={["非常赞同", "绝对反对"]}
+                    scores={[4, 3, 2, 1]}
                     onAnswerChange={this.handleRadioChange}
                   />
                 ))}
@@ -132,31 +134,6 @@ class AQA extends Component {
                 subtitle: "得分",
                 score: this.state.score,
               },
-              {
-                title: "社交技巧",
-                subtitle: "得分",
-                score: this.state.score,
-              },
-              {
-                title: "交流",
-                subtitle: "得分",
-                score: this.state.score,
-              },
-              {
-                title: "注意力切换",
-                subtitle: "得分",
-                score: this.state.score,
-              },
-              {
-                title: "细节注意力",
-                subtitle: "得分",
-                score: this.state.score,
-              },
-              {
-                title: "交流",
-                subtitle: "得分",
-                score: this.state.score,
-              },
             ]}
             result={this.state.result}
             showModal={this.state.showModal}
@@ -170,4 +147,4 @@ class AQA extends Component {
   }
 }
 
-export default AQA;
+export default EQ60;

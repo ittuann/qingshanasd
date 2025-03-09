@@ -73,8 +73,8 @@ class OAQ extends Component {
   render() {
     return (
       <Layout
-        title="孤独商儿童测试量表 | 青衫 Neuro"
-        description="孤独商儿童测试量表，用于测试儿童的孤独症商数"
+        title="G2述情障碍测试量表 | 青衫 Neuro"
+        description="述情障碍又译作“情感表达不能”或“情感难言症”"
       >
         <main className="max-w-3xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-8">
