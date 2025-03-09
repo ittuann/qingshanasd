@@ -61,7 +61,7 @@ class AQC extends Component {
   }
 
   calculateResult(score) {
-    if (score < 0.3) {
+    if (score < 76) {
       return "基本可排除孤独症倾向";
     } else {
       return "孩子可能有高功能孤独症倾向";
@@ -79,13 +79,34 @@ class AQC extends Component {
             {/* 信息 */}
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">
-              本量表为儿童ASD筛查量表
+                本量表为儿童ASD筛查量表
               </h1>
-              <p className="text-gray-500 mt-2">孩子处于焦虑，抑郁，社恐等都可能造成分值偏高</p>
-              <p className="text-gray-500 mt-2"> 请父母代替儿童完成</p>
+              <p className="text-gray-500 mt-2">
+                孩子处于焦虑，抑郁，社恐等都可能造成分值偏高
+              </p>
+              <p className="text-gray-500 mt-2">请父母代替儿童完成</p>
               <p className="text-sm text-gray-500 mt-2">
                 *本量表仅供参考，不能作为诊断依据。
               </p>
+              <div className="text-xs text-gray-400 mt-2 space-y-1">
+                <p>本量表参考文献：</p>
+                <ul className="list-disc pl-4 space-y-1">
+                  <li>
+                    <a
+                      href="https://www.ncbi.nlm.nih.gov/pubmed/18064550?ordinalpos=2&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_RVDocSum"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-gray-600"
+                    >
+                      Auyeung B, Baron-Cohen S, Wheelwright S, Allison C. (2007)
+                    </a>
+                  </li>
+                  <li>
+                    The Autism Spectrum Quotient: Children's Version (AQ-Child).
+                  </li>
+                  <li>Journal of Autism and Developmental Disorders Dec 7</li>
+                </ul>
+              </div>
             </div>
 
             <form className="space-y-8" onSubmit={this.handleSubmit}>

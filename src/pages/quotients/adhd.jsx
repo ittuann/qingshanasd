@@ -139,17 +139,24 @@ class ADHD extends Component {
               <p className="text-sm text-gray-500 mt-2">
                 *本量表仅供参考，不能作为诊断依据。
               </p>
-              <p className="text-sm text-gray-400 mt-1">
-                本量表参考文献：
-                <a
-                  href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/18Q_Chinese%20(Traditional)_final.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-600 underline"
-                >
-                  18Q-Chinese-Traditional.pdf
-                </a>
-              </p>
+              <div className="text-xs text-gray-400 mt-2 space-y-1">
+                <p>本量表参考文献：</p>
+                <ul className="list-disc pl-4 space-y-1">
+                  <li>
+                    <a
+                      href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/18Q_Chinese%20(Traditional)_final.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-gray-600"
+                    >
+                      18Q-Chinese-Traditional.pdf
+                    </a>
+                  </li>
+                  <li>
+                    世界卫生组织 Composite International Diagnostic Interview
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <form className="space-y-8" onSubmit={this.handleSubmit}>

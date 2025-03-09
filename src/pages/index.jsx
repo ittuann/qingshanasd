@@ -37,7 +37,7 @@ const scales = [
     title: "孤独商成人测试量表",
     description: "孤独商成人测试量表，用于测试成年人的孤独商数",
     tags: ["孤独症", "量表", "在线测试", "AQ", "成人测试"],
-    link: "/quotients/adhd",
+    link: "/quotients/aq-a",
   },
   {
     icon: "ri-mental-health-line",
