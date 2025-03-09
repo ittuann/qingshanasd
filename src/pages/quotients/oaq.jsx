@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import Layout from "@/components/Layout";
 import QuestionItem from "@/components/QuestionItem";
 import QuestionResult from "@/components/QuestionResult";
-import questionData from "@/data/questionAQA.json";
+import questionData from "@/data/questionOAQ.json";
 import BackToTop from "@/components/BackToTop";
 
-class AQA extends Component {
+class OAQ extends Component {
   state = {
     answers: {},
     showModal: false,
@@ -49,7 +49,7 @@ class AQA extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.questionAQA;
+    return questionData.questionOAQ;
   }
 
   calculateScores() {
@@ -61,14 +61,12 @@ class AQA extends Component {
   }
 
   calculateResult(score) {
-    if (score <= 21) {
-      return "非孤独症谱系";
-    } else if (score <= 25) {
-      return "您有一些孤独症谱系的特质";
-    } else if (score <= 31) {
-      return "您可能有高功能孤独症谱系障碍";
+    if (score <= 94) {
+      return "非诉情障碍";
+    } else if (score <= 112) {
+      return "可能有诉情障碍";
     } else {
-      return "您非常可能有高功能孤独症谱系障碍";
+      return "诉情障碍";
     }
   }
 
@@ -83,12 +81,8 @@ class AQA extends Component {
             {/* 信息 */}
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">
-                成人ASD筛查量表
+                OAQ- G2述情障碍测试量表
               </h1>
-              <p className="text-gray-500 mt-2">
-                焦虑抑郁等都可能造成分值偏高
-              </p>
-              <p className="text-gray-500 mt-2">最终确诊需要结合儿童时期的情况</p>
               <p className="text-sm text-gray-500 mt-2">
                 *本量表仅供参考，不能作为诊断依据。
               </p>
@@ -96,8 +90,19 @@ class AQA extends Component {
                 <p>本量表参考文献：</p>
                 <ul className="list-disc pl-4 space-y-1">
                   <li>
-                  Simon Baron-Cohen, et al. The Autism-Spectrum Quotient (AQ): Evidence from Asperger Syndrome/High-Functioning Autism, Malesand Females, Scientists and Mathematicians. 31: J Autism Dev Disord 5-17. 2001.
+                    青衫取得了OAQ- G2（Online Alexithymia Questionnaire）量表作者授权，将量表翻译成中文版：OAQ- G2述情障碍在线测试
                   </li>
+                  <li>
+                    <a
+                      href="https://www.amazon.com/Emotionally-Dumb-Alexithymia-Jason-Thompson-ebook/dp/B0038VZJ9U/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-gray-600"
+                    >
+                      Jason著有与述情障碍相关的两本书（点击购买）
+                    </a>
+                  </li>
+
                 </ul>
               </div>
             </div>
@@ -110,7 +115,7 @@ class AQA extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={["赞同", "反对"]}
-                    scores={[1, 1, 0, 0]}
+                    scores={[5, 4, 3, 2, 1]}
                     onAnswerChange={this.handleRadioChange}
                   />
                 ))}
@@ -132,31 +137,6 @@ class AQA extends Component {
                 subtitle: "得分",
                 score: this.state.score,
               },
-              {
-                title: "社交技巧",
-                subtitle: "得分",
-                score: this.state.score,
-              },
-              {
-                title: "交流",
-                subtitle: "得分",
-                score: this.state.score,
-              },
-              {
-                title: "注意力切换",
-                subtitle: "得分",
-                score: this.state.score,
-              },
-              {
-                title: "细节注意力",
-                subtitle: "得分",
-                score: this.state.score,
-              },
-              {
-                title: "交流",
-                subtitle: "得分",
-                score: this.state.score,
-              },
             ]}
             result={this.state.result}
             showModal={this.state.showModal}
@@ -170,4 +150,4 @@ class AQA extends Component {
   }
 }
 
-export default AQA;
+export default OAQ;

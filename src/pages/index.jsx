@@ -52,10 +52,10 @@ const scales = [
     icon: "ri-hearts-line",
     iconColor: "text-yellow-500",
     iconBg: "bg-yellow-100",
-    title: "G2达情障碍测试量表",
-    description: '达情障碍又译作"情感表达不能"或"情感迟钝症"',
+    title: "G2述情障碍测试量表",
+    description: '述情障碍又译作"情感表达不能"或"情感难言症"',
     tags: ["述情障碍", "量表", "在线测试", "OAQ"],
-    link: "/quotients/adhd",
+    link: "/quotients/oaq",
   },
 ];
 

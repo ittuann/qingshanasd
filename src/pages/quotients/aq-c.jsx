@@ -79,7 +79,7 @@ class AQC extends Component {
             {/* 信息 */}
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">
-                本量表为儿童ASD筛查量表
+                儿童ASD筛查量表
               </h1>
               <p className="text-gray-500 mt-2">
                 孩子处于焦虑，抑郁，社恐等都可能造成分值偏高
