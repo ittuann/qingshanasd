@@ -135,7 +135,6 @@ class BPD extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={["频繁", "没有"]}
-                    scores={[4, 3, 2, 1, 0]}
                     onAnswerChange={this.handleRadioChange}
                   />
                 ))}

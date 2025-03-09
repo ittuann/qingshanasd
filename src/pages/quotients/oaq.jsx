@@ -90,7 +90,9 @@ class OAQ extends Component {
                 <p>本量表参考文献：</p>
                 <ul className="list-disc pl-4 space-y-1">
                   <li>
-                    青衫取得了OAQ- G2（Online Alexithymia Questionnaire）量表作者授权，将量表翻译成中文版：OAQ- G2述情障碍在线测试
+                    青衫取得了OAQ- G2（Online Alexithymia
+                    Questionnaire）量表作者授权，将量表翻译成中文版：OAQ-
+                    G2述情障碍在线测试
                   </li>
                   <li>
                     <a
@@ -102,7 +104,6 @@ class OAQ extends Component {
                       Jason著有与述情障碍相关的两本书（点击购买）
                     </a>
                   </li>
-
                 </ul>
               </div>
             </div>
@@ -115,7 +116,6 @@ class OAQ extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={["赞同", "反对"]}
-                    scores={[5, 4, 3, 2, 1]}
                     onAnswerChange={this.handleRadioChange}
                   />
                 ))}

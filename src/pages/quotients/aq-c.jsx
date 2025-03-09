@@ -117,7 +117,6 @@ class AQC extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={["赞同", "反对"]}
-                    scores={[3, 2, 1, 0]}
                     onAnswerChange={this.handleRadioChange}
                   />
                 ))}

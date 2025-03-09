@@ -2,11 +2,13 @@
   "questionOAQ": [
     {
       "id": 1,
-      "text": ""
+      "text": "",
+      "scoresAagree": [5, 4, 3, 2, 1]
     },
     {
       "id": 2,
-      "text": ""
+      "text": "",
+      "scoresAagree": [5, 4, 3, 2, 1]
     }
   ]
 }

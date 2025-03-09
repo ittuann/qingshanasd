@@ -13,7 +13,7 @@ class QuestionItem extends Component {
             {degree[0]}
           </div>
           <div className="flex gap-4 md:gap-8">
-            {scores.map((val) => (
+            {question.scoresAagree.map((val) => (
               <label className="radio-label" key={val}>
                 <input
                   type="radio"

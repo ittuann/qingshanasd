@@ -85,10 +85,10 @@ class AQA extends Component {
               <h1 className="text-2xl font-semibold text-gray-900">
                 成人ASD筛查量表
               </h1>
+              <p className="text-gray-500 mt-2">焦虑抑郁等都可能造成分值偏高</p>
               <p className="text-gray-500 mt-2">
-                焦虑抑郁等都可能造成分值偏高
+                最终确诊需要结合儿童时期的情况
               </p>
-              <p className="text-gray-500 mt-2">最终确诊需要结合儿童时期的情况</p>
               <p className="text-sm text-gray-500 mt-2">
                 *本量表仅供参考，不能作为诊断依据。
               </p>
@@ -96,7 +96,10 @@ class AQA extends Component {
                 <p>本量表参考文献：</p>
                 <ul className="list-disc pl-4 space-y-1">
                   <li>
-                  Simon Baron-Cohen, et al. The Autism-Spectrum Quotient (AQ): Evidence from Asperger Syndrome/High-Functioning Autism, Malesand Females, Scientists and Mathematicians. 31: J Autism Dev Disord 5-17. 2001.
+                    Simon Baron-Cohen, et al. The Autism-Spectrum Quotient (AQ):
+                    Evidence from Asperger Syndrome/High-Functioning Autism,
+                    Malesand Females, Scientists and Mathematicians. 31: J
+                    Autism Dev Disord 5-17. 2001.
                   </li>
                 </ul>
               </div>
@@ -110,7 +113,6 @@ class AQA extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={["赞同", "反对"]}
-                    scores={[1, 1, 0, 0]}
                     onAnswerChange={this.handleRadioChange}
                   />
                 ))}

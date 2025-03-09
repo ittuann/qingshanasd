@@ -2,11 +2,13 @@
   "questionAQC": [
     {
       "id": 1,
-      "text": ""
+      "text": "",
+      "scoresAagree": [3, 2, 1, 0]
     },
     {
       "id": 2,
-      "text": ""
+      "text": "",
+      "scoresAagree": [3, 2, 1, 0]
     }
   ]
 }

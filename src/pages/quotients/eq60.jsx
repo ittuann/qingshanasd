@@ -79,11 +79,9 @@ class EQ60 extends Component {
             {/* 信息 */}
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">
-              共情商测试量表 (Empathy Quotient)
+                共情商测试量表 (Empathy Quotient)
               </h1>
-              <p className="text-gray-500 mt-2">
-                本量表效度存在争议，仅供参考
-              </p>
+              <p className="text-gray-500 mt-2">本量表效度存在争议，仅供参考</p>
               <p className="text-sm text-gray-500 mt-2">
                 *本量表仅供参考，不能作为诊断依据。
               </p>
@@ -97,7 +95,9 @@ class EQ60 extends Component {
                       rel="noopener noreferrer"
                       className="hover:text-gray-600"
                     >
-                      The Empathy Quotient: An Investigation of Adults with Asperger Syndrome or High Functioning Autism, and Normal Sex Differences
+                      The Empathy Quotient: An Investigation of Adults with
+                      Asperger Syndrome or High Functioning Autism, and Normal
+                      Sex Differences
                     </a>
                   </li>
                 </ul>
@@ -112,7 +112,6 @@ class EQ60 extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={["非常赞同", "绝对反对"]}
-                    scores={[4, 3, 2, 1]}
                     onAnswerChange={this.handleRadioChange}
                   />
                 ))}

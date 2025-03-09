@@ -2,11 +2,18 @@
   "questionAQA": [
     {
       "id": 1,
-      "text": ""
+      "text": "",
+      "scoresAagree": [1, 1, 0, 0]
     },
     {
       "id": 2,
-      "text": ""
+      "text": "",
+      "scoresAagree": [1, 1, 0, 0]
+    },
+    {
+      "id": 3,
+      "text": "",
+      "scoresAagree": [1, 1, 0, 0]
     }
   ]
 }
