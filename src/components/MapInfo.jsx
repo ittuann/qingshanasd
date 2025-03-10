@@ -25,7 +25,7 @@ class MapInfoNav extends Component {
               <a
                 key={index}
                 href={`#${area.areaBrief}`}
-                className="px-6 py-2.5 text-sm bg-white rounded-full shadow hover:shadow-md hover:bg-green-500 hover:text-white transition-all duration-200 whitespace-nowrap font-medium"
+                className="px-6 py-2.5 text-sm bg-white rounded-full shadow hover:shadow-md hover:bg-primary hover:text-white transition-all duration-200 whitespace-nowrap font-medium"
               >
                 {area.area}
               </a>
@@ -38,7 +38,7 @@ class MapInfoNav extends Component {
             title={isSticky ? "取消固定" : "固定导航"}
           >
             <i
-              className={`ri-pushpin-fill w-5 h-5 ${isSticky ? "text-green-500" : "text-gray-400"}`}
+              className={`ri-pushpin-fill w-5 h-5 ${isSticky ? "text-primary" : "text-gray-400"}`}
             ></i>
           </button>
         </div>
@@ -57,14 +57,14 @@ class MapInfo extends Component {
             id={areaData.areaBrief}
             className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl"
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-2 border-b-2 border-green-500/20">
+            <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-2 border-b-2 border-primary/20">
               {areaData.area}
             </h2>
 
             <div className="space-y-10">
               {areaData.hospitals.map((hospital, hospitalIndex) => (
                 <div key={hospitalIndex} className="group">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-green-500 transition-colors duration-200">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-200">
                     {hospital.name}
                   </h3>
 
@@ -78,11 +78,11 @@ class MapInfo extends Component {
                   <div className="space-y-4">
                     {hospital.doctors.map((doctor, doctorIndex) => (
                       <div key={doctorIndex} className="space-y-3">
-                        <div className="flex items-center justify-between p-4 rounded-lg bg-gray-50 hover:bg-green-500/5 transition-all duration-200">
+                        <div className="flex items-center justify-between p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-all duration-200">
                           <span className="text-gray-800 font-medium">
                             {doctor.name}
                           </span>
-                          <span className="text-sm text-green-500 bg-green-500/10 px-3 py-1 rounded-full">
+                          <span className="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">
                             {doctor.capacity.join(", ")}
                           </span>
                         </div>
@@ -103,7 +103,7 @@ class MapInfo extends Component {
                                     href={share.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-4 py-2 bg-green-50 hover:bg-green-100 rounded-lg text-green-600 hover:text-green-700 transition-colors duration-200"
+                                    className="flex items-center gap-2 px-4 py-2 bg-primary-light/80 hover:bg-primary-light rounded-lg text-primary/80 hover:text-primary transition-colors duration-200"
                                   >
                                     <i className="ri-link text-lg"></i>
                                     <span className="text-sm font-medium">{share.name}</span>

@@ -18,7 +18,7 @@ class MedicalMap extends Component {
             <div className="mb-8">
               <h1 className="text-3xl font-bold text-gray-900 mb-4 relative inline-block">
                 ADHD/ASD 就诊地图
-                <div className="absolute bottom-0 left-0 w-full h-1 bg-green-500/20"></div>
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-primary/20"></div>
               </h1>
 
               <div className="relative bg-white rounded-xl shadow-lg p-4 transition-all duration-300 hover:shadow-xl min-h-[500px]">
@@ -28,7 +28,7 @@ class MedicalMap extends Component {
 
             {/* 按钮组 */}
             <div className="flex justify-end space-x-3 my-4">
-              <button className="px-4 py-2 text-sm bg-green-500 text-white rounded-lg shadow-sm hover:bg-green-500/90 transition-all duration-200">
+              <button className="px-4 py-2 text-sm bg-primary text-white rounded-lg shadow-sm hover:bg-primary/90 transition-all duration-200">
                 国内版
               </button>
               <button className="px-4 py-2 text-sm bg-white text-gray-700 rounded-lg shadow-sm hover:bg-gray-50 transition-all duration-200">
@@ -40,7 +40,7 @@ class MedicalMap extends Component {
             </div>
 
             {/* 提示区域 */}
-            <div className="bg-white rounded-xl shadow-lg p-6 my-8 border-l-4 border-green-500 bg-gradient-to-r from-green-500/5 to-transparent">
+            <div className="bg-white rounded-xl shadow-lg p-6 my-8 border-l-4 border-primary bg-gradient-to-r from-primary/5 to-transparent">
               <p className="text-gray-600 mb-4">
                 由于就诊地图的统计难免有疏漏，部分可诊断ADHD/ASD的医院可能并没有被收录。建议先在自己本地三甲医院尝试就诊。
               </p>

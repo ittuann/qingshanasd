@@ -17,8 +17,8 @@ class Navbar extends Component {
 
   isActive = (path) => {
     return this.props.router.pathname === path
-      ? "text-green-600 font-medium border-b-2 border-green-500"
-      : "text-gray-500 hover:text-purple-400";
+      ? "text-primary/90 font-medium border-b-2 border-primary"
+      : "text-gray-500 hover:text-primary-dark";
   };
 
   toggleMobileMenu = () => {

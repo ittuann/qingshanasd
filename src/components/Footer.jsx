@@ -27,7 +27,7 @@ class Footer extends Component {
               </p>
               <a
                 href="https://qingshanasd.cn/"
-                className="text-gray-500 hover:text-green-600 transition-colors duration-300 text-sm inline-flex items-center mt-1"
+                className="text-gray-500 hover:text-primary transition-colors duration-300 text-sm inline-flex items-center mt-1"
               >
                 <i className="ri-earth-line text-sm mr-1"></i>
                 qingshanasd.cn
@@ -138,7 +138,7 @@ class Footer extends Component {
                   <a
                     href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
                     target="_blank"
-                    className="text-green-600 hover:text-green-600/80 transition"
+                    className="text-primary hover:text-primary/80 transition"
                   >
                     知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议
                   </a>

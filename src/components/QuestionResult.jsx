@@ -28,7 +28,7 @@ const QuestionResult = ({ scores, result, showModal, onClose }) => {
           {/* 量表结论 */}
           <div className="border-t border-gray-200 pt-4">
             <div className="flex items-center mb-3">
-              <i className="ri-mental-health-line text-green-500 text-xl mr-2"></i>
+              <i className="ri-mental-health-line text-primary text-xl mr-2"></i>
               <h3 className="text-lg font-semibold">测试结果表示</h3>
             </div>
             <p className="text-gray-600 bg-gray-50 p-4 rounded-lg">{result}</p>

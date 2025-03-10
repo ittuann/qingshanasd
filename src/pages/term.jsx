@@ -26,7 +26,7 @@ export default class Terms extends Component {
                 文章版权许可
               </p>
               <div className="mt-8 flex justify-center">
-                <div className="h-1 w-20 bg-gradient-to-r from-green-500 to-teal-500 rounded-full"></div>
+                <div className="h-1 w-20 bg-gradient-to-r from-primary to-teal-500 rounded-full"></div>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default class Terms extends Component {
                     除特别说明外，作品均采用
                     <a
                       href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
-                      className="text-green-600 hover:text-green-800"
+                      className="text-primary hover:text-primary-dark"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -136,7 +136,7 @@ export default class Terms extends Component {
                 For more information about Creative Commons licenses, visit{" "}
                 <a
                   href="https://creativecommons.org"
-                  className="text-green-600 hover:text-green-800"
+                  className="text-primary hover:text-primary-dark"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

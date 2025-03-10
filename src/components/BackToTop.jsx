@@ -74,7 +74,7 @@ class BackToTop extends Component {
           {isShowButton && visible && (
             <button
               onClick={this.scrollToTop}
-              className="absolute inset-0 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-green-50/90 flex items-center justify-center z-10"
+              className="absolute inset-0 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-primary-light flex items-center justify-center z-10"
               aria-label="回到顶部"
             >
               <i className="ri-arrow-up-line text-xl text-gray-600" />
@@ -96,7 +96,7 @@ class BackToTop extends Component {
                 cy={size / 2}
               />
               <circle
-                className="text-green-500 transition-all duration-300"
+                className="text-primary transition-all duration-300"
                 strokeWidth={strokeWidth}
                 strokeDasharray={circumference}
                 strokeDashoffset={offset}

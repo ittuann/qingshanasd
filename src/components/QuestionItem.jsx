@@ -22,7 +22,7 @@ class QuestionItem extends Component {
                   className="hidden peer"
                   onChange={() => onAnswerChange(question.id, val)}
                 />
-                <div className="w-4 h-4 md:w-6 md:h-6 border-2 border-gray-300 rounded-full peer-checked:border-green-600 peer-checked:bg-green-600"></div>
+                <div className="w-4 h-4 md:w-6 md:h-6 border-2 border-gray-300 rounded-full peer-checked:border-primary peer-checked:bg-primary"></div>
               </label>
             ))}
           </div>

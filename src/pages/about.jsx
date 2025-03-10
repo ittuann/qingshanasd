@@ -55,7 +55,7 @@ class About extends Component {
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
                 <span className="block">关于青衫 Neuro</span>
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-500 mt-3">
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-500 mt-3">
                   为神经多样性群体提供支持
                 </span>
               </h1>
@@ -63,7 +63,7 @@ class About extends Component {
                 因为你我，这个世界终将丰富多彩
               </p>
               <div className="mt-8 flex justify-center">
-                <div className="h-1 w-20 bg-gradient-to-r from-green-500 to-teal-500 rounded-full"></div>
+                <div className="h-1 w-20 bg-gradient-to-r from-primary to-teal-500 rounded-full"></div>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ class About extends Component {
                         <h3 className="text-xl font-bold text-gray-900">
                           {contributor.name}
                         </h3>
-                        <div className="w-12 h-1 bg-gradient-to-r from-green-500 to-teal-500 mx-auto my-3 rounded-full"></div>
+                        <div className="w-12 h-1 bg-gradient-to-r from-primary to-teal-500 mx-auto my-3 rounded-full"></div>
                         <p className="text-sm text-gray-500 mt-2">
                           {contributor.role}
                         </p>
@@ -142,7 +142,7 @@ class About extends Component {
               <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
                 <span className="relative">
                   财务公示
-                  <span className="absolute bottom-1 left-0 w-full h-2 bg-green-200 -z-10"></span>
+                  <span className="absolute bottom-1 left-0 w-full h-2 bg-primary-light -z-10"></span>
                 </span>
               </h2>
               <div className="max-w-3xl mx-auto">
@@ -153,7 +153,7 @@ class About extends Component {
                   <a
                     href="https://www.zhihu.com/pin/1866410059749277697"
                     target="_blank"
-                    className="group inline-flex items-center px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition duration-300"
+                    className="group inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition duration-300"
                   >
                     <span>查看财务报告</span>
                     <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform"></i>

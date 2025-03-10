@@ -13,7 +13,7 @@ class QuestionIntervention extends Component {
               <a
                 href="https://mp.weixin.qq.com/s/pRYTYnuvUvlJNNn-bVagcQ"
                 target="_blank"
-                className="text-lg font-medium text-gray-800 mb-2 hover:text-green-600 underline"
+                className="text-lg font-medium text-gray-800 mb-2 hover:text-primary underline"
               >
                 中国心理危机干预热线汇总
               </a>
@@ -22,7 +22,7 @@ class QuestionIntervention extends Component {
               <a
                 href="https://mp.weixin.qq.com/s/f2bpVY437pUO-tp0Ibgn9A"
                 target="_blank"
-                className="text-lg font-medium text-gray-800 mb-2 hover:text-green-600 underline"
+                className="text-lg font-medium text-gray-800 mb-2 hover:text-primary underline"
               >
                 心理CPR：每个人都要学会的危机干预
               </a>
