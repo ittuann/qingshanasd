@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Medical Resources Schema",
+  "description": "可诊断ADHD/ASD的医院及医生数据",
+  "type": "object",
+  "properties": {
+    "medicalData": {
+      "type": "array",
+      "description": "按地理区域收集的医疗资源数据",
+      "items": {
+        "type": "object",
+        "properties": {
+          "area": {
+            "type": "string",
+            "description": "地区名称"
+          },
+          "areaBrief": {
+            "type": "string",
+            "description": "地区简称"
+          },
+          "hospitals": {
+            "type": "array",
+            "description": "医院列表",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "医院名称"
+                },
+                "notes": {
+                  "type": "string",
+                  "description": "医院备注"
+                },
+                "doctors": {
+                  "type": "array",
+                  "description": "医生列表",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "医生姓名"
+                      },
+                      "capacity": {
+                        "type": "array",
+                        "description": "医生专长",
+                        "items": {
+                          "type": "string",
+                          "enum": ["ADHD", "ASD"],
+                          "description": "ADHD/ASD"
+                        }
+                      },
+                      "shares": {
+                        "type": "array",
+                        "description": "医生分享文章列表",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "description": "分享文章标题"
+                            },
+                            "link": {
+                              "type": "string",
+                              "format": "uri",
+                              "description": "分享文章链接"
+                            }
+                          },
+                          "required": ["name", "link"]
+                        }
+                      },
+                      "notes": {
+                        "type": "string",
+                        "description": "医生备注"
+                      }
+                    },
+                    "required": ["name", "capacity", "shares", "notes"]
+                  }
+                }
+              },
+              "required": ["name", "notes", "doctors"]
+            }
+          }
+        },
+        "required": ["area", "areaBrief", "hospitals"]
+      }
+    }
+  },
+  "required": ["medicalData"]
+}

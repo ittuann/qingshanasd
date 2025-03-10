@@ -2,17 +2,12 @@
   "questionAQA": [
     {
       "id": 1,
-      "text": "测试中",
-      "scoresAagree": [1, 1, 0, 0]
+      "text": "我喜欢与和他人一起做事情，而不是自己一人:",
+      "scoresAagree": [0, 0, 1, 1]
     },
     {
       "id": 2,
-      "text": "测试中",
-      "scoresAagree": [0, 0, 0, 0]
-    },
-    {
-      "id": 3,
-      "text": "测试中",
+      "text": "我喜欢用反复同样的方法做事情:",
       "scoresAagree": [1, 1, 0, 0]
     }
   ]

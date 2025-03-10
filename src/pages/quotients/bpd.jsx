@@ -94,6 +94,7 @@ class BPD extends Component {
                 边缘人格障碍表现量表 BSL-23
               </h1>
               <p className="text-gray-500 mt-2">焦虑抑郁等都可能造成分值偏高</p>
+              <p className="text-gray-500 mt-2">本量表可能含有情绪触动的内容</p>
               <p className="text-sm text-gray-500 mt-2">
                 *本量表仅供参考，不能作为诊断依据。
               </p>

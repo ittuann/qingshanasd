@@ -2,13 +2,13 @@
   "questionAQC": [
     {
       "id": 1,
-      "text": "测试中",
-      "scoresAagree": [3, 2, 1, 0]
+      "text": "孩子喜欢与和他人一起做事情，而不是自己一人:",
+      "scoresAagree": [0, 1, 2, 3]
     },
     {
       "id": 2,
-      "text": "测试中",
-      "scoresAagree": [0, 1, 2, 3]
+      "text": "孩子喜欢用反复同样的方法做事情:",
+      "scoresAagree": [3, 2, 1, 0]
     }
   ]
 }

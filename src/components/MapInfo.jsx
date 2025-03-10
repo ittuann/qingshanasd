@@ -96,16 +96,17 @@ class MapInfo extends Component {
                               </p>
                             )}
                             {doctor.shares.length > 0 && (
-                              <div className="flex flex-wrap gap-3">
+                              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                                 {doctor.shares.map((share, shareIndex) => (
                                   <a
                                     key={shareIndex}
                                     href={share.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-green-500 hover:text-green-500/80 text-sm hover:underline"
+                                    className="flex items-center gap-2 px-4 py-2 bg-green-50 hover:bg-green-100 rounded-lg text-green-600 hover:text-green-700 transition-colors duration-200"
                                   >
-                                    {share.name}
+                                    <i className="ri-link text-lg"></i>
+                                    <span className="text-sm font-medium">{share.name}</span>
                                   </a>
                                 ))}
                               </div>

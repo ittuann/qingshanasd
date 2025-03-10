@@ -101,6 +101,7 @@ class AQA extends Component {
                     Malesand Females, Scientists and Mathematicians. 31: J
                     Autism Dev Disord 5-17. 2001.
                   </li>
+                  <li>翻译：青衫</li>
                 </ul>
               </div>
             </div>
@@ -135,28 +136,28 @@ class AQA extends Component {
                 score: this.state.score,
               },
               {
-                title: "社交技巧",
-                subtitle: "得分",
+                title: "分析分数",
+                subtitle: "社交技巧",
                 score: this.state.score,
               },
               {
-                title: "交流",
-                subtitle: "得分",
+                title: "分析分数",
+                subtitle: "交流",
                 score: this.state.score,
               },
               {
-                title: "注意力切换",
-                subtitle: "得分",
+                title: "分析分数",
+                subtitle: "注意力切换",
                 score: this.state.score,
               },
               {
-                title: "细节注意力",
-                subtitle: "得分",
+                title: "分析分数",
+                subtitle: "细节注意力",
                 score: this.state.score,
               },
               {
-                title: "交流",
-                subtitle: "得分",
+                title: "分析分数",
+                subtitle: "想象力",
                 score: this.state.score,
               },
             ]}

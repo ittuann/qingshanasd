@@ -1,4 +1,5 @@
 {
+  "$schema": "medicalData.schema.json",
   "medicalData": [
     {
       "area": "北京市",
@@ -12,10 +13,6 @@
               "name": "司飞飞 医生",
               "capacity": ["ADHD", "ASD"],
               "shares": [
-                {
-                  "name": "北医六院成年ASD+ADHD就诊记",
-                  "link": "https://mp.weixin.qq.com/s/AYKfbKJg8VVoxMHHTvq4gQ"
-                },
                 {
                   "name": "北医六院ADHD2024年10月就诊详录",
                   "link": "https://mp.weixin.qq.com/s/QtoX2YqSonxcKRFpmyWbPg"
@@ -31,6 +28,59 @@
             },
             {
               "name": "王玉凤 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [
+                {
+                  "name": "王医生的就诊分享",
+                  "link": "https://mp.weixin.qq.com/s/"
+                }
+              ],
+              "notes": ""
+            },
+            {
+              "name": "钱秋谨 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [
+                {
+                  "name": "北医六院成年ASD+ADHD就诊记",
+                  "link": "https://mp.weixin.qq.com/s/AYKfbKJg8VVoxMHHTvq4gQ"
+                },
+                {
+                  "name": "【完全版】成年疑似孤独症谱系障碍简明就诊及自助指南",
+                  "link": "https://mp.weixin.qq.com/s/rXa_Sj9uD2Rm_rlPEkzjuw"
+                }
+              ],
+              "notes": ""
+            },
+            {
+              "name": "王力芳 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [
+                {
+                  "name": "安定医院+北医六院成人ASD就诊经历分享",
+                  "link": "https://mp.weixin.qq.com/s/-bh563FPkazSDllJ1ESteg"
+                },
+                {
+                  "name": "深圳康宁+北医六院ADHD+ASD成人确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/Mr2B1Wwb9Im3AvfaTmFEJg"
+                }
+              ],
+              "notes": ""
+            },
+            {
+              "name": "孙黎 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "曹庆久 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "顾伯美 医生",
               "capacity": ["ADHD", "ASD"],
               "shares": [],
               "notes": ""
