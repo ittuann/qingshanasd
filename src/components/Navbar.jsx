@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Pacifico } from "next/font/google";
+import Image from "next/image";
 import { withRouter } from "next/router";
 import Link from "next/link";
 import "remixicon/fonts/remixicon.css";
@@ -31,7 +32,13 @@ class Navbar extends Component {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <a href="/" className="flex items-center">
-                <i className="ri-brain-line text-green-600 text-2xl mr-2"></i>
+                <Image
+                  src="/favicon.ico"
+                  alt="logo"
+                  width={32}
+                  height={32}
+                  className="mr-2"
+                />
                 <span className={`${pacifico.className} text-xl text-gray-900`}>
                   青衫 Neuro
                 </span>

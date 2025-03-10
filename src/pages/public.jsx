@@ -10,7 +10,7 @@ const resources = [
     title: "初识神经多样性指南",
     description: "带你走进8亿NS(神经多样性)的世界——23年9月发布",
     tags: ["手册", "指南", "PDF"],
-    link: "https://qingshanasd.cn",
+    link: "/pdf/初识神经多样性指南.pdf",
   },
   {
     icon: "ri-book-2-line",
@@ -19,7 +19,7 @@ const resources = [
     title: "独立生活能力指南",
     description: "独立生活能力清单电子书 Checklist——23年7月发布",
     tags: ["手册", "指南", "PDF"],
-    link: "https://qingshanasd.cn",
+    link: "/pdf/独立生活能力清单.pdf",
   },
   {
     icon: "ri-book-2-line",
@@ -28,7 +28,7 @@ const resources = [
     title: "成年DCD人士生活指南",
     description: "与发育协调性障碍共同生活——21年9月发布",
     tags: ["手册", "指南", "PDF"],
-    link: "https://qingshanasd.cn",
+    link: "/pdf/与DCD共同生活.pdf",
   },
 ];
 

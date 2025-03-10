@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import "remixicon/fonts/remixicon.css";
 
 class Footer extends Component {
@@ -10,7 +11,13 @@ class Footer extends Component {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center mb-4">
-                <i className="ri-brain-line text-green-600 text-2xl mr-2"></i>
+                <Image
+                  src="/favicon.ico"
+                  alt="logo"
+                  width={32}
+                  height={32}
+                  className="mr-2"
+                />
                 <span className="font-['Pacifico'] text-xl text-gray-900">
                   青衫 Neuro
                 </span>
@@ -119,6 +126,9 @@ class Footer extends Component {
           </div>
           <div className="border-t mt-12 pt-8">
             <div className="flex flex-col items-center space-y-4">
+              <p className="text-center text-gray-500 text-sm">
+                量表版本: 1.1.7
+              </p>
               <p className="text-center text-gray-500 text-sm">
                 © 2025 青衫 Neuro. All rights reserved.
               </p>

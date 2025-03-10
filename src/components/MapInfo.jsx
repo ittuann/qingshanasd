@@ -4,7 +4,7 @@ import "remixicon/fonts/remixicon.css";
 
 class MapInfoNav extends Component {
   state = {
-    isSticky: true,
+    isSticky: false,
   };
 
   toggleSticky = () => {
