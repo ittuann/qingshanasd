@@ -106,7 +106,9 @@ class MapInfo extends Component {
                                     className="flex items-center gap-2 px-4 py-2 bg-primary-light/80 hover:bg-primary-light rounded-lg text-primary/80 hover:text-primary transition-colors duration-200"
                                   >
                                     <i className="ri-link text-lg"></i>
-                                    <span className="text-sm font-medium">{share.name}</span>
+                                    <span className="text-sm font-medium">
+                                      {share.name}
+                                    </span>
                                   </a>
                                 ))}
                               </div>

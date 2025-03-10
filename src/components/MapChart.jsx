@@ -95,7 +95,7 @@ class MapChart extends Component {
               color: "#000",
             },
             itemStyle: {
-              areaColor: "#00A63E",
+              areaColor: "#52B394",
             },
           },
           nameMap: {
