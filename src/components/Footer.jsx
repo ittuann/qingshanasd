@@ -88,7 +88,7 @@ class Footer extends Component {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="mailto:contact@qingshanasd.com"
+                    href="mailto:qingshan.aspie@gmail.com"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
                     邮件
@@ -105,7 +105,7 @@ class Footer extends Component {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://mp.weixin.qq.com/s/dvU8EbuaCuv3iLaxJbOd5w"
                     target="_blank"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >

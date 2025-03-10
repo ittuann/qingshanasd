@@ -4,7 +4,7 @@ import Card from "@/components/Card";
 
 const scales = [
   {
-    icon: "ri-brain-fill",
+    icon: "ri-brain-line",
     iconColor: "text-orange-500",
     iconBg: "bg-orange-100",
     title: "成人 ADHD 自填量表 (ASRS)",

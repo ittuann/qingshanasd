@@ -14,10 +14,6 @@
             "type": "string",
             "description": "地区名称"
           },
-          "areaBrief": {
-            "type": "string",
-            "description": "地区简称"
-          },
           "hospitals": {
             "type": "array",
             "description": "医院列表",
@@ -83,7 +79,7 @@
             }
           }
         },
-        "required": ["area", "areaBrief", "hospitals"]
+        "required": ["area", "hospitals"]
       }
     }
   },

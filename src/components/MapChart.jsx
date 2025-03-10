@@ -61,8 +61,8 @@ class MapChart extends Component {
         inverse: true,
         pieces: [
           { value: 1, label: "可诊断 ADHD/ASD", color: "#fce7f3" },
-          { value: 2, label: "可诊断 ADHD", color: "#dbeafe" },
-          { value: 3, label: "可诊断 ASD", color: "#dcfce7" },
+          { value: 2, label: "仅可诊断 ADHD", color: "#dbeafe" },
+          { value: 3, label: "仅可诊断 ASD", color: "#dcfce7" },
         ],
       },
       // 图形类型
@@ -114,8 +114,8 @@ class MapChart extends Component {
     // 添加点击事件处理
     this.chart.on("click", (params) => {
       const data = hospitalData.find((item) => item.name === params.name);
-      if (data && data.brief) {
-        const element = document.getElementById(data.brief);
+      if (data && data.name) {
+        const element = document.getElementById(data.name);
         if (element) {
           element.scrollIntoView({
             behavior: "smooth",

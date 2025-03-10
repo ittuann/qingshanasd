@@ -3,7 +3,6 @@
   "medicalData": [
     {
       "area": "北京市",
-      "areaBrief": "BJ",
       "hospitals": [
         {
           "name": "北京大学第六医院",
@@ -103,12 +102,308 @@
               "notes": ""
             }
           ]
+        },
+        {
+          "name": "北京安定医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "陈旭 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [
+                {
+                  "name": "北京安定医院成人ADHD就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/21b6BK52CpcYqjERw_EAwg"
+                },
+                {
+                  "name": "北京安定医院成人ADHD&抑郁共现就诊记录",
+                  "link": "https://mp.weixin.qq.com/s/7TWo-auMYB1hIASsbY3cRw"
+                },
+                {
+                  "name": "北京安定医院成人ASD就诊记录",
+                  "link": "https://mp.weixin.qq.com/s/LJ1ZUrNBfPgBoevfXfgv2g"
+                },
+                {
+                  "name": "视力障碍女生 北京安定医院ASD+ADHD成人就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/Okgo566GF_zcg7GCxU-9GQ"
+                }
+              ],
+              "notes": "注：安定医院陈旭医生周三下午特需门诊可看成人ASD（转自网络经验贴），陈旭医生也可以确诊成人ADHD"
+            },
+            {
+              "name": "何凡 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [],
+              "notes": "注：何凡医生可以开药。"
+            },
+            {
+              "name": "周玉明 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [],
+              "notes": "注：周玉明医生可以确诊成人ASD和ADHD, 每周五上午作为副主任医生在孤独症门诊出诊。 每周二、四、六下午在儿科精神科出诊，专家号60元。"
+            },
+            {
+              "name": "杜海霞 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [],
+              "notes": "注：挂号：特需门诊→孤独症谱系障碍筛查与评估门诊"
+            },
+            {
+              "name": "吴元贞 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "梁月竹 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "黄环环 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "上海市",
+      "hospitals": [
+        {
+          "name": "上海新华医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "张劲松 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "夏卫萍 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "上海新华医院adhd确诊指南",
+                  "link": "https://mp.weixin.qq.com/s/4bgsrcvmOpGAGGglUUIXTg"
+                },
+                {
+                  "name": "【更新】上海新华医院ADHD就诊流程",
+                  "link": "https://mp.weixin.qq.com/s/i1hT9NihBj8EKn-ockKB8Q"
+                },
+                {
+                  "name": "【更新】上海新华医院异地就诊tips",
+                  "link": "https://mp.weixin.qq.com/s/Zldy5YP2C9RN7vXscfw5iQ"
+                },
+                {
+                  "name": "【更新】上海新华医院ADHD就诊攻略（2021/5/4）",
+                  "link": "https://mp.weixin.qq.com/s/fm69NfoAO8BY97OIfd9I6w"
+                },
+                {
+                  "name": "【更新】上海新华医院成人ADHD就诊记录（2021.9.25）",
+                  "link": "https://mp.weixin.qq.com/s/m3kg-gUZOwpd1JGAtAExkg"
+                },
+                {
+                  "name": "上海新华成人ADHD处方药报销",
+                  "link": "https://mp.weixin.qq.com/s/RRyyAlqJ1gp697Of0Qxx1A"
+                },
+                {
+                  "name": "上海新华医院ASD成人就诊保姆级攻略",
+                  "link": "https://mp.weixin.qq.com/s/n0SF0pp47BBNpM3Sk-9Erw"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "上海市第一人民医院松江南院",
+          "notes": "注：王兰兰医生不仅周三在松江南院有专家门诊和adhd的专病门诊，她亲口说周五周六上午在北院专家门诊也可以找到她。",
+          "doctors": [
+            {
+              "name": "王兰兰 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "上海第一人民医院虹口院区",
+          "notes": "注：王兰兰医生不仅周三在松江南院有专家门诊和adhd的专病门诊，她亲口说周五周六上午在北院专家门诊也可以找到她。",
+          "doctors": [
+            {
+              "name": "王兰兰 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "上海同济大学附属医院 - ADHD门诊",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "刘飞 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "管晓枫 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "上海市同济医院成人ADHD就诊攻略",
+                  "link": "https://mp.weixin.qq.com/s/bb43hw4P-IlSXIm_HUYqHw"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "上海市宝山区精神卫生中心",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "曹亚宁 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "云南省",
+      "hospitals": [
+        {
+          "name": "昆明医学院附属第一医院(云大医院)",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "卢瑾 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "杨润许 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "戴南 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "昆明医科大成人ADHD就诊攻略",
+                  "link": "https://mp.weixin.qq.com/s/v52WiSbILr3lDfrZCndeLg"
+                },
+                {
+                  "name": "昆明医科大学第一附属医院成人ADHD确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/FuTtYmZ_dyMP40fkM5YT0A"
+                },
+                {
+                  "name": "【更新】昆明成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/z9z7P7iN5PYo0azde9wXvw"
+                },
+                {
+                  "name": "昆明医科大学第一附属医院成人ASD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/rWSENteOhnqzwf6ekum-Uw"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "内蒙古自治区",
+      "hospitals": [
+        {
+          "name": "内蒙古自治区第三医院儿少心理医学中心",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "景兰 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "吉林省",
+      "hospitals": [
+        {
+          "name": "吉林大学白求恩第一医院",
+          "notes": "注：心理卫生科",
+          "doctors": [
+            {
+              "name": "栾树鑫 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "王瑞 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "田润辉 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
         }
       ]
     },
     {
       "area": "四川省",
-      "areaBrief": "SC",
       "hospitals": [
         {
           "name": "四川大学华西医院",
@@ -116,9 +411,2271 @@
           "doctors": [
             {
               "name": "黄颐 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "司徒明镜 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "李元媛 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "成都四医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "多动症科室 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "成都军区机关医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "蒲昭霞 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "成都市四医院九江院区（成都市心理健康中心）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "刘芳 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "朱敏 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "四川大学华西医院和重庆精神卫生中心成人ADHD就诊记录",
+                  "link": "https://mp.weixin.qq.com/s/XegOiuQMeDg_INtJ5yhnmQ"
+                },
+                {
+                  "name": "四川成都华西第二医院（锦江院区）成人ADHD就诊故事",
+                  "link": "https://mp.weixin.qq.com/s/0f_adQJe4dF9c_6Z8mY0Bw"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "四川市",
+      "hospitals": [
+        {
+          "name": "四川大学华西医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "黄颐 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "司徒明镜 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "李元媛 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "成都四医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "多动症科室 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "成都军区机关医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "蒲昭霞 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "成都市四医院九江院区（成都市心理健康中心）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "刘芳 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "朱敏 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "四川大学华西医院和重庆精神卫生中心成人ADHD就诊记录",
+                  "link": "https://mp.weixin.qq.com/s/XegOiuQMeDg_INtJ5yhnmQ"
+                },
+                {
+                  "name": "四川成都华西第二医院（锦江院区）成人ADHD就诊故事",
+                  "link": "https://mp.weixin.qq.com/s/0f_adQJe4dF9c_6Z8mY0Bw"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "天津市",
+      "hospitals": [
+        {
+          "name": "天津市安定医院",
+          "notes": "注：天津安定医院青少年门诊都可以看ADHD。",
+          "doctors": [
+            {
+              "name": "雷彤 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "随广红 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "天津市安定医院成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/bwPMrJng4V4BM48t6Bm5fA"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "安徽省",
+      "hospitals": [
+        {
+          "name": "安医大二附院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "耿峰 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "张蕾 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "安徽医科大学附属第二医院成人ADHD就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/QoHlPg_8C5V42_1kWqSoNQ"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "合肥市第四人民医院",
+          "notes": "注：周四周五出诊，挂号青少年心理科。",
+          "doctors": [
+            {
+              "name": "钟慧 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "朱丽 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "莫大明 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "合肥四院（安徽省精卫）成人ADHD确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/4rJdxqr_Fldt1yKvKw3Ugg"
+                },
+                {
+                  "name": "确诊后异地开药：合肥四院ADHDer就诊拿药记录",
+                  "link": "https://mp.weixin.qq.com/s/4f2zaMPNXbDHG-pI6XjbVw"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "山东省",
+      "hospitals": [
+        {
+          "name": "山东省精神卫生中心",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "殷爱华 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "徐德峰 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "山东精卫&深圳康宁成人ASD近期就诊攻略",
+                  "link": "https://mp.weixin.qq.com/s/bdgfkbXiPv7ZwZNz4hkzsg"
+                },
+                {
+                  "name": "山东省精神卫生中心ADHD成人就诊攻略",
+                  "link": "https://mp.weixin.qq.com/s/ePZqhLaNQQdzu04NiACM2Q"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "山东省立医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "焦志安 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "山东省立医院成人ADHD就诊攻略",
+                  "link": "https://mp.weixin.qq.com/s/wz18VzkSd4d3PAVUNk8kBw"
+                },
+                {
+                  "name": "山东省立医院（中心院区）成人ADHD就诊攻略【更新】",
+                  "link": "https://mp.weixin.qq.com/s/oPl3Fs8UvIqVdiyhd_sgRQ"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "山东省济宁医学院附属医院",
+          "notes": "注：心理咨询科",
+          "doctors": [
+            {
+              "name": "刘传新 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "青岛精神卫生中心（青岛市第七人民医院）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "万好 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [
+                {
+                  "name": "山东省青岛市精神卫生中心成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/ssmfFUZtSEu7YuADTT73-w"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "青岛市立医院",
+          "notes": "注：非工作日去 不用排队 就诊体验好",
+          "doctors": [
+            {
+              "name": "王俊 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "秦俊峰 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "王克 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "王冠军 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "万好 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [
+                {
+                  "name": "青岛市市立医院成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/1a1vNP1mmucZvgevJP0yrA"
+                },
+                {
+                  "name": "山东青岛ASD+ADHD成人就诊全方位经验分享",
+                  "link": "https://mp.weixin.qq.com/s/376IImrTAi8ag2yajDqFSg"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "青岛妇女儿童医院",
+          "notes": "注：可开专注达。",
+          "doctors": [
+            {
+              "name": "冀永娟 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "谭歆 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "山东潍坊市人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "赵约翰 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "威海市立医院",
+          "notes": "注：可以开专注达，需要户口本复印件，建议提前带好身份证和户口本索引页＋个人页印在一张纸上的复印件",
+          "doctors": [
+            {
+              "name": "孙榕蔚 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "山东泰安解放军八十八医院",
+          "notes": "注：可以开托莫西汀",
+          "doctors": [
+            {
+              "name": "肖立群 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "千佛山医院",
+          "notes": "注：有pjz处方权，需要做测试和量表。",
+          "doctors": [
+            {
+              "name": "张华 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "山西省",
+      "hospitals": [
+        {
+          "name": "山西医科大学第一医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "曹晓华 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "山西医科大学第一医院成人ADHD确诊指南",
+                  "link": "https://mp.weixin.qq.com/s/lvWbwrzFYeWOcyDbKT7hWw"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "广东省",
+      "hospitals": [
+        {
+          "name": "广州医科大学附属脑科医院（广州市惠爱医院）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "吴秋霞 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [
+                {
+                  "name": "广州脑科（惠爱）医院的成人ADHD就诊记录",
+                  "link": "https://mp.weixin.qq.com/s/m12qan6xax6-g4_NZ8Whww"
+                },
+                {
+                  "name": "广州医科大学附属脑科医院成人ADHD就诊攻略",
+                  "link": "https://mp.weixin.qq.com/s/x2YbnQL2X_7eS-O9sGruJQ"
+                },
+                {
+                  "name": "广州医科大学附属脑科医院成人ASD就诊经验",
+                  "link": "https://mp.weixin.qq.com/s/u_l3DvQc4Le-DuuQtL7p_A"
+                },
+                {
+                  "name": "20岁的新生：广州脑科医院ADHD成人加号就诊故事",
+                  "link": "https://mp.weixin.qq.com/s/C_MwUhVkcBupmAXo6x2ymw"
+                },
+                {
+                  "name": "广州私立医疗机构ASD+ADHD成人单独就诊记录",
+                  "link": "https://mp.weixin.qq.com/s/JxtLXwaiSFMKOcaYn6Lnfg"
+                },
+                {
+                  "name": "经验汇总：广州脑科医院ASD/ADHD成人就诊常见问题解答",
+                  "link": "https://mp.weixin.qq.com/s/gM9CgU4Q07S3ViNBwQ9RbA"
+                },
+                {
+                  "name": "【成人】ADHD广州医科大学附属脑科医院就诊、续药记录",
+                  "link": "https://mp.weixin.qq.com/s/B8Jtv68a369UvwqRCUsFxA"
+                },
+                {
+                  "name": "广州医科大学附属脑科医院ASD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/D-kZNZ5hp1mjkqRhGgb_Hg"
+                }
+              ],
+              "notes": ""
+            },
+            {
+              "name": "程道猛 医生",
               "capacity": ["ADHD"],
               "shares": [],
               "notes": ""
+            },
+            {
+              "name": "李苏义 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "叶碧瑜 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "欧玉芬 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "深圳市康宁医院 ",
+          "notes": "注：目前已经不再给18岁以上患者做ados评估以及不再给出成人ASD诊断",
+          "doctors": [
+            {
+              "name": "李颖源 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": "注：每周三下午出诊。"
+            },
+            {
+              "name": "王中磊 医生",
+              "capacity": ["ADHD"],
+              "shares": [
+                {
+                  "name": "深圳康宁成人ADHD+阿斯伯格确诊记",
+                  "link": "https://mp.weixin.qq.com/s/-qPgCoP_Tje4nwYPi9x9qg"
+                },
+                {
+                  "name": "【更新】深圳康宁医院和成都华西医院成人ASD+ADHD最新就诊细节更新",
+                  "link": "https://mp.weixin.qq.com/s/WRADPkC2-_dW60fBP4VteA"
+                },
+                {
+                  "name": "深圳康宁医院成人ADHD首诊医保报销就诊体验",
+                  "link": "https://mp.weixin.qq.com/s/KlMaEGBdCpf_V9Oim2urRQ"
+                },
+                {
+                  "name": "喜大普奔！深圳康宁成人ADHD处方药医保初体验",
+                  "link": "https://mp.weixin.qq.com/s/bpY7yQ3VN4dWNRoA-XIAQg"
+                },
+                {
+                  "name": "世界必有出口：武汉长沙深圳成人ASD+ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/dSNUojHXjqBQOPATMmSaAA"
+                },
+                {
+                  "name": "深圳康宁+北医六院ADHD+ASD成人确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/Mr2B1Wwb9Im3AvfaTmFEJg"
+                }
+              ],
+              "notes": ""
+            },
+            {
+              "name": "齐云柯 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "王冰 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "齐玉 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "陈周文 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "广东省人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "戚元丽 医生",
+              "capacity": ["ADHD"],
+              "shares": [
+                {
+                  "name": "广东省人民医院ADHD成人就诊指南及对新人建议",
+                  "link": "https://mp.weixin.qq.com/s/Ai7E6GANjg2Z2tqA84wzog"
+                }
+              ],
+              "notes": ""
+            },
+            {
+              "name": "杨帆 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "广州暨南大学附属第一医院精神心理科",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "贾滟滨 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "广州妇幼保健院（广州市妇女儿童医疗中心）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "查彩慧 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "中山大学附属第三医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "李雷俊 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "广州医学院第二附属医院心理科",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "苏程 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": "注：有专注达处方权"
+            },
+            {
+              "name": "刘军 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "汕头大学精神卫生中心",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "黄燕虹 医生",
+              "capacity": ["ADHD"],
+              "shares": [
+                {
+                  "name": "少数的故事：汕头大学精神卫生中心成人ASD和ADHD确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/JOxvBGNUAv7TZaMvwmtSHw"
+                }
+              ],
+              "notes": ""
+            },
+            {
+              "name": "李艾 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "佛山顺德大良伍仲佩纪念医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "冯婉霞 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [],
+              "notes": "注：冯医生人很好，具体剂量问题请咨询冯医生，初诊有问到刻板行为和家庭养育情况。"
+            }
+          ]
+        },
+        {
+          "name": "江门市妇幼保健院",
+          "notes": "注：本医院有成人ADHD专门门诊。",
+          "doctors": [
+            {
+              "name": "许律琴 医生",
+              "capacity": ["ADHD"],
+              "shares": [
+                {
+                  "name": "广东江门妇幼保健院成人ADHD确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/ThT2Q03MuSHY-8nCZtqrLw"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "中山市博爱医院（妇幼保健院）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "张艳红 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [
+                {
+                  "name": "我的22岁重生：广东中山市博爱医院成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/cCw60aRcUpkHU82NA1SdmA"
+                }
+              ],
+              "notes": ""
+            },
+            {
+              "name": "何淑华 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": "注：心理科儿童行为发育门诊"
+            }
+          ]
+        },
+        {
+          "name": "中山市小榄人民医院",
+          "notes": "注：儿童保健科——儿童心理行为门诊",
+          "doctors": [
+            {
+              "name": "吴炜翰 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "中山市第三人民医院",
+          "notes": "注：儿童青少年心理门诊（湖滨路）",
+          "doctors": [
+            {
+              "name": "任衍镇 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "珠海市妇幼保健院",
+          "notes": "注：儿童青少年心理门诊（湖滨路）",
+          "doctors": [
+            {
+              "name": "庄志成 医生",
+              "capacity": ["ADHD", "ASD"],
+              "shares": [
+                {
+                  "name": "广东珠海妇幼保健院翠香社康成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/Y4fMYOJzO5avPX6Eu3Z4NQ"
+                }
+              ],
+              "notes": "注：儿童心理行为科，有36mg和18mg专注达处方权。"
+            },
+            {
+              "name": "陈强 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "何贤纪念医院（广东省广州市番禺区）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "张国荣 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": "注：失眠心理专科"
+            }
+          ]
+        },
+        {
+          "name": "广东医科大学顺德妇女儿童医院（佛山市顺德区妇幼保健院）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "梁烨 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "佛山市第一人民医院",
+          "notes": "注：儿科，可能看不了成人",
+          "doctors": [
+            {
+              "name": "黄志民 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "梁少霞 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "佛山市妇幼保健院",
+          "notes": "注：儿童保健科，可能看不了成人",
+          "doctors": [
+            {
+              "name": "俞红 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "佛山市第三人民医院",
+          "notes": "注：临床心理科门诊",
+          "doctors": [
+            {
+              "name": "张杏莲 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "南方医科大学顺德医院",
+          "notes": "注：总院门诊，心理科门诊",
+          "doctors": [
+            {
+              "name": "陈旻彦 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "江门市第四人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "祝勇敢 医生",
+              "capacity": ["ADHD"],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "肇庆市第三人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "程国强 医生",
+              "capacity": ["ADHD"],
+              "shares": [
+                {
+                  "name": "【完全版】成年疑似孤独症谱系障碍简明就诊及自助指南",
+                  "link": "https://mp.weixin.qq.com/s/rXa_Sj9uD2Rm_rlPEkzjuw"
+                },
+                {
+                  "name": "从精神病性障碍到ADHD、ASD，这是我的自我发现历程",
+                  "link": "https://mp.weixin.qq.com/s/VmABTjXexPw5NSy8_np4_A"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "广西壮族自治区",
+      "hospitals": [
+        {
+          "name": "广西壮族自治区人民医院（桃源院区）",
+          "notes": "注：临床心理科",
+          "doctors": [
+            {
+              "name": "秦岭 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "刘海润 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "傅燕虹 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "黄思艳 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "张鸿 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "李丹丹 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "梁佳 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "广西医科大学第一附属医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "尤美娜 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "广西壮族自治区人民医院成人ASD+ADHD就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/hUEZ6PPncUeDu355qqGPIA"
+                },
+                {
+                  "name": "广西壮族自治区人民医院成人ADHD就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/w-9IOKGw53wWPtcwl_8AvA"
+                },
+                {
+                  "name": "广西壮族自治区人民医院成人ASD就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/Y0f4BJ1G_MhhVqagpZA4kw"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "新疆维吾尔自治区",
+      "hospitals": [
+        {
+          "name": "新疆人民医院",
+          "notes": "注：有专注达处方权。",
+          "doctors": [
+            {
+              "name": "邹邵红 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "佟钙玉 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "新疆医科大学第一附属医院",
+          "notes": "注：医生态度很好。",
+          "doctors": [
+            {
+              "name": "安景荣 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "江苏省",
+      "hospitals": [
+        {
+          "name": "南京脑科儿童心理卫生中心",
+          "notes": "注：南京脑科医院儿童心理卫生中心所有医生都可以确诊成人ADHD患者，只需要先精神科挂号，再网上挂号，儿童心理卫生中心普通号复诊就行。",
+          "doctors": [
+            {
+              "name": "焦公凯 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "张会会 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "鲍晨曦 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "柯晓燕 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "梁金凤 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "殷璐 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [
+                {
+                  "name": "南京脑科医院成人asd+adhd就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/jBg86bXnYZsIJ7FpM4Hkcw"
+                },
+                {
+                  "name": "南京脑科医院ADHD就诊经历（成人直接挂号方法）",
+                  "link": "https://mp.weixin.qq.com/s/Dgm2KxidxLI6a2dKGazQgg"
+                },
+                {
+                  "name": "【更新】成人ASD南京脑科就诊流程",
+                  "link": "https://mp.weixin.qq.com/s/m5PZbCTl4SQKAOsI6UQQCQ"
+                },
+                {
+                  "name": "【更新】南京脑科医院成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/MvDLtTPjPors-VFTSd2P4A"
+                },
+                {
+                  "name": "南京脑科医院成人ASD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/ZVtRBN-55oocXjyHcluzIQ"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "扬州五台山医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "卜茹 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "王万章 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "江苏平江医院",
+          "notes": "注：卜医生也会来这里出诊，具体可关注“江苏平江医院心理服务中心”查看出诊日期",
+          "doctors": [
+            {
+              "name": "方红丽 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "卜茹 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "苏州平江医院成人ADHD就诊流程",
+                  "link": "https://mp.weixin.qq.com/s/k5t24boDsUpt36W7BBqyaQ"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "江西省",
+      "hospitals": [
+        {
+          "name": "江西省妇幼保健院九龙湖院区",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "周文琴 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "ADHD在江西：从一个问号说开去，江西妇幼成人ADHD就诊筛查记录",
+                  "link": "https://mp.weixin.qq.com/s/CUiOaxwTWCOFo2t8L8EcYA"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "河北省",
+      "hospitals": [
+        {
+          "name": "河北省儿童医院心理行为科",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "王霞 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "石家庄市第八医院精八科",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "李素水 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "河北医科大学第一医院",
+          "notes": "注：专注达和托莫西汀可开。",
+          "doctors": [
+            {
+              "name": "曹旭影 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "王岚 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "余明 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "乜欣红 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "河北省第六人民医院",
+          "notes": "注：在儿少门诊，可开药",
+          "doctors": [
+            {
+              "name": "张欣 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "李阳 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "张萍 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "张旭静 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "河北省第六人民医院ADHD成人确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/OD-569jqoTIWVIll2yp1sg"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "河南省",
+      "hospitals": [
+        {
+          "name": "河南省妇幼保健院（郑大三附院）心理门诊",
+          "notes": "注：可以给成人开药，需要用6-12岁小孩户口本照片办就诊卡取药。",
+          "doctors": [
+            {
+              "name": "姚梅玲 医生",
+              "capacity": [
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "段桂琴 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "宋春兰 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "郑州大学第一附属医院",
+          "notes": "注：南院区，儿童保健科",
+          "doctors": [
+            {
+              "name": "王仕奎 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "郑州大学第三附属医院（郑州市妇幼保健院）成人ADHD就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/niGILl_iLYyyKUdiBkXDWw"
+                },
+                {
+                  "name": "河南省妇幼保健院（郑大三附院）就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/CC-EE3FlVlMydLertPKuhQ"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "浙江省",
+      "hospitals": [
+        {
+          "name": "浙江大学医学院附属第一医院 （余杭院区）（庆春院区）",
+          "notes": "注：精神卫生科 - 精神卫生门诊",
+          "doctors": [
+            {
+              "name": "付广慧 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "胡少华 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "陆绍佳 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "浙江大学第一附属医院成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/FxvlRWIMUpZzbZsaCB5yug"
+                },
+                {
+                  "name": "浙医一院余杭院区成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/LGnaqruj4KfJeTedsgDQQQ"
+                },
+                {
+                  "name": "背着看不见的石头行走：杭州浙医一院ADHD成人就诊经历分享",
+                  "link": "https://mp.weixin.qq.com/s/SbRz2M9O6hcTFrwuyY5Qhg"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "杭州市第七人民医院",
+          "notes": "注：儿童心理科，可以开18mg和36mg的专注达。",
+          "doctors": [
+            {
+              "name": "刘艳 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "宁波市康宁医院",
+          "notes": "注：周四下午在海曙，周日下午在庄市",
+          "doctors": [
+            {
+              "name": "程芳 医生",
+              "capacity": [
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "胡珍玉 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "赵袁志 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "宁波市康宁医院成人ASD+ADHD确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/Tr7HkeqhX9NcrDW0zYCjjg"
+                },
+                {
+                  "name": "宁波市康宁医院成人ASD确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/MSwfnsUOHhScZ5kkEk8KpA"
+                },
+                {
+                  "name": "宁波康宁与常州德安双A就诊：明天又是新的一天",
+                  "link": "https://mp.weixin.qq.com/s/a8aAWVetdMql_bDhg8MTvQ"
+                },
+                {
+                  "name": "宁波大学附属康宁医院ADHD+ASD青少年就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/3tjlY9DlE30K6EWcEWFDSw"
+                },
+                {
+                  "name": "宁波大学附属康宁医院ASD成人就诊攻略",
+                  "link": "https://mp.weixin.qq.com/s/su7jF2ltTM9qzajOpkoXUw"
+                },
+                {
+                  "name": "宁波市康宁医院成人ASD+ADHD就诊流程",
+                  "link": "https://mp.weixin.qq.com/s/v4aarGvKLjHMnOgxFXNgDg"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "浙江大学邵逸夫医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "覃艳华 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "浙大邵逸夫医院成人ADHD确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/qEC1D80K9juDn8O82EIy8w"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "浙江金华妇幼保健院",
+          "notes": "注：因为一些复杂的原因建议阅读链接文章再决定是否前往。",
+          "doctors": [
+            {
+              "name": "刘畅 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "浙江金华市妇幼保健院成人ADHD确诊记录",
+                  "link": "https://mp.weixin.qq.com/s/1H4-wA-G10KNXoESBaY_Wg"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "温州医科大学附属康宁医院",
+          "notes": "注：有ADHD门诊",
+          "doctors": [
+            {
+              "name": "于学力 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "叶敏捷 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "李美花 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [
+                {
+                  "name": "温州康宁医院ASD成人就诊经历：确诊了，然后呢？",
+                  "link": "https://mp.weixin.qq.com/s/gJfci3l40C82rjNNuvYmYA"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "江山市第四人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "祝勇敢 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "浙江大学医学院附属第二医院",
+          "notes": "注：滨江院区周六下午， '注意缺陷/学习困难门诊'。",
+          "doctors": [
+            {
+              "name": "林铮 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "金嘉郦 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "温州市第七人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "丁万涛 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "海南省",
+      "hospitals": [
+        {
+          "name": "海南省人民医院 - 精神科",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "康延海 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "海南省人民医院成人ADHD就诊指南：去吧！总有一天能找到那个适合你的医生！",
+                  "link": "https://mp.weixin.qq.com/s/Qlq2pLNrRZzc_VfxOmhm9g"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "湖北省",
+      "hospitals": [
+        {
+          "name": "武汉市精神卫生中心（二七院区）",
+          "notes": "注：每周五上午在武汉市心理医院",
+          "doctors": [
+            {
+              "name": "李轶琛 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "汤珺 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "张焱 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "路晓文 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "斯亮 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "刘修军 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "湖北宜昌市二医院（学习困难门诊）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "汤珺 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "武汉市精神卫生中心（二七院区）ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/iw5a1cPSNbYodqMShtVStg"
+                },
+                {
+                  "name": "武汉市精神卫生中心（二七院区）成人ASD+ADHD就诊记录",
+                  "link": "https://mp.weixin.qq.com/s/JWvpvEkp2Tvw85pyP93XfQ"
+                },
+                {
+                  "name": "世界必有出口：武汉长沙深圳成人ASD+ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/dSNUojHXjqBQOPATMmSaAA"
+                },
+                {
+                  "name": "武汉精神卫生中心（二七院区）成人ADHD门诊就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/3YxnvxCqTwQgWFFtrPxayg"
+                },
+                {
+                  "name": "武汉精神卫生中心（六角亭院区）成人ASD确诊经历",
+                  "link": "https://mp.weixin.qq.com/s/bk9eoW2GoCslE6Jf2Gifgg"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "湖南省",
+      "hospitals": [
+        {
+          "name": "中南大学湘雅二医院",
+          "notes": "注：自闭症专项门诊",
+          "doctors": [
+            {
+              "name": "崔夕龙 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "⻩春香 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "苏林雁 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "欧建君 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [
+                {
+                  "name": "长沙湘雅二医院成人ASD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/xf-mJwp47Cn03gP3Aqq8Ig"
+                },
+                {
+                  "name": "世界必有出口：武汉长沙深圳成人ASD+ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/dSNUojHXjqBQOPATMmSaAA"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "福建省",
+      "hospitals": [
+        {
+          "name": "厦门仙岳医院",
+          "notes": "注：儿童门诊/学习障碍门诊，支持成人开药。（不确定是否支持确诊）",
+          "doctors": [
+            {
+              "name": "李韵 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "郑微 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "王文强 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "石磊 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "黄怡颖 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "厦门仙岳医院成人ADHD就诊故事",
+                  "link": "https://mp.weixin.qq.com/s/CWbcIaEd9MaZp1FHq0cEnQ"
+                },
+                {
+                  "name": "我曾经竭尽全力去摘那颗星：厦门仙岳医院成人ADHD就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/0k7f7FeqPG6817QKC-B4Rw"
+                },
+                {
+                  "name": "世界不曾经历过相同的两场雨季：ADHD确诊心路历程",
+                  "link": "https://mp.weixin.qq.com/s/szJCRWljKSC-6TtV0P5ZJg"
+                },
+                {
+                  "name": "孤独与焦虑的集合体：厦门仙岳医院成人ASD确诊故事",
+                  "link": "https://mp.weixin.qq.com/s/GGCVFsB_Jq2Izih48w5ziQ"
+                },
+                {
+                  "name": "厦门私立医疗机构ASD成人确诊记录",
+                  "link": "https://mp.weixin.qq.com/s/v8_oLUtKTPRJVw4ffneH5w"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "贵州省",
+      "hospitals": [
+        {
+          "name": "贵州省第二人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "莫芸 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "我与拖延二三事：贵州省人民医院成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/PBW2dnjKTqP8kbgU4jEKYg"
+                },
+                {
+                  "name": "贵州省第二人民医院成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/St1pufe9rM30RHyIloHu3Q"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "辽宁省",
+      "hospitals": [
+        {
+          "name": "辽宁省肿瘤医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "姜爽 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [
+                {
+                  "name": "辽宁省肿瘤医院成人ADHD就诊经历",
+                  "link": "https://mp.weixin.qq.com/s/QgSuovQHPG2oyy_gAeYXJg"
+                },
+                {
+                  "name": "辽宁省肿瘤医院成人ASD就诊故事",
+                  "link": "https://mp.weixin.qq.com/s/WJsCPqjr92Y04wullZZ4_Q"
+                },
+                {
+                  "name": "一位医生想传达出的心意【含就诊攻略】",
+                  "link": "https://mp.weixin.qq.com/s/XCRQQ7iP6m9PofgAFuZrGQ"
+                },
+                {
+                  "name": "未曾设想的结果——辽宁省肿瘤医院ASD成人就诊经历分享",
+                  "link": "https://mp.weixin.qq.com/s/N5gntKPdfSfFJyp7Ods-zA"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "中国医科大学沈阳盛京医院（滑翔院区）",
+          "notes": "注：支持多项共病诊断",
+          "doctors": [
+            {
+              "name": "彭淼 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "高倩 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "辽宁沈阳盛京医院滑翔院区成人ASD就诊记录",
+                  "link": "https://mp.weixin.qq.com/s/KPC_MIbEaaSd-MXPp-79lQ"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "中国医科大学附属鞍山医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "巴宇辰 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "大连市第七人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "李奕 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "重庆市",
+      "hospitals": [
+        {
+          "name": "重庆市精神卫生中心",
+          "notes": "注：成年高中生群体可以考虑就诊，学习困难门诊",
+          "doctors": [
+            {
+              "name": "王敏建 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "冉曼利 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "张骁 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "王萌 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "彭美玲 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "四川大学华西医院和重庆精神卫生中心成人ADHD就诊记录",
+                  "link": "https://mp.weixin.qq.com/s/XegOiuQMeDg_INtJ5yhnmQ"
+                },
+                {
+                  "name": "重庆市精神卫生中心（金紫山区）成人ASD就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/kEgRojRImJ5pGhD4mKuNKg"
+                },
+                {
+                  "name": "重庆精神卫生中心成人ADHD就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/2_Odxg33yDij99nPMIxJ_Q"
+                },
+                {
+                  "name": "【更新】重庆市精神卫生中心（金紫山区）ADHD成人就诊全流程",
+                  "link": "https://mp.weixin.qq.com/s/I_mKDwHy6i2kenNlOlNzcw"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "陕西省",
+      "hospitals": [
+        {
+          "name": "西安交大第二附属医院",
+          "notes": "注：心理精神病科",
+          "doctors": [
+            {
+              "name": "王亚萍 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "张欢 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "西安交大第一附属医院",
+          "notes": "注：可开18mg的专注达。确诊过程需要家长填写发育史问卷+各种量表，排除强迫，抑郁等情绪问题引起的分心。",
+          "doctors": [
+            {
+              "name": "李强 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "高新医院",
+          "notes": "注：临床心理科",
+          "doctors": [
+            {
+              "name": "白洁 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "西安交通大学第二附属医院成人ADHD就诊记录",
+                  "link": "https://mp.weixin.qq.com/s/TPLerqcp0lD6THMFJM3m6w"
+                },
+                {
+                  "name": "【就诊更新】西安交通大学第二附属医院成人ADHD",
+                  "link": "https://mp.weixin.qq.com/s/yp6j3vCBHlw4u31LOOH9Ag"
+                },
+                {
+                  "name": "【就诊更新】西安交通大学第二附属医院成人ADHD",
+                  "link": "https://mp.weixin.qq.com/s/yp6j3vCBHlw4u31LOOH9Ag"
+                }
+              ],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "香港特别行政区",
+      "hospitals": [
+        {
+          "name": "中建医务（中建醫務）",
+          "notes": "注：地址：香港中环毕打街1-3号中建大厦608室",
+          "doctors": [
+            {
+              "name": "麦棨诺（麥棨諾） 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": "注：麦棨诺医生讲普通话，可确诊成人ADHD。"
+            },
+            {
+              "name": "林震 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": "注：可讲普通话，可开专注达和Vyvanse，价格可谈。"
+            },
+            {
+              "name": "李靖国 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "思健医务中心",
+          "notes": "注：地址：香港中环德辅道19号环球大厦11楼1101室。公众号：香港思健医务中心。",
+          "doctors": [
+            {
+              "name": "张正平 医生",
+              "capacity": [
+                "ASD"
+              ],
+              "shares": [
+                {
+                  "name": "【香港确诊】一个人类世界的猫猫人的自白",
+                  "link": "https://mp.weixin.qq.com/s/0LqAbvmLB_HNPKUBoFpVeA"
+                }
+              ],
+              "notes": "注：2024年5月参考价格2200hkd/45min，量表未额外收费。医生态度好。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "澳门特别行政区",
+      "hospitals": [
+        {
+          "name": "澳门镜湖医院（澳門鏡湖醫院） ",
+          "notes": "注：地址：香港中环毕打街1-3号中建大厦608室",
+          "doctors": [
+            {
+              "name": "麦棨诺（麥棨諾） 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": "注：麦棨诺医生讲普通话，可确诊成人ADHD。澳门镜湖医院就诊请先预约神经内科转介。"
             }
           ]
         }

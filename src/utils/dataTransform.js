@@ -23,7 +23,6 @@ export function transformMedicalData(medicalData) {
 
     return {
       name: areaData.area,
-      brief: areaData.areaBrief,
       hospitals: areaData.hospitals.length,
       doctors: areaData.hospitals.reduce(
         (sum, hospital) => sum + hospital.doctors.length,
