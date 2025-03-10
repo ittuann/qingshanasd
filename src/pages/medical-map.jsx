@@ -20,34 +20,9 @@ class MedicalMap extends Component {
                 ADHD/ASD 就诊地图
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-green-500/20"></div>
               </h1>
+
               <div className="relative bg-white rounded-xl shadow-lg p-4 transition-all duration-300 hover:shadow-xl min-h-[500px]">
                 <MapChart />
-
-                {/* 图例信息 */}
-                <div className="md:absolute md:top-6 md:right-6 mt-4 md:mt-0 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg w-full md:w-auto">
-                  <div className="flex md:flex-col flex-wrap gap-3 md:space-y-2">
-                    <div className="flex items-center flex-1 md:flex-none">
-                      <div className="w-4 h-4 bg-pink-200 rounded mr-2"></div>
-                      <span className="text-sm text-gray-600">
-                        可诊断ADHD与ASD
-                      </span>
-                    </div>
-                    <div className="flex items-center flex-1 md:flex-none">
-                      <div className="w-4 h-4 bg-blue-100 rounded mr-2"></div>
-                      <span className="text-sm text-gray-600">可诊断ADHD</span>
-                    </div>
-                    <div className="flex items-center flex-1 md:flex-none">
-                      <div className="w-4 h-4 bg-green-100 rounded mr-2"></div>
-                      <span className="text-sm text-gray-600">可诊断ASD</span>
-                    </div>
-                    <div className="flex items-center flex-1 md:flex-none">
-                      <div className="w-4 h-4 bg-gray-200 rounded mr-2"></div>
-                      <span className="text-sm text-gray-600">
-                        暂无就诊信息
-                      </span>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 

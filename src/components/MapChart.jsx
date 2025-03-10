@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import * as echarts from "echarts";
+import { transformMedicalData } from "@/utils/dataTransform";
+import medicalDataSource from "@/data/medicalData.json";
+import chinaGeoJson from "@/data/100000_full.json";
 
 class MapChart extends Component {
   constructor(props) {
@@ -18,22 +21,15 @@ class MapChart extends Component {
     }
   }
 
-  async initChart() {
+  initChart() {
     if (!this.chartRef.current) return;
 
     this.chart = echarts.init(this.chartRef.current);
 
     // https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json
-    const chinaJson = require("../data/100000_full.json");
-    echarts.registerMap("china", chinaJson);
+    echarts.registerMap("china", chinaGeoJson);
 
-    const hospitalData = [
-      // tpye字段记录地图着色映射 1-ADHD&ASD 2-ADHD 3-ASD
-      { name: "北京市", brief: "BJ", hospitals: 3, doctors: 9, type: 1 },
-      { name: "上海市", brief: "SH", hospitals: 2, doctors: 3, type: 2 },
-      { name: "广东省", brief: "GD", hospitals: 2, doctors: 2, type: 3 },
-      { name: "四川省", brief: "SC", hospitals: 1, doctors: 1, type: 1 },
-    ];
+    const hospitalData = transformMedicalData(medicalDataSource.medicalData);
 
     const option = {
       animation: true,
@@ -43,12 +39,12 @@ class MapChart extends Component {
         subtext: "ADHD/ASD Diagnosis Map",
         left: "center",
       },
+      // 提示框组件
       tooltip: {
         trigger: "item",
         showDelay: 0,
         transitionDuration: 0.2,
         zoom: 5,
-        roam: true,
         formatter: function (params) {
           const data = hospitalData.find((item) => item.name === params.name);
           if (data) {
@@ -57,39 +53,53 @@ class MapChart extends Component {
           return params.name + ": 暂无数据";
         },
       },
+      // 视觉映射组件
       visualMap: {
-        show: false,
-        min: 1,
-        max: 3,
-        inRange: {
-          color: ["#fce7f3", "#dbeafe", "#dcfce7"],
-        },
+        show: true,
+        type: "piecewise",
+        categories: ["1", "2", "3"],
+        inverse: true,
+        pieces: [
+          { value: 1, label: "可诊断 ADHD/ASD", color: "#fce7f3" },
+          { value: 2, label: "可诊断 ADHD", color: "#dbeafe" },
+          { value: 3, label: "可诊断 ASD", color: "#dcfce7" },
+        ],
       },
+      // 图形类型
       series: [
         {
-          name: "中国",
           type: "map",
           map: "china",
-          roam: false,
+          name: "中国大陆地图",
+          roam: true, // 鼠标缩放和平移
           selectedMode: false,
+          zoom: 1.0,
+          // 图形上的文本标签
           label: {
             show: true,
             fontSize: 8,
             color: "#333",
+            position: "inside",
           },
+          // 地图区域的多边形样式
           itemStyle: {
             areaColor: "#e5e7eb",
             borderColor: "#fff",
             borderWidth: 1,
+            borderType: "solid",
           },
+          // 高亮状态样式
           emphasis: {
             label: {
               show: true,
               color: "#000",
             },
             itemStyle: {
-              areaColor: "#fce7f3",
+              areaColor: "#00A63E",
             },
+          },
+          nameMap: {
+            台湾省: "台湾",
           },
           data: hospitalData.map((item) => ({
             name: item.name,
