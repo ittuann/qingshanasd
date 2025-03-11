@@ -1,26 +1,49 @@
-import React, { Component } from "react";
-import medicalData from "@/data/medicalData.json";
+import React, { Component, useContext } from "react";
+import { MedicalDataContext } from "@/context/MedicalDataContext";
 import "remixicon/fonts/remixicon.css";
 
-class MapInfoSelect extends Component {
-  render() {
-    return (
-      <div className="flex justify-end space-x-3 my-4">
-        <button className="px-4 py-2 text-sm bg-primary text-white rounded-lg shadow-sm hover:bg-primary/90 transition-all duration-200">
-          国内版
-        </button>
-        <button className="px-4 py-2 text-sm bg-white text-gray-700 rounded-lg shadow-sm hover:bg-gray-50 transition-all duration-200">
-          儿童版
-        </button>
-        <button className="px-4 py-2 text-sm bg-white text-gray-700 rounded-lg shadow-sm hover:bg-gray-50 transition-all duration-200">
-          国际版
-        </button>
-      </div>
-    );
-  }
-}
+const MapInfoSelect = () => {
+  const { dataType, switchData } = useContext(MedicalDataContext);
+
+  return (
+    <div className="flex justify-end space-x-3 my-4">
+      <button
+        onClick={() => switchData("domestic")}
+        className={`px-4 py-2 text-sm rounded-lg shadow-sm transition-all duration-200 ${
+          dataType === "domestic"
+            ? "bg-primary text-white"
+            : "bg-white text-gray-700 hover:bg-gray-50"
+        }`}
+      >
+        国内版
+      </button>
+      <button
+        onClick={() => switchData("child")}
+        className={`px-4 py-2 text-sm rounded-lg shadow-sm transition-all duration-200 ${
+          dataType === "child"
+            ? "bg-primary text-white"
+            : "bg-white text-gray-700 hover:bg-gray-50"
+        }`}
+      >
+        儿童版
+      </button>
+      <button
+        onClick={() => switchData("abroad")}
+        className={`px-4 py-2 text-sm rounded-lg shadow-sm transition-all duration-200 ${
+          dataType === "abroad"
+            ? "bg-primary text-white"
+            : "bg-white text-gray-700 hover:bg-gray-50"
+        }`}
+      >
+        海外版
+      </button>
+    </div>
+  );
+};
 
 class MapInfoNav extends Component {
+  static contextType = MedicalDataContext;
+
   state = {
     isSticky: false,
   };
@@ -33,13 +56,14 @@ class MapInfoNav extends Component {
 
   render() {
     const { isSticky } = this.state;
+    const { currentData } = this.context;
     const containerClass = `${isSticky ? "sticky" : ""} top-0 py-4 z-50 bg-white/80 backdrop-blur-lg shadow-sm rounded-lg mt-8`;
 
     return (
       <div className={containerClass}>
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4">
           <div className="flex flex-wrap gap-2">
-            {medicalData.medicalData.map((area, index) => (
+            {currentData.medicalData.map((area, index) => (
               <a
                 key={index}
                 href={`#${area.area}`}
@@ -66,10 +90,13 @@ class MapInfoNav extends Component {
 }
 
 class MapInfo extends Component {
+  static contextType = MedicalDataContext;
+
   render() {
+    const { currentData } = this.context;
     return (
       <div className="space-y-12">
-        {medicalData.medicalData.map((areaData, areaIndex) => (
+        {currentData.medicalData.map((areaData, areaIndex) => (
           <div
             key={areaIndex}
             id={areaData.area}
@@ -96,7 +123,7 @@ class MapInfo extends Component {
                   <div className="space-y-4">
                     {hospital.doctors.map((doctor, doctorIndex) => (
                       <div key={doctorIndex} className="space-y-3">
-                        {(doctor.name || doctor.capacity) && (
+                        {doctor.name && (
                           <div className="flex items-center justify-between p-4 rounded-lg bg-gray-50 hover:bg-primary-light/50 transition-all duration-200">
                             <span className="text-gray-800 font-medium">
                               {doctor.name}
