@@ -1,0 +1,42 @@
+name: Build Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking Out
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: "pnpm"
+          node-version: 20
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: dist/
+          name: qingshanasd
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Format
+        run: pnpm format

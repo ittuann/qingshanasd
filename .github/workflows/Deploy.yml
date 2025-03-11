@@ -1,0 +1,89 @@
+name: Deploy to dist branch
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "Build Site"
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    if: github.ref == 'refs/heads/main' && github.event.workflow_run.event == 'push' && github.event.workflow_run.conclusion == 'success'
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checking Out
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: "pnpm"
+          node-version: 20
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
+
+      - name: Prepare Deploy
+        id: prepare_deploy
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          MAIN_LATEST_HASH=$(git rev-parse --short=7 HEAD)
+
+          echo "--- Clone dist branch to pages directory. ---"
+          git clone https://github.com/ittuann/qingshanasd.git dist
+          mv dist dist-repo
+          cd dist-repo
+          git checkout dist
+
+          echo "--- Clean old files: ---"
+          echo "--- Delete all tracked files ---"
+          git rm -rf . || echo "No tracked files to remove."
+          echo "--- Delete all untracked files ---"
+          git clean -fxd
+
+          echo "--- Build ---"
+          cd ..
+          pnpm build
+
+          echo "--- Copy new files. ---"
+          cd dist-repo
+          cp -r ../dist/* .
+          git add .
+          rm -rf ../dist
+
+          echo "--- Attempts to commit changes. If there are no changes the new commit will not be created. ---"
+          git commit -s -m "Deployed dist branch - $MAIN_LATEST_HASH" || echo "No changes to commit."
+
+          echo "--- Check if there has been a new commit. ---"
+          LOCAL_HASH=$(git rev-parse HEAD)
+          REMOTE_HASH=$(git rev-parse @{u})
+          if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "has_changes=true"
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "has_changes=false"
+          fi
+
+      - name: Push Changes
+        if: steps.prepare_deploy.outputs.has_changes == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: dist
+          directory: dist-repo
