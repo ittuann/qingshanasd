@@ -11,6 +11,11 @@ class AQC extends Component {
     showModal: false,
     score: 0,
     result: "",
+    socialScore: 0,
+    attentionSwitchingScore: 0,
+    attentionDetailScore: 0,
+    communicationScore: 0,
+    imaginationScore: 0,
   };
 
   closeModal = () => {
@@ -53,11 +58,50 @@ class AQC extends Component {
   }
 
   calculateScores() {
-    let score = 0;
-    Object.entries(this.state.answers).forEach(([questionId, value]) => {
-      score += value;
+    const { answers } = this.state;
+    const questionSocial = [1, 11, 13, 15, 22, 36, 44, 45, 47, 48];
+    const questionAttentionSwitching = [2, 4, 10, 16, 25, 32, 34, 37, 43, 46];
+    const questionAttentionDetail = [5, 6, 9, 12, 19, 23, 28, 29, 30, 49];
+    const questionCommunication = [7, 17, 18, 26, 27, 31, 33, 35, 38, 39];
+    const questionImagination = [3, 8, 14, 20, 21, 24, 40, 41, 42, 50];
+
+    const socialScore = questionSocial.reduce(
+      (sum, id) => sum + (answers[id] || 0),
+      0,
+    );
+    const attentionSwitchingScore = questionAttentionSwitching.reduce(
+      (sum, id) => sum + (answers[id] || 0),
+      0,
+    );
+    const attentionDetailScore = questionAttentionDetail.reduce(
+      (sum, id) => sum + (answers[id] || 0),
+      0,
+    );
+    const communicationScore = questionCommunication.reduce(
+      (sum, id) => sum + (answers[id] || 0),
+      0,
+    );
+    const imaginationScore = questionImagination.reduce(
+      (sum, id) => sum + (answers[id] || 0),
+      0,
+    );
+
+    const totalScore =
+      socialScore +
+      attentionSwitchingScore +
+      attentionDetailScore +
+      communicationScore +
+      imaginationScore;
+
+    this.setState({
+      socialScore,
+      attentionSwitchingScore,
+      attentionDetailScore,
+      communicationScore,
+      imaginationScore,
     });
-    return score;
+
+    return totalScore;
   }
 
   calculateResult(score) {
@@ -69,6 +113,17 @@ class AQC extends Component {
   }
 
   render() {
+    const {
+      score,
+      result,
+      showModal,
+      socialScore,
+      attentionSwitchingScore,
+      attentionDetailScore,
+      communicationScore,
+      imaginationScore,
+    } = this.state;
+
     return (
       <Layout
         title="孤独商儿童测试量表 | 青衫 Neuro"
@@ -136,37 +191,37 @@ class AQC extends Component {
             scores={[
               {
                 title: "测试分数",
-                subtitle: "得分",
-                score: this.state.score,
+                subtitle: "总分",
+                score: score,
               },
               {
                 title: "分析分数",
                 subtitle: "社交技巧",
-                score: this.state.score,
+                score: socialScore,
               },
               {
                 title: "分析分数",
                 subtitle: "交流",
-                score: this.state.score,
+                score: communicationScore,
               },
               {
                 title: "分析分数",
                 subtitle: "注意力切换",
-                score: this.state.score,
+                score: attentionSwitchingScore,
               },
               {
                 title: "分析分数",
                 subtitle: "细节注意力",
-                score: this.state.score,
+                score: attentionDetailScore,
               },
               {
                 title: "分析分数",
                 subtitle: "想象力",
-                score: this.state.score,
+                score: imaginationScore,
               },
             ]}
-            result={this.state.result}
-            showModal={this.state.showModal}
+            result={result}
+            showModal={showModal}
             onClose={this.closeModal}
           />
 
