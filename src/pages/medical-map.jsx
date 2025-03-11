@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Layout from "@/components/Layout";
 import dynamic from "next/dynamic";
-import MapInfo, { MapInfoNav } from "@/components/MapInfo";
+import MapInfo, { MapInfoNav, MapInfoSelect } from "@/components/MapInfo";
 import BackToTop from "@/components/BackToTop";
 
 const MapChart = dynamic(() => import("@/components/MapChart"), {
@@ -27,17 +27,7 @@ class MedicalMap extends Component {
             </div>
 
             {/* 按钮组 */}
-            <div className="flex justify-end space-x-3 my-4">
-              <button className="px-4 py-2 text-sm bg-primary text-white rounded-lg shadow-sm hover:bg-primary/90 transition-all duration-200">
-                国内版
-              </button>
-              <button className="px-4 py-2 text-sm bg-white text-gray-700 rounded-lg shadow-sm hover:bg-gray-50 transition-all duration-200">
-                儿童版
-              </button>
-              <button className="px-4 py-2 text-sm bg-white text-gray-700 rounded-lg shadow-sm hover:bg-gray-50 transition-all duration-200">
-                国际版
-              </button>
-            </div>
+            <MapInfoSelect />
 
             {/* 提示区域 */}
             <div className="bg-white rounded-xl shadow-lg p-6 my-8 border-l-4 border-primary bg-gradient-to-r from-primary/5 to-transparent">

@@ -10,7 +10,10 @@
           "doctors": [
             {
               "name": "司飞飞 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [
                 {
                   "name": "北医六院ADHD2024年10月就诊详录",
@@ -21,24 +24,28 @@
             },
             {
               "name": "赵梦婕 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": "注：北京大学第六医院儿童门诊的普通门诊也可能可以看成人ADHD，案例在赵梦婕医生处确诊。"
             },
             {
               "name": "王玉凤 医生",
-              "capacity": ["ADHD", "ASD"],
-              "shares": [
-                {
-                  "name": "王医生的就诊分享",
-                  "link": "https://mp.weixin.qq.com/s/"
-                }
+              "capacity": [
+                "ADHD",
+                "ASD"
               ],
+              "shares": [],
               "notes": ""
             },
             {
               "name": "钱秋谨 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [
                 {
                   "name": "北医六院成年ASD+ADHD就诊记",
@@ -53,7 +60,10 @@
             },
             {
               "name": "王力芳 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [
                 {
                   "name": "安定医院+北医六院成人ASD就诊经历分享",
@@ -68,19 +78,28 @@
             },
             {
               "name": "孙黎 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "曹庆久 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "顾伯美 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -92,7 +111,10 @@
           "doctors": [
             {
               "name": "李斌彬 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [
                 {
                   "name": "北京回龙观医院成人ASD+ADHD就诊经历",
@@ -109,7 +131,10 @@
           "doctors": [
             {
               "name": "陈旭 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [
                 {
                   "name": "北京安定医院成人ADHD就诊指南",
@@ -132,37 +157,52 @@
             },
             {
               "name": "何凡 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": "注：何凡医生可以开药。"
             },
             {
               "name": "周玉明 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": "注：周玉明医生可以确诊成人ASD和ADHD, 每周五上午作为副主任医生在孤独症门诊出诊。 每周二、四、六下午在儿科精神科出诊，专家号60元。"
             },
             {
               "name": "杜海霞 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": "注：挂号：特需门诊→孤独症谱系障碍筛查与评估门诊"
             },
             {
               "name": "吴元贞 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "梁月竹 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "黄环环 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -404,100 +444,6 @@
     },
     {
       "area": "四川省",
-      "hospitals": [
-        {
-          "name": "四川大学华西医院",
-          "notes": "",
-          "doctors": [
-            {
-              "name": "黄颐 医生",
-              "capacity": [
-                "ADHD"
-              ],
-              "shares": [],
-              "notes": ""
-            },
-            {
-              "name": "司徒明镜 医生",
-              "capacity": [
-                "ADHD"
-              ],
-              "shares": [],
-              "notes": ""
-            },
-            {
-              "name": "李元媛 医生",
-              "capacity": [
-                "ADHD"
-              ],
-              "shares": [],
-              "notes": ""
-            }
-          ]
-        },
-        {
-          "name": "成都四医院",
-          "notes": "",
-          "doctors": [
-            {
-              "name": "多动症科室 医生",
-              "capacity": [
-                "ADHD"
-              ],
-              "shares": [],
-              "notes": ""
-            }
-          ]
-        },
-        {
-          "name": "成都军区机关医院",
-          "notes": "",
-          "doctors": [
-            {
-              "name": "蒲昭霞 医生",
-              "capacity": [
-                "ADHD"
-              ],
-              "shares": [],
-              "notes": ""
-            }
-          ]
-        },
-        {
-          "name": "成都市四医院九江院区（成都市心理健康中心）",
-          "notes": "",
-          "doctors": [
-            {
-              "name": "刘芳 医生",
-              "capacity": [
-                "ADHD"
-              ],
-              "shares": [],
-              "notes": ""
-            },
-            {
-              "name": "朱敏 医生",
-              "capacity": [
-                "ADHD"
-              ],
-              "shares": [
-                {
-                  "name": "四川大学华西医院和重庆精神卫生中心成人ADHD就诊记录",
-                  "link": "https://mp.weixin.qq.com/s/XegOiuQMeDg_INtJ5yhnmQ"
-                },
-                {
-                  "name": "四川成都华西第二医院（锦江院区）成人ADHD就诊故事",
-                  "link": "https://mp.weixin.qq.com/s/0f_adQJe4dF9c_6Z8mY0Bw"
-                }
-              ],
-              "notes": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "area": "四川市",
       "hospitals": [
         {
           "name": "四川大学华西医院",
@@ -953,7 +899,10 @@
           "doctors": [
             {
               "name": "吴秋霞 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [
                 {
                   "name": "广州脑科（惠爱）医院的成人ADHD就诊记录",
@@ -992,25 +941,33 @@
             },
             {
               "name": "程道猛 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "李苏义 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "叶碧瑜 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "欧玉芬 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1022,13 +979,17 @@
           "doctors": [
             {
               "name": "李颖源 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": "注：每周三下午出诊。"
             },
             {
               "name": "王中磊 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [
                 {
                   "name": "深圳康宁成人ADHD+阿斯伯格确诊记",
@@ -1059,25 +1020,33 @@
             },
             {
               "name": "齐云柯 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "王冰 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "齐玉 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "陈周文 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1089,7 +1058,9 @@
           "doctors": [
             {
               "name": "戚元丽 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [
                 {
                   "name": "广东省人民医院ADHD成人就诊指南及对新人建议",
@@ -1100,7 +1071,9 @@
             },
             {
               "name": "杨帆 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1112,7 +1085,9 @@
           "doctors": [
             {
               "name": "贾滟滨 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1124,7 +1099,9 @@
           "doctors": [
             {
               "name": "查彩慧 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1136,7 +1113,10 @@
           "doctors": [
             {
               "name": "李雷俊 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1148,13 +1128,17 @@
           "doctors": [
             {
               "name": "苏程 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": "注：有专注达处方权"
             },
             {
               "name": "刘军 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1166,7 +1150,9 @@
           "doctors": [
             {
               "name": "黄燕虹 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [
                 {
                   "name": "少数的故事：汕头大学精神卫生中心成人ASD和ADHD确诊经历",
@@ -1177,7 +1163,10 @@
             },
             {
               "name": "李艾 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1189,7 +1178,10 @@
           "doctors": [
             {
               "name": "冯婉霞 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": "注：冯医生人很好，具体剂量问题请咨询冯医生，初诊有问到刻板行为和家庭养育情况。"
             }
@@ -1201,7 +1193,9 @@
           "doctors": [
             {
               "name": "许律琴 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [
                 {
                   "name": "广东江门妇幼保健院成人ADHD确诊经历",
@@ -1218,7 +1212,10 @@
           "doctors": [
             {
               "name": "张艳红 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [
                 {
                   "name": "我的22岁重生：广东中山市博爱医院成人ADHD就诊经历",
@@ -1229,7 +1226,9 @@
             },
             {
               "name": "何淑华 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": "注：心理科儿童行为发育门诊"
             }
@@ -1241,7 +1240,10 @@
           "doctors": [
             {
               "name": "吴炜翰 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1253,7 +1255,9 @@
           "doctors": [
             {
               "name": "任衍镇 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1265,7 +1269,10 @@
           "doctors": [
             {
               "name": "庄志成 医生",
-              "capacity": ["ADHD", "ASD"],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [
                 {
                   "name": "广东珠海妇幼保健院翠香社康成人ADHD就诊经历",
@@ -1276,7 +1283,9 @@
             },
             {
               "name": "陈强 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1288,7 +1297,9 @@
           "doctors": [
             {
               "name": "张国荣 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": "注：失眠心理专科"
             }
@@ -1300,7 +1311,9 @@
           "doctors": [
             {
               "name": "梁烨 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1312,13 +1325,17 @@
           "doctors": [
             {
               "name": "黄志民 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             },
             {
               "name": "梁少霞 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1330,7 +1347,9 @@
           "doctors": [
             {
               "name": "俞红 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1342,7 +1361,9 @@
           "doctors": [
             {
               "name": "张杏莲 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1354,7 +1375,9 @@
           "doctors": [
             {
               "name": "陈旻彦 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1366,7 +1389,9 @@
           "doctors": [
             {
               "name": "祝勇敢 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [],
               "notes": ""
             }
@@ -1378,7 +1403,9 @@
           "doctors": [
             {
               "name": "程国强 医生",
-              "capacity": ["ADHD"],
+              "capacity": [
+                "ADHD"
+              ],
               "shares": [
                 {
                   "name": "【完全版】成年疑似孤独症谱系障碍简明就诊及自助指南",

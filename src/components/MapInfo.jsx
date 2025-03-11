@@ -2,6 +2,24 @@ import React, { Component } from "react";
 import medicalData from "@/data/medicalData.json";
 import "remixicon/fonts/remixicon.css";
 
+class MapInfoSelect extends Component {
+  render() {
+    return (
+      <div className="flex justify-end space-x-3 my-4">
+        <button className="px-4 py-2 text-sm bg-primary text-white rounded-lg shadow-sm hover:bg-primary/90 transition-all duration-200">
+          国内版
+        </button>
+        <button className="px-4 py-2 text-sm bg-white text-gray-700 rounded-lg shadow-sm hover:bg-gray-50 transition-all duration-200">
+          儿童版
+        </button>
+        <button className="px-4 py-2 text-sm bg-white text-gray-700 rounded-lg shadow-sm hover:bg-gray-50 transition-all duration-200">
+          国际版
+        </button>
+      </div>
+    );
+  }
+}
+
 class MapInfoNav extends Component {
   state = {
     isSticky: false,
@@ -78,14 +96,16 @@ class MapInfo extends Component {
                   <div className="space-y-4">
                     {hospital.doctors.map((doctor, doctorIndex) => (
                       <div key={doctorIndex} className="space-y-3">
-                        <div className="flex items-center justify-between p-4 rounded-lg bg-gray-50 hover:bg-primary-light/50 transition-all duration-200">
-                          <span className="text-gray-800 font-medium">
-                            {doctor.name}
-                          </span>
-                          <span className="text-sm text-primary bg-primary-light px-3 py-1 rounded-full">
-                            {doctor.capacity.join(", ")}
-                          </span>
-                        </div>
+                        {(doctor.name || doctor.capacity) && (
+                          <div className="flex items-center justify-between p-4 rounded-lg bg-gray-50 hover:bg-primary-light/50 transition-all duration-200">
+                            <span className="text-gray-800 font-medium">
+                              {doctor.name}
+                            </span>
+                            <span className="text-sm text-primary bg-primary-light px-3 py-1 rounded-full">
+                              {doctor.capacity.join(", ")}
+                            </span>
+                          </div>
+                        )}
 
                         {/* 医生备注 和 分享 */}
                         {(doctor.notes || doctor.shares.length > 0) && (
@@ -129,4 +149,4 @@ class MapInfo extends Component {
 }
 
 export default MapInfo;
-export { MapInfoNav };
+export { MapInfoNav, MapInfoSelect };

@@ -74,6 +74,10 @@ class MapChart extends Component {
           roam: true, // 鼠标缩放和平移
           selectedMode: false,
           zoom: 1.0,
+          scaleLimit :{
+            min: 0.6,
+            max: 10,
+          },
           // 图形上的文本标签
           label: {
             show: true,

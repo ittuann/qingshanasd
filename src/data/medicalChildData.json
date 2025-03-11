@@ -1,0 +1,548 @@
+{
+  "medicalData": [
+    {
+      "area": "北京市",
+      "hospitals": [
+        {
+          "name": "北京大学第六医院",
+          "notes": "注：三岁以上可诊断ASD，建议中重症去找医生确诊。",
+          "doctors": [
+            {
+              "name": "杨莉 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "郭延庆 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "北京安定医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "陈旭 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "北京儿童医院",
+          "notes": "注：较为依赖家长填写的量表，不建议青少年独自前往就诊。",
+          "doctors": [
+            {
+              "name": "闫春梅 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "北京大学人民医院（西直门）",
+          "notes": "注：其他科→医学心理科门诊→专病门诊→注意缺陷与多动障碍门诊",
+          "doctors": [
+            {
+              "name": "杨 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "上海市",
+      "hospitals": [
+        {
+          "name": "上海新华医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "张劲松 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "李斐 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "内蒙古古自治区",
+      "hospitals": [
+        {
+          "name": "内蒙古自治区第三医院儿少心理医学中心",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "任瑞 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "天津市",
+      "hospitals": [
+        {
+          "name": "天津市儿童医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "石萍 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "安徽省",
+      "hospitals": [
+        {
+          "name": "中国科学技术大学附属安徽省立医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "徐桂凤 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "山东省",
+      "hospitals": [
+        {
+          "name": "青岛妇女儿童医院总院区（辽阳西路）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "冀永娟 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "匡桂芳 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "青岛市立医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "王冠军 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "济南市儿童医院",
+          "notes": "注：可开zzd和tmxt，门诊挂号注意选儿童保健门诊 - 心理卫生门诊。",
+          "doctors": [
+            {
+              "name": "刘金同 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "青岛大学附属医院儿保科",
+          "notes": "注：可确诊ADHD、ASD以及抽动症",
+          "doctors": [
+            {
+              "name": "衣明纪 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "广东省",
+      "hospitals": [
+        {
+          "name": "中山大学附属第三医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "邹小兵 医生",
+              "capacity": [
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "静进 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "深圳市儿童医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "刘娟 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "操小兰 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "吴赵敏 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "深圳市康宁医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "王宗磊 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "江苏省",
+      "hospitals": [
+        {
+          "name": "南京脑科儿童心理卫生中心",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "焦公凯 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "南京市儿童医院",
+          "notes": "注：学习困难门诊/心理行为门诊",
+          "doctors": [
+            {
+              "name": "吴丹丹 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "河北省",
+      "hospitals": [
+        {
+          "name": "河北省儿童医院心理行为科",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "王霞 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "河南省",
+      "hospitals": [
+        {
+          "name": "郑州大学第五附属医院（郑州铁路局中心医院）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "李恩耀 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "郑州大学第一附属医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "郎艳 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "浙江省",
+      "hospitals": [
+        {
+          "name": "温州市康宁医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "叶敏捷 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "浙江温州人民医院",
+          "notes": "注：医生很有耐心且推荐书单及干预机构",
+          "doctors": [
+            {
+              "name": "陈明黎 医生",
+              "capacity": [
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "湖北省",
+      "hospitals": [
+        {
+          "name": "武汉同济医院",
+          "notes": "注：儿保科",
+          "doctors": [
+            {
+              "name": "陈敏 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "武汉儿童医院",
+          "notes": "注：康复专家门诊",
+          "doctors": [
+            {
+              "name": "林俊 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "湖南省",
+      "hospitals": [
+        {
+          "name": "湘雅附属二医院",
+          "notes": "注：青少年儿童心理，学习困难门诊。",
+          "doctors": [
+            {
+              "name": "高雪屏 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "福建省",
+      "hospitals": [
+        {
+          "name": "福建省儿童医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "刘秀梅 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "辽宁省",
+      "hospitals": [
+        {
+          "name": "中国医科大学附属盛京医院滑翔院区",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "彭淼 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "重庆市",
+      "hospitals": [
+        {
+          "name": "重庆儿童医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "魏华 医生",
+              "capacity": [
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "宋钊 医生",
+              "capacity": [
+                "ASD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
