@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft-07/schema#",
   "title": "Medical Resources Schema",
   "description": "可诊断ADHD/ASD的医院及医生数据",
   "type": "object",

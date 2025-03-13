@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #52b394;
-  --color-primary-dark: #1ebc9a;
-  --color-primary-light: #e8f9f1;
+  --color-primary: #52b394; /* 主色调 */
+  --color-primary-content: #091307; /* 内容颜色 */
+  --color-secondary: #e8f9f1; /* 次色调 */
+  --color-secondary-content: #000c07;
+  --color-accent: #1eb88e; /* 强调色 */
+  --color-accent-content: #010c0b;
+  --color-neutral: #dfe5ed; /* 中性色 */
+  --color-neutral-content: #171717;
+  --color-base: #f9fafb; /* 基础色。用于空白背景 */
+  --color-base-100: #e8e8e8; /* 更深的基础色 */
+  --color-base-content: #202a38;
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

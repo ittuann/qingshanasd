@@ -102,7 +102,7 @@ class MapInfo extends Component {
             id={areaData.area}
             className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl"
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-2 border-b-2 border-primary-light/50">
+            <h2 className="text-2xl font-bold text-gray-900 mb-8 pb-2 border-b-2 border-secondary/50">
               {areaData.area}
             </h2>
 
@@ -124,11 +124,11 @@ class MapInfo extends Component {
                     {hospital.doctors.map((doctor, doctorIndex) => (
                       <div key={doctorIndex} className="space-y-3">
                         {doctor.name && (
-                          <div className="flex items-center justify-between p-4 rounded-lg bg-gray-50 hover:bg-primary-light/50 transition-all duration-200">
+                          <div className="flex items-center justify-between p-4 rounded-lg bg-gray-50 hover:bg-secondary/50 transition-all duration-200">
                             <span className="text-gray-800 font-medium">
                               {doctor.name}
                             </span>
-                            <span className="text-sm text-primary bg-primary-light px-3 py-1 rounded-full">
+                            <span className="text-sm text-primary bg-secondary px-3 py-1 rounded-full">
                               {doctor.capacity.join(", ")}
                             </span>
                           </div>
@@ -150,7 +150,7 @@ class MapInfo extends Component {
                                     href={share.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-4 py-2 bg-primary-light hover:bg-green-200 rounded-lg text-primary hover:text-green-600 transition-colors duration-200"
+                                    className="flex items-center gap-2 px-4 py-2 bg-secondary hover:bg-green-200 rounded-lg text-primary hover:text-green-600 transition-colors duration-200"
                                   >
                                     <i className="ri-link text-lg"></i>
                                     <span className="text-sm font-medium">
