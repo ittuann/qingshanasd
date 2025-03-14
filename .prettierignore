@@ -1,2 +1,4 @@
 # Ignore json files in the data folder
 /src/data/
+/src/data/100000_full.json
+/src/utils/detection.js
