@@ -27,12 +27,12 @@ export default class Layout extends Component {
             src="../utils/detection.js"
             data-website-id="ed6801de-a80a-452f-ab47-a81ddec2904a"
           />
-          <Footer />
         </Head>
 
         <div className="bg-base min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow">{children}</main>
+          <Footer />
         </div>
       </>
     );
