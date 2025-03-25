@@ -1,3 +1,5 @@
-# Security Policy
+# Reporting Security Issues
 
-请勿使用 [GitHub Issues](https://github.com/ittuann/qingshanasd/issues)报告开源项目中的安全问题，这会让包括恶意行为者在内的所有人立即看到问题。
+If you believe you have found a security vulnerability, we encourage you to let us know right away.
+
+Please do not use [GitHub Issues](https://github.com/ittuann/qingshanasd/issues) to report security issues in open source projects, as this will make the problem visible to everyone, including malicious actors.
