@@ -7,31 +7,31 @@ const contributors = [
   {
     name: "青衫",
     role: "创立者",
-    icon: "/img/qingshan_150.png",
+    icon: "/assets/img/qingshan_150.png",
     link: "#",
   },
   {
     name: "air wish",
     role: "开发者",
-    icon: "/img/ittuann.png",
+    icon: "/assets/img/ittuann.png",
     link: "https://github.com/ittuann",
   },
   {
     name: "H-MALGANIS",
     role: "开发者",
-    icon: "/img/zealot.png",
+    icon: "/assets/img/zealot.png",
     link: "#",
   },
   {
     name: "GLOOMYGHOST",
     role: "开发者",
-    icon: "/img/G-150x150.png",
+    icon: "/assets/img/G-150x150.png",
     link: "https://github.com/YuzukiTsuru",
   },
   {
     name: "SPACEDUCK",
     role: "维护者",
-    icon: "/img/SpaceDuck.png",
+    icon: "/assets/img/SpaceDuck.png",
     link: "#",
   },
 ];
@@ -74,7 +74,7 @@ class About extends Component {
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-r rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
                 <Image
-                  src="/img/qingshan.jpg"
+                  src="/assets/img/qingshan.jpg"
                   alt="view"
                   width={240}
                   height={300}
