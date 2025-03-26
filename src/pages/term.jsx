@@ -87,9 +87,9 @@ export default class Terms extends Component {
                     Abstract
                   </h3>
                   <p className="text-gray-700 mb-4">
-                    这是一个便于人们阅读的摘要（并非 Creative Commons
+                    这是一个便于人们阅读的摘要，并非 Creative Commons
                     Attribution-NonCommercial-NoDerivatives 4.0 International
-                    Deed 的替代文本）。
+                    Deed 的替代文本。
                   </p>
                   <p className="text-gray-700 mb-4">
                     本文本仅仅强调部分核心特征和真正许可协议的部分条款，不是许可协议，也没有法律意义。您应当在使用授权作品前，仔细审阅真正许可协议的所有条款。

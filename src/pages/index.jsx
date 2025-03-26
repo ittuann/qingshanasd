@@ -10,8 +10,9 @@ const scales = [
     iconColor: "text-orange-500",
     iconBg: "bg-orange-100",
     title: "成人 ADHD 自填量表 (ASRS)",
-    description: "ADHD多动症成人测试量表，用于测试成年人的多动症情况。",
-    tags: ["多动症", "量表", "在线测试", "ADHD", "成人测试"],
+    description:
+      "注意力缺陷过动障碍（ADHD）成人测试量表，用于筛查成年人存在ADHD的可能性",
+    tags: ["量表", "在线测试", "ADHD", "成人测试"],
     link: "/quotients/adhd",
   },
   {
@@ -46,7 +47,7 @@ const scales = [
     iconColor: "text-green-500",
     iconBg: "bg-green-100",
     title: "Aspie-Quiz 测试量表",
-    description: "本测试的目的是检验成人的神经多样性神经典型性特点",
+    description: "本测试的目的是检验成人的神经多样性/神经典型性特点",
     tags: ["孤独症", "量表", "在线测试", "AQ", "成人测试"],
     link: "https://www.rdos.net/china/index.php",
   },
@@ -84,7 +85,7 @@ export default class Index extends Component {
                   青衫 Neuro
                 </h1>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-content">
-                  为神经多样性群体提供支持
+                  为神经多元群体提供支持
                 </h2>
                 <p className="text-lg md:text-xl mb-8 text-primary-content/80">
                   因为你我，这个世界终将丰富多彩
@@ -108,10 +109,10 @@ export default class Index extends Component {
 
               <div className="flex justify-center md:justify-start">
                 <Image
-                  src="favicon.ico"
+                  src="/assets/img/logo.png"
                   alt="logo"
-                  width={96}
-                  height={96}
+                  width={128}
+                  height={128}
                   className="rounded-full"
                 />
               </div>

@@ -126,7 +126,7 @@ class ADHD extends Component {
     return (
       <Layout
         title="成人 ADHD 自填量表 (ASRS) | 青衫 Neuro"
-        description="ADHD多动症成人测试量表，用于测试成年人的多动症情况。"
+        description="注意力缺陷过动障碍（ADHD）成人测试量表，用于筛查成年人存在ADHD的可能性"
       >
         <main className="max-w-3xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-8">
@@ -135,30 +135,35 @@ class ADHD extends Component {
               <h1 className="text-2xl font-semibold text-gray-900">
                 成人 ADHD 自填量表 (ASRS)
               </h1>
-              <p className="text-gray-500 mt-2">焦虑抑郁等都可能造成分值偏高</p>
-              <p className="text-sm text-gray-500 mt-2">
-                *本量表仅供参考，不能作为诊断依据。
-              </p>
-              <div className="text-xs text-gray-400 mt-2 space-y-1">
-                <p>本量表参考文献：</p>
-                <ul className="list-disc pl-4 space-y-1">
-                  <li>
-                    <a
-                      href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/18Q_Chinese%20(Traditional)_final.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-gray-600"
-                    >
-                      18Q-Chinese-Traditional.pdf
-                    </a>
-                  </li>
-                  <li>
-                    世界卫生组织 Composite International Diagnostic Interview
-                  </li>
-                </ul>
+              <div className="mt-2">
+                <p className="text-gray-500 mt-2">
+                  焦虑抑郁等都可能造成分值偏高
+                </p>
+                <p className="text-sm text-gray-500 mt-2">
+                  *本量表仅供筛查，不代表确诊或作为诊断依据。
+                </p>
+                <div className="text-xs text-gray-400 mt-2 space-y-1">
+                  <p>本量表参考文献：</p>
+                  <ul className="list-disc pl-4 space-y-1">
+                    <li>
+                      <a
+                        href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/18Q_Chinese%20(Traditional)_final.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-gray-600"
+                      >
+                        18Q-Chinese-Traditional.pdf
+                      </a>
+                    </li>
+                    <li>
+                      世界卫生组织 Composite International Diagnostic Interview
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
+            {/* 量表 */}
             <form className="space-y-8" onSubmit={this.handleSubmit}>
               {/* 量表问题 */}
               <div className="space-y-6">

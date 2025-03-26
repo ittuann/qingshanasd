@@ -56,7 +56,7 @@ class About extends Component {
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
                 <span className="block">关于青衫 Neuro</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent mt-3">
-                  为神经多样性群体提供支持
+                  为神经多元群体提供支持
                 </span>
               </h1>
               <p className="mt-5 text-base-content sm:mt-6 sm:text-lg sm:max-w-2xl sm:mx-auto md:mt-6 md:text-xl">
@@ -86,10 +86,10 @@ class About extends Component {
                   青衫，神经科学博士
                 </h2>
                 <p className="text-gray-600 mb-6 text-lg">
-                  青衫Neuro创始人，ASD人士 公众号·微信读书·知乎·豆瓣 @青衫Aspie
+                  青衫Neuro创始人，ASD人士 公众号·微信读书·知乎 @青衫Neuro
                 </p>
                 <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                  青衫Neuro创始于2016年1月，公众号注册于2017年4月。公众号非营利组织，致力于神经多样性的科普、资源和互助，希望能够帮助你找到一样的你和让人了解。
+                  青衫Neuro开始于2016年1月，公众号注册于2017年4月，为公益非营利组织。青衫Neuro致力于神经多元的科普、资源和互助，希望能够帮助不一样的你和家人了解自己。
                 </p>
               </div>
             </div>

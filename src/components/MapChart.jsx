@@ -72,9 +72,9 @@ class MapChart extends Component {
           type: "map",
           map: "china",
           name: "中国大陆地图",
-          roam: true, // 鼠标缩放和平移
+          roam: true, // 缩放和平移
           selectedMode: false,
-          zoom: 1.0,
+          zoom: 1.2,
           scaleLimit: {
             min: 0.7,
             max: 7,
