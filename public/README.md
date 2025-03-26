@@ -8,4 +8,4 @@
 此仓库仅用于托管自动构建生成的网站静态资源（不想处理CNAME了）。因此，请不要直接向此仓库提交 Pull Request。
 
 > [!NOTE]
-> 我们的开发仓库是 [ittuann/qingshanasd:](https://github.com/ittuann/qingshanasd) <https://github.com/ittuann/qingshanasd>.
+> 我们的开发仓库是 [ittuann/qingshanasd](https://github.com/ittuann/qingshanasd): <https://github.com/ittuann/qingshanasd>.

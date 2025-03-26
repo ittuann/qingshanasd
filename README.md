@@ -7,7 +7,7 @@
 
 我们支持您将文章分享给更多的人，只需要带上我们的出处与链接即可！
 
-网站代码采用 [GPL-3.0](https://github.com/ittuann/qingshanasd/blob/main/LICENSE) 进行许可。
+网站代码采用 [GNU General Public License v3.0 (GPL-3.0)](https://github.com/ittuann/qingshanasd/blob/main/LICENSE) 进行许可。
 
 ## 🛠️ Develop
 
