@@ -9,13 +9,13 @@ import QuestionIntervention from "@/components/QuestionIntervention";
 class BPD extends Component {
   state = {
     answers: {},
-    showModal: false,
+    showResultModal: false,
     score: 0,
     result: "",
   };
 
   closeModal = () => {
-    this.setState({ showModal: false });
+    this.setState({ showResultModal: false });
   };
 
   handleRadioChange = (questionId, value) => {
@@ -45,7 +45,7 @@ class BPD extends Component {
     this.setState({
       score,
       result,
-      showModal: true,
+      showResultModal: true,
     });
   };
 
@@ -81,6 +81,8 @@ class BPD extends Component {
   }
 
   render() {
+    const { showResultModal, score, result } = this.state;
+
     return (
       <Layout
         title="边缘人格障碍表现量表 BSL-23 | 青衫 Neuro"
@@ -155,11 +157,11 @@ class BPD extends Component {
               {
                 title: "分数（总分4.0）",
                 subtitle: "得分",
-                score: this.state.score,
+                score: score,
               },
             ]}
-            result={this.state.result}
-            showModal={this.state.showModal}
+            result={result}
+            showModal={showResultModal}
             onClose={this.closeModal}
           />
 

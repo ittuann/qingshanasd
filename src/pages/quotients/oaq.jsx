@@ -8,13 +8,13 @@ import BackToTop from "@/components/BackToTop";
 class OAQ extends Component {
   state = {
     answers: {},
-    showModal: false,
+    showResultModal: false,
     score: 0,
     result: "",
   };
 
   closeModal = () => {
-    this.setState({ showModal: false });
+    this.setState({ showResultModal: false });
   };
 
   handleRadioChange = (questionId, value) => {
@@ -44,7 +44,7 @@ class OAQ extends Component {
     this.setState({
       score,
       result,
-      showModal: true,
+      showResultModal: true,
     });
   };
 
@@ -71,6 +71,8 @@ class OAQ extends Component {
   }
 
   render() {
+    const { score, result, showResultModal } = this.state;
+
     return (
       <Layout
         title="G2述情障碍测试量表 | 青衫 Neuro"
@@ -135,11 +137,11 @@ class OAQ extends Component {
               {
                 title: "测试分数",
                 subtitle: "得分",
-                score: this.state.score,
+                score: score,
               },
             ]}
-            result={this.state.result}
-            showModal={this.state.showModal}
+            result={result}
+            showModal={showResultModal}
             onClose={this.closeModal}
           />
 

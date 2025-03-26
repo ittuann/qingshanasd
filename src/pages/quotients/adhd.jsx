@@ -2,20 +2,26 @@ import React, { Component } from "react";
 import Layout from "@/components/Layout";
 import QuestionItem from "@/components/QuestionItem";
 import QuestionResult from "@/components/QuestionResult";
+import InfoModal from "@/components/InfoModal";
 import questionData from "@/data/questionADHD.json";
 import BackToTop from "@/components/BackToTop";
 
 class ADHD extends Component {
   state = {
     answers: {},
-    showModal: false,
+    showResultModal: false,
+    showInfoModal: false,
     scoreA: 0,
     scoreB: 0,
     result: "",
   };
 
   closeModal = () => {
-    this.setState({ showModal: false });
+    this.setState({ showResultModal: false });
+  };
+
+  closeInfoModal = () => {
+    this.setState({ showInfoModal: false });
   };
 
   handleRadioChange = (questionId, value) => {
@@ -46,7 +52,7 @@ class ADHD extends Component {
       scoreA,
       scoreB,
       result,
-      showModal: true,
+      showResultModal: true,
     });
   };
 
@@ -123,6 +129,38 @@ class ADHD extends Component {
   }
 
   render() {
+    const { showResultModal, showInfoModal, scoreA, scoreB, result } =
+      this.state;
+
+    const infoContent = (
+      <>
+        <p className="text-gray-500">焦虑抑郁等都可能造成分值偏高</p>
+        <p className="text-sm text-gray-500 mt-2">
+          本量表仅供筛查，不代表确诊或作为诊断依据
+        </p>
+        <div className="text-xs text-gray-400 space-y-2 mt-2">
+          <p>本量表参考文献：</p>
+          <ul className="list-disc pl-4 space-y-1">
+            <li>
+              <a
+                href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/18Q_Chinese%20(Traditional)_final.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-600"
+              >
+                18Q-Chinese-Traditional.pdf
+              </a>
+            </li>
+            <li>世界卫生组织 Composite International Diagnostic Interview</li>
+          </ul>
+        </div>
+        <p className="text-xs text-gray-400 mt-2">
+          * 本站符合 GDPR 数据保护条例。不会使用 Cookie
+          记录和存储任何可识别个人身份的信息
+        </p>
+      </>
+    );
+
     return (
       <Layout
         title="成人 ADHD 自填量表 (ASRS) | 青衫 Neuro"
@@ -130,38 +168,18 @@ class ADHD extends Component {
       >
         <main className="max-w-3xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-8">
-            {/* 信息 */}
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">
                 成人 ADHD 自填量表 (ASRS)
               </h1>
-              <div className="mt-2">
-                <p className="text-gray-500 mt-2">
-                  焦虑抑郁等都可能造成分值偏高
-                </p>
-                <p className="text-sm text-gray-500 mt-2">
-                  *本量表仅供筛查，不代表确诊或作为诊断依据。
-                </p>
-                <div className="text-xs text-gray-400 mt-2 space-y-1">
-                  <p>本量表参考文献：</p>
-                  <ul className="list-disc pl-4 space-y-1">
-                    <li>
-                      <a
-                        href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/18Q_Chinese%20(Traditional)_final.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-gray-600"
-                      >
-                        18Q-Chinese-Traditional.pdf
-                      </a>
-                    </li>
-                    <li>
-                      世界卫生组织 Composite International Diagnostic Interview
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <div className="mt-2">{infoContent}</div>
             </div>
+
+            <InfoModal
+              showModal={showInfoModal}
+              onClose={this.closeInfoModal}
+              content={infoContent}
+            />
 
             {/* 量表 */}
             <form className="space-y-8" onSubmit={this.handleSubmit}>
@@ -191,16 +209,16 @@ class ADHD extends Component {
               {
                 title: "A部分",
                 subtitle: "注意力障碍",
-                score: this.state.scoreA,
+                score: scoreA,
               },
               {
                 title: "B部分",
                 subtitle: "多动/冲动障碍",
-                score: this.state.scoreB,
+                score: scoreB,
               },
             ]}
-            result={this.state.result}
-            showModal={this.state.showModal}
+            result={result}
+            showModal={showResultModal}
             onClose={this.closeModal}
           />
 

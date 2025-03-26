@@ -8,13 +8,13 @@ import BackToTop from "@/components/BackToTop";
 class EQ60 extends Component {
   state = {
     answers: {},
-    showModal: false,
+    showResultModal: false,
     score: 0,
     result: "",
   };
 
   closeModal = () => {
-    this.setState({ showModal: false });
+    this.setState({ showResultModal: false });
   };
 
   handleRadioChange = (questionId, value) => {
@@ -44,7 +44,7 @@ class EQ60 extends Component {
     this.setState({
       score,
       result,
-      showModal: true,
+      showResultModal: true,
     });
   };
 
@@ -69,6 +69,8 @@ class EQ60 extends Component {
   }
 
   render() {
+    const { showResultModal, score, result } = this.state;
+
     return (
       <Layout
         title="共情商测试量表 (Empathy Quotient) | 青衫 Neuro"
@@ -131,11 +133,11 @@ class EQ60 extends Component {
               {
                 title: "测试分数",
                 subtitle: "得分",
-                score: this.state.score,
+                score: score,
               },
             ]}
-            result={this.state.result}
-            showModal={this.state.showModal}
+            result={result}
+            showModal={showResultModal}
             onClose={this.closeModal}
           />
 
