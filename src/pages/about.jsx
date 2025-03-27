@@ -151,7 +151,7 @@ class About extends Component {
                 </p>
                 <div className="flex justify-center">
                   <a
-                    href="https://www.zhihu.com/pin/1866410059749277697"
+                    href="https://docs.qq.com/sheet/DT05BclBnZk9CYmhx"
                     target="_blank"
                     className="group inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-accent transition duration-300"
                   >
