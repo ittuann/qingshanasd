@@ -10,7 +10,7 @@ class ADHD extends Component {
   state = {
     answers: {},
     showResultModal: false,
-    showInfoModal: false,
+    showInfoModal: true,
     scoreA: 0,
     scoreB: 0,
     result: "",
