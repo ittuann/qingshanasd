@@ -5,11 +5,11 @@ class QuestionItem extends Component {
     const { question, degree, onAnswerChange, scores } = this.props;
     return (
       <div className="question-item">
-        <p className="text-gray-800">
+        <p className="text-lg text-gray-900">
           {question.id}. {question.text}
         </p>
         <div className="flex justify-between items-center my-4">
-          <div className="text-sm text-gray-500 flex items-center">
+          <div className="text-lg text-gray-800 flex items-center">
             {degree[0]}
           </div>
           <div className="flex gap-4 md:gap-8">
@@ -26,7 +26,7 @@ class QuestionItem extends Component {
               </label>
             ))}
           </div>
-          <div className="text-sm text-gray-500 flex items-center">
+          <div className="text-lg text-gray-800 flex items-center">
             {degree[1]}
           </div>
         </div>

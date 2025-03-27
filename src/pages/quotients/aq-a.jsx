@@ -8,7 +8,7 @@ import BackToTop from "@/components/BackToTop";
 class AQA extends Component {
   state = {
     answers: {},
-    showModal: false,
+    showResultModal: false,
     score: 0,
     result: "",
     socialScore: 0,
@@ -19,7 +19,7 @@ class AQA extends Component {
   };
 
   closeModal = () => {
-    this.setState({ showModal: false });
+    this.setState({ showResultModal: false });
   };
 
   handleRadioChange = (questionId, value) => {
@@ -49,7 +49,7 @@ class AQA extends Component {
     this.setState({
       score,
       result,
-      showModal: true,
+      showResultModal: true,
     });
   };
 
@@ -120,7 +120,7 @@ class AQA extends Component {
     const {
       score,
       result,
-      showModal,
+      showResultModal,
       socialScore,
       attentionSwitchingScore,
       attentionDetailScore,
@@ -217,7 +217,7 @@ class AQA extends Component {
               },
             ]}
             result={result}
-            showModal={showModal}
+            showModal={showResultModal}
             onClose={this.closeModal}
           />
 
