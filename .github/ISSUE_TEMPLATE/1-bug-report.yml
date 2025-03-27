@@ -17,14 +17,12 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: reproduction
     attributes:
       label: Reproduction
       description: Steps to reproduce the behavior. Alternatively, a [Minimal Reproduction](https://stackoverflow.com/help/minimal-reproducible-example) would be more appreciated.
       placeholder: How To Reproduce
-    validations:
-      required: true
 
   - type: textarea
     id: additional-context

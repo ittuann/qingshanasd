@@ -1,7 +1,7 @@
 import React from "react";
 import "remixicon/fonts/remixicon.css";
 
-const InfoModal = ({ showModal, onClose, content }) => {
+const QuestionInfo = ({ showModal, onClose, content }) => {
   if (!showModal) return null;
 
   return (
@@ -33,4 +33,4 @@ const InfoModal = ({ showModal, onClose, content }) => {
   );
 };
 
-export default InfoModal;
+export default QuestionInfo;

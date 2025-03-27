@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Layout from "@/components/Layout";
 import QuestionItem from "@/components/QuestionItem";
 import QuestionResult from "@/components/QuestionResult";
-import InfoModal from "@/components/InfoModal";
+import QuestionInfo from "@/components/QuestionInfo";
 import questionData from "@/data/questionADHD.json";
 import BackToTop from "@/components/BackToTop";
 
@@ -175,7 +175,7 @@ class ADHD extends Component {
               <div className="mt-2">{infoContent}</div>
             </div>
 
-            <InfoModal
+            <QuestionInfo
               showModal={showInfoModal}
               onClose={this.closeInfoModal}
               content={infoContent}
