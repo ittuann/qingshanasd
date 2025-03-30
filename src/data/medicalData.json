@@ -72,6 +72,10 @@
                 {
                   "name": "深圳康宁+北医六院ADHD+ASD成人确诊经历",
                   "link": "https://mp.weixin.qq.com/s/Mr2B1Wwb9Im3AvfaTmFEJg"
+                },
+                {
+                  "name": "北医六院王力芳医生ADHD成人确诊及复诊",
+                  "link": "https://mp.weixin.qq.com/s/8nPzhINH7uoNJTuPaN5H2Q"
                 }
               ],
               "notes": ""
@@ -210,8 +214,26 @@
                 {
                   "name": "视力障碍女生 北京安定医院ASD+ADHD成人就诊经历",
                   "link": "https://mp.weixin.qq.com/s/Okgo566GF_zcg7GCxU-9GQ"
+                },
+                {
+                  "name": "确诊ADHD后我决定过一种允许自己走神的生活 ——成人ADHD北京安定医院就医+开药记录",
+                  "link": "https://mp.weixin.qq.com/s/Pf4npAysKwxDKtv0Puux7g"
                 }
               ],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "积水潭医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "赵福君 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
               "notes": ""
             }
           ]
@@ -588,7 +610,12 @@
               "capacity": [
                 "ADHD"
               ],
-              "shares": [],
+              "shares": [
+                {
+                  "name": "安徽医科大学附属第二医院心理科成人ADHD就诊分享",
+                  "link": "https://mp.weixin.qq.com/s/LeKzfnj9c2cG1vtI-CxQiA"
+                }
+              ],
               "notes": ""
             },
             {
@@ -943,6 +970,10 @@
                 {
                   "name": "广州医科大学附属脑科医院ASD就诊经历",
                   "link": "https://mp.weixin.qq.com/s/D-kZNZ5hp1mjkqRhGgb_Hg"
+                },
+                {
+                  "name": "广州医科大学附属脑科医院成人ASD就诊分享",
+                  "link": "https://mp.weixin.qq.com/s/vm-_8pNHzIYb_NTwjd3MXg"
                 }
               ],
               "notes": ""
@@ -1760,7 +1791,12 @@
               "capacity": [
                 "ADHD"
               ],
-              "shares": [],
+              "shares": [
+                {
+                  "name": "河北医科大学第一医院成人ADHD临床心理科就诊指南",
+                  "link": "https://mp.weixin.qq.com/s/Pe0foLhMsbA4Fk4_fElcAA"
+                }
+              ],
               "notes": ""
             },
             {
@@ -2467,6 +2503,10 @@
                 {
                   "name": "辽宁沈阳盛京医院滑翔院区成人ASD就诊记录",
                   "link": "https://mp.weixin.qq.com/s/KPC_MIbEaaSd-MXPp-79lQ"
+                },
+                {
+                  "name": "辽宁盛京医院南湖院区成人ASD就诊攻略",
+                  "link": "https://mp.weixin.qq.com/s/99nmagB5ks2ZuzHaRQCjag"
                 }
               ],
               "notes": ""
@@ -2692,6 +2732,20 @@
                 }
               ],
               "notes": "注：2024年5月参考价格2200hkd/45min，量表未额外收费。医生态度好。"
+            }
+          ]
+        },
+        {
+          "name": "Optimind Clinic",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "王駿濱(Gordon Wong) 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": "有vyv，网址www.wong.ro"
             }
           ]
         }

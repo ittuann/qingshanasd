@@ -355,6 +355,25 @@
               "notes": ""
             }
           ]
+        },
+        {
+          "name": "河北省第六人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "刘卉兰 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+                {
+                  "name": "河北省第六人民医院ADHD未成年就诊分享（含可开药医生名单）",
+                  "link": "https://mp.weixin.qq.com/s/lYQnvpXHMnkDRcnQ7crLMQ"
+                }
+              ],
+              "notes": ""
+            }
+          ]
         }
       ]
     },
@@ -382,6 +401,20 @@
           "doctors": [
             {
               "name": "郎艳 医生",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "河南省精神病医院（新乡医学院二附院）",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "张燕 医生",
               "capacity": [
                 "ADHD"
               ],
