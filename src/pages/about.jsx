@@ -61,7 +61,7 @@ class About extends Component {
                   </span>
                 </span>
               </h1>
-              <p className="mt-5 text-base-content sm:mt-6 sm:text-lg sm:max-w-2xl sm:mx-auto md:mt-6 md:text-xl">
+              <p className="mt-5 text-zinc-600 sm:mt-6 sm:text-lg sm:max-w-2xl sm:mx-auto md:mt-6 md:text-xl">
                 因为你我，这个世界终将丰富多彩
               </p>
               <div className="mt-8 flex justify-center">

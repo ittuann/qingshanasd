@@ -24,7 +24,7 @@ export default class Layout extends Component {
           />
         </Head>
 
-        <div className="bg-base min-h-screen flex flex-col">
+        <div className="bg-zinc-50 min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow">{children}</main>
           <Footer />

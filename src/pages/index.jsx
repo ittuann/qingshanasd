@@ -113,7 +113,7 @@ export default class Index extends Component {
                   alt="logo"
                   width={128}
                   height={128}
-                  priority={true}
+                  priority={false}
                   className="rounded-full"
                 />
               </div>

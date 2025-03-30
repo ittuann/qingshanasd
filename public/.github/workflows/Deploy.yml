@@ -23,11 +23,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          echo "--- Clone dist branch to directory. ---"
+          echo "--- Get dist branch files to directory. ---"
           git clone https://github.com/ittuann/qingshanasd.git dist-branch
           cd dist-branch
           MAIN_LATEST_HASH=$(git rev-parse --short=7 HEAD)
           git checkout dist
+          rm -rf .git
           cd ..
 
           echo "--- Clean old files: ---"
@@ -38,10 +39,15 @@ jobs:
 
           echo "--- Copy new files. ---"
           rsync -av --exclude=".git" dist-branch/ .
+
+          echo "--- Remove dist directory. ---"
+          rm -rf dist-branch
+
+          echo "--- Add files to git. ---"
           git add .
 
           echo "--- Attempts to commit changes. If there are no changes the new commit will not be created. ---"
-          git commit -s -m "Auto deployed dist branch - $MAIN_LATEST_HASH" || echo "No changes to commit."
+          git commit -s -m "Auto deployed dist - $MAIN_LATEST_HASH" || echo "No changes to commit."
 
           echo "--- Check if there has been a new commit. ---"
           LOCAL_HASH=$(git rev-parse HEAD)
