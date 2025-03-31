@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Image from "next/image";
 import Layout from "@/components/Layout";
+import "remixicon/fonts/remixicon.css";
 
 export default class Terms extends Component {
   render() {
@@ -68,7 +69,7 @@ export default class Terms extends Component {
                   <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
                     <div className="flex">
                       <div className="flex-shrink-0">
-                        <i className="ri-information-line text-2xl text-yellow-400"></i>
+                        <i className="ri-information-2-line text-2xl text-yellow-400"></i>
                       </div>
                       <div className="ml-3">
                         <p className="text-sm text-yellow-700 items-center">
