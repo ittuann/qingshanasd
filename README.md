@@ -38,3 +38,6 @@ pnpm serve
 ```
 
 Then you can open `http://localhost:3000` in your browser.
+
+> [!NOTE]
+> 就诊地图等所有外部信息均由青衫统一认证并集中补充，请直接邮件联系青衫 [qingshan.aspie@gmail.com](mailto:qingshan.aspie@gmail.com) 。GitHub 仓库目前暂不处理直接添加信息的请求

@@ -20,12 +20,12 @@ export default class Terms extends Component {
               />
             </div>
             <div className="text-center">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
-                <span className="block">青衫 Neuro 网站使用条款</span>
+              <h1 className="tracking-tight font-extrabold text-gray-900">
+                <span className="block text-4xl md:text-5xl">
+                  青衫 Neuro 网站使用条款
+                </span>
               </h1>
-              <p className="mt-3 max-w-md mx-auto text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                文章版权许可
-              </p>
+              <p className="mt-5 text-lg text-zinc-600">文章版权许可</p>
               <div className="mt-8 flex justify-center">
                 <div className="h-1 w-20 bg-gradient-to-r from-primary to-teal-500 rounded-full"></div>
               </div>
@@ -33,9 +33,9 @@ export default class Terms extends Component {
           </div>
 
           {/* 条款内容 */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-              <div className="px-4 py-5 sm:px-6 border-b border-gray-200">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
+            <div className="bg-white shadow overflow-hidden md:rounded-lg">
+              <div className="px-4 py-5 md:px-6 border-b border-gray-200">
                 <h2 className="text-2xl font-bold text-gray-900">
                   Terms of Service
                 </h2>
@@ -45,7 +45,7 @@ export default class Terms extends Component {
               </div>
 
               {/* 条款详情 */}
-              <div className="px-4 py-5 sm:p-6 prose max-w-none">
+              <div className="px-4 py-5 md:p-6 prose max-w-none">
                 <section className="mb-8">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     Overview
@@ -76,7 +76,7 @@ export default class Terms extends Component {
                           禁止无出处转载，重新编辑发布，和商业使用。
                         </p>
                         <p className="text-sm text-yellow-700 items-center">
-                          青衫会对侵权者追究法律责任。
+                          青衫 Neuro 会对侵权者追究法律责任。
                         </p>
                       </div>
                     </div>

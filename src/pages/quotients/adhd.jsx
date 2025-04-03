@@ -143,9 +143,13 @@ class ADHD extends Component {
                 <i className="ri-information-2-line text-xl text-rose-400"></i>
               </div>
               <div className="ml-3 text-left">
-                <p className="text-gray-600">焦虑抑郁等都可能造成分值偏高</p>
+                <p className="text-gray-600">
+                  焦虑 / 抑郁 / 睡眠障碍<strong>等其他情况</strong>
+                  均有可能造成分值偏高
+                </p>
                 <p className="text-sm text-gray-500 mt-2">
-                  本量表仅供筛查，不代表确诊或作为诊断依据
+                  本量表<strong>仅供筛查</strong>，<strong>不代表</strong>
+                  确诊或作为诊断依据
                 </p>
               </div>
             </div>
@@ -183,7 +187,7 @@ class ADHD extends Component {
         <main className="max-w-3xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-8">
             <div className="text-center mb-8">
-              <h1 className="text-2xl font-semibold text-gray-900">
+              <h1 className="text-2xl font-semibold text-gray-900 mb-4">
                 成人 ADHD 自填量表 (ASRS)
               </h1>
               <div className="mt-2">{infoContent}</div>
@@ -198,7 +202,7 @@ class ADHD extends Component {
             {/* 量表 */}
             <form className="space-y-8" onSubmit={this.handleSubmit}>
               {/* 量表问题 */}
-              <div className="space-y-6">
+              <div className="space-y-10">
                 {this.getQuestionDetail().map((question) => (
                   <QuestionItem
                     key={`quotients_${question.id}`}

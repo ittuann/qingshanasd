@@ -37,7 +37,7 @@ class MapChart extends Component {
       backgroundColor: "transparent",
       title: {
         text: "ADHD/ASD可诊地图",
-        subtext: "ADHD/ASD Diagnosis Map",
+        subtext: "注：地图可拖动和放大缩小",
         left: "center",
       },
       // 提示框组件
@@ -63,7 +63,7 @@ class MapChart extends Component {
         pieces: [
           { value: 1, label: "可诊断 ADHD/ASD", color: "#fce7f3" },
           { value: 2, label: "仅可诊断 ADHD", color: "#dbeafe" },
-          { value: 3, label: "仅可诊断 ASD", color: "#dcfce7" },
+          // { value: 3, label: "仅可诊断 ASD", color: "#dcfce7" },
         ],
       },
       // 图形类型

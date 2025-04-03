@@ -9,7 +9,7 @@ const QuestionInfo = ({ showModal, onClose, content }) => {
       <div className="fixed inset-0 bg-black/60" onClick={onClose}></div>
       <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4 relative z-10">
         <div className="flex justify-between items-center mb-4">
-          <h3 className="text-xl font-semibold text-gray-900">提示</h3>
+          <h3 className="text-xl font-semibold text-gray-900">重要信息</h3>
           <button
             className="text-gray-400 hover:text-gray-500"
             onClick={onClose}

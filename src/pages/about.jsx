@@ -53,15 +53,17 @@ class About extends Component {
               />
             </div>
             <div className="text-center">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
-                <span className="block">关于青衫 Neuro</span>
-                <span className="block mt-3">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+              <h1 className="tracking-tight font-extrabold text-gray-900">
+                <span className="block text-4xl md:text-5xl">
+                  关于青衫 Neuro
+                </span>
+                <span className="block mt-5">
+                  <span className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                     为神经多元群体提供支持
                   </span>
                 </span>
               </h1>
-              <p className="mt-5 text-zinc-600 sm:mt-6 sm:text-lg sm:max-w-2xl sm:mx-auto md:mt-6 md:text-xl">
+              <p className="mt-5 text-lg text-zinc-600">
                 因为你我，这个世界终将丰富多彩
               </p>
               <div className="mt-8 flex justify-center">
@@ -88,10 +90,13 @@ class About extends Component {
                   青衫，神经科学博士
                 </h2>
                 <p className="text-gray-600 mb-6 text-lg">
-                  青衫Neuro创始人，ASD人士 公众号·微信读书·知乎 @青衫Neuro
+                  青衫 Neuro 创始人，ASD 人士，公众号·微信读书·知乎 @青衫Neuro
                 </p>
                 <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                  青衫Neuro开始于2016年1月，公众号注册于2017年4月，为公益非营利组织。青衫Neuro致力于神经多元的科普、资源和互助，希望能够帮助不一样的你和家人了解自己。
+                  青衫 Neuro
+                  开始于2016年1月，公众号注册于2017年4月，为公益非营利组织。青衫
+                  Neuro
+                  致力于神经多元的科普、资源和互助，希望能够帮助不一样的你和家人了解自己。
                 </p>
               </div>
             </div>
@@ -100,13 +105,13 @@ class About extends Component {
           {/* 贡献者部分 */}
           <div className="bg-gradient-to-b from-white to-gray-50 rounded-3xl shadow-xl py-20 px-8 mb-32">
             <div className="max-w-7xl mx-auto">
-              <div className="lg:text-center mb-16">
-                <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-6">
+              <div className="text-center mb-16">
+                <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl mb-6">
                   贡献者
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
                 {contributors.map((contributor, index) => (
                   <div
                     key={index}
@@ -149,7 +154,8 @@ class About extends Component {
               </h2>
               <div className="max-w-3xl mx-auto">
                 <p className="text-gray-600 mb-8 text-center text-lg leading-relaxed">
-                  青衫Neuro始终秉持公开透明的财务管理原则，定期发布资产负债表和资金池报告，以确保所有资金的使用都能得到合理说明。
+                  青衫 Neuro
+                  始终秉持公开透明的财务管理原则，定期发布资产负债表和资金池报告，以确保所有资金的使用都能得到合理说明。
                 </p>
                 <div className="flex justify-center">
                   <a
