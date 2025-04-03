@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import QuestionItem from "@/components/QuestionItem";
 import QuestionResult from "@/components/QuestionResult";
 import QuestionInfo from "@/components/QuestionInfo";
+import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import questionData from "@/data/questionADHD.json";
 import BackToTop from "@/components/BackToTop";
 
@@ -134,48 +135,46 @@ class ADHD extends Component {
 
     const infoContent = (
       <>
-        <div className="bg-gray-50 border border-gray-100 rounded-md p-4">
-          <div className="flex justify-center items-center">
-            <div className="inline-flex items-center">
-              <div
-                className={`flex-shrink-0 w-8 h-8 bg-rose-100 rounded-full flex items-center justify-center`}
-              >
-                <i className="ri-information-2-line text-xl text-rose-400"></i>
-              </div>
-              <div className="ml-3 text-left">
-                <p className="text-gray-600">
-                  焦虑 / 抑郁 / 睡眠障碍<strong>等其他情况</strong>
-                  均有可能造成分值偏高
-                </p>
-                <p className="text-sm text-gray-500 mt-2">
-                  本量表<strong>仅供筛查</strong>，<strong>不代表</strong>
-                  确诊或作为诊断依据
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <QuestionInfo
+          icon={<i className="ri-information-2-line text-xl text-rose-400"></i>}
+          content={
+            <>
+              <p className="text-gray-600">
+                焦虑 / 抑郁 / 睡眠障碍<strong>等其他情况</strong>
+                均有可能造成分值偏高
+              </p>
+              <p className="text-sm text-gray-500 mt-2">
+                本量表<strong>仅供筛查</strong>，<strong>不代表</strong>
+                确诊或作为诊断依据
+              </p>
+            </>
+          }
+        />
 
-        <div className="text-xs text-gray-400 space-y-2 mt-3">
-          <p className="font-medium">本量表参考文献：</p>
-          <ul className="list-disc pl-4 space-y-1.5">
-            <li>
-              <a
-                href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/18Q_Chinese%20(Traditional)_final.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-gray-600 transition-colors"
-              >
-                18Q-Chinese-Traditional.pdf
-              </a>{" "}
-              转自世界卫生组织 Composite International Diagnostic Interview
-            </li>
-          </ul>
-        </div>
-        <p className="text-xs text-gray-400 mt-2">
-          * 本站符合 GDPR 数据保护条例。不会使用 Cookie
-          记录和存储任何可识别个人身份的信息
-        </p>
+        <QuestionInfo
+          icon={<i className="ri-lightbulb-line text-xl text-primary"></i>}
+          iconBg="bg-green-100"
+          content={
+            <>
+              <p className="text-xs text-gray-600">本量表参考文献：</p>
+              <p className="text-xs text-gray-500 mt-2">
+                <a
+                  href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/18Q_Chinese%20(Traditional)_final.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-gray-600 transition-colors"
+                >
+                  18Q-Chinese-Traditional.pdf
+                </a>{" "}
+                转自世界卫生组织 Composite International Diagnostic Interview
+              </p>
+              <p className="text-xs text-gray-500 mt-2">
+                * 本站符合 GDPR 数据保护条例。不会使用 Cookie
+                记录和存储任何可识别个人身份的信息
+              </p>
+            </>
+          }
+        />
       </>
     );
 
@@ -193,7 +192,7 @@ class ADHD extends Component {
               <div className="mt-2">{infoContent}</div>
             </div>
 
-            <QuestionInfo
+            <QuestionInfoAlert
               showModal={showInfoModal}
               onClose={this.closeInfoModal}
               content={infoContent}

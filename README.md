@@ -40,4 +40,4 @@ pnpm serve
 Then you can open `http://localhost:3000` in your browser.
 
 > [!NOTE]
-> 就诊地图等所有外部信息均由青衫统一认证并集中补充，请直接邮件联系青衫 [qingshan.aspie@gmail.com](mailto:qingshan.aspie@gmail.com) 。GitHub 仓库目前暂不处理直接添加信息的请求
+> 就诊地图等所有外部信息均由青衫统一认证，并由志愿者们集中补充。如要更新信息请[通过邮件联系青衫](https://mp.weixin.qq.com/s/YuUY9ZKhMgJSxmLIzOW4sQ)。GitHub 仓库目前暂不处理直接更新信息的请求

@@ -147,17 +147,15 @@ class AQA extends Component {
               <p className="text-sm text-gray-500 mt-2">
                 *本量表仅供参考，不能作为诊断依据。
               </p>
-              <div className="text-xs text-gray-400 mt-2 space-y-1">
+              <div className="text-xs text-gray-400 mt-2">
                 <p>本量表参考文献：</p>
-                <ul className="list-disc pl-4 space-y-1">
-                  <li>
-                    Simon Baron-Cohen, et al. The Autism-Spectrum Quotient (AQ):
-                    Evidence from Asperger Syndrome/High-Functioning Autism,
-                    Malesand Females, Scientists and Mathematicians. 31: J
-                    Autism Dev Disord 5-17. 2001.
-                  </li>
-                  <li>翻译：青衫</li>
-                </ul>
+                <p className="mt-1">
+                  Simon Baron-Cohen, et al. The Autism-Spectrum Quotient (AQ):
+                  Evidence from Asperger Syndrome/High-Functioning Autism,
+                  Malesand Females, Scientists and Mathematicians. 31: J Autism
+                  Dev Disord 5-17. 2001.
+                </p>
+                <p className="mt-1">翻译：青衫</p>
               </div>
             </div>
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "@/components/Layout";
 import Card from "@/components/Card";
+import "remixicon/fonts/remixicon.css";
 
 const scales = [
   {

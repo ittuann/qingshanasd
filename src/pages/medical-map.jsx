@@ -3,14 +3,17 @@ import Layout from "@/components/Layout";
 import dynamic from "next/dynamic";
 import MapInfo, { MapInfoNav, MapInfoSelect } from "@/components/MapInfo";
 import BackToTop from "@/components/BackToTop";
-import { MedicalDataProvider, MedicalDataContext } from "@/context/MedicalDataContext";
+import {
+  MedicalDataProvider,
+  MedicalDataContext,
+} from "@/context/MedicalDataContext";
 
 const MapChart = dynamic(() => import("@/components/MapChart"), {
   ssr: false,
   loading: () => (
     <div className="flex items-center justify-center h-[500px]">
       <div className="text-lg text-gray-600">
-        <i className="ri-color-filter-ai-line text-primary"></i>
+        <i className="ri-road-map-line text-primary"></i>
         地图组件加载中...
         <br />
         （加载速度取决于网络环境）

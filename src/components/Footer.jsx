@@ -105,7 +105,7 @@ class Footer extends Component {
                 </li>
                 <li>
                   <a
-                    href="https://mp.weixin.qq.com/s/dvU8EbuaCuv3iLaxJbOd5w"
+                    href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIyMzgyMjY5NQ%3D%3D&hid=1"
                     target="_blank"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
