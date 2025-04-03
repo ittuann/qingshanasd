@@ -6,16 +6,10 @@ const QuestionInfo = ({ showModal, onClose, content }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
-      <div className="fixed inset-0 bg-black/60" onClick={onClose}></div>
+      <div className="fixed inset-0 bg-black/60"></div>
       <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4 relative z-10">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-xl font-semibold text-gray-900">重要信息</h3>
-          <button
-            className="text-gray-400 hover:text-gray-500"
-            onClick={onClose}
-          >
-            <i className="ri-close-line text-xl"></i>
-          </button>
         </div>
 
         <div className="space-y-4">{content}</div>
