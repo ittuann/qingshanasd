@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, useContext } from "react";
 import Layout from "@/components/Layout";
 import dynamic from "next/dynamic";
 import MapInfo, { MapInfoNav, MapInfoSelect } from "@/components/MapInfo";
 import BackToTop from "@/components/BackToTop";
-import { MedicalDataProvider } from "@/context/MedicalDataContext";
+import { MedicalDataProvider, MedicalDataContext } from "@/context/MedicalDataContext";
 
 const MapChart = dynamic(() => import("@/components/MapChart"), {
   ssr: false,
@@ -33,9 +33,7 @@ class MedicalMap extends Component {
                   <div className="absolute bottom-0 left-0 w-full h-1 bg-primary/20"></div>
                 </h1>
 
-                <div className="relative bg-white rounded-xl shadow-lg p-4 transition-all duration-300 hover:shadow-xl min-h-[500px]">
-                  <MapChart />
-                </div>
+                <MapContainer />
               </div>
 
               {/* 按钮组 */}
@@ -70,5 +68,20 @@ class MedicalMap extends Component {
     );
   }
 }
+
+const MapContainer = () => {
+  const { dataType } = useContext(MedicalDataContext);
+
+  // 海外版不渲染地图
+  if (dataType === "abroad") {
+    return null;
+  }
+
+  return (
+    <div className="relative bg-white rounded-xl shadow-lg p-4 transition-all duration-300 hover:shadow-xl min-h-[500px]">
+      <MapChart />
+    </div>
+  );
+};
 
 export default MedicalMap;
