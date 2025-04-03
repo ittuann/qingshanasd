@@ -43,8 +43,14 @@ const QuestionResult = ({ scores, result, showModal, onClose }) => {
               </span>
             </div>
             <div className="text-sm text-yellow-700 space-y-1">
-              <p>* 本量表仅供筛查，不代表确诊或作为诊断依据</p>
-              <p>* 如有困扰建议及时就医咨询</p>
+              <p>
+                * 焦虑 / 抑郁 / 睡眠障碍<strong>等其他情况</strong>
+                均有可能造成分值偏高
+              </p>
+              <p>
+                * 本量表<strong>仅供筛查</strong>，<strong>不代表</strong>
+                确诊或作为诊断依据
+              </p>
             </div>
           </div>
         </div>
