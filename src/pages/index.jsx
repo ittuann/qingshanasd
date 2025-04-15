@@ -85,17 +85,17 @@ export default class Index extends Component {
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
                   青衫 Neuro
                 </h1>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-content">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-zinc-600">
                   为神经多元群体提供支持
                 </h2>
-                <p className="text-lg md:text-xl mb-8 text-primary-content/80">
+                <p className="text-lg md:text-xl mb-8 text-zinc-600/80">
                   因为你我，这个世界终将丰富多彩
                 </p>
 
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                   <Link
                     href="/medical-map"
-                    className="px-6 py-2 bg-accent text-accent-content rounded-full font-medium hover:bg-primary transition-colors"
+                    className="px-6 py-2 bg-accent text-zinc-500 rounded-full font-medium hover:bg-primary transition-colors"
                   >
                     就诊地图
                   </Link>
