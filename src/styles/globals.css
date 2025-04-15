@@ -1,24 +1,125 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   /* 主色调 */
-  --color-primary: #52b394;
-  --color-primary-foreground: #4a5565; /* 内容颜色 */
+  --primary: #52b394;
+  --primary-foreground: oklch(1 0 0); /* 内容颜色 */
+  /* Base Colors */
+  --background: oklch(0.98 0 247.86);
+  --foreground: oklch(0.28 0.04 260.03);
   /* 次色调 */
-  --color-secondary: #e8f9f1;
-  --color-secondary-foreground: #000c07;
+  --secondary: #e8f9f1;
+  --secondary-foreground: oklch(0.37 0.03 259.73);
   /* 强调颜色 */
-  --color-accent: #1eb88e;
-  --color-accent-content: #4a5565;
-
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --accent: #1eb88e;
+  --accent-content: oklch(0.37 0.03 259.73);
+  /* UI Component Colors */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.28 0.04 260.03);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.28 0.04 260.03);
+  --muted: oklch(0.97 0 264.54);
+  --muted-foreground: oklch(0.55 0.02 264.36);
+  /* Utility & Form Colors */
+  --border: oklch(0.87 0.01 258.34);
+  --input: oklch(0.87 0.01 258.34);
+  --ring: oklch(0.59 0.2 277.12);
+  /* Sidebar & Navigation Colors */
+  --sidebar: oklch(0.97 0 264.54);
+  --sidebar-foreground: oklch(0.28 0.04 260.03);
+  --sidebar-primary: oklch(0.59 0.2 277.12);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.93 0.03 272.79);
+  --sidebar-accent-foreground: oklch(0.37 0.03 259.73);
+  --sidebar-border: oklch(0.87 0.01 258.34);
+  --sidebar-ring: oklch(0.59 0.2 277.12);
+  /* Status & Feedback Colors */
+  --destructive: oklch(0.64 0.21 25.33);
+  --destructive-foreground: oklch(1 0 0);
+  /* Chart & Visualization Colors */
+  --chart-1: oklch(0.59 0.2 277.12);
+  --chart-2: oklch(0.51 0.23 276.97);
+  --chart-3: oklch(0.46 0.21 277.02);
+  --chart-4: oklch(0.4 0.18 277.37);
+  --chart-5: oklch(0.36 0.14 278.7);
+  /* Typography */
+  --font-sans: Geist, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Geist Mono, monospace;
+  --tracking-normal: 0em;
+  /* Other */
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 4px 8px -1px hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0px 4px 8px -1px hsl(0 0% 0% / 0.05);
+  --shadow-sm:
+    0px 4px 8px -1px hsl(0 0% 0% / 0.1), 0px 1px 2px -2px hsl(0 0% 0% / 0.1);
+  --shadow:
+    0px 4px 8px -1px hsl(0 0% 0% / 0.1), 0px 1px 2px -2px hsl(0 0% 0% / 0.1);
+  --shadow-md:
+    0px 4px 8px -1px hsl(0 0% 0% / 0.1), 0px 2px 4px -2px hsl(0 0% 0% / 0.1);
+  --shadow-lg:
+    0px 4px 8px -1px hsl(0 0% 0% / 0.1), 0px 4px 6px -2px hsl(0 0% 0% / 0.1);
+  --shadow-xl:
+    0px 4px 8px -1px hsl(0 0% 0% / 0.1), 0px 8px 10px -2px hsl(0 0% 0% / 0.1);
+  --shadow-2xl: 0px 4px 8px -1px hsl(0 0% 0% / 0.25);
 }
 
-:root {
-  /* Base Colors */
-  --background: #f8fafc;
-  --foreground: #1e293b;
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-serif: var(--font-serif);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --shadow-2xs: var(--shadow-2xs);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow: var(--shadow);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-2xl: var(--shadow-2xl);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
 }
 
 /* 滚动条样式 */
@@ -38,17 +139,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #9ca3af;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
