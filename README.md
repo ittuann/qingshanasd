@@ -62,3 +62,5 @@ Then you can open `http://localhost:3000` in your browser.
 
 > [!NOTE]
 > 就诊地图等所有外部信息均由青衫统一认证，并由志愿者们集中补充。如要更新信息请[通过邮件联系青衫](https://mp.weixin.qq.com/s/YuUY9ZKhMgJSxmLIzOW4sQ)。GitHub 仓库目前暂不处理直接更新信息的请求
+
+![FOSSA License Scan](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2Fqingshanasd.svg?type=large&issueType=license)

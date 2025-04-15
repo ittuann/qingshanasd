@@ -34,8 +34,6 @@ jobs:
           echo "--- Clean old files: ---"
           echo "--- Delete all tracked files ---"
           git rm -rf . || echo "No tracked files to remove."
-          echo "--- Delete all untracked files ---"
-          git clean -fxd
 
           echo "--- Copy new files. ---"
           rsync -av --exclude=".git" dist-branch/ .

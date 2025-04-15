@@ -116,7 +116,7 @@ class MapInfo extends Component {
                   {/* 医院备注 */}
                   {hospital.notes && (
                     <p className="text-sm text-gray-600 bg-gray-50 p-3 rounded-lg mb-6">
-                      {hospital.notes}
+                      注：{hospital.notes}
                     </p>
                   )}
 
@@ -139,7 +139,7 @@ class MapInfo extends Component {
                           <div className="space-y-3 ml-4">
                             {doctor.notes && (
                               <p className="text-sm text-gray-600 bg-gray-50 p-3 rounded-lg">
-                                {doctor.notes}
+                                注：{doctor.notes}
                               </p>
                             )}
                             {doctor.shares.length > 0 && (

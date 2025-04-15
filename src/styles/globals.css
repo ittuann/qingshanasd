@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  /* To preview the theme: https://tweakcn.com/editor/theme */
   /* 主色调 */
   --primary: #52b394;
   --primary-foreground: oklch(1 0 0); /* 内容颜色 */
