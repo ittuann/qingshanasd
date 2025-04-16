@@ -2,6 +2,10 @@ import Link from "next/link";
 import { getPosts } from "@/utils/mdx";
 import Layout from "@/components/Layout";
 
+/**
+ * 获取所有博客文章的静态属性
+ * @returns {Promise<{props: {posts: Array}}>} 包含所有博客文章数据的props对象
+ */
 export async function getStaticProps() {
   const posts = await getPosts();
   return {
@@ -11,6 +15,12 @@ export async function getStaticProps() {
   };
 }
 
+/**
+ * 博客文章列表页面组件
+ * @param {Object} props - 组件属性
+ * @param {Array} props.posts - 博客文章列表数据
+ * @returns {JSX.Element}
+ */
 export default function BlogList({ posts }) {
   return (
     <Layout title="文章 - 青衫 Neuro">

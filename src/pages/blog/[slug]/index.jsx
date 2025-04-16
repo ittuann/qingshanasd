@@ -3,6 +3,10 @@ import { CustomMDX } from "@/components/Mdx";
 import Layout from "@/components/Layout";
 import Link from "next/link";
 
+/**
+ * 获取所有博客文章的路径参数
+ * @returns {Promise<{ paths: { params: { slug: string } }[], fallback: boolean }>}
+ */
 export async function getStaticPaths() {
   const posts = await getPosts();
 
@@ -18,6 +22,13 @@ export async function getStaticPaths() {
   };
 }
 
+/**
+ * 获取指定 slug 的博客文章数据
+ * @param {Object} context - Next.js 静态生成上下文
+ * @param {Object} context.params - URL 参数
+ * @param {string} context.params.slug - 文章的 slug
+ * @returns {Promise<{ props: { post: Object } }>}
+ */
 export async function getStaticProps({ params }) {
   const posts = await getPosts();
   const post = posts.find((post) => post.slug === params.slug);
@@ -29,6 +40,12 @@ export async function getStaticProps({ params }) {
   };
 }
 
+/**
+ * 博客文章详情页面组件
+ * @param {Object} props - 组件属性
+ * @param {Object} props.post - 博客文章数据
+ * @returns {JSX.Element}
+ */
 export default function Blog({ post }) {
   return (
     <Layout title={post.metadata.title + " - 青衫 Neuro"}>

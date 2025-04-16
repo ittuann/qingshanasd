@@ -1,7 +1,11 @@
 import fs from "fs/promises";
 import path from "path";
 
-// 解析前置信息（frontmatter）的函数
+/**
+ * 解析 MDX 文件的前置信息 frontmatter
+ * @param {string} fileContent - MDX 文件的原始内容
+ * @returns {{metadata: Object, content: string}} 包含前置信息和正文内容的对象
+ */
 function parseFrontmatter(fileContent) {
   const frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
   const content = fileContent.replace(frontmatterRegex, "").trim();
@@ -19,28 +23,37 @@ function parseFrontmatter(fileContent) {
     metadata[key.trim()] = value;
   });
 
-  // 返回提取出的前置信息和正文内容
   return { metadata, content };
 }
 
-// 获取指定目录下所有 .mdx 文件的函数
+/**
+ * 获取指定目录下所有 .mdx 文件
+ * @param {string} dir - 要扫描的目录路径
+ * @returns {Promise<string[]>} 包含所有 .mdx 文件名的数组
+ */
 async function getMDXFiles(dir) {
   const files = await fs.readdir(dir);
   return files.filter((file) => path.extname(file) === ".mdx");
 }
 
-// 读取 .mdx 文件内容并解析的函数
+/**
+ * 读取并解析 MDX 文件内容
+ * @param {string} filePath - MDX 文件的完整路径
+ * @returns {Promise<{metadata: Object, content: string}>} 包含解析后的前置信息和正文内容的对象
+ */
 async function readMDXFile(filePath) {
   const rawContent = await fs.readFile(filePath, "utf-8");
   return parseFrontmatter(rawContent);
 }
 
-// 获取指定目录下所有 .mdx 文件的元数据和内容
+/**
+ * 获取指定目录下所有 MDX 文件的数据
+ * @param {string} dir - 要扫描的目录路径
+ * @returns {Promise<Array<{metadata: Object, slug: string, content: string}>>} 包含所有文章数据的数组
+ */
 async function getMDXData(dir) {
-  // 获取目录下所有 .mdx 文件
   const mdxFiles = await getMDXFiles(dir);
 
-  // 遍历每个文件，读取并解析其内容
   const posts = await Promise.all(
     mdxFiles.map(async (file) => {
       const { metadata, content } = await readMDXFile(
@@ -59,7 +72,10 @@ async function getMDXData(dir) {
   return posts;
 }
 
-// 获取博客文章的函数
+/**
+ * 获取所有博客文章
+ * @returns {Promise<Array<{metadata: Object, slug: string, content: string}>>} 包含所有博客文章数据的数组
+ */
 export async function getPosts() {
   const posts = await getMDXData(
     path.join(process.cwd(), "src", "pages", "blog", "_posts"),
