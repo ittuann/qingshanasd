@@ -21,9 +21,7 @@ export default function BlogHome({ posts }) {
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
-            <Link href={`/blog/${post.slug}`}>
-              {post.metadata.title}
-            </Link>
+            <Link href={`/blog/${post.slug}`}>{post.metadata.title}</Link>
           </li>
         ))}
       </ul>

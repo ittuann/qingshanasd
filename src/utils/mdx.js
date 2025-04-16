@@ -64,6 +64,5 @@ export async function getPosts() {
   const posts = await getMDXData(
     path.join(process.cwd(), "src", "pages", "blog", "_posts"),
   );
-  console.log("获取的博客文章数据:", posts);
   return posts;
 }
