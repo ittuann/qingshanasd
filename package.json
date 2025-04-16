@@ -11,7 +11,7 @@
   },
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "serve": "serve dist/",
     "start": "next start",
@@ -23,6 +23,7 @@
     "echarts": "^5.6.0",
     "js-cookie": "^3.0.5",
     "next": "^15.2.4",
+    "next-mdx-remote": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remixicon": "^4.6.0"
