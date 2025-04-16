@@ -34,6 +34,12 @@ const contributors = [
     icon: "/assets/img/SpaceDuck.png",
     link: "#",
   },
+  {
+    name: "maoguy",
+    role: "维护者",
+    icon: "/assets/img/maoguy.jpg",
+    link: "https://github.com/maoguy",
+  },
 ];
 
 class About extends Component {
@@ -111,7 +117,7 @@ class About extends Component {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {contributors.map((contributor, index) => (
                   <div
                     key={index}
