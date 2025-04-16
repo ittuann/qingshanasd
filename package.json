@@ -22,7 +22,7 @@
   "dependencies": {
     "echarts": "^5.6.0",
     "js-cookie": "^3.0.5",
-    "next": "15.2.4",
+    "next": "^15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remixicon": "^4.6.0"
@@ -31,7 +31,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.2.0",
+    "eslint-config-next": "^15.2.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "prettier": "^3.5.3",
     "serve": "^14.2.4",

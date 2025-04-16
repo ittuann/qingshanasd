@@ -130,7 +130,7 @@ class Footer extends Component {
                 量表版本: 1.1.7
               </p>
               <p className="text-center text-gray-500 text-sm">
-                © 2025 青衫 Neuro. All rights reserved.
+                © {new Date().getFullYear()} 青衫 Neuro. All rights reserved.
               </p>
               <div className="flex items-center space-x-2">
                 <p className="text-center text-gray-500 text-sm">
