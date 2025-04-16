@@ -5,7 +5,7 @@ import QuestionItem from "@/components/QuestionItem";
 import QuestionResult from "@/components/QuestionResult";
 import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
-import questionData from "@/data/questionBPD.json";
+import questionData from "@/_data/questionBPD.json";
 import BackToTop from "@/components/BackToTop";
 
 class BPD extends Component {

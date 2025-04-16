@@ -5,7 +5,7 @@ import QuestionItem from "@/components/QuestionItem";
 import QuestionResult from "@/components/QuestionResult";
 import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
-import questionData from "@/data/questionOAQ.json";
+import questionData from "@/_data/questionOAQ.json";
 import BackToTop from "@/components/BackToTop";
 
 class OAQ extends Component {

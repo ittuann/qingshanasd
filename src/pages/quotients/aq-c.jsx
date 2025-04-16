@@ -5,7 +5,7 @@ import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import QuestionItem from "@/components/QuestionItem";
 import QuestionResult from "@/components/QuestionResult";
-import questionData from "@/data/questionAQC.json";
+import questionData from "@/_data/questionAQC.json";
 import BackToTop from "@/components/BackToTop";
 
 class AQC extends Component {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import * as echarts from "echarts";
 import { transformMedicalData } from "@/utils/dataTransform";
-import chinaGeoJson from "@/data/100000_full.json";
+import chinaGeoJson from "@/_data/100000_full.json";
 import { MedicalDataContext } from "@/context/MedicalDataContext";
 
 class MapChart extends Component {

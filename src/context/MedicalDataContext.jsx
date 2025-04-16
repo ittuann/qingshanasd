@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
-import medicalData from "@/data/medicalData.json";
-import medicalChildData from "@/data/medicalChildData.json";
-import medicalAbroadData from "@/data/medicalAbroadData.json";
+import medicalData from "@/_data/medicalData.json";
+import medicalChildData from "@/_data/medicalChildData.json";
+import medicalAbroadData from "@/_data/medicalAbroadData.json";
 
 export const MedicalDataContext = createContext();
 
