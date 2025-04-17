@@ -74,7 +74,7 @@ async function getMDXData(dir) {
 
 /**
  * 获取所有博客文章
- * @returns {Promise<Array<{metadata: Object, slug: string, content: string}>>} 包含所有博客文章数据的数组
+ * @returns {Promise<Array<{metadata: Object, content: string, slug: string}>>} 包含所有博客文章数据的数组
  */
 export async function getPosts() {
   const posts = await getMDXData(

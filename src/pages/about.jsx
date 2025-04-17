@@ -115,9 +115,9 @@ class About extends Component {
                 {contributors.map((contributor, index) => (
                   <div
                     key={index}
-                    className="transform transition-all duration-300 hover:-translate-y-2"
+                    className="h-full transform transition-all duration-300 hover:-translate-y-2"
                   >
-                    <a href={contributor.link} target="" className="block">
+                    <a href={contributor.link} target="" className="block h-full">
                       <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all p-8 text-center border border-gray-100 h-full">
                         <div className="flex items-center justify-center mx-auto rounded-full mb-6">
                           <Image
@@ -128,10 +128,10 @@ class About extends Component {
                             className="rounded-full"
                           />
                         </div>
-                        <h3 className="text-xl font-bold text-gray-900">
+                        <h3 className="text-lg font-bold text-gray-900 break-words">
                           {contributor.name}
                         </h3>
-                        <div className="w-12 h-1 bg-gradient-to-r from-primary to-teal-500 mx-auto my-3 rounded-full"></div>
+                        <div className="w-12 h-1 break-words bg-gradient-to-r from-primary to-teal-500 mx-auto my-3 rounded-full"></div>
                         <p className="text-sm text-gray-500 mt-2">
                           {contributor.role}
                         </p>
