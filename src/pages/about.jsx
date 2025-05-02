@@ -117,7 +117,11 @@ class About extends Component {
                     key={index}
                     className="h-full transform transition-all duration-300 hover:-translate-y-2"
                   >
-                    <a href={contributor.link} target="" className="block h-full">
+                    <a
+                      href={contributor.link}
+                      target=""
+                      className="block h-full"
+                    >
                       <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all p-8 text-center border border-gray-100 h-full">
                         <div className="flex items-center justify-center mx-auto rounded-full mb-6">
                           <Image
