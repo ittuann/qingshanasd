@@ -46,7 +46,7 @@ export async function getStaticProps({ params }) {
  * @param {Object} props.post - 博客文章数据
  * @returns {JSX.Element}
  */
-export default function Blog({ post }) {
+export default function Posts({ post }) {
   return (
     <Layout title={post.metadata.title + " - 青衫 Neuro"}>
       <main className="max-w-4xl mx-auto px-4 py-8">

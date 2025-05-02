@@ -78,7 +78,7 @@ async function getMDXData(dir) {
  */
 export async function getPosts() {
   const posts = await getMDXData(
-    path.join(process.cwd(), "src", "pages", "blog", "_posts"),
+    path.join(process.cwd(), "src", "pages", "posts", "_posts"),
   );
   return posts;
 }

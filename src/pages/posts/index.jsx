@@ -21,7 +21,7 @@ export async function getStaticProps() {
  * @param {Array} props.posts - 博客文章列表数据
  * @returns {JSX.Element}
  */
-export default function BlogList({ posts }) {
+export default function PostsList({ posts }) {
   return (
     <Layout title="文章 - 青衫 Neuro">
       <main className="max-w-4xl mx-auto px-4 py-8">
@@ -34,7 +34,7 @@ export default function BlogList({ posts }) {
               key={post.slug}
               className="border-b border-gray-200 pb-8 last:border-b-0"
             >
-              <Link href={`/blog/${post.slug}`} className="block group">
+              <Link href={`/posts/${post.slug}`} className="block group">
                 <h2 className="text-2xl font-semibold mb-3 text-gray-900 group-hover:text-primary">
                   {post.metadata.title}
                 </h2>
