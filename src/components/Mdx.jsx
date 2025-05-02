@@ -1,14 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import ScaleCard from "@/components/Card";
 
-export function Greet({ name = "world" }) {
-  return <div className="p-4 bg-gray-100 rounded">Hello, {name}!</div>;
-}
-
+/**
+ * 链接Next.js格式
+ * @param {Object} props - 组件属性
+ * @param {string} props.href - 链接地址
+ * @param {React.ReactNode} props.children - 链接内容
+ * @returns {JSX.Element} 根据href类型返回相应的链接组件
+ */
 function CustomLink({ href, children, ...props }) {
+  // 统一的链接样式
   const linkStyle = "text-blue-600 hover:text-blue-800 underline";
 
+  // 处理内部路由链接
   if (href?.startsWith("/")) {
     return (
       <Link href={href} className={linkStyle} {...props}>
@@ -17,6 +23,7 @@ function CustomLink({ href, children, ...props }) {
     );
   }
 
+  // 处理页内锚点链接
   if (href?.startsWith("#")) {
     return (
       <a href={href} className={linkStyle} {...props}>
@@ -25,6 +32,7 @@ function CustomLink({ href, children, ...props }) {
     );
   }
 
+  // 处理外部链接
   return (
     <a
       href={href}
@@ -38,6 +46,9 @@ function CustomLink({ href, children, ...props }) {
   );
 }
 
+/**
+ * 为常用的HTML元素映射定义样式
+ */
 const components = {
   h1: (props) => <h1 {...props} className="text-3xl font-bold mt-8 mb-4" />,
   h2: (props) => <h2 {...props} className="text-2xl font-bold mt-6 mb-3" />,
@@ -62,9 +73,28 @@ const components = {
     />
   ),
   a: CustomLink,
-  Greet: Greet,
+  Card: Card,
 };
 
+/**
+ * 自定义组件示例
+ */
+export function Card({ title, description, icon, iconColor, iconBg, link }) {
+  return (
+    <ScaleCard
+      title={title}
+      description={description}
+      icon={icon}
+      iconColor={iconColor}
+      iconBg={iconBg}
+      link={link}
+    />
+  );
+}
+
+/**
+ * MDXRemote
+ */
 export function CustomMDX(props) {
   return (
     <article className="prose prose-lg max-w-none">

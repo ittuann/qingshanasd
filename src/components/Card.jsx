@@ -8,7 +8,7 @@ class ScaleCard extends Component {
       this.props;
 
     return (
-      <Link href={link} rel="" className="block h-full">
+      <Link href={link} rel="" className="block h-full max-w-lg">
         <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-6 h-full flex flex-col">
           <div className="flex-grow">
             <div
@@ -16,22 +16,24 @@ class ScaleCard extends Component {
             >
               <i className={`${icon} ${iconColor} text-2xl`}></i>
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+            <div className="text-lg font-semibold text-gray-900 mb-2">
               {title}
-            </h3>
+            </div>
             <p className="text-gray-600 text-sm mb-4">{description}</p>
           </div>
 
-          <div className="flex flex-wrap gap-2 mt-auto">
-            {tags.map((tag, index) => (
-              <span
-                key={index}
-                className={`px-3 py-1 rounded-full text-xs ${iconColor} ${iconBg}`}
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
+          {tags && tags.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-auto">
+              {tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className={`px-3 py-1 rounded-full text-xs ${iconColor} ${iconBg}`}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       </Link>
     );

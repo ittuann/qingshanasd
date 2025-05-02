@@ -1,7 +1,6 @@
 import { getPosts } from "@/utils/mdx";
 import { CustomMDX } from "@/components/Mdx";
 import Layout from "@/components/Layout";
-import Link from "next/link";
 
 /**
  * 获取所有博客文章的路径参数
@@ -41,7 +40,7 @@ export async function getStaticProps({ params }) {
 }
 
 /**
- * 博客文章详情页面组件
+ * 博客文章详情 页面组件
  * @param {Object} props - 组件属性
  * @param {Object} props.post - 博客文章数据
  * @returns {JSX.Element}
@@ -50,17 +49,23 @@ export default function Posts({ post }) {
   return (
     <Layout title={post.metadata.title + " - 青衫 Neuro"}>
       <main className="max-w-4xl mx-auto px-4 py-8">
+        {/* 文章标题 */}
         <h1 className="text-4xl font-bold mb-4 text-gray-900">
           {post.metadata.title}
         </h1>
+
+        {/* 文章描述 */}
         {post.metadata.description && (
           <p className="text-lg text-gray-600 mb-8">
             {post.metadata.description}
           </p>
         )}
+
+        {/* 文章正文 */}
         <article className="prose prose-lg max-w-none">
           <CustomMDX source={post.content} />
         </article>
+
       </main>
     </Layout>
   );
