@@ -65,7 +65,6 @@ export default function Posts({ post }) {
         <article className="prose prose-lg max-w-none">
           <CustomMDX source={post.content} />
         </article>
-
       </main>
     </Layout>
   );

@@ -1466,7 +1466,7 @@
       "hospitals": [
         {
           "name": "广西壮族自治区人民医院（桃源院区）",
-          "notes": "临床心理科",
+          "notes": "睡眠科",
           "doctors": [
             {
               "name": "秦岭 医生",
@@ -1550,6 +1550,26 @@
                 }
               ],
               "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "宁夏回族自治区",
+      "hospitals": [
+        {
+          "name": "宁夏回族自治区宁安医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "常少华 医生",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": "能开专注达"
             }
           ]
         }
