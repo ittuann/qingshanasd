@@ -1,3 +1,6 @@
+import createMDX from "@next/mdx";
+import remarkGfm from "remark-gfm";
+
 /**
  * @type {import('next').NextConfig}
  */
@@ -16,6 +19,8 @@ const nextConfig = {
     unoptimized: true,
   },
 
+  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
+
   webpack: (config) => {
     config.resolve.fallback = {
       fs: false,
@@ -25,4 +30,11 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [],
+  },
+});
+
+export default withMDX(nextConfig);
