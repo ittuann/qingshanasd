@@ -36,26 +36,25 @@ function CustomLink({ href, children, ...props }) {
 
 export function useMDXComponents(components) {
   return {
-    wrapper: ({ children, post }) => {
-      const githubFileLink = `https://github.com/ittuann/qingshanasd/blob/main/src/pages/posts/_posts/${post?.slug}.mdx`;
+    wrapper: ({ children }) => {
+      const githubFileLink = `https://github.com/ittuann/qingshanasd/blob/main/src/pages/posts/`;
 
       return (
-        <Layout title={post?.metadata?.title + " - 青衫 Neuro"}>
+        <Layout title={"青衫 Neuro"}>
           <main className="max-w-4xl mx-auto px-4 py-8">
-            <h1 className="text-4xl font-bold mb-4 text-gray-900">
+            {/* Title */}
+            {/* <h1 className="text-4xl font-bold mb-4 text-gray-900">
               {post?.metadata?.title}
             </h1>
+            <p className="text-lg text-gray-600 mb-2">
+              {post?.metadata.description}
+            </p> */}
 
-            {post?.metadata?.description && (
-              <p className="text-lg text-gray-600 mb-2">
-                {post.metadata.description}
-              </p>
-            )}
-
-            <p className="flex items-center gap-4 text-sm text-gray-500 mb-8">
+            {/* Icons */}
+            {/* <p className="flex items-center gap-4 text-sm text-gray-500 mb-8">
               <span className="flex items-center gap-1">
                 <i className="ri-time-line"></i>
-                {post?.metadata?.pubDate}
+                {post?.metadata.pubDate}
               </span>
               {post?.metadata?.modDate && (
                 <span className="flex items-center gap-1">
@@ -74,11 +73,9 @@ export function useMDXComponents(components) {
                   GitHub
                 </Link>
               </span>
-            </p>
+            </p> */}
 
-            <article className="prose prose-lg max-w-none">
-              {children}
-            </article>
+            <article className="prose prose-lg max-w-none">{children}</article>
           </main>
         </Layout>
       );

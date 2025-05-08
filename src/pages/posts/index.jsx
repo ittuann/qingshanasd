@@ -36,6 +36,18 @@ export default function PostsList({ posts }) {
           文章列表
         </h1>
 
+        {/* GitHub 链接 */}
+        <div className="flex justify-end mb-4">
+          <a
+            href="https://github.com/ittuann/qingshanasd/blob/main/src/pages/posts/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-sm text-gray-600 hover:text-primary"
+          >
+            <i className="ri-github-fill mr-1"></i>在 GitHub 上查看
+          </a>
+        </div>
+
         {/* 文章列表容器 */}
         <div className="space-y-4">
           {/* 遍历文章数组，渲染每篇文章的预览卡片 */}
