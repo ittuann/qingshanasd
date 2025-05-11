@@ -1,6 +1,13 @@
 import { useContext } from "react";
 import { LocaleContext } from "@/i18n/i18n";
 import "remixicon/fonts/remixicon.css";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export const locales = {
   "zh-CN": {
@@ -16,19 +23,25 @@ export default function LangSwitcher() {
 
   return (
     <div className="">
-      <select
+      <Select
         value={locale}
-        onChange={(e) => {
-          setLocale(e.target.value);
+        onValueChange={(value) => {
+          setLocale(value);
         }}
-        className="pl-2 pr-2 py-1 border border-gray-300 rounded-md bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary"
       >
-        {Object.keys(locales).map((loc) => (
-          <option value={loc} key={loc}>
-            {locales[loc].name}
-          </option>
-        ))}
-      </select>
+        <SelectTrigger className="w-[180px]">
+          <SelectValue placeholder="Language">
+            {locales[locale]?.name || "Language"}
+          </SelectValue>
+        </SelectTrigger>
+        <SelectContent>
+          {Object.keys(locales).map((loc) => (
+            <SelectItem value={loc} key={loc}>
+              {locales[loc].name}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
     </div>
   );
 }
