@@ -4,6 +4,8 @@ import Image from "next/image";
 import { withRouter } from "next/router";
 import Link from "next/link";
 import "remixicon/fonts/remixicon.css";
+import { FormattedMessage } from "react-intl";
+import LangSwitcher from "@/i18n/LangSwitcher";
 
 const pacifico = Pacifico({
   weight: "400",
@@ -24,7 +26,6 @@ class Navbar extends Component {
   toggleMobileMenu = () => {
     this.setState((prev) => ({ isMobileMenuOpen: !prev.isMobileMenuOpen }));
   };
-
   render() {
     return (
       <nav className="bg-white shadow-sm">
@@ -60,23 +61,26 @@ class Navbar extends Component {
             {/* 桌面端菜单 */}
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className={this.isActive("/")}>
-                量表
+                <FormattedMessage id="Navbar.quotients" />
               </Link>
               <Link href="/about" className={this.isActive("/about")}>
-                关于
+                <FormattedMessage id="Navbar.about" />
               </Link>
               <Link
                 href="/medical-map"
                 className={this.isActive("/medical-map")}
               >
-                就诊地图
+                <FormattedMessage id="Navbar.medicalMap" />
               </Link>
               <Link href="/res" className={this.isActive("/res")}>
-                资源引索
+                <FormattedMessage id="Navbar.res" />
               </Link>
               <Link href="/term" className={this.isActive("/term")}>
-                使用条款
+                <FormattedMessage id="Navbar.terms" />
               </Link>
+              <div className="">
+                <LangSwitcher />
+              </div>
             </div>
           </div>
 
@@ -114,6 +118,9 @@ class Navbar extends Component {
                 >
                   使用条款
                 </Link>
+                <div className="">
+                  <LangSwitcher />
+                </div>
               </div>
             </div>
           )}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import I18n from "@/i18n/i18n";
 
 export default class Layout extends Component {
   render() {
@@ -22,11 +23,13 @@ export default class Layout extends Component {
           <meta name="theme-color" content="#52b394" />
         </Head>
 
-        <div className="bg-zinc-50 min-h-screen flex flex-col">
-          <Navbar />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-        </div>
+        <I18n>
+          <div className="bg-zinc-50 min-h-screen flex flex-col">
+            <Navbar />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
+        </I18n>
       </>
     );
   }
