@@ -1,7 +1,26 @@
 {
+  "siteName": "青衫 Neuro",
   "Navbar.quotients": "量表",
   "Navbar.about": "关于",
   "Navbar.medicalMap": "就诊地图",
   "Navbar.res": "资源索引",
-  "Navbar.terms": "使用条款"
+  "Navbar.terms": "使用条款",
+  "Footer.description": "致力于神经多元的科普、资讯、资源",
+  "Footer.resources": "资源",
+  "Footer.selfTest": "量表自测",
+  "Footer.medicalMap": "就诊地图",
+  "Footer.resourceIndex": "资源引索",
+  "Footer.about": "关于",
+  "Footer.aboutUs": "关于我们",
+  "Footer.terms": "使用条款",
+  "Footer.contact": "联系",
+  "Footer.email": "邮件",
+  "Footer.zhihu": "知乎",
+  "Footer.wechat": "微信公众号",
+  "Footer.github": "GitHub",
+  "Footer.version": "量表版本",
+  "Footer.license": "除特别说明外，本站内容均采用",
+  "Footer.licenseLink": "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议",
+  "Footer.licenseSuffix": "进行许可。",
+  "Footer.sourceCode": "网站开源代码"
 }

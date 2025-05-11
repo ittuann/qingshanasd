@@ -41,7 +41,7 @@ class Navbar extends Component {
                   className="mr-2"
                 />
                 <span className={`${pacifico.className} text-xl text-gray-900`}>
-                  青衫 Neuro
+                  <FormattedMessage id="siteName" />
                 </span>
               </a>
             </div>
@@ -92,31 +92,31 @@ class Navbar extends Component {
                   href="/"
                   className={`block px-3 py-2 rounded-md ${this.isActive("/")}`}
                 >
-                  量表
+                  <FormattedMessage id="Navbar.quotients" />
                 </Link>
                 <Link
                   href="/about"
                   className={`block px-3 py-2 rounded-md ${this.isActive("/about")}`}
                 >
-                  关于
+                  <FormattedMessage id="Navbar.about" />
                 </Link>
                 <Link
                   href="/medical-map"
                   className={`block px-3 py-2 rounded-md ${this.isActive("/medical-map")}`}
                 >
-                  就诊地图
+                  <FormattedMessage id="Navbar.medicalMap" />
                 </Link>
                 <Link
                   href="/res"
                   className={`block px-3 py-2 rounded-md ${this.isActive("/res")}`}
                 >
-                  资源引索
+                  <FormattedMessage id="Navbar.res" />
                 </Link>
                 <Link
                   href="/term"
                   className={`block px-3 py-2 rounded-md ${this.isActive("/term")}`}
                 >
-                  使用条款
+                  <FormattedMessage id="Navbar.terms" />
                 </Link>
                 <div className="">
                   <LangSwitcher />

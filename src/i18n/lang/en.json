@@ -1,7 +1,26 @@
 {
+  "siteName": "Qingshan Neuro",
   "Navbar.quotients": "Quotients",
   "Navbar.about": "About",
   "Navbar.medicalMap": "Medical Map",
   "Navbar.res": "Resource",
-  "Navbar.terms": "Terms"
+  "Navbar.terms": "Terms",
+  "Footer.description": "Dedicated to neurodiversity education, information, and resources",
+  "Footer.resources": "Resources",
+  "Footer.selfTest": "Quotients",
+  "Footer.medicalMap": "Medical Map",
+  "Footer.resourceIndex": "Resource",
+  "Footer.about": "About",
+  "Footer.aboutUs": "About Us",
+  "Footer.terms": "Terms",
+  "Footer.contact": "Contact",
+  "Footer.email": "Email",
+  "Footer.zhihu": "Zhihu",
+  "Footer.wechat": "WeChat",
+  "Footer.github": "GitHub",
+  "Footer.version": "Version",
+  "Footer.license": "Unless otherwise stated, all content on this site is licensed under",
+  "Footer.licenseLink": "Creative Commons BY-NC-ND 4.0 License",
+  "Footer.licenseSuffix": ".",
+  "Footer.sourceCode": "Open Source Code"
 }

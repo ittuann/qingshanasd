@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import "remixicon/fonts/remixicon.css";
+import { FormattedMessage } from "react-intl";
 
 class Footer extends Component {
   render() {
@@ -19,11 +20,11 @@ class Footer extends Component {
                   className="mr-2"
                 />
                 <span className="font-['Pacifico'] text-xl text-gray-900">
-                  青衫 Neuro
+                  <FormattedMessage id="siteName" />
                 </span>
               </div>
               <p className="text-gray-500 text-sm">
-                致力于神经多元的科普、资讯、资源
+                <FormattedMessage id="Footer.description" />
               </p>
               <a
                 href="https://qingshanasd.cn/"
@@ -34,14 +35,16 @@ class Footer extends Component {
               </a>
             </div>
             <div>
-              <h4 className="font-medium text-gray-900 mb-4">资源</h4>
+              <h4 className="font-medium text-gray-900 mb-4">
+                <FormattedMessage id="Footer.resources" />
+              </h4>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
-                    量表自测
+                    <FormattedMessage id="Footer.selfTest" />
                   </Link>
                 </li>
                 <li>
@@ -49,7 +52,7 @@ class Footer extends Component {
                     href="/medical-map"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
-                    就诊地图
+                    <FormattedMessage id="Footer.medicalMap" />
                   </Link>
                 </li>
                 <li>
@@ -57,20 +60,22 @@ class Footer extends Component {
                     href="/res"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
-                    资源引索
+                    <FormattedMessage id="Footer.resourceIndex" />
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-medium text-gray-900 mb-4">关于</h4>
+              <h4 className="font-medium text-gray-900 mb-4">
+                <FormattedMessage id="Footer.about" />
+              </h4>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/about"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
-                    关于我们
+                    <FormattedMessage id="Footer.aboutUs" />
                   </Link>
                 </li>
                 <li>
@@ -78,20 +83,22 @@ class Footer extends Component {
                     href="/term"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
-                    使用条款
+                    <FormattedMessage id="Footer.terms" />
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-medium text-gray-900 mb-4">联系</h4>
+              <h4 className="font-medium text-gray-900 mb-4">
+                <FormattedMessage id="Footer.contact" />
+              </h4>
               <ul className="space-y-2">
                 <li>
                   <a
                     href="mailto:qingshan.aspie@gmail.com"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
-                    邮件
+                    <FormattedMessage id="Footer.email" />
                   </a>
                 </li>
                 <li>
@@ -100,7 +107,7 @@ class Footer extends Component {
                     target="_blank"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
-                    知乎
+                    <FormattedMessage id="Footer.zhihu" />
                   </a>
                 </li>
                 <li>
@@ -109,7 +116,7 @@ class Footer extends Component {
                     target="_blank"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
-                    微信公众号
+                    <FormattedMessage id="Footer.wechat" />
                   </a>
                 </li>
                 <li>
@@ -118,7 +125,7 @@ class Footer extends Component {
                     target="_blank"
                     className="text-gray-500 hover:text-gray-900 text-sm"
                   >
-                    GitHub
+                    <FormattedMessage id="Footer.github" />
                   </a>
                 </li>
               </ul>
@@ -127,22 +134,23 @@ class Footer extends Component {
           <div className="border-t mt-12 pt-8">
             <div className="flex flex-col items-center space-y-4">
               <p className="text-center text-gray-500 text-sm">
-                量表版本: 1.1.7
+                <FormattedMessage id="Footer.version" />: 1.1.7
               </p>
               <p className="text-center text-gray-500 text-sm">
-                © {new Date().getFullYear()} 青衫 Neuro. All rights reserved.
+                © {new Date().getFullYear()} <FormattedMessage id="siteName" />
+                . All rights reserved.
               </p>
               <div className="flex items-center space-x-2">
                 <p className="text-center text-gray-500 text-sm">
-                  除特别说明外，本站内容均采用
+                  <FormattedMessage id="Footer.license" />{" "}
                   <a
                     href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
                     target="_blank"
                     className="text-primary hover:text-primary/80 transition"
                   >
-                    知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议
-                  </a>
-                  进行许可。
+                    <FormattedMessage id="Footer.licenseLink" />
+                  </a>{" "}
+                  <FormattedMessage id="Footer.licenseSuffix" />
                 </p>
               </div>
               <div className="flex items-center space-x-2">
@@ -166,7 +174,9 @@ class Footer extends Component {
                   className="flex items-center space-x-2 text-gray-600 hover:text-gray-900"
                 >
                   <i className="ri-github-fill"></i>
-                  <span>网站开源代码</span>
+                  <span>
+                    <FormattedMessage id="Footer.sourceCode" />
+                  </span>
                 </a>
               </div>
             </div>
