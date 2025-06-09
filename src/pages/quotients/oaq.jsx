@@ -8,6 +8,7 @@ import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import questionData from "@/_data/questionOAQ.json";
 import BackToTop from "@/components/BackToTop";
+import { FormattedMessage, injectIntl } from "react-intl";
 
 class OAQ extends Component {
   state = {
@@ -55,7 +56,6 @@ class OAQ extends Component {
     Cookies.remove(this.state.quotientsName);
     this.setState({ answers: {} });
   };
-
   handleSubmit = (e) => {
     // 检查提交前是否所有问题都已经回答
     e.preventDefault();
@@ -64,7 +64,9 @@ class OAQ extends Component {
       (q) => q.id !== 0,
     ).length;
     if (answeredQuestions < requiredQuestions) {
-      alert("请完成量表所有问题的作答");
+      alert(
+        this.props.intl.formatMessage({ id: "quotients.completeAllQuestions" }),
+      );
       return;
     }
 
@@ -89,20 +91,21 @@ class OAQ extends Component {
     });
     return score;
   }
-
   calculateResult(score) {
     if (score <= 94) {
-      return "非诉情障碍";
+      return this.props.intl.formatMessage({ id: "OAQ.resultNonAlexithymia" });
     } else if (score <= 112) {
-      return "可能有诉情障碍";
+      return this.props.intl.formatMessage({
+        id: "OAQ.resultPossibleAlexithymia",
+      });
     } else {
-      return "诉情障碍";
+      return this.props.intl.formatMessage({ id: "OAQ.resultAlexithymia" });
     }
   }
-
   render() {
     const { score, result, showResultModal, showInfoModal, answers } =
       this.state;
+    const { intl } = this.props;
 
     const infoContent = (
       <>
@@ -111,8 +114,12 @@ class OAQ extends Component {
           content={
             <>
               <p className="text-gray-600">
-                本量表<strong>仅供筛查</strong>，<strong>不代表</strong>
-                确诊或作为诊断依据
+                <FormattedMessage
+                  id="quotients.info2"
+                  values={{
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  }}
+                />
               </p>
             </>
           }
@@ -129,13 +136,13 @@ class OAQ extends Component {
                 rel="noopener noreferrer"
                 className="text-xs mt-1 text-gray-600 hover:text-gray-700 transition-colors underline"
               >
-                量表介绍
+                <FormattedMessage id="OAQ.referenceIntro" />
               </Link>
-              <p className="text-xs text-gray-600 mt-1">本量表参考文献：</p>
+              <p className="text-xs text-gray-600 mt-1">
+                <FormattedMessage id="OAQ.reference" />
+              </p>
               <p className="text-xs text-gray-500 mt-1">
-                青衫取得了OAQ- G2（Online Alexithymia
-                Questionnaire）量表作者授权，将量表翻译成中文版：OAQ- G2
-                述情障碍在线测试
+                <FormattedMessage id="OAQ.reference1" />
               </p>
               <p className="text-xs text-gray-500 mt-1">
                 <Link
@@ -144,19 +151,17 @@ class OAQ extends Component {
                   rel="nofollow noopener noreferrer"
                   className="underline hover:text-gray-600 transition-colors"
                 >
-                  Jason著有与述情障碍相关的两本书（点击购买）
+                  <FormattedMessage id="OAQ.reference2" />
                 </Link>
               </p>
               <p className="text-xs text-gray-500 mt-2">
-                * 页面在您的本地浏览器中使用 Cookie
-                临时保存量表填写选项，并于2小时后自动
+                <FormattedMessage id="quotients.cookieNotice" />
                 <button
                   onClick={this.clearAnswersCookie}
                   className="underline hover:text-gray-600 transition-colors"
                 >
-                  删除
+                  <FormattedMessage id="quotients.cookieDelete" />
                 </button>
-                。
               </p>
             </>
           }
@@ -166,15 +171,15 @@ class OAQ extends Component {
 
     return (
       <Layout
-        title="G2述情障碍测试量表 | 青衫 Neuro"
-        description="述情障碍又译作“情感表达不能”或“情感难言症”"
+        title={intl.formatMessage({ id: "OAQ.title" })}
+        description={intl.formatMessage({ id: "OAQ.description" })}
       >
         <main className="max-w-3xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-8">
             {/* 信息 */}
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">
-                OAQ- G2述情障碍测试量表
+                <FormattedMessage id="OAQ.pageTitle" />
               </h1>
 
               <div className="mt-2">{infoContent}</div>
@@ -193,28 +198,29 @@ class OAQ extends Component {
                   <QuestionItem
                     key={`quotients_${question.id}`}
                     question={question}
-                    degree={["赞同", "反对"]}
+                    degree={[
+                      intl.formatMessage({ id: "OAQ.degreeAgree" }),
+                      intl.formatMessage({ id: "OAQ.degreeDisagree" }),
+                    ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
                   />
                 ))}
               </div>
-
               <button
                 type="submit"
                 id="quotients-submit-oaq"
                 className="w-full bg-gradient-to-r from-green-600 to-indigo-600 text-white py-3 px-6 rounded-lg hover:from-green-600/90 hover:to-indigo-600/90 transition-all duration-200 shadow-lg shadow-green-600/20"
               >
-                提交
+                <FormattedMessage id="quotients.submit" />
               </button>
             </form>
           </div>
-
           <QuestionResult
             scores={[
               {
-                title: "测试分数",
-                subtitle: "得分",
+                title: intl.formatMessage({ id: "OAQ.scoreTest" }),
+                subtitle: intl.formatMessage({ id: "OAQ.scoreSubtitle" }),
                 score: score,
               },
             ]}
@@ -222,7 +228,6 @@ class OAQ extends Component {
             showModal={showResultModal}
             onClose={this.closeModal}
           />
-
           {!showResultModal && !showInfoModal && (
             <BackToTop isShowButton={true} isShowProgress={true} />
           )}
@@ -232,4 +237,4 @@ class OAQ extends Component {
   }
 }
 
-export default OAQ;
+export default injectIntl(OAQ);

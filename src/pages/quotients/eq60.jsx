@@ -8,6 +8,7 @@ import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import questionData from "@/_data/questionEQ60.json";
 import BackToTop from "@/components/BackToTop";
+import { FormattedMessage, injectIntl } from "react-intl";
 
 class EQ60 extends Component {
   state = {
@@ -64,7 +65,9 @@ class EQ60 extends Component {
       (q) => q.id !== 0,
     ).length;
     if (answeredQuestions < requiredQuestions) {
-      alert("请完成量表所有问题的作答");
+      alert(
+        this.props.intl.formatMessage({ id: "quotients.completeAllQuestions" }),
+      );
       return;
     }
 
@@ -92,15 +95,16 @@ class EQ60 extends Component {
 
   calculateResult(score) {
     if (score <= 30) {
-      return "您可能有ASD";
+      return this.props.intl.formatMessage({ id: "EQ60.resultASD" });
     } else {
-      return "您不太可能有ASD";
+      return this.props.intl.formatMessage({ id: "EQ60.resultNotASD" });
     }
   }
 
   render() {
     const { showResultModal, showInfoModal, score, result, answers } =
       this.state;
+    const { intl } = this.props;
 
     const infoContent = (
       <>
@@ -108,10 +112,16 @@ class EQ60 extends Component {
           icon={<i className="ri-information-2-line text-xl text-rose-400"></i>}
           content={
             <>
-              <p className="text-gray-600">本量表效度存在争议，仅供参考</p>
+              <p className="text-gray-600">
+                <FormattedMessage id="EQ60.info1" />
+              </p>
               <p className="text-gray-600 mt-2">
-                本量表<strong>仅供筛查</strong>，<strong>不代表</strong>
-                确诊或作为诊断依据
+                <FormattedMessage
+                  id="quotients.info2"
+                  values={{
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  }}
+                />
               </p>
             </>
           }
@@ -122,7 +132,9 @@ class EQ60 extends Component {
           iconBg="bg-green-100"
           content={
             <>
-              <p className="text-xs text-gray-600">本量表参考文献：</p>
+              <p className="text-xs text-gray-600">
+                <FormattedMessage id="EQ60.reference" />
+              </p>
               <p className="text-xs text-gray-500 mt-1">
                 <Link
                   href="https://pubmed.ncbi.nlm.nih.gov/15162935/"
@@ -136,13 +148,12 @@ class EQ60 extends Component {
                 </Link>
               </p>
               <p className="text-xs text-gray-500 mt-2">
-                * 页面在您的本地浏览器中使用 Cookie
-                临时保存量表填写选项，并于2小时后自动
+                <FormattedMessage id="quotients.cookieNotice" />
                 <button
                   onClick={this.clearAnswersCookie}
                   className="underline hover:text-gray-600 transition-colors"
                 >
-                  删除
+                  <FormattedMessage id="quotients.cookieDelete" />
                 </button>
                 。
               </p>
@@ -154,15 +165,15 @@ class EQ60 extends Component {
 
     return (
       <Layout
-        title="共情商测试量表 (Empathy Quotient) | 青衫 Neuro"
-        description="本量表效度存在争议，仅供参考"
+        title={intl.formatMessage({ id: "EQ60.title" })}
+        description={intl.formatMessage({ id: "EQ60.description" })}
       >
         <main className="max-w-3xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-8">
             {/* 信息 */}
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">
-                共情商测试量表 (Empathy Quotient)
+                <FormattedMessage id="EQ60.pageTitle" />
               </h1>
 
               <div className="mt-2">{infoContent}</div>
@@ -181,7 +192,10 @@ class EQ60 extends Component {
                   <QuestionItem
                     key={`quotients_${question.id}`}
                     question={question}
-                    degree={["非常赞同", "绝对反对"]}
+                    degree={[
+                      intl.formatMessage({ id: "EQ60.degreeAgree" }),
+                      intl.formatMessage({ id: "EQ60.degreeDisagree" }),
+                    ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
                   />
@@ -193,7 +207,7 @@ class EQ60 extends Component {
                 id="quotients-submit-eq60"
                 className="w-full bg-gradient-to-r from-green-600 to-indigo-600 text-white py-3 px-6 rounded-lg hover:from-green-600/90 hover:to-indigo-600/90 transition-all duration-200 shadow-lg shadow-green-600/20"
               >
-                提交
+                <FormattedMessage id="quotients.submit" />
               </button>
             </form>
           </div>
@@ -201,8 +215,8 @@ class EQ60 extends Component {
           <QuestionResult
             scores={[
               {
-                title: "测试分数",
-                subtitle: "得分",
+                title: intl.formatMessage({ id: "EQ60.scoreTest" }),
+                subtitle: intl.formatMessage({ id: "EQ60.scoreSubtitle" }),
                 score: score,
               },
             ]}
@@ -220,4 +234,4 @@ class EQ60 extends Component {
   }
 }
 
-export default EQ60;
+export default injectIntl(EQ60);

@@ -8,6 +8,7 @@ import QuestionItem from "@/components/QuestionItem";
 import QuestionResult from "@/components/QuestionResult";
 import questionData from "@/_data/questionAQC.json";
 import BackToTop from "@/components/BackToTop";
+import { FormattedMessage, injectIntl } from "react-intl";
 
 class AQC extends Component {
   state = {
@@ -69,7 +70,9 @@ class AQC extends Component {
       (q) => q.id !== 0,
     ).length;
     if (answeredQuestions < requiredQuestions) {
-      alert("请完成量表所有问题的作答");
+      alert(
+        this.props.intl.formatMessage({ id: "quotients.completeAllQuestions" }),
+      );
       return;
     }
 
@@ -136,9 +139,11 @@ class AQC extends Component {
 
   calculateResult(score) {
     if (score < 76) {
-      return "基本可排除孤独症倾向";
+      return this.props.intl.formatMessage({
+        id: "AQC.resultBasicallyExclude",
+      });
     } else {
-      return "孩子可能有高功能孤独症倾向";
+      return this.props.intl.formatMessage({ id: "AQC.resultLikelyAutistic" });
     }
   }
 
@@ -155,6 +160,7 @@ class AQC extends Component {
       imaginationScore,
       answers,
     } = this.state;
+    const { intl } = this.props;
 
     const infoContent = (
       <>
@@ -163,13 +169,23 @@ class AQC extends Component {
           content={
             <>
               <p className="text-gray-600">
-                孩子处于焦虑 / 抑郁 / 睡眠障碍<strong>等其他情况</strong>
-                均有可能造成分值偏高
+                <FormattedMessage
+                  id="AQC.info1"
+                  values={{
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  }}
+                />
               </p>
-              <p className="text-gray-600 mt-2">请父母代替儿童完成</p>
               <p className="text-gray-600 mt-2">
-                本量表<strong>仅供筛查</strong>，<strong>不代表</strong>
-                确诊或作为诊断依据
+                <FormattedMessage id="AQC.info2" />
+              </p>
+              <p className="text-gray-600 mt-2">
+                <FormattedMessage
+                  id="quotients.info2"
+                  values={{
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  }}
+                />
               </p>
             </>
           }
@@ -186,9 +202,11 @@ class AQC extends Component {
                 rel="noopener noreferrer"
                 className="text-xs mt-1 text-gray-600 hover:text-gray-700 transition-colors underline"
               >
-                量表介绍
+                <FormattedMessage id="AQC.referenceIntro" />
               </Link>
-              <p className="text-xs text-gray-600 mt-1">本量表参考文献：</p>
+              <p className="text-xs text-gray-600 mt-1">
+                <FormattedMessage id="AQC.reference" />
+              </p>
               <p className="text-xs text-gray-500 mt-1">
                 <Link
                   href="https://www.ncbi.nlm.nih.gov/pubmed/18064550?ordinalpos=2&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_RVDocSum"
@@ -205,15 +223,16 @@ class AQC extends Component {
               <p className="text-xs text-gray-500 mt-1">
                 Journal of Autism and Developmental Disorders Dec 7
               </p>
-              <p className="text-xs text-gray-500 mt-1">翻译：青衫</p>
+              <p className="text-xs text-gray-500 mt-1">
+                <FormattedMessage id="AQC.reference1" />
+              </p>
               <p className="text-xs text-gray-500 mt-2">
-                * 页面在您的本地浏览器中使用 Cookie
-                临时保存量表填写选项，并于2小时后自动
+                <FormattedMessage id="quotients.cookieNotice" />
                 <button
                   onClick={this.clearAnswersCookie}
                   className="underline hover:text-gray-600 transition-colors"
                 >
-                  删除
+                  <FormattedMessage id="quotients.cookieDelete" />
                 </button>
                 。
               </p>
@@ -225,15 +244,15 @@ class AQC extends Component {
 
     return (
       <Layout
-        title="孤独商儿童测试量表 | 青衫 Neuro"
-        description="孤独商儿童测试量表，用于测试儿童的孤独症商数"
+        title={intl.formatMessage({ id: "AQC.title" })}
+        description={intl.formatMessage({ id: "AQC.description" })}
       >
         <main className="max-w-3xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-8">
             {/* 信息 */}
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900">
-                儿童ASD筛查量表
+                <FormattedMessage id="AQC.pageTitle" />
               </h1>
 
               <div className="mt-2">{infoContent}</div>
@@ -252,7 +271,10 @@ class AQC extends Component {
                   <QuestionItem
                     key={`quotients_${question.id}`}
                     question={question}
-                    degree={["赞同", "反对"]}
+                    degree={[
+                      intl.formatMessage({ id: "AQC.degreeAgree" }),
+                      intl.formatMessage({ id: "AQC.degreeDisagree" }),
+                    ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
                   />
@@ -264,7 +286,7 @@ class AQC extends Component {
                 id="quotients-submit-aqc"
                 className="w-full bg-gradient-to-r from-green-600 to-indigo-600 text-white py-3 px-6 rounded-lg hover:from-green-600/90 hover:to-indigo-600/90 transition-all duration-200 shadow-lg shadow-green-600/20"
               >
-                提交
+                <FormattedMessage id="quotients.submit" />
               </button>
             </form>
           </div>
@@ -272,33 +294,37 @@ class AQC extends Component {
           <QuestionResult
             scores={[
               {
-                title: "测试分数",
-                subtitle: "总分",
+                title: intl.formatMessage({ id: "AQC.scoreTest" }),
+                subtitle: intl.formatMessage({ id: "AQC.scoreTotal" }),
                 score: score,
               },
               {
-                title: "分析分数",
-                subtitle: "社交技巧",
+                title: intl.formatMessage({ id: "AQC.scoreAnalysis" }),
+                subtitle: intl.formatMessage({ id: "AQC.scoreSocial" }),
                 score: socialScore,
               },
               {
-                title: "分析分数",
-                subtitle: "交流",
+                title: intl.formatMessage({ id: "AQC.scoreAnalysis" }),
+                subtitle: intl.formatMessage({ id: "AQC.scoreCommunication" }),
                 score: communicationScore,
               },
               {
-                title: "分析分数",
-                subtitle: "注意力切换",
+                title: intl.formatMessage({ id: "AQC.scoreAnalysis" }),
+                subtitle: intl.formatMessage({
+                  id: "AQC.scoreAttentionSwitching",
+                }),
                 score: attentionSwitchingScore,
               },
               {
-                title: "分析分数",
-                subtitle: "细节注意力",
+                title: intl.formatMessage({ id: "AQC.scoreAnalysis" }),
+                subtitle: intl.formatMessage({
+                  id: "AQC.scoreAttentionDetail",
+                }),
                 score: attentionDetailScore,
               },
               {
-                title: "分析分数",
-                subtitle: "想象力",
+                title: intl.formatMessage({ id: "AQC.scoreAnalysis" }),
+                subtitle: intl.formatMessage({ id: "AQC.scoreImagination" }),
                 score: imaginationScore,
               },
             ]}
@@ -316,4 +342,4 @@ class AQC extends Component {
   }
 }
 
-export default AQC;
+export default injectIntl(AQC);
