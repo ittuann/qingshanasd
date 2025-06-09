@@ -8,6 +8,7 @@ import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import questionData from "@/_data/questionADHD.json";
 import BackToTop from "@/components/BackToTop";
+import { FormattedMessage, injectIntl } from "react-intl";
 
 class ADHD extends Component {
   state = {
@@ -66,7 +67,9 @@ class ADHD extends Component {
       (q) => q.id !== 0,
     ).length;
     if (answeredQuestions < requiredQuestions) {
-      alert("请完成量表所有问题的作答");
+      alert(
+        this.props.intl.formatMessage({ id: "quotients.completeAllQuestions" }),
+      );
       return;
     }
 
@@ -104,23 +107,23 @@ class ADHD extends Component {
   calculateResult(scoreA, scoreB) {
     const resultADHD = {
       A: {
-        A: "您不太可能有ADHD",
+        A: this.props.intl.formatMessage({ id: "ADHD.resultTypeA" }),
       },
       B: {
-        A: "您很有可能有ADHD-I（注意力缺失为主）",
-        B: "您非常有可能有ADHD-I（注意力缺失为主）",
+        A: this.props.intl.formatMessage({ id: "ADHD.resultTypeB1" }),
+        B: this.props.intl.formatMessage({ id: "ADHD.resultTypeB2" }),
       },
       C: {
-        A: "您很有可能有ADHD-H（多动/冲动障碍为主）",
-        B: "您非常有可能有ADHD-H（多动/冲动障碍为主）",
+        A: this.props.intl.formatMessage({ id: "ADHD.resultTypeC1" }),
+        B: this.props.intl.formatMessage({ id: "ADHD.resultTypeC2" }),
       },
       D: {
-        A: "您很有可能有ADHD-C（注意力缺失与多动/冲动障碍混合）",
-        B: "您非常有可能有ADHD-C（注意力缺失与多动/冲动障碍混合）",
+        A: this.props.intl.formatMessage({ id: "ADHD.resultTypeD1" }),
+        B: this.props.intl.formatMessage({ id: "ADHD.resultTypeD2" }),
       },
       E: {
-        A: "您很有可能有ADHD-C（注意力缺失与多动/冲动障碍混合，其中多动/冲动障碍比较严重）",
-        B: "您很有可能有ADHD-C（注意力缺失与多动/冲动障碍混合，其中注意力缺失比较严重）",
+        A: this.props.intl.formatMessage({ id: "ADHD.resultTypeE1" }),
+        B: this.props.intl.formatMessage({ id: "ADHD.resultTypeE2" }),
       },
     };
 
@@ -156,6 +159,7 @@ class ADHD extends Component {
   render() {
     const { showResultModal, showInfoModal, scoreA, scoreB, result, answers } =
       this.state;
+    const { intl } = this.props;
 
     const infoContent = (
       <>
@@ -164,12 +168,20 @@ class ADHD extends Component {
           content={
             <>
               <p className="text-gray-600">
-                焦虑 / 抑郁 / 睡眠障碍<strong>等其他情况</strong>
-                均有可能造成分值偏高
+                <FormattedMessage
+                  id="quotients.info1"
+                  values={{
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  }}
+                />
               </p>
               <p className="text-gray-600 mt-2">
-                本量表<strong>仅供筛查</strong>，<strong>不代表</strong>
-                确诊或作为诊断依据
+                <FormattedMessage
+                  id="quotients.info2"
+                  values={{
+                    strong: (chunks) => <strong>{chunks}</strong>,
+                  }}
+                />
               </p>
             </>
           }
@@ -186,9 +198,11 @@ class ADHD extends Component {
                 rel="noopener noreferrer"
                 className="text-xs mt-1 text-gray-600 hover:text-gray-700 transition-colors underline"
               >
-                量表介绍
+                <FormattedMessage id="ADHD.referenceIntro" />
               </Link>
-              <p className="text-xs text-gray-600 mt-1">本量表参考文献：</p>
+              <p className="text-xs text-gray-600 mt-1">
+                <FormattedMessage id="ADHD.reference" />
+              </p>
               <p className="text-xs text-gray-500 mt-1">
                 <Link
                   href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/Old%20Versions/18Q-Chinese-Traditional.pdf"
@@ -198,16 +212,16 @@ class ADHD extends Component {
                 >
                   18Q-Chinese-Traditional.pdf
                 </Link>{" "}
-                转自世界卫生组织 Composite International Diagnostic Interview
+                <FormattedMessage id="ADHD.reference1" /> Composite
+                International Diagnostic Interview
               </p>
               <p className="text-xs text-gray-500 mt-2">
-                * 页面在您的本地浏览器中使用 Cookie
-                临时保存量表填写选项，并于2小时后自动
+                <FormattedMessage id="quotients.cookieNotice" />
                 <button
                   onClick={this.clearAnswersCookie}
                   className="underline hover:text-gray-600 transition-colors"
                 >
-                  删除
+                  <FormattedMessage id="quotients.cookieDelete" />
                 </button>
                 。
               </p>
@@ -219,14 +233,14 @@ class ADHD extends Component {
 
     return (
       <Layout
-        title="成人 ADHD 自填量表 (ASRS) | 青衫 Neuro"
-        description="注意力缺陷过动障碍 (ADHD) 成人测试量表，用于筛查成年人存在ADHD的可能性"
+        title={intl.formatMessage({ id: "ADHD.title" })}
+        description={intl.formatMessage({ id: "ADHD.description" })}
       >
         <main className="max-w-3xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-8">
             <div className="text-center mb-8">
               <h1 className="text-2xl font-semibold text-gray-900 mb-4">
-                成人 ADHD 自填量表 (ASRS)
+                <FormattedMessage id="ADHD.pageTitle" />
               </h1>
 
               <div className="mt-2">{infoContent}</div>
@@ -246,7 +260,10 @@ class ADHD extends Component {
                   <QuestionItem
                     key={`quotients_${question.id}`}
                     question={question}
-                    degree={["经常这样", "从来没有"]}
+                    degree={[
+                      intl.formatMessage({ id: "ADHD.degreeOften" }),
+                      intl.formatMessage({ id: "ADHD.degreeNever" }),
+                    ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
                   />
@@ -258,7 +275,7 @@ class ADHD extends Component {
                 id="quotients-submit-adhd"
                 className="w-full bg-gradient-to-r from-green-600 to-indigo-600 text-white py-3 px-6 rounded-lg hover:from-green-600/90 hover:to-indigo-600/90 transition-all duration-200 shadow-lg shadow-green-600/20"
               >
-                提交
+                <FormattedMessage id="quotients.submit" />
               </button>
             </form>
           </div>
@@ -266,13 +283,13 @@ class ADHD extends Component {
           <QuestionResult
             scores={[
               {
-                title: "A部分",
-                subtitle: "注意力障碍",
+                title: intl.formatMessage({ id: "ADHD.scorePartA" }),
+                subtitle: intl.formatMessage({ id: "ADHD.scorePartASubtitle" }),
                 score: scoreA,
               },
               {
-                title: "B部分",
-                subtitle: "多动/冲动障碍",
+                title: intl.formatMessage({ id: "ADHD.scorePartB" }),
+                subtitle: intl.formatMessage({ id: "ADHD.scorePartBSubtitle" }),
                 score: scoreB,
               },
             ]}
@@ -290,4 +307,4 @@ class ADHD extends Component {
   }
 }
 
-export default ADHD;
+export default injectIntl(ADHD);
