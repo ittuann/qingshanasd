@@ -9,7 +9,7 @@ Below you can find some guidance on how to be most effective when contributing t
 ### Core Principles
 
 - Maintain a respectful, civil, open-minded, and friendly attitude in all interactions.
-- Follow our Code Of Conduct standards.
+- Follow the Code Of Conduct standards.
 
 ### Contributing Process
 
@@ -40,7 +40,7 @@ For the CI/CD workflows, automated code quality testing and builds are implement
 
 [Apache ECharts](https://echarts.apache.org/) is utilized for data visualization in the Map. [RemixIcon](https://remixicon.com/) icon library is used for icon resources.
 
-For the blog implementation, [@next/mdx](https://www.npmjs.com/package/@next/mdx) is used to process [MDX](https://mdxjs.com/) files for content handling. It's integrated with the [remark-GFM](https://github.com/remarkjs/remark-gfm) extension to support GitHub-flavored Markdown (GFM) syntax features such as footnotes.
+For the blog implementation, [@next/mdx](https://www.npmjs.com/package/@next/mdx) is used to process [MDX](https://mdxjs.com/) files for content handling. It's integrated with the [remark-GFM](https://github.com/remarkjs/remark-gfm) extension to support GitHub-flavored Markdown syntax features such as footnotes.
 
 ## Getting Started
 
@@ -48,5 +48,7 @@ There are many ways to help:
 
 - Submit a bug report on [GitHub Issues](https://github.com/ittuann/qingshanasd/issues)
 - Create a pull request on [GitHub](https://github.com/ittuann/qingshanasd/pulls)
+
+- License
 
 When you contribute code, you affirm that the contribution is your original work and that you license the work to the project under the project's open source license. Whether or not you state this explicitly, by submitting any copyrighted material via pull request, email, or other means you agree to license the material under the project's open source license and warrant that you have the legal authority to do so.

@@ -2,6 +2,12 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Noto_Sans_SC } from "next/font/google";
+
+const noto = Noto_Sans_SC({
+  subsets: ["latin"],
+  fallback: ["Noto_Sans_Mono", "Noto_Sans_JP"],
+});
 
 console.log(
   "%c 青衫 Neuro %c 因为你我 这个世界终将丰富多彩",
@@ -79,7 +85,9 @@ export default function Layout({
         <meta name="msvalidate.01" content="E73984A8E6A62AB2E04103B41EF00802" />
       </Head>
 
-      <div className="bg-zinc-50 min-h-screen flex flex-col">
+      <div
+        className={`${noto.className} bg-zinc-50 min-h-screen flex flex-col`}
+      >
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
