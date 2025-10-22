@@ -34,7 +34,7 @@ git clone https://github.com/<your-github-username>/qingshanasd.git
 cd qingshanasd
 ```
 
-If you simply wish to explore the repository, you can clone the original repository directly:
+If you simply want to explore the repository, you can clone the original repository directly:
 
 ```bash
 git clone https://github.com/ittuann/qingshanasd.git
@@ -47,16 +47,17 @@ cd qingshanasd
 pnpm i
 ```
 
-3. Preview
+3. Build
 
-```bash
-pnpm dev
-```
-
-To preview the builded static site:
+Build for production:
 
 ```bash
 pnpm build
+```
+
+To preview the built static site:
+
+```bash
 pnpm serve
 ```
 

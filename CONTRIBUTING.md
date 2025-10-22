@@ -44,11 +44,61 @@ For the blog implementation, [@next/mdx](https://www.npmjs.com/package/@next/mdx
 
 ## Getting Started
 
-There are many ways to help:
+1. Fork and Clone this Repository
 
-- Submit a bug report on [GitHub Issues](https://github.com/ittuann/qingshanasd/issues)
-- Create a pull request on [GitHub](https://github.com/ittuann/qingshanasd/pulls)
+- Create [your own fork](https://docs.github.com/get-started/quickstart/fork-a-repo) of this repository to your GitHub account.
+- Clone your fork to your local machine
+
+```bash
+git clone https://github.com/<your-github-username>/qingshanasd.git
+cd qingshanasd
+```
+
+If you simply want to explore the repository, you can clone the original repository directly:
+
+```bash
+git clone https://github.com/ittuann/qingshanasd.git
+cd qingshanasd
+```
+
+2. Install Dependencies
+
+```bash
+pnpm i
+```
+
+3. Build
+
+Build for production:
+
+```bash
+pnpm build
+```
+
+Now you're all setup and can start implementing your changes.
+
+To preview the built static site:
+
+```bash
+pnpm serve
+```
+
+4. Preview
+
+Preview in development:
+
+```bash
+pnpm dev
+```
+
+After completing your changes, please rerun the build command `pnpm build` to check the code.
+
+When all that's done, it's time to submit a pull request to upstream and fill out the title and body appropriately.
 
 - License
 
 When you contribute code, you affirm that the contribution is your original work and that you license the work to the project under the project's open source license. Whether or not you state this explicitly, by submitting any copyrighted material via pull request, email, or other means you agree to license the material under the project's open source license and warrant that you have the legal authority to do so.
+
+## Thank You
+
+Your contributions to open source, large or small, make great projects like this possible. Thank you for taking the time to contribute.
