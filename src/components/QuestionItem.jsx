@@ -14,18 +14,18 @@ class QuestionItem extends Component {
             {degree[0]}
           </div>
           <div className="flex gap-1 md:gap-8 items-center">
-            {question.scoresAagree.map((val, index) => {
+            {question.scoresAgree.map((val, index) => {
               // 圆圈尺寸
               let size = "w-5 h-5 md:w-6 md:h-6";
-              if (index === 0 || index === question.scoresAagree.length - 1) {
+              if (index === 0 || index === question.scoresAgree.length - 1) {
                 // 两端最大
                 size = "w-8 h-8 md:w-9 md:h-9";
               } else if (
                 index === 1 ||
-                index === question.scoresAagree.length - 2
+                index === question.scoresAgree.length - 2
               ) {
                 size = "w-7 h-7 md:w-8 md:h-8";
-              } else if (index === question.scoresAagree.length - 3) {
+              } else if (index === question.scoresAgree.length - 3) {
                 size = "w-6 h-6 md:w-7 md:h-7";
               }
 
