@@ -84,7 +84,7 @@ class ADHD extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.questionADHD;
+    return questionData.question;
   }
 
   calculateScores() {

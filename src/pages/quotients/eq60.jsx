@@ -82,7 +82,7 @@ class EQ60 extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.questionEQ60;
+    return questionData.question;
   }
 
   calculateScores() {

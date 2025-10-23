@@ -81,7 +81,7 @@ class OAQ extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.questionOAQ;
+    return questionData.question;
   }
 
   calculateScores() {

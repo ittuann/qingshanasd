@@ -108,7 +108,7 @@ class BPD extends Component {
   };
 
   getQuestionDetail() {
-    return this.state.questionData?.questionBPD || [];
+    return this.state.questionData?.question || [];
   }
 
   calculateScores() {

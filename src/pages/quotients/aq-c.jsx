@@ -87,7 +87,7 @@ class AQC extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.questionAQC;
+    return questionData.question;
   }
 
   calculateScores() {

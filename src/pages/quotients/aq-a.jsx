@@ -87,7 +87,7 @@ class AQA extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.questionAQA;
+    return questionData.question;
   }
 
   calculateScores() {
