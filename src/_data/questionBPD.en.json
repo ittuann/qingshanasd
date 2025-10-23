@@ -3,7 +3,7 @@
     {
       "id": 1,
       "text": "It was hard for me to concentrate:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -14,7 +14,7 @@
     {
       "id": 2,
       "text": "I felt helpless:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -25,7 +25,7 @@
     {
       "id": 3,
       "text": "I was absent-minded and unable to remember what I was actually doing:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -36,7 +36,7 @@
     {
       "id": 4,
       "text": "I felt disgust:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -47,7 +47,7 @@
     {
       "id": 5,
       "text": "I thought of hurting myself:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -58,7 +58,7 @@
     {
       "id": 6,
       "text": "I didn’t trust other people:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -69,7 +69,7 @@
     {
       "id": 7,
       "text": "I didn’t believe in my right to live:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -80,7 +80,7 @@
     {
       "id": 8,
       "text": "I was lonely:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -91,7 +91,7 @@
     {
       "id": 9,
       "text": "I experienced stressful inner tension:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -102,7 +102,7 @@
     {
       "id": 10,
       "text": "I had images that I was very much afraid of:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -113,7 +113,7 @@
     {
       "id": 11,
       "text": "I hated myself:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -124,7 +124,7 @@
     {
       "id": 12,
       "text": "I wanted to punish myself:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -135,7 +135,7 @@
     {
       "id": 13,
       "text": "I suffered from shame:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -146,7 +146,7 @@
     {
       "id": 14,
       "text": "My mood rapidly cycled in terms of anxiety, anger, and depression:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -157,7 +157,7 @@
     {
       "id": 15,
       "text": "I suffered from voices and noises from inside or outside my head:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -168,7 +168,7 @@
     {
       "id": 16,
       "text": "Criticism had a devastating effect on me:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -179,7 +179,7 @@
     {
       "id": 17,
       "text": "I felt vulnerable:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -190,7 +190,7 @@
     {
       "id": 18,
       "text": "The idea of death had a certain fascination for me:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -201,7 +201,7 @@
     {
       "id": 19,
       "text": "Everything seemed senseless to me:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -212,7 +212,7 @@
     {
       "id": 20,
       "text": "I was afraid of losing control:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -223,7 +223,7 @@
     {
       "id": 21,
       "text": "I felt disgusted by myself:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -234,7 +234,7 @@
     {
       "id": 22,
       "text": "I felt as if I was far away from myself:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -245,7 +245,7 @@
     {
       "id": 23,
       "text": "I felt worthless:",
-      "scoresAgree": [
+      "scoreAgree": [
         4,
         3,
         2,
@@ -255,8 +255,8 @@
     }
   ],
   "degree": {
-    "left": "Frequent",
-    "right": "None"
+    "agree": "Frequent",
+    "disagree": "None"
   },
   "scores": [
     {

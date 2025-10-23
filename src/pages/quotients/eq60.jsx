@@ -189,8 +189,8 @@ class EQ60 extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      questionData.degree.left,
-                      questionData.degree.right,
+                      questionData.degree.agree,
+                      questionData.degree.disagree,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}

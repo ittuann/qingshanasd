@@ -242,8 +242,8 @@ class BPD extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      this.state.questionData?.degree.left,
-                      this.state.questionData?.degree.right,
+                      this.state.questionData?.degree.agree,
+                      this.state.questionData?.degree.disagree,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "text": "我喜欢与和他人一起做事情，而不是自己一人:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "text": "我喜欢用反复同样的方法做事情:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -23,7 +23,7 @@
     {
       "id": 3,
       "text": "我想象的时候很容易在思维中生成画面:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -33,7 +33,7 @@
     {
       "id": 4,
       "text": "我经常沉浸于一件事，以至于对周围充耳不闻:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -43,7 +43,7 @@
     {
       "id": 5,
       "text": "我经常注意到他人注意不到的小声音:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -53,7 +53,7 @@
     {
       "id": 6,
       "text": "我总是注意到车牌号这种一串的信息:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -63,7 +63,7 @@
     {
       "id": 7,
       "text": "其他人总是告诉我我说过的话不礼貌，虽然我觉得很礼貌:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -73,7 +73,7 @@
     {
       "id": 8,
       "text": "当我读故事的时候，我很容易想象故事中人物的长相:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -83,7 +83,7 @@
     {
       "id": 9,
       "text": "我对日期感兴趣:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -93,7 +93,7 @@
     {
       "id": 10,
       "text": "在聚会时，我很容易就能同时跟上几个人不同的谈话内容:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -103,7 +103,7 @@
     {
       "id": 11,
       "text": "我觉得社交场合对我很容易:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -113,7 +113,7 @@
     {
       "id": 12,
       "text": "我总是注意到他人注意不到的细节:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -123,7 +123,7 @@
     {
       "id": 13,
       "text": "比起去聚会，我更愿意去图书馆:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -133,7 +133,7 @@
     {
       "id": 14,
       "text": "我觉得编瞎话很简单:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -143,7 +143,7 @@
     {
       "id": 15,
       "text": "比起事情，我觉得人们更吸引我:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -153,7 +153,7 @@
     {
       "id": 16,
       "text": "我对某事有很强的兴趣，要是不能去做，我会很难过:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -163,7 +163,7 @@
     {
       "id": 17,
       "text": "我喜欢闲聊:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -173,7 +173,7 @@
     {
       "id": 18,
       "text": "我说话的时候，别人很难插进话:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -183,7 +183,7 @@
     {
       "id": 19,
       "text": "我很喜欢数字:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -193,7 +193,7 @@
     {
       "id": 20,
       "text": "我读故事的时候，很难揣测角色的意图:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -203,7 +203,7 @@
     {
       "id": 21,
       "text": "我不喜欢读幻想故事:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -213,7 +213,7 @@
     {
       "id": 22,
       "text": "对我来说交新朋友很难:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -223,7 +223,7 @@
     {
       "id": 23,
       "text": "我总是注意到事物的模式:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -233,7 +233,7 @@
     {
       "id": 24,
       "text": "比起去博物馆，我更愿意去剧院:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -243,7 +243,7 @@
     {
       "id": 25,
       "text": "要是我的日常惯例被打乱了，我不会感到难过:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -253,7 +253,7 @@
     {
       "id": 26,
       "text": "我经常感到自己不知道怎样能让谈话继续下去:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -263,7 +263,7 @@
     {
       "id": 27,
       "text": "我很容易就能明白别人话里有话的意思:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -273,7 +273,7 @@
     {
       "id": 28,
       "text": "我总是更注意全局，而不是细节:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -283,7 +283,7 @@
     {
       "id": 29,
       "text": "我不擅长记电话号码:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -293,7 +293,7 @@
     {
       "id": 30,
       "text": "我一般想不起来某个情形或者某个人容貌的小改变:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -303,7 +303,7 @@
     {
       "id": 31,
       "text": "我知道怎么判断对方对我的讲话感到无聊:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -313,7 +313,7 @@
     {
       "id": 32,
       "text": "我觉得同时做多件事很容易:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -323,7 +323,7 @@
     {
       "id": 33,
       "text": "讲电话的时候，我总是不确定是不是该我说话了:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -333,7 +333,7 @@
     {
       "id": 34,
       "text": "我很喜欢做即兴的、非计划安排的事情:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -343,7 +343,7 @@
     {
       "id": 35,
       "text": "我总是最后一个才明白一个笑话的笑点:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -353,7 +353,7 @@
     {
       "id": 36,
       "text": "我很容易就能通过看别人的脸，想到别人的想法和感觉:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -363,7 +363,7 @@
     {
       "id": 37,
       "text": "如果被打扰，我可以很快回到我手头在做的事上:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -373,7 +373,7 @@
     {
       "id": 38,
       "text": "我很擅长闲聊:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -383,7 +383,7 @@
     {
       "id": 39,
       "text": "大家说我总是在谈同一个事物:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -393,7 +393,7 @@
     {
       "id": 40,
       "text": "我小时候喜欢和其他小孩玩假想类的游戏:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -403,7 +403,7 @@
     {
       "id": 41,
       "text": "我喜欢收集某一类东西的资料，比如汽车、鸟类、火车、植物等等:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -413,7 +413,7 @@
     {
       "id": 42,
       "text": "我很难想象如果我是其他人会是什么样子:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -423,7 +423,7 @@
     {
       "id": 43,
       "text": "我喜欢对我将进行的任何事情加以计划:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -433,7 +433,7 @@
     {
       "id": 44,
       "text": "我喜欢社交场合:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -443,7 +443,7 @@
     {
       "id": 45,
       "text": "我很难猜到别人的意图:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -453,7 +453,7 @@
     {
       "id": 46,
       "text": "新环境使我紧张，焦虑:",
-      "scoresAgree": [
+      "scoreAgree": [
         1,
         1,
         0,
@@ -463,7 +463,7 @@
     {
       "id": 47,
       "text": "我很喜欢交新朋友，认识之前不认识的人:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -473,7 +473,7 @@
     {
       "id": 48,
       "text": "我很擅长外交，我认为我是个很好的外交家:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -483,7 +483,7 @@
     {
       "id": 49,
       "text": "我不擅长记住别人的生日:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -493,7 +493,7 @@
     {
       "id": 50,
       "text": "我小时候很擅长和其他小孩玩假想类的游戏:",
-      "scoresAgree": [
+      "scoreAgree": [
         0,
         0,
         1,
@@ -502,8 +502,8 @@
     }
   ],
   "degree": {
-    "left": "赞同",
-    "right": "反对"
+    "agree": "赞同",
+    "disagree": "反对"
   },
   "scores": [
     {
