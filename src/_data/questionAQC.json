@@ -500,5 +500,43 @@
         3
       ]
     }
+  ],
+  "degree": {
+    "left": "赞同",
+    "right": "反对"
+  },
+  "scores": [
+    {
+      "title": "测试分数",
+      "subtitle": "总分"
+    },
+    {
+      "title": "分析分数",
+      "subtitle": "社交技巧"
+    },
+    {
+      "title": "分析分数",
+      "subtitle": "交流"
+    },
+    {
+      "title": "分析分数",
+      "subtitle": "注意力切换"
+    },
+    {
+      "title": "分析分数",
+      "subtitle": "细节注意力"
+    },
+    {
+      "title": "分析分数",
+      "subtitle": "想象力"
+    }
+  ],
+  "result": [
+    {
+      "text": "基本可排除孤独症倾向"
+    },
+    {
+      "text": "孩子可能有高功能孤独症倾向"
+    }
   ]
 }

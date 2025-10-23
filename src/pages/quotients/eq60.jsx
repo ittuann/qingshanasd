@@ -95,9 +95,9 @@ class EQ60 extends Component {
 
   calculateResult(score) {
     if (score <= 30) {
-      return this.props.intl.formatMessage({ id: "EQ60.resultASD" });
+      return questionData.result[0].text;
     } else {
-      return this.props.intl.formatMessage({ id: "EQ60.resultNotASD" });
+      return questionData.result[1].text;
     }
   }
 
@@ -189,8 +189,8 @@ class EQ60 extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      intl.formatMessage({ id: "EQ60.degreeAgree" }),
-                      intl.formatMessage({ id: "EQ60.degreeDisagree" }),
+                      questionData.degree.left,
+                      questionData.degree.right,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
@@ -212,8 +212,8 @@ class EQ60 extends Component {
             questionTitle={intl.formatMessage({ id: "EQ60.pageTitle" })}
             scores={[
               {
-                title: intl.formatMessage({ id: "EQ60.scoreTest" }),
-                subtitle: intl.formatMessage({ id: "EQ60.scoreSubtitle" }),
+                title: questionData.scores[0].title,
+                subtitle: questionData.scores[0].subtitle,
                 score: score,
               },
             ]}

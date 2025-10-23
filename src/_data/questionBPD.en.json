@@ -253,5 +253,38 @@
         0
       ]
     }
+  ],
+  "degree": {
+    "left": "Frequent",
+    "right": "None"
+  },
+  "scores": [
+    {
+      "title": "Score (Total 4.0)",
+      "subtitle": "Your Score"
+    }
+  ],
+  "result": [
+    {
+      "text": "None/Low - You are unlikely to have BPD"
+    },
+    {
+      "text": "Mild - You are unlikely to have BPD"
+    },
+    {
+      "text": "Moderate - You are unlikely to have BPD"
+    },
+    {
+      "text": "Moderate"
+    },
+    {
+      "text": "High"
+    },
+    {
+      "text": "Very High"
+    },
+    {
+      "text": "Extremely High"
+    }
   ]
 }

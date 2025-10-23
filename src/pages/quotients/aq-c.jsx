@@ -139,11 +139,9 @@ class AQC extends Component {
 
   calculateResult(score) {
     if (score < 76) {
-      return this.props.intl.formatMessage({
-        id: "AQC.resultBasicallyExclude",
-      });
+      return questionData.result[0].text;
     } else {
-      return this.props.intl.formatMessage({ id: "AQC.resultLikelyAutistic" });
+      return questionData.result[1].text;
     }
   }
 
@@ -268,8 +266,8 @@ class AQC extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      intl.formatMessage({ id: "AQC.degreeAgree" }),
-                      intl.formatMessage({ id: "AQC.degreeDisagree" }),
+                      questionData.degree.left,
+                      questionData.degree.right,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
@@ -291,37 +289,33 @@ class AQC extends Component {
             questionTitle={intl.formatMessage({ id: "AQC.pageTitle" })}
             scores={[
               {
-                title: intl.formatMessage({ id: "AQC.scoreTest" }),
-                subtitle: intl.formatMessage({ id: "AQC.scoreTotal" }),
+                title: questionData.scores[0].title,
+                subtitle: questionData.scores[0].subtitle,
                 score: score,
               },
               {
-                title: intl.formatMessage({ id: "AQC.scoreAnalysis" }),
-                subtitle: intl.formatMessage({ id: "AQC.scoreSocial" }),
+                title: questionData.scores[1].title,
+                subtitle: questionData.scores[1].subtitle,
                 score: socialScore,
               },
               {
-                title: intl.formatMessage({ id: "AQC.scoreAnalysis" }),
-                subtitle: intl.formatMessage({ id: "AQC.scoreCommunication" }),
+                title: questionData.scores[2].title,
+                subtitle: questionData.scores[2].subtitle,
                 score: communicationScore,
               },
               {
-                title: intl.formatMessage({ id: "AQC.scoreAnalysis" }),
-                subtitle: intl.formatMessage({
-                  id: "AQC.scoreAttentionSwitching",
-                }),
+                title: questionData.scores[3].title,
+                subtitle: questionData.scores[3].subtitle,
                 score: attentionSwitchingScore,
               },
               {
-                title: intl.formatMessage({ id: "AQC.scoreAnalysis" }),
-                subtitle: intl.formatMessage({
-                  id: "AQC.scoreAttentionDetail",
-                }),
+                title: questionData.scores[4].title,
+                subtitle: questionData.scores[4].subtitle,
                 score: attentionDetailScore,
               },
               {
-                title: intl.formatMessage({ id: "AQC.scoreAnalysis" }),
-                subtitle: intl.formatMessage({ id: "AQC.scoreImagination" }),
+                title: questionData.scores[5].title,
+                subtitle: questionData.scores[5].subtitle,
                 score: imaginationScore,
               },
             ]}

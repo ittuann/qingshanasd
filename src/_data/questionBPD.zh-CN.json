@@ -253,5 +253,38 @@
         0
       ]
     }
+  ],
+  "degree": {
+    "left": "频繁",
+    "right": "没有"
+  },
+  "scores": [
+    {
+      "title": "分数（总分4.0）",
+      "subtitle": "得分"
+    }
+  ],
+  "result": [
+    {
+      "text": "None/Low 您不太可能有BPD"
+    },
+    {
+      "text": "Mild 您不太可能有BPD"
+    },
+    {
+      "text": "Moderate 您不太可能有BPD"
+    },
+    {
+      "text": "Moderate"
+    },
+    {
+      "text": "High"
+    },
+    {
+      "text": "Very High"
+    },
+    {
+      "text": "Extremely High"
+    }
   ]
 }

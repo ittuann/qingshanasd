@@ -106,23 +106,23 @@ class ADHD extends Component {
   calculateResult(scoreA, scoreB) {
     const resultADHD = {
       A: {
-        A: this.props.intl.formatMessage({ id: "ADHD.resultTypeA" }),
+        A: questionData.result[0].text,
       },
       B: {
-        A: this.props.intl.formatMessage({ id: "ADHD.resultTypeB1" }),
-        B: this.props.intl.formatMessage({ id: "ADHD.resultTypeB2" }),
+        A: questionData.result[1].text,
+        B: questionData.result[2].text,
       },
       C: {
-        A: this.props.intl.formatMessage({ id: "ADHD.resultTypeC1" }),
-        B: this.props.intl.formatMessage({ id: "ADHD.resultTypeC2" }),
+        A: questionData.result[3].text,
+        B: questionData.result[4].text,
       },
       D: {
-        A: this.props.intl.formatMessage({ id: "ADHD.resultTypeD1" }),
-        B: this.props.intl.formatMessage({ id: "ADHD.resultTypeD2" }),
+        A: questionData.result[5].text,
+        B: questionData.result[6].text,
       },
       E: {
-        A: this.props.intl.formatMessage({ id: "ADHD.resultTypeE1" }),
-        B: this.props.intl.formatMessage({ id: "ADHD.resultTypeE2" }),
+        A: questionData.result[7].text,
+        B: questionData.result[8].text,
       },
     };
 
@@ -256,8 +256,8 @@ class ADHD extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      intl.formatMessage({ id: "ADHD.degreeOften" }),
-                      intl.formatMessage({ id: "ADHD.degreeNever" }),
+                      questionData.degree.left,
+                      questionData.degree.right,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
@@ -279,13 +279,13 @@ class ADHD extends Component {
             questionTitle={intl.formatMessage({ id: "ADHD.pageTitle" })}
             scores={[
               {
-                title: intl.formatMessage({ id: "ADHD.scorePartA" }),
-                subtitle: intl.formatMessage({ id: "ADHD.scorePartASubtitle" }),
+                title: questionData.score[0].title,
+                subtitle: questionData.score[0].subtitle,
                 score: scoreA,
               },
               {
-                title: intl.formatMessage({ id: "ADHD.scorePartB" }),
-                subtitle: intl.formatMessage({ id: "ADHD.scorePartBSubtitle" }),
+                title: questionData.score[1].title,
+                subtitle: questionData.score[1].subtitle,
                 score: scoreB,
               },
             ]}

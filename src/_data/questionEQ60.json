@@ -600,5 +600,23 @@
         0
       ]
     }
+  ],
+  "degree": {
+    "left": "非常赞同",
+    "right": "绝对反对"
+  },
+  "scores": [
+    {
+      "title": "测试分数",
+      "subtitle": "得分"
+    }
+  ],
+  "result": [
+    {
+      "text": "您可能有ASD"
+    },
+    {
+      "text": "您不太可能有ASD"
+    }
   ]
 }

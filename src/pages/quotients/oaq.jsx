@@ -93,13 +93,11 @@ class OAQ extends Component {
   }
   calculateResult(score) {
     if (score <= 94) {
-      return this.props.intl.formatMessage({ id: "OAQ.resultNonAlexithymia" });
+      return questionData.result[0].text;
     } else if (score <= 112) {
-      return this.props.intl.formatMessage({
-        id: "OAQ.resultPossibleAlexithymia",
-      });
+      return questionData.result[1].text;
     } else {
-      return this.props.intl.formatMessage({ id: "OAQ.resultAlexithymia" });
+      return questionData.result[2].text;
     }
   }
   render() {
@@ -195,8 +193,8 @@ class OAQ extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      intl.formatMessage({ id: "OAQ.degreeAgree" }),
-                      intl.formatMessage({ id: "OAQ.degreeDisagree" }),
+                      questionData.degree.left,
+                      questionData.degree.right,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
@@ -216,8 +214,8 @@ class OAQ extends Component {
             questionTitle={intl.formatMessage({ id: "OAQ.pageTitle" })}
             scores={[
               {
-                title: intl.formatMessage({ id: "OAQ.scoreTest" }),
-                subtitle: intl.formatMessage({ id: "OAQ.scoreSubtitle" }),
+                title: questionData.scores[0].title,
+                subtitle: questionData.scores[0].subtitle,
                 score: score,
               },
             ]}

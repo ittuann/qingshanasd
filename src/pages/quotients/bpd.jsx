@@ -122,19 +122,19 @@ class BPD extends Component {
 
   calculateResult(score) {
     if (score < 0.3) {
-      return this.props.intl.formatMessage({ id: "BPD.resultNoneLow" });
+      return this.state.questionData?.result[0].text;
     } else if (score < 1.1) {
-      return this.props.intl.formatMessage({ id: "BPD.resultMild" });
+      return this.state.questionData?.result[1].text;
     } else if (score < 1.5) {
-      return this.props.intl.formatMessage({ id: "BPD.resultModerate1" });
+      return this.state.questionData?.result[2].text;
     } else if (score < 1.9) {
-      return this.props.intl.formatMessage({ id: "BPD.resultModerate2" });
+      return this.state.questionData?.result[3].text;
     } else if (score < 2.7) {
-      return this.props.intl.formatMessage({ id: "BPD.resultHigh" });
+      return this.state.questionData?.result[4].text;
     } else if (score < 3.5) {
-      return this.props.intl.formatMessage({ id: "BPD.resultVeryHigh" });
+      return this.state.questionData?.result[5].text;
     } else {
-      return this.props.intl.formatMessage({ id: "BPD.resultExtremelyHigh" });
+      return this.state.questionData?.result[6].text;
     }
   }
 
@@ -242,8 +242,8 @@ class BPD extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      intl.formatMessage({ id: "BPD.degreeStrong" }),
-                      intl.formatMessage({ id: "BPD.degreeWeak" }),
+                      this.state.questionData?.degree.left,
+                      this.state.questionData?.degree.right,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
@@ -265,8 +265,8 @@ class BPD extends Component {
             questionTitle={intl.formatMessage({ id: "BPD.pageTitle" })}
             scores={[
               {
-                title: intl.formatMessage({ id: "BPD.scoreTitle" }),
-                subtitle: intl.formatMessage({ id: "BPD.scoreSubtitle" }),
+                title: this.state.questionData?.scores[0].title,
+                subtitle: this.state.questionData?.scores[0].subtitle,
                 score: score,
               },
             ]}
