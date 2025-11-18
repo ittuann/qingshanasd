@@ -1,4 +1,5 @@
 {
+  "$schema": "medicalData.schema.json",
   "medicalData": [
     {
       "area": "美国",
