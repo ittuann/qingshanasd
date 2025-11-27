@@ -3,16 +3,19 @@ name: Deploy to dist branch
 on:
   workflow_dispatch:
   workflow_run:
-    workflows:
-      - "Build Site"
-    types:
-      - completed
+    workflows: [Build Site]
+    types: [completed]
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    if: github.ref == 'refs/heads/main' && github.event.workflow_run.event == 'push' && github.event.workflow_run.conclusion == 'success'
+    if: >
+      (github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push') ||
+      (github.event_name == 'workflow_dispatch')
 
     permissions:
       contents: write
