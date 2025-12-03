@@ -1,0 +1,9 @@
+Data:
+- changed-files:
+  - any-glob-to-any-file:
+    - src/_data/*
+
+Posts:
+- changed-files:
+  - any-glob-to-any-file:
+    - src/pages/posts/*
