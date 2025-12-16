@@ -1950,7 +1950,7 @@
           "notes": "",
           "doctors": [
             {
-              "name": "王仕奎",
+              "name": "郎艳",
               "capacity": [
                 "ADHD"
               ],
@@ -1964,14 +1964,6 @@
                   "link": "https://mp.weixin.qq.com/s/CC-EE3FlVlMydLertPKuhQ"
                 }
               ],
-              "notes": "南院区，儿童保健科。无法诊断成人。"
-            },
-            {
-              "name": "郎艳",
-              "capacity": [
-                "ADHD"
-              ],
-              "shares": [],
               "notes": ""
             }
           ]
