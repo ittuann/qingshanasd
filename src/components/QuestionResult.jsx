@@ -46,8 +46,9 @@ const QuestionResult = ({
       <div className="fixed inset-0 bg-black/60" onClick={onClose}></div>
       <div
         ref={resultRef}
-        className="bg-white rounded-lg p-6 max-w-md w-full mx-4 relative z-10 max-h-[90vh] overflow-y-auto"
+        className="bg-white rounded-lg max-w-md w-full mx-4 relative z-10 p-6 max-h-[90vh] overflow-y-auto"
       >
+        {/* 量表结果标题 */}
         <div className="flex justify-between items-center mb-4">
           <div>
             <div className="text-xl font-semibold text-gray-900">
@@ -75,21 +76,21 @@ const QuestionResult = ({
           </div>
         </div>
 
-        {/* 量表分数 */}
-        <div className="space-y-6">
+        <div className="space-y-3">
+          {/* 量表分数 */}
           {scores.map((score, index) => (
             <QuestionResultCard key={index} {...score} />
           ))}
 
           {/* 量表结论 */}
-          <div className="border-t border-gray-200 pt-4">
-            <div className="flex items-center mb-3">
+          <div className="border-t border-gray-200">
+            <div className="flex items-center mt-3">
               <i className="ri-mental-health-line text-primary text-xl mr-2"></i>
               <div className="text-lg font-semibold">
                 <FormattedMessage id="QuestionResult.resultTitle" />
               </div>
             </div>
-            <p className="text-gray-600 bg-gray-50 p-4 rounded-lg">{result}</p>
+            <p className="text-gray-600 bg-gray-50 p-4 mt-3 rounded-lg">{result}</p>
           </div>
 
           {/* 注意事项 */}

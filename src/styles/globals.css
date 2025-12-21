@@ -148,7 +148,9 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: var(--border);
-  border-radius: 4px;
+  border-radius: 9px;
+  border: 2px solid transparent;
+  background-clip: content-box;
   transition: all 0.2s;
 }
 
