@@ -461,6 +461,21 @@
       "area": "湖北省",
       "hospitals": [
         {
+          "name": "武汉荣军优抚医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "汤珺",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": "儿少心理门诊、青少年心理门诊"
+            }
+          ]
+        },
+        {
           "name": "武汉同济医院",
           "notes": "儿保科",
           "doctors": [
