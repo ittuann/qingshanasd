@@ -90,7 +90,9 @@ const QuestionResult = ({
                 <FormattedMessage id="QuestionResult.resultTitle" />
               </div>
             </div>
-            <p className="text-gray-600 bg-gray-50 p-4 mt-3 rounded-lg">{result}</p>
+            <p className="text-gray-600 bg-gray-50 p-4 mt-3 rounded-lg">
+              {result}
+            </p>
           </div>
 
           {/* 注意事项 */}

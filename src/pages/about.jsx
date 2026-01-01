@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "@/components/Layout";
 import "remixicon/fonts/remixicon.css";
+import { ChevronDown } from "lucide-react";
 import { FormattedMessage, useIntl } from "react-intl";
 import Head from "next/head";
 
@@ -49,75 +50,249 @@ const contributors = [
   },
 ];
 
-const mediaProjects = [
-  {
-    name: <FormattedMessage id="About.media.projects.tencent" />,
-    link: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247514836&idx=1&sn=c12376cd562cbcb916b4bfc266a217ed",
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.sinaHummingbird" />,
-    link: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247529199&idx=1&sn=ed0483d7b63fbebf3fe517aff90fed6d",
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.xinhuaHealth" />,
-    link: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247502883&idx=1&sn=2dd3834f3c447518288a9e89575e1957",
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.phoenixWeekly" />,
-    link: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247502611&idx=1&sn=e6e888b8066c40b0ea2c590252cc67d7",
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.southernWindow" />,
-    link: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247513738&idx=1&sn=7376f6f1bc4f983c8d25480456a7d2ea",
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.shanghaiResearch" />,
-    link: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247521093&idx=1&sn=edd802215eee1c76bc17971f37b65539",
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.xiehe" />,
-    link: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247487437&idx=1&sn=eed7b0912e54f234c089659af30be487",
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.wanxiangPodcast" />,
-    link: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247528711&idx=1&sn=2fbb8fab1e14d9de87f219f6c216622e",
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.mindVoice" />,
-    link: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247487441&idx=1&sn=7b0fcc4cf8c469b3b54461886eaf4c13",
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.worldOfChinese" />,
-    link: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247548059&idx=1&sn=421d64b152eb18b92edb897caab8652e",
-  },
-];
-
-const researchProjects = [
+const cooperationData = [
   {
     name: <FormattedMessage id="About.research.projects.pku" />,
-    link: "https://mp.weixin.qq.com/s/VNUziWfLt9gOF6oS-jqCNg",
+    type: "scholarship",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s/VNUziWfLt9gOF6oS-jqCNg",
+      },
+    ],
   },
   {
     name: <FormattedMessage id="About.research.projects.xiamenXianyue" />,
-    link: "https://mp.weixin.qq.com/s/EiglerYoRcORF5rzMqjDMQ",
+    type: "scholarship",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s/EiglerYoRcORF5rzMqjDMQ",
+      },
+    ],
   },
   {
     name: <FormattedMessage id="About.research.projects.bupt" />,
-    link: "https://mp.weixin.qq.com/s/ubtULQqS9SXj2XV6H_K9Zw",
+    type: "scholarship",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s/ubtULQqS9SXj2XV6H_K9Zw",
+      },
+    ],
   },
   {
     name: <FormattedMessage id="About.research.projects.sysu" />,
-    link: "https://mp.weixin.qq.com/s/ycSjPzJpPo_34xveSTpNXw",
+    type: "scholarship",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s/ycSjPzJpPo_34xveSTpNXw",
+      },
+    ],
   },
   {
     name: <FormattedMessage id="About.research.projects.leiden" />,
-    link: "https://mp.weixin.qq.com/s/dv2LoL37tDtx_HEZo-2c7Q",
+    type: "scholarship",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s/dv2LoL37tDtx_HEZo-2c7Q",
+      },
+    ],
   },
   {
     name: <FormattedMessage id="About.research.projects.anding" />,
-    link: "https://mp.weixin.qq.com/s/1PUcaiRcoU3LReejb112xg",
+    type: "scholarship",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s/1PUcaiRcoU3LReejb112xg",
+      },
+    ],
+  },
+
+  {
+    name: <FormattedMessage id="About.media.projects.tencent" />,
+    type: "media",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247514836&idx=1&sn=c12376cd562cbcb916b4bfc266a217ed",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.media.projects.sinaHummingbird" />,
+    type: "media",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247529199&idx=1&sn=ed0483d7b63fbebf3fe517aff90fed6d",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.media.projects.xinhuaHealth" />,
+    type: "media",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247502883&idx=1&sn=2dd3834f3c447518288a9e89575e1957",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.media.projects.phoenixWeekly" />,
+    type: "media",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247502611&idx=1&sn=e6e888b8066c40b0ea2c590252cc67d7",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.media.projects.southernWindow" />,
+    type: "media",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247513738&idx=1&sn=7376f6f1bc4f983c8d25480456a7d2ea",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.media.projects.shanghaiResearch" />,
+    type: "media",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247521093&idx=1&sn=edd802215eee1c76bc17971f37b65539",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.media.projects.xiehe" />,
+    type: "media",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247487437&idx=1&sn=eed7b0912e54f234c089659af30be487",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.media.projects.wanxiangPodcast" />,
+    type: "media",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247528711&idx=1&sn=2fbb8fab1e14d9de87f219f6c216622e",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.media.projects.mindVoice" />,
+    type: "media",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247487441&idx=1&sn=7b0fcc4cf8c469b3b54461886eaf4c13",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.media.projects.worldOfChinese" />,
+    type: "media",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247548059&idx=1&sn=421d64b152eb18b92edb897caab8652e",
+      },
+    ],
   },
 ];
+
+const CooperationItem = ({ data }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div
+      className={`bg-white border rounded-lg transition-all duration-200 overflow-hidden ${
+        isOpen
+          ? `shadow-sm border-green-800 ring-1 ring-green-50`
+          : `border-slate-100 hover:border-green-600`
+      }`}
+    >
+      <button
+        type="button"
+        onClick={() => setIsOpen((v) => !v)}
+        aria-expanded={isOpen}
+        className="w-full flex items-center justify-between p-4 text-left group select-none"
+      >
+        <div className="flex items-center gap-3 min-w-0">
+          <div
+            className={`flex-shrink-0 p-2 rounded-md ${
+              data.type === "scholarship"
+                ? "text-indigo-600 bg-indigo-50"
+                : "text-emerald-600 bg-emerald-50"
+            }`}
+          >
+            <i
+              className={
+                data.type === "scholarship"
+                  ? "ri-graduation-cap-line"
+                  : "ri-article-line"
+              }
+            ></i>
+          </div>
+
+          <div className="flex flex-col min-w-0">
+            <span className="font-bold text-slate-800 truncate group-hover:text-slate-900 text-base">
+              {data.name}
+            </span>
+            <span className="text-xs text-slate-400 font-medium flex items-center gap-1">
+              <FormattedMessage id="About.cooperation.readDetail" />
+            </span>
+          </div>
+        </div>
+
+        <ChevronDown
+          className={`w-5 h-5 text-slate-300 transition-transform duration-300 ${
+            isOpen ? "rotate-180 text-slate-500" : "group-hover:text-slate-400"
+          }`}
+        />
+      </button>
+
+      <div
+        className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="px-4 pb-4 pt-0">
+            <div className="h-px w-full bg-slate-50 mb-3" />
+            <div className="flex flex-wrap gap-2">
+              {data.coop.map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-50 border border-slate-100 hover:bg-white hover:border-slate-300 hover:shadow-sm text-xs text-slate-600 hover:text-green-700 rounded-full transition-all duration-200"
+                >
+                  {item.name}
+                  <i className="ri-external-link-line w-3 h-3 opacity-50"></i>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 function About() {
   const jsonLd = {
@@ -296,38 +471,12 @@ function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {mediaProjects.map((project, index) => (
-              <a
-                key={index}
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transform transition-all duration-300 hover:-translate-y-2"
-              >
-                <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all p-6 border border-gray-100 h-full flex items-center">
-                  <div className="flex-shrink-0 mr-4">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center text-white">
-                      <i className="ri-article-line"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900">
-                      {project.name}
-                    </h3>
-                    <div className="text-sm text-gray-500 mt-1 flex items-center">
-                      <span>
-                        <FormattedMessage
-                          id="About.media.read"
-                          defaultMessage="阅读报道"
-                        />
-                      </span>
-                      <i className="ri-external-link-line ml-1"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl mx-auto">
+            {cooperationData
+              .filter((item) => item.type === "media")
+              .map((item, index) => (
+                <CooperationItem key={index} data={item} />
+              ))}
           </div>
 
           <div className="text-center mt-8">
@@ -356,35 +505,12 @@ function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {researchProjects.map((project, index) => (
-              <a
-                key={index}
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transform transition-all duration-300 hover:-translate-y-2"
-              >
-                <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all p-6 border border-gray-100 h-full flex items-center">
-                  <div className="flex-shrink-0 mr-4">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center text-white">
-                      <i className="ri-file-list-3-line"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900">
-                      {project.name}
-                    </h3>
-                    <div className="text-sm text-gray-500 mt-1 flex items-center">
-                      <span>
-                        <FormattedMessage id="About.research.read" />
-                      </span>
-                      <i className="ri-external-link-line ml-1"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl mx-auto">
+            {cooperationData
+              .filter((item) => item.type === "scholarship")
+              .map((item, index) => (
+                <CooperationItem key={index} data={item} />
+              ))}
           </div>
 
           <div className="text-center mt-8">

@@ -89,7 +89,9 @@ export default function Layout({
         className={`${noto.className} bg-zinc-50 min-h-screen flex flex-col`}
       >
         <Navbar />
-        <main className="flex-grow text-autospace [scrollbar-gutter:stable]">{children}</main>
+        <main className="flex-grow text-autospace [scrollbar-gutter:stable]">
+          {children}
+        </main>
         <Footer />
       </div>
     </>
