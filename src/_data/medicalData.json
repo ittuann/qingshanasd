@@ -2309,6 +2309,21 @@
           ]
         },
         {
+          "name": "武汉荣军优抚医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "汤珺",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": "儿少心理门诊、青少年心理门诊"
+            }
+          ]
+        },
+        {
           "name": "湖北宜昌市二医院（学习困难门诊）",
           "notes": "",
           "doctors": [
@@ -2339,7 +2354,7 @@
                   "link": "https://mp.weixin.qq.com/s/bk9eoW2GoCslE6Jf2Gifgg"
                 }
               ],
-              "notes": ""
+              "notes": "注意：汤珺似乎已离职，目前在武汉荣军优抚医院工作。以上网友分享经历可能已过时。"
             }
           ]
         },
