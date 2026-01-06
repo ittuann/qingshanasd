@@ -71,14 +71,14 @@ const CooperationItem = ({ data }) => {
         <div className="flex items-center gap-3 min-w-0">
           <div
             className={`flex-shrink-0 p-2 rounded-md ${
-              data.type === "scholarship"
+              data.type === "research"
                 ? "text-indigo-600 bg-indigo-50"
                 : "text-emerald-600 bg-emerald-50"
             }`}
           >
             <i
               className={
-                data.type === "scholarship"
+                data.type === "research"
                   ? "ri-graduation-cap-line"
                   : "ri-article-line"
               }
@@ -86,7 +86,7 @@ const CooperationItem = ({ data }) => {
           </div>
 
           <div className="flex flex-col min-w-0">
-            <span className="font-bold text-slate-800 truncate group-hover:text-slate-900 text-base">
+            <span className="font-bold text-slate-800 group-hover:text-slate-900 text-base">
               {data.name}
             </span>
             <span className="text-xs text-slate-400 font-medium flex items-center gap-1">
@@ -350,6 +350,22 @@ function About() {
           </div>
         </section>
 
+        {/* 研究合作部分 */}
+        <section className="bg-gradient-to-b from-white to-gray-50 rounded-3xl shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-3xl py-8 px-8 mb-16">
+          <div className="text-center mb-4">
+            <h2 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl mb-6">
+              <FormattedMessage id="About.research.title" />
+            </h2>
+            <p className="max-w-3xl mx-auto text-center text-gray-600">
+              <FormattedMessage id="About.research.description" />
+            </p>
+          </div>
+
+          <CooperationList
+            items={cooperationData.filter((item) => item.type === "research")}
+          />
+        </section>
+
         {/* 媒体报道部分 */}
         <section className="bg-gradient-to-b from-white to-gray-50 rounded-3xl shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-3xl py-8 px-8 mb-16">
           <div className="text-center mb-4">
@@ -363,24 +379,6 @@ function About() {
 
           <CooperationList
             items={cooperationData.filter((item) => item.type === "media")}
-          />
-        </section>
-
-        {/* 研究合作部分 */}
-        <section className="bg-gradient-to-b from-white to-gray-50 rounded-3xl shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-3xl py-8 px-8 mb-16">
-          <div className="text-center mb-4">
-            <h2 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl mb-6">
-              <FormattedMessage id="About.research.title" />
-            </h2>
-            <p className="max-w-3xl mx-auto text-center text-gray-600">
-              <FormattedMessage id="About.research.description" />
-            </p>
-          </div>
-
-          <CooperationList
-            items={cooperationData.filter(
-              (item) => item.type === "scholarship",
-            )}
           />
         </section>
 

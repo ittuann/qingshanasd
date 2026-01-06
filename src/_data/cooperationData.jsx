@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 const cooperationData = [
   {
     name: <FormattedMessage id="About.research.projects.pku" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
@@ -19,7 +19,7 @@ const cooperationData = [
   },
   {
     name: <FormattedMessage id="About.research.projects.anding" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
@@ -30,7 +30,7 @@ const cooperationData = [
   },
   {
     name: <FormattedMessage id="About.research.projects.sysu" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
@@ -46,7 +46,7 @@ const cooperationData = [
   },
   {
     name: <FormattedMessage id="About.research.projects.bupt" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
@@ -57,7 +57,7 @@ const cooperationData = [
   },
   {
     name: <FormattedMessage id="About.research.projects.cuhksz" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
@@ -68,7 +68,7 @@ const cooperationData = [
   },
   {
     name: <FormattedMessage id="About.research.projects.xiamenXianyue" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
@@ -79,7 +79,7 @@ const cooperationData = [
   },
   {
     name: <FormattedMessage id="About.research.projects.sysu3" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
@@ -90,7 +90,7 @@ const cooperationData = [
   },
   {
     name: <FormattedMessage id="About.research.projects.leiden" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
@@ -101,7 +101,7 @@ const cooperationData = [
   },
   {
     name: <FormattedMessage id="About.research.projects.sichuanNormal" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
@@ -112,7 +112,7 @@ const cooperationData = [
   },
   {
     name: <FormattedMessage id="About.research.projects.scnu" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
@@ -123,7 +123,7 @@ const cooperationData = [
   },
   {
     name: <FormattedMessage id="About.research.projects.hrbmu" />,
-    type: "scholarship",
+    type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
