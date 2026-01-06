@@ -6,6 +6,7 @@ import "remixicon/fonts/remixicon.css";
 import { ChevronDown } from "lucide-react";
 import { FormattedMessage, useIntl } from "react-intl";
 import Head from "next/head";
+import cooperationData from "@/_data/cooperationData";
 
 const contributors = [
   {
@@ -47,170 +48,6 @@ const contributors = [
     link: "#",
     email: "#",
     alternateName: "",
-  },
-];
-
-const cooperationData = [
-  {
-    name: <FormattedMessage id="About.research.projects.pku" />,
-    type: "scholarship",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s/VNUziWfLt9gOF6oS-jqCNg",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.research.projects.xiamenXianyue" />,
-    type: "scholarship",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s/EiglerYoRcORF5rzMqjDMQ",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.research.projects.bupt" />,
-    type: "scholarship",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s/ubtULQqS9SXj2XV6H_K9Zw",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.research.projects.sysu" />,
-    type: "scholarship",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s/ycSjPzJpPo_34xveSTpNXw",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.research.projects.leiden" />,
-    type: "scholarship",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s/dv2LoL37tDtx_HEZo-2c7Q",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.research.projects.anding" />,
-    type: "scholarship",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s/1PUcaiRcoU3LReejb112xg",
-      },
-    ],
-  },
-
-  {
-    name: <FormattedMessage id="About.media.projects.tencent" />,
-    type: "media",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247514836&idx=1&sn=c12376cd562cbcb916b4bfc266a217ed",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.sinaHummingbird" />,
-    type: "media",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247529199&idx=1&sn=ed0483d7b63fbebf3fe517aff90fed6d",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.xinhuaHealth" />,
-    type: "media",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247502883&idx=1&sn=2dd3834f3c447518288a9e89575e1957",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.phoenixWeekly" />,
-    type: "media",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247502611&idx=1&sn=e6e888b8066c40b0ea2c590252cc67d7",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.southernWindow" />,
-    type: "media",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247513738&idx=1&sn=7376f6f1bc4f983c8d25480456a7d2ea",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.shanghaiResearch" />,
-    type: "media",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247521093&idx=1&sn=edd802215eee1c76bc17971f37b65539",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.xiehe" />,
-    type: "media",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247487437&idx=1&sn=eed7b0912e54f234c089659af30be487",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.wanxiangPodcast" />,
-    type: "media",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247528711&idx=1&sn=2fbb8fab1e14d9de87f219f6c216622e",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.mindVoice" />,
-    type: "media",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247487441&idx=1&sn=7b0fcc4cf8c469b3b54461886eaf4c13",
-      },
-    ],
-  },
-  {
-    name: <FormattedMessage id="About.media.projects.worldOfChinese" />,
-    type: "media",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247548059&idx=1&sn=421d64b152eb18b92edb897caab8652e",
-      },
-    ],
   },
 ];
 
@@ -265,6 +102,7 @@ const CooperationItem = ({ data }) => {
         />
       </button>
 
+      {/* 内容链接 */}
       <div
         className={`grid transition-[grid-template-rows] duration-300 ease-out ${
           isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
@@ -291,6 +129,58 @@ const CooperationItem = ({ data }) => {
         </div>
       </div>
     </div>
+  );
+};
+
+const CooperationList = ({ items, maxItems = 9 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const shouldShowButton = items.length > maxItems;
+  const displayedItems = isExpanded ? items : items.slice(0, maxItems);
+
+  const totalPartners = items.length;
+  const totalCoopCount = items.reduce(
+    (acc, curr) => acc + (curr.coop ? curr.coop.length : 0),
+    0,
+  );
+
+  return (
+    <>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl mx-auto">
+        {displayedItems.map((item, index) => (
+          <CooperationItem key={index} data={item} />
+        ))}
+      </div>
+
+      {shouldShowButton && (
+        <div className="flex justify-center mt-4">
+          <button
+            type="button"
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="group inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-slate-500 hover:text-slate-800 transition-colors"
+          >
+            <span>
+              {isExpanded ? (
+                <FormattedMessage id="About.showLess" defaultMessage="收起" />
+              ) : (
+                <FormattedMessage
+                  id="About.showMoreWithStats"
+                  defaultMessage="展开全部 {partnerCount} 个合作方 ({coopCount} 次合作)"
+                  values={{
+                    partnerCount: totalPartners,
+                    coopCount: totalCoopCount,
+                  }}
+                />
+              )}
+            </span>
+            <ChevronDown
+              className={`w-4 h-4 transition-transform duration-200 ${
+                isExpanded ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+        </div>
+      )}
+    </>
   );
 };
 
@@ -471,27 +361,9 @@ function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl mx-auto">
-            {cooperationData
-              .filter((item) => item.type === "media")
-              .map((item, index) => (
-                <CooperationItem key={index} data={item} />
-              ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <p className="text-gray-600">
-              <Link
-                href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIyMzgyMjY5NQ==&hid=1&sn=f3f557bb16f4781bf487fe58efa0c15f"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-2 text-primary hover:text-accent inline-flex items-center"
-              >
-                <FormattedMessage id="About.media.viewAll" />
-                <i className="ri-arrow-right-line ml-1"></i>
-              </Link>
-            </p>
-          </div>
+          <CooperationList
+            items={cooperationData.filter((item) => item.type === "media")}
+          />
         </section>
 
         {/* 研究合作部分 */}
@@ -505,27 +377,11 @@ function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl mx-auto">
-            {cooperationData
-              .filter((item) => item.type === "scholarship")
-              .map((item, index) => (
-                <CooperationItem key={index} data={item} />
-              ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <p className="text-gray-600">
-              <Link
-                href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIyMzgyMjY5NQ==&hid=1&sn=f3f557bb16f4781bf487fe58efa0c15f"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-2 text-primary hover:text-accent inline-flex items-center"
-              >
-                <FormattedMessage id="About.research.viewAll" />
-                <i className="ri-arrow-right-line ml-1"></i>
-              </Link>
-            </p>
-          </div>
+          <CooperationList
+            items={cooperationData.filter(
+              (item) => item.type === "scholarship",
+            )}
+          />
         </section>
 
         {/* 财务公示部分 */}
