@@ -6,7 +6,7 @@
 [![CDN][cdn-img]][cdn-url]
 [![License][license-img]][license-url]
 
-[cdn-img]: https://img.shields.io/badge/GitHub_Pages-CDN-blue?logo=github
+[cdn-img]: https://img.shields.io/badge/GitHub_Pages-Deploy-blue?logo=github
 [cdn-url]: https://qingshanasd.cn
 [license-img]: https://img.shields.io/github/license/ittuann/qingshanasd
 [license-url]: https://github.com/ittuann/qingshanasd/blob/main/LICENSE
