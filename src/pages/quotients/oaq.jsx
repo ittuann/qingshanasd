@@ -7,11 +7,13 @@ import QuestionResult from "@/components/QuestionResult";
 import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import QuestionAlert from "@/components/QuestionAlert";
-import questionData from "@/_data/questionOAQ.json";
 import BackToTop from "@/components/BackToTop";
 import { FormattedMessage, injectIntl } from "react-intl";
+import { defaultLocale, LocaleContext } from "@/i18n/i18n";
 
 class OAQ extends Component {
+  static contextType = LocaleContext;
+
   state = {
     quotientsName: "answers_oaq",
     answers: {},
@@ -20,6 +22,7 @@ class OAQ extends Component {
 
     score: 0,
     result: "",
+    questionData: null,
   };
 
   componentDidMount() {
@@ -29,7 +32,27 @@ class OAQ extends Component {
         answers: JSON.parse(savedAnswers),
       });
     }
+
+    this.loadQuestionData();
   }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.context?.locale !== prevState.locale) {
+      this.loadQuestionData();
+    }
+  }
+
+  loadQuestionData = async () => {
+    try {
+      const locale = this.context?.locale || defaultLocale;
+      const data = await import(`@/_data/questionOAQ.${locale}.json`);
+      this.setState({ questionData: data.default, locale });
+    } catch (error) {
+      console.error("Error loading question data:", error);
+      const data = await import(`@/_data/questionOAQ.${defaultLocale}.json`);
+      this.setState({ questionData: data.default, locale: defaultLocale });
+    }
+  };
 
   closeResultModal = () => {
     this.setState({ showResultModal: false });
@@ -81,7 +104,7 @@ class OAQ extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.question;
+    return this.state.questionData?.question || [];
   }
 
   calculateScores() {
@@ -93,11 +116,11 @@ class OAQ extends Component {
   }
   calculateResult(score) {
     if (score <= 94) {
-      return questionData.result[0].text;
+      return this.state.questionData?.result[0].text;
     } else if (score <= 112) {
-      return questionData.result[1].text;
+      return this.state.questionData?.result[1].text;
     } else {
-      return questionData.result[2].text;
+      return this.state.questionData?.result[2].text;
     }
   }
   render() {
@@ -193,8 +216,8 @@ class OAQ extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      questionData.degree.agree,
-                      questionData.degree.disagree,
+                      this.state.questionData?.degree.agree,
+                      this.state.questionData?.degree.disagree,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
@@ -214,8 +237,8 @@ class OAQ extends Component {
             questionTitle={intl.formatMessage({ id: "OAQ.pageTitle" })}
             scores={[
               {
-                title: questionData.scores[0].title,
-                subtitle: questionData.scores[0].subtitle,
+                title: this.state.questionData?.scores[0].title,
+                subtitle: this.state.questionData?.scores[0].subtitle,
                 score: score,
               },
             ]}

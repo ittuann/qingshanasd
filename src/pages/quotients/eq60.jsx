@@ -7,7 +7,7 @@ import QuestionResult from "@/components/QuestionResult";
 import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import QuestionAlert from "@/components/QuestionAlert";
-import questionData from "@/_data/questionEQ60.json";
+import questionData from "@/_data/questionEQ60.zh-CN.json";
 import BackToTop from "@/components/BackToTop";
 import { FormattedMessage, injectIntl } from "react-intl";
 

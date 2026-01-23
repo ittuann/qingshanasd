@@ -1,0 +1,542 @@
+{
+  "question": [
+    {
+      "id": 1,
+      "text": "S/he prefers to do things with others rather than on his/her own.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "text": "S/he prefers to do things the same way over and over again.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "If s/he tries to imagine something, s/he finds it very easy to create a picture in his/her mind.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 4,
+      "text": "S/he frequently gets so strongly absorbed in one thing that s/he loses sight of other things.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "S/he often notices small sounds when others do not.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "S/he usually notices car number plates or similar strings of information.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Other people frequently tell her/him that what s/he has said is impolite, even though s/he thinks it is polite.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "When s/he is reading a story, s/he can easily imagine what the characters might look like.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 9,
+      "text": "S/he is fascinated by dates.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "In a social group, s/he can easily keep track of several different people’s conversations.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 11,
+      "text": "S/he finds social situations easy.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 12,
+      "text": "S/he tends to notice details that others do not.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "S/he would rather go to a library than a party.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "S/he finds making up stories easy.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 15,
+      "text": "S/he finds him/herself drawn more strongly to people than to things.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 16,
+      "text": "S/he tends to have very strong interests, which s/he gets upset about if s/he can’t pursue.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "S/he enjoys social chit-chat.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 18,
+      "text": "When s/he talks, it isn’t always easy for others to get a word in edgeways.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "S/he is fascinated by numbers.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "When s/he is reading a story, s/he finds it difficult to work out the characters’ intentions.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "S/he doesn’t particularly enjoy reading fiction.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "S/he finds it hard to make new friends.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "S/he notices patterns in things all the time.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "S/he would rather go to the theatre than a museum.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 25,
+      "text": "It does not upset him/her if his/her daily routine is disturbed.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 26,
+      "text": "S/he frequently finds that s/he doesn’t know how to keep a conversation going.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "S/he finds it easy to “read between the lines” when someone is talking to her/him.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 28,
+      "text": "S/he usually concentrates more on the whole picture, rather than the small details.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 29,
+      "text": "S/he is not very good at remembering phone numbers.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 30,
+      "text": "S/he doesn’t usually notice small changes in a situation, or a person’s appearance.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 31,
+      "text": "S/he knows how to tell if someone listening to him/her is getting bored.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 32,
+      "text": "S/he finds it easy to do more than one thing at once.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 33,
+      "text": "When s/he talks on the phone, s/he is not sure when it’s his/her turn to speak.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "S/he enjoys doing things spontaneously.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 35,
+      "text": "S/he is often the last to understand the point of a joke.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "S/he finds it easy to work out what someone is thinking or feeling just by looking at their face.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "If there is an interruption, s/he can switch back to what s/he was doing very quickly.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 38,
+      "text": "S/he is good at social chit-chat.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 39,
+      "text": "People often tell her/him that s/he keeps going on and on about the same thing.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "When s/he was younger, s/he used to enjoy playing games involving pretending with other children.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 41,
+      "text": "S/he likes to collect information about categories of things (e.g. types of car, types of bird, types of plant, etc.).",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "S/he finds it difficult to imagine what it would be like to be someone else.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "S/he likes to plan any activities s/he participates in carefully.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "S/he enjoys social occasions.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 45,
+      "text": "S/he finds it difficult to work out people’s intentions.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "New situations make him/her anxious.",
+      "scoreAgree": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "S/he enjoys meeting new people.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 48,
+      "text": "S/he is a good diplomat.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 49,
+      "text": "S/he is not very good at remembering people’s date of birth.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 50,
+      "text": "S/he finds it very easy to play games with children that involve pretending.",
+      "scoreAgree": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "degree": {
+    "agree": "Agree",
+    "disagree": "Disagree"
+  },
+  "scores": [
+    {
+      "title": "Test Score",
+      "subtitle": "Total Score"
+    },
+    {
+      "title": "Subscale Score",
+      "subtitle": "Social Skills"
+    },
+    {
+      "title": "Subscale Score",
+      "subtitle": "Communication"
+    },
+    {
+      "title": "Subscale Score",
+      "subtitle": "Attention Switching"
+    },
+    {
+      "title": "Subscale Score",
+      "subtitle": "Attention to Detail"
+    },
+    {
+      "title": "Subscale Score",
+      "subtitle": "Imagination"
+    }
+  ],
+  "result": [
+    {
+      "text": "Traits of autism are unlikely."
+    },
+    {
+      "text": "The adolescent may show traits associated with high-functioning autism."
+    }
+  ]
+}
