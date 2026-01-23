@@ -1,0 +1,245 @@
+{
+  "question": [
+    {
+      "id": 1,
+      "text": "How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "text": "How often do you have difficulty getting things in order when you have to do a task that requires organization?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "How often do you have problems remembering appointments or obligations?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "text": "When you have a task that requires a lot of thought, how often do you avoid or delay getting started?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "How often do you feel overly active and compelled to do things, like you were driven by a motor?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "How often do you make careless mistakes when you have to work on a boring or difficult project?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "How often do you have difficulty keeping your attention when you are doing boring or repetitive work?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "text": "How often do you have difficulty concentrating on what people say to you, even when they are speaking to you directly?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "How often do you misplace or have difficulty finding things at home or at work?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "text": "How often are you distracted by activity or noise around you?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "text": "How often do you leave your seat in meetings or other situations in which you are expected to remain seated?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "How often do you feel restless or fidgety?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "How often do you have difficulty unwinding and relaxing when you have time to yourself?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "text": "How often do you find yourself talking too much when you are in social situations?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "text": "When you’re in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "How often do you have difficulty waiting your turn in situations when turn taking is required?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "text": "How often do you interrupt others when they are busy?",
+      "scoreAgree": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  ],
+  "degree": {
+    "agree": "Very Often",
+    "disagree": "Never"
+  },
+  "score": [
+    {
+      "title": "Part A",
+      "subtitle": "Inattentive Disorder"
+    },
+    {
+      "title": "Part B",
+      "subtitle": "Hyperactive/Impulsive Disorder"
+    }
+  ],
+  "result": [
+    {
+      "text": "You are unlikely to have ADHD"
+    },
+    {
+      "text": "You are likely to have ADHD-I (Predominantly Inattentive Type)"
+    },
+    {
+      "text": "You are very likely to have ADHD-I (Predominantly Inattentive Type)"
+    },
+    {
+      "text": "You are likely to have ADHD-H (Predominantly Hyperactive/Impulsive Type)"
+    },
+    {
+      "text": "You are very likely to have ADHD-H (Predominantly Hyperactive/Impulsive Type)"
+    },
+    {
+      "text": "You are likely to have ADHD-C (Combined Inattentive and Hyperactive/Impulsive Type)"
+    },
+    {
+      "text": "You are very likely to have ADHD-C (Combined Inattentive and Hyperactive/Impulsive Type)"
+    },
+    {
+      "text": "You are likely to have ADHD-C (Combined type with more pronounced hyperactive/impulsive symptoms)"
+    },
+    {
+      "text": "You are likely to have ADHD-C (Combined type with more pronounced inattentive symptoms)"
+    }
+  ]
+}

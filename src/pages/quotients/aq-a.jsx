@@ -7,11 +7,13 @@ import QuestionResult from "@/components/QuestionResult";
 import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import QuestionAlert from "@/components/QuestionAlert";
-import questionData from "@/_data/questionAQA.json";
 import BackToTop from "@/components/BackToTop";
 import { FormattedMessage, injectIntl } from "react-intl";
+import { defaultLocale, LocaleContext } from "@/i18n/i18n";
 
 class AQA extends Component {
+  static contextType = LocaleContext;
+
   state = {
     quotientsName: "answers_aqa",
     answers: {},
@@ -25,6 +27,7 @@ class AQA extends Component {
     attentionDetailScore: 0,
     communicationScore: 0,
     imaginationScore: 0,
+    questionData: null,
   };
 
   componentDidMount() {
@@ -34,7 +37,26 @@ class AQA extends Component {
         answers: JSON.parse(savedAnswers),
       });
     }
+    this.loadQuestionData();
   }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.context?.locale !== prevState.locale) {
+      this.loadQuestionData();
+    }
+  }
+
+  loadQuestionData = async () => {
+    try {
+      const locale = this.context?.locale || defaultLocale;
+      const data = await import(`@/_data/questionAQA.${locale}.json`);
+      this.setState({ questionData: data.default, locale });
+    } catch (error) {
+      console.error("Error loading question data:", error);
+      const data = await import(`@/_data/questionAQA.${defaultLocale}.json`);
+      this.setState({ questionData: data.default, locale: defaultLocale });
+    }
+  };
 
   closeResultModal = () => {
     this.setState({ showResultModal: false });
@@ -87,7 +109,7 @@ class AQA extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.question;
+    return this.state.questionData?.question || [];
   }
 
   calculateScores() {
@@ -139,13 +161,13 @@ class AQA extends Component {
 
   calculateResult(score) {
     if (score <= 21) {
-      return questionData.result[0].text;
+      return this.state.questionData?.result[0].text;
     } else if (score <= 25) {
-      return questionData.result[1].text;
+      return this.state.questionData?.result[1].text;
     } else if (score <= 31) {
-      return questionData.result[2].text;
+      return this.state.questionData?.result[2].text;
     } else {
-      return questionData.result[3].text;
+      return this.state.questionData?.result[3].text;
     }
   }
 
@@ -260,8 +282,8 @@ class AQA extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      questionData.degree.agree,
-                      questionData.degree.disagree,
+                      this.state.questionData?.degree.agree,
+                      this.state.questionData?.degree.disagree,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
@@ -283,33 +305,33 @@ class AQA extends Component {
             questionTitle={intl.formatMessage({ id: "AQA.pageTitle" })}
             scores={[
               {
-                title: questionData.scores[0].title,
-                subtitle: questionData.scores[0].subtitle,
+                title: this.state.questionData?.scores[0].title,
+                subtitle: this.state.questionData?.scores[0].subtitle,
                 score: score,
               },
               {
-                title: questionData.scores[1].title,
-                subtitle: questionData.scores[1].subtitle,
+                title: this.state.questionData?.scores[1].title,
+                subtitle: this.state.questionData?.scores[1].subtitle,
                 score: socialScore,
               },
               {
-                title: questionData.scores[2].title,
-                subtitle: questionData.scores[2].subtitle,
+                title: this.state.questionData?.scores[2].title,
+                subtitle: this.state.questionData?.scores[2].subtitle,
                 score: communicationScore,
               },
               {
-                title: questionData.scores[3].title,
-                subtitle: questionData.scores[3].subtitle,
+                title: this.state.questionData?.scores[3].title,
+                subtitle: this.state.questionData?.scores[3].subtitle,
                 score: attentionSwitchingScore,
               },
               {
-                title: questionData.scores[4].title,
-                subtitle: questionData.scores[4].subtitle,
+                title: this.state.questionData?.scores[4].title,
+                subtitle: this.state.questionData?.scores[4].subtitle,
                 score: attentionDetailScore,
               },
               {
-                title: questionData.scores[5].title,
-                subtitle: questionData.scores[5].subtitle,
+                title: this.state.questionData?.scores[5].title,
+                subtitle: this.state.questionData?.scores[5].subtitle,
                 score: imaginationScore,
               },
             ]}

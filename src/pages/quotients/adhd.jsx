@@ -7,11 +7,13 @@ import QuestionResult from "@/components/QuestionResult";
 import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import QuestionAlert from "@/components/QuestionAlert";
-import questionData from "@/_data/questionADHD.json";
 import BackToTop from "@/components/BackToTop";
 import { FormattedMessage, injectIntl } from "react-intl";
+import { defaultLocale, LocaleContext } from "@/i18n/i18n";
 
 class ADHD extends Component {
+  static contextType = LocaleContext;
+
   state = {
     quotientsName: "answers_adhd",
     answers: {},
@@ -20,6 +22,7 @@ class ADHD extends Component {
     scoreA: 0,
     scoreB: 0,
     result: "",
+    questionData: null,
   };
 
   // React method
@@ -30,7 +33,26 @@ class ADHD extends Component {
         answers: JSON.parse(savedAnswers),
       });
     }
+    this.loadQuestionData();
   }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.context?.locale !== prevState.locale) {
+      this.loadQuestionData();
+    }
+  }
+
+  loadQuestionData = async () => {
+    try {
+      const locale = this.context?.locale || defaultLocale;
+      const data = await import(`@/_data/questionADHD.${locale}.json`);
+      this.setState({ questionData: data.default, locale });
+    } catch (error) {
+      console.error("Error loading question data:", error);
+      const data = await import(`@/_data/questionADHD.${defaultLocale}.json`);
+      this.setState({ questionData: data.default, locale: defaultLocale });
+    }
+  };
 
   closeResultModal = () => {
     this.setState({ showResultModal: false });
@@ -84,7 +106,7 @@ class ADHD extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.question;
+    return this.state.questionData?.question || [];
   }
 
   calculateScores() {
@@ -104,6 +126,9 @@ class ADHD extends Component {
   }
 
   calculateResult(scoreA, scoreB) {
+    const { questionData } = this.state;
+    if (!questionData) return "";
+
     const resultADHD = {
       A: {
         A: questionData.result[0].text,
@@ -156,8 +181,15 @@ class ADHD extends Component {
   }
 
   render() {
-    const { showResultModal, showAlertModal, scoreA, scoreB, result, answers } =
-      this.state;
+    const {
+      showResultModal,
+      showAlertModal,
+      scoreA,
+      scoreB,
+      result,
+      answers,
+      questionData,
+    } = this.state;
     const { intl } = this.props;
 
     const infoContent = (
@@ -256,8 +288,8 @@ class ADHD extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      questionData.degree.agree,
-                      questionData.degree.disagree,
+                      questionData?.degree.agree,
+                      questionData?.degree.disagree,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
@@ -279,13 +311,13 @@ class ADHD extends Component {
             questionTitle={intl.formatMessage({ id: "ADHD.pageTitle" })}
             scores={[
               {
-                title: questionData.score[0].title,
-                subtitle: questionData.score[0].subtitle,
+                title: questionData?.score[0].title,
+                subtitle: questionData?.score[0].subtitle,
                 score: scoreA,
               },
               {
-                title: questionData.score[1].title,
-                subtitle: questionData.score[1].subtitle,
+                title: questionData?.score[1].title,
+                subtitle: questionData?.score[1].subtitle,
                 score: scoreB,
               },
             ]}

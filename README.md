@@ -9,7 +9,7 @@
 
 [ci-img]: https://img.shields.io/github/actions/workflow/status/ittuann/qingshanasd/CI.yml?branch=main&label=Build%20Status&logo=refinedgithub
 [ci-url]: https://github.com/ittuann/qingshanasd
-[cdn-img]: https://img.shields.io/badge/GitHub_Pages-CDN-blue?logo=github
+[cdn-img]: https://img.shields.io/badge/GitHub_Pages-Deploy-blue?logo=github
 [cdn-url]: https://qingshanasd.cn
 [license-img]: https://img.shields.io/github/license/ittuann/qingshanasd
 [license-url]: https://github.com/ittuann/qingshanasd/blob/main/LICENSE

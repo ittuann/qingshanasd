@@ -1,0 +1,548 @@
+{
+  "question": [
+    {
+      "id": 1,
+      "text": "I prefer to do things with others rather than on my own.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "text": "I prefer to do things the same way over and over again.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "If I try to imagine something, I find it very easy to create a picture in my mind.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "text": "I frequently get so strongly absorbed in one thing that I lose sight of other things.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "I often notice small sounds when others do not.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "I usually notice car number plates or similar strings of information.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "People often tell me that I say things that are impolite, even though I think they are polite.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "When I read a story, I can easily imagine what the characters might look like.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 9,
+      "text": "I am interested in dates.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "In a conversation, I can easily keep track of several different people’s contributions.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 11,
+      "text": "I find social situations easy.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 12,
+      "text": "I notice patterns in things all the time.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "I would rather go to the library than a party.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "I find it easy to work out what someone is thinking or feeling just by looking at their face.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 15,
+      "text": "I find people more interesting than things.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 16,
+      "text": "I get upset if my daily routine is disturbed.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "I enjoy social chit-chat.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 18,
+      "text": "When I’m talking, it’s hard for others to get a word in edgeways.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "I am fascinated by numbers.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "I find it difficult to imagine what it would be like to be someone else.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "I prefer fiction to non-fiction.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "I find it hard to make new friends.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "I notice details that others do not.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "I would rather go to a museum than the theatre.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 25,
+      "text": "If I try to imagine something, I find it very difficult to create a picture in my mind.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 26,
+      "text": "I often find it difficult to keep a conversation going.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "I can easily tell if someone is bored by what I’m saying.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 28,
+      "text": "I usually focus on the whole picture rather than the small details.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 29,
+      "text": "I find it difficult to remember people’s phone numbers.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 30,
+      "text": "I usually don’t notice small changes in a situation or a person’s appearance.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 31,
+      "text": "I can tell if someone is interested in what I’m saying.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 32,
+      "text": "I find it easy to do more than one thing at once.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 33,
+      "text": "I often don’t know when it’s my turn to speak in a conversation.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "I prefer to do things spontaneously rather than plan ahead.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 35,
+      "text": "I usually catch the point of a joke quickly.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "I find it easy to work out what someone is thinking from their facial expression.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "If I am interrupted, I can easily resume what I was doing.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 38,
+      "text": "I am good at socializing with people.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 39,
+      "text": "People tell me that I tend to talk about the same thing repeatedly.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "When I was young, I enjoyed pretending to be someone else.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 41,
+      "text": "I like to collect information about categories of things (e.g., cars, birds, trains, plants).",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "I find it hard to imagine what it would be like to be another person.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "I like to organize everything before I do it.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "I enjoy being part of social gatherings.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 45,
+      "text": "I find it difficult to figure out people’s intentions.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "New situations make me anxious.",
+      "scoreAgree": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "I enjoy meeting new people.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 48,
+      "text": "I consider myself a good diplomat.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 49,
+      "text": "I find it hard to remember other people’s birthdays.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 50,
+      "text": "I enjoyed playing pretend games with other children when I was young.",
+      "scoreAgree": [
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  ],
+  "degree": {
+    "agree": "Agree",
+    "disagree": "Disagree"
+  },
+  "scores": [
+    {
+      "title": "Test Score",
+      "subtitle": "Total"
+    },
+    {
+      "title": "Subscale Score",
+      "subtitle": "Social Skills"
+    },
+    {
+      "title": "Subscale Score",
+      "subtitle": "Communication"
+    },
+    {
+      "title": "Subscale Score",
+      "subtitle": "Attention Switching"
+    },
+    {
+      "title": "Subscale Score",
+      "subtitle": "Attention to Detail"
+    },
+    {
+      "title": "Subscale Score",
+      "subtitle": "Imagination"
+    }
+  ],
+  "result": [
+    {
+      "text": "Non-autistic"
+    },
+    {
+      "text": "You have some autistic traits"
+    },
+    {
+      "text": "You may have high-functioning autism traits"
+    },
+    {
+      "text": "You are very likely to have high-functioning autism traits"
+    }
+  ]
+}
