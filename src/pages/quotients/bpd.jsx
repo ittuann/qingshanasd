@@ -33,12 +33,13 @@ class BPD extends Component {
       });
     }
 
+    this.currentLocale = this.context?.locale;
     this.loadQuestionData();
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    // 如果语言变化，重新加载问题数据
-    if (this.context?.locale !== prevState.locale) {
+  componentDidUpdate() {
+    if (this.context?.locale !== this.currentLocale) {
+      this.currentLocale = this.context?.locale;
       this.loadQuestionData();
     }
   }
@@ -46,14 +47,12 @@ class BPD extends Component {
   loadQuestionData = async () => {
     try {
       const locale = this.context?.locale || defaultLocale;
-      // 根据当前语言加载对应的问题数据
       const data = await import(`@/_data/questionBPD.${locale}.json`);
-      this.setState({ questionData: data.default, locale });
+      this.setState({ questionData: data.default });
     } catch (error) {
-      // 如果找不到当前语言的问题数据，使用默认语言
       console.error("Error loading question data:", error);
       const data = await import(`@/_data/questionBPD.${defaultLocale}.json`);
-      this.setState({ questionData: data.default, locale: defaultLocale });
+      this.setState({ questionData: data.default });
     }
   };
 

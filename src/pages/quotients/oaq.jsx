@@ -33,11 +33,13 @@ class OAQ extends Component {
       });
     }
 
+    this.currentLocale = this.context?.locale;
     this.loadQuestionData();
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (this.context?.locale !== prevState.locale) {
+  componentDidUpdate() {
+    if (this.context?.locale !== this.currentLocale) {
+      this.currentLocale = this.context?.locale;
       this.loadQuestionData();
     }
   }
@@ -46,11 +48,11 @@ class OAQ extends Component {
     try {
       const locale = this.context?.locale || defaultLocale;
       const data = await import(`@/_data/questionOAQ.${locale}.json`);
-      this.setState({ questionData: data.default, locale });
+      this.setState({ questionData: data.default });
     } catch (error) {
       console.error("Error loading question data:", error);
       const data = await import(`@/_data/questionOAQ.${defaultLocale}.json`);
-      this.setState({ questionData: data.default, locale: defaultLocale });
+      this.setState({ questionData: data.default });
     }
   };
 

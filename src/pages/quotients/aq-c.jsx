@@ -37,11 +37,13 @@ class AQC extends Component {
         answers: JSON.parse(savedAnswers),
       });
     }
+    this.currentLocale = this.context?.locale;
     this.loadQuestionData();
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (this.context?.locale !== prevState.locale) {
+  componentDidUpdate() {
+    if (this.context?.locale !== this.currentLocale) {
+      this.currentLocale = this.context?.locale;
       this.loadQuestionData();
     }
   }
@@ -50,11 +52,11 @@ class AQC extends Component {
     try {
       const locale = this.context?.locale || defaultLocale;
       const data = await import(`@/_data/questionAQC.${locale}.json`);
-      this.setState({ questionData: data.default, locale });
+      this.setState({ questionData: data.default });
     } catch (error) {
       console.error("Error loading question data:", error);
       const data = await import(`@/_data/questionAQC.${defaultLocale}.json`);
-      this.setState({ questionData: data.default, locale: defaultLocale });
+      this.setState({ questionData: data.default });
     }
   };
 

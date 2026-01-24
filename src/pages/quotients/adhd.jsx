@@ -33,11 +33,14 @@ class ADHD extends Component {
         answers: JSON.parse(savedAnswers),
       });
     }
+    this.currentLocale = this.context?.locale;
     this.loadQuestionData();
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (this.context?.locale !== prevState.locale) {
+  componentDidUpdate() {
+    // 如果语言变化，重新加载量表问题
+    if (this.context?.locale !== this.currentLocale) {
+      this.currentLocale = this.context?.locale;
       this.loadQuestionData();
     }
   }
@@ -45,12 +48,14 @@ class ADHD extends Component {
   loadQuestionData = async () => {
     try {
       const locale = this.context?.locale || defaultLocale;
+      // 根据当前语言加载对应的量表问题
       const data = await import(`@/_data/questionADHD.${locale}.json`);
-      this.setState({ questionData: data.default, locale });
+      this.setState({ questionData: data.default });
     } catch (error) {
+      // 如果找不到当前语言的量表问题数据，使用默认语言
       console.error("Error loading question data:", error);
       const data = await import(`@/_data/questionADHD.${defaultLocale}.json`);
-      this.setState({ questionData: data.default, locale: defaultLocale });
+      this.setState({ questionData: data.default });
     }
   };
 
