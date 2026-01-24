@@ -7,7 +7,7 @@ import QuestionResult from "@/components/QuestionResult";
 import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import QuestionAlert from "@/components/QuestionAlert";
-import questionData from "@/_data/questionEQ60.zh-CN.json";
+import questionDataDefault from "@/_data/questionEQ60.zh-CN.json";
 import BackToTop from "@/components/BackToTop";
 import { FormattedMessage, injectIntl } from "react-intl";
 
@@ -82,7 +82,7 @@ class EQ60 extends Component {
   };
 
   getQuestionDetail() {
-    return questionData.question;
+    return questionDataDefault.question;
   }
 
   calculateScores() {
@@ -95,9 +95,9 @@ class EQ60 extends Component {
 
   calculateResult(score) {
     if (score <= 30) {
-      return questionData.result[0].text;
+      return questionDataDefault.result[0].text;
     } else {
-      return questionData.result[1].text;
+      return questionDataDefault.result[1].text;
     }
   }
 
@@ -189,8 +189,8 @@ class EQ60 extends Component {
                     key={`quotients_${question.id}`}
                     question={question}
                     degree={[
-                      questionData.degree.agree,
-                      questionData.degree.disagree,
+                      questionDataDefault.degree.agree,
+                      questionDataDefault.degree.disagree,
                     ]}
                     onAnswerChange={this.handleRadioChange}
                     checkedIndex={answers[question.id]?.index}
@@ -212,8 +212,8 @@ class EQ60 extends Component {
             questionTitle={intl.formatMessage({ id: "EQ60.pageTitle" })}
             scores={[
               {
-                title: questionData.scores[0].title,
-                subtitle: questionData.scores[0].subtitle,
+                title: questionDataDefault.scores[0].title,
+                subtitle: questionDataDefault.scores[0].subtitle,
                 score: score,
               },
             ]}

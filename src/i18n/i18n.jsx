@@ -1,7 +1,7 @@
 import { useEffect, useState, createContext } from "react";
 import { IntlProvider } from "react-intl";
 
-export const defaultLocale = "zh-CN";
+export const localeDefault = "zh-CN";
 
 export const supportedLocales = {
   "zh-CN": {
@@ -64,7 +64,7 @@ const defaultMessageMerge = (defaultMessages, currentMessages) => {
  * @returns {string} A supported locale string, or the default locale if no match is found
  */
 const getBrowserLocale = () => {
-  if (typeof window === "undefined") return defaultLocale;
+  if (typeof window === "undefined") return localeDefault;
 
   const browserLang = window.navigator.language;
 
@@ -76,7 +76,7 @@ const getBrowserLocale = () => {
   const match = Object.keys(supportedLocales).find((locale) =>
     locale.startsWith(languageCode),
   );
-  return match || defaultLocale;
+  return match || localeDefault;
 };
 
 export const LocaleContext = createContext({
@@ -92,7 +92,7 @@ export default function I18n(props) {
       // 如果没有保存的语言设置，使用浏览器语言
       return savedLocale || getBrowserLocale();
     }
-    return defaultLocale;
+    return localeDefault;
   });
   const [messages, setMessages] = useState(null);
 
@@ -107,10 +107,10 @@ export default function I18n(props) {
       try {
         // 总是加载默认语言 作为回退
         const defaultMessages = await import(
-          `@/i18n/lang/${defaultLocale}.json`
+          `@/i18n/lang/${localeDefault}.json`
         );
 
-        if (locale === defaultLocale) {
+        if (locale === localeDefault) {
           // 如果当前语言就是默认语言则直接使用
           setMessages(defaultMessages.default || defaultMessages);
         } else {
@@ -125,7 +125,7 @@ export default function I18n(props) {
           } catch (err) {
             // 如果当前语言加载失败，使用默认语言
             console.warn(
-              `Failed to load messages for locale ${locale}, falling back to ${defaultLocale}:`,
+              `Failed to load messages for locale ${locale}, falling back to ${localeDefault}:`,
               err,
             );
             setMessages(defaultMessages.default || defaultMessages);
@@ -133,7 +133,7 @@ export default function I18n(props) {
         }
       } catch (err) {
         console.error(
-          `Error loading default messages for locale ${defaultLocale}:`,
+          `Error loading default messages for locale ${localeDefault}:`,
           err,
         );
       }
@@ -146,7 +146,7 @@ export default function I18n(props) {
     <LocaleContext.Provider value={{ locale, setLocale }}>
       <IntlProvider
         locale={locale}
-        defaultLocale={defaultLocale}
+        localeDefault={localeDefault}
         messages={messages}
         key={locale}
       >

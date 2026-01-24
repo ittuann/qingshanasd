@@ -8,8 +8,9 @@ import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import QuestionAlert from "@/components/QuestionAlert";
 import BackToTop from "@/components/BackToTop";
+import questionDataDefault from "@/_data/questionAQA.zh-CN.json";
 import { FormattedMessage, injectIntl } from "react-intl";
-import { defaultLocale, LocaleContext } from "@/i18n/i18n";
+import { localeDefault, LocaleContext } from "@/i18n/i18n";
 
 class AQA extends Component {
   static contextType = LocaleContext;
@@ -50,13 +51,16 @@ class AQA extends Component {
 
   loadQuestionData = async () => {
     try {
-      const locale = this.context?.locale || defaultLocale;
-      const data = await import(`@/_data/questionAQA.${locale}.json`);
-      this.setState({ questionData: data.default });
+      const locale = this.context?.locale || localeDefault;
+      if (locale === localeDefault) {
+        this.setState({ questionData: questionDataDefault });
+      } else {
+        const data = await import(`@/_data/questionAQA.${locale}.json`);
+        this.setState({ questionData: data.default });
+      }
     } catch (error) {
       console.error("Error loading question data:", error);
-      const data = await import(`@/_data/questionAQA.${defaultLocale}.json`);
-      this.setState({ questionData: data.default });
+      this.setState({ questionData: questionDataDefault });
     }
   };
 

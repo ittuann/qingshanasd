@@ -9,7 +9,8 @@ import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import QuestionAlert from "@/components/QuestionAlert";
 import BackToTop from "@/components/BackToTop";
 import { FormattedMessage, injectIntl } from "react-intl";
-import { defaultLocale, LocaleContext } from "@/i18n/i18n";
+import { localeDefault, LocaleContext } from "@/i18n/i18n";
+import questionDataDefault from "@/_data/questionOAQ.zh-CN.json";
 
 class OAQ extends Component {
   static contextType = LocaleContext;
@@ -46,13 +47,16 @@ class OAQ extends Component {
 
   loadQuestionData = async () => {
     try {
-      const locale = this.context?.locale || defaultLocale;
-      const data = await import(`@/_data/questionOAQ.${locale}.json`);
-      this.setState({ questionData: data.default });
+      const locale = this.context?.locale || localeDefault;
+      if (locale === localeDefault) {
+        this.setState({ questionData: questionDataDefault });
+      } else {
+        const data = await import(`@/_data/questionOAQ.${locale}.json`);
+        this.setState({ questionData: data.default });
+      }
     } catch (error) {
       console.error("Error loading question data:", error);
-      const data = await import(`@/_data/questionOAQ.${defaultLocale}.json`);
-      this.setState({ questionData: data.default });
+      this.setState({ questionData: questionDataDefault });
     }
   };
 

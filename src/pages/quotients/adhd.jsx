@@ -8,8 +8,9 @@ import QuestionInfo from "@/components/QuestionInfo";
 import QuestionInfoAlert from "@/components/QuestionInfoAlert";
 import QuestionAlert from "@/components/QuestionAlert";
 import BackToTop from "@/components/BackToTop";
+import questionDataDefault from "@/_data/questionADHD.zh-CN.json";
 import { FormattedMessage, injectIntl } from "react-intl";
-import { defaultLocale, LocaleContext } from "@/i18n/i18n";
+import { localeDefault, LocaleContext } from "@/i18n/i18n";
 
 class ADHD extends Component {
   static contextType = LocaleContext;
@@ -47,15 +48,19 @@ class ADHD extends Component {
 
   loadQuestionData = async () => {
     try {
-      const locale = this.context?.locale || defaultLocale;
+      const locale = this.context?.locale || localeDefault;
       // 根据当前语言加载对应的量表问题
-      const data = await import(`@/_data/questionADHD.${locale}.json`);
-      this.setState({ questionData: data.default });
+      if (locale === localeDefault) {
+        // 默认语言直接使用导入的数据
+        this.setState({ questionData: questionDataDefault });
+      } else {
+        const data = await import(`@/_data/questionADHD.${locale}.json`);
+        this.setState({ questionData: data.default });
+      }
     } catch (error) {
       // 如果找不到当前语言的量表问题数据，使用默认语言
       console.error("Error loading question data:", error);
-      const data = await import(`@/_data/questionADHD.${defaultLocale}.json`);
-      this.setState({ questionData: data.default });
+      this.setState({ questionData: questionDataDefault });
     }
   };
 
