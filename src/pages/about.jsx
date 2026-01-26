@@ -11,7 +11,7 @@ import cooperationData from "@/_data/cooperationData";
 const contributors = [
   {
     name: "青衫",
-    role: <FormattedMessage id="About.creatorRole" />,
+    role: <FormattedMessage id="About.contributorFounder" />,
     icon: "/assets/img/qingshan_150.png",
     link: "#",
     email: "qingshan.aspire@gmail.com",
@@ -19,7 +19,7 @@ const contributors = [
   },
   {
     name: "air wish",
-    role: <FormattedMessage id="About.developerRole" />,
+    role: <FormattedMessage id="About.contributorDeveloper" />,
     icon: "/assets/img/ittuann.png",
     link: "https://github.com/ittuann",
     email: "ittuann@outlook.com",
@@ -27,7 +27,7 @@ const contributors = [
   },
   {
     name: "H-MALGANIS",
-    role: <FormattedMessage id="About.developerRole" />,
+    role: <FormattedMessage id="About.contributorDeveloper" />,
     icon: "/assets/img/zealot.png",
     link: "#",
     email: "#",
@@ -35,7 +35,7 @@ const contributors = [
   },
   {
     name: "GLOOMYGHOST",
-    role: <FormattedMessage id="About.developerRole" />,
+    role: <FormattedMessage id="About.contributorDeveloper" />,
     icon: "/assets/img/G-150x150.png",
     link: "https://github.com/YuzukiTsuru",
     email: "#",
@@ -43,7 +43,7 @@ const contributors = [
   },
   {
     name: "SPACEDUCK",
-    role: <FormattedMessage id="About.maintainerRole" />,
+    role: <FormattedMessage id="About.contributorMaintainer" />,
     icon: "/assets/img/SpaceDuck.png",
     link: "#",
     email: "#",
@@ -137,12 +137,6 @@ const CooperationList = ({ items, maxItems = 9 }) => {
   const shouldShowButton = items.length > maxItems;
   const displayedItems = isExpanded ? items : items.slice(0, maxItems);
 
-  const totalPartners = items.length;
-  const totalCoopCount = items.reduce(
-    (acc, curr) => acc + (curr.coop ? curr.coop.length : 0),
-    0,
-  );
-
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl mx-auto">
@@ -163,12 +157,8 @@ const CooperationList = ({ items, maxItems = 9 }) => {
                 <FormattedMessage id="About.showLess" defaultMessage="收起" />
               ) : (
                 <FormattedMessage
-                  id="About.showMoreWithStats"
-                  defaultMessage="展开全部 {partnerCount} 个合作方 ({coopCount} 次合作)"
-                  values={{
-                    partnerCount: totalPartners,
-                    coopCount: totalCoopCount,
-                  }}
+                  id="About.showMore"
+                  defaultMessage="查看更多"
                 />
               )}
             </span>
@@ -287,10 +277,10 @@ function About() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-4">
               <h2 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl mb-4">
-                <FormattedMessage id="About.contributors" />
+                <FormattedMessage id="About.contributor" />
               </h2>
               <p className="max-w-3xl mx-auto text-center text-gray-600 mb-6">
-                <FormattedMessage id="About.contributorsDescription" />
+                <FormattedMessage id="About.contributorDescription" />
               </p>
             </div>
 
@@ -330,7 +320,7 @@ function About() {
 
             <div className="text-center mt-6">
               <p className="text-gray-600">
-                <FormattedMessage id="About.contributorsNote" />
+                <FormattedMessage id="About.contributorNote" />
               </p>
             </div>
 
