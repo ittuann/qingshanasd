@@ -23,6 +23,21 @@ const MapChart = dynamic(() => import("@/components/MapChart"), {
   ),
 });
 
+const MapContainer = () => {
+  const { dataType } = useContext(MedicalDataContext);
+
+  // 海外版不渲染地图
+  if (dataType === "abroad") {
+    return null;
+  }
+
+  return (
+    <div className="relative bg-white rounded-xl shadow-lg p-4 transition-all duration-300 hover:shadow-xl min-h-[500px]">
+      <MapChart />
+    </div>
+  );
+};
+
 function MedicalMap() {
   const intl = useIntl();
 
@@ -34,26 +49,24 @@ function MedicalMap() {
       <MedicalDataProvider>
         <div className="max-w-7xl mx-auto px-4 py-8">
           {/* 标题区域 */}
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-4 relative inline-block">
-              <FormattedMessage id="MedicalMap.title" />
-              <div className="absolute bottom-0 left-0 w-full h-1 bg-primary/20"></div>
-            </h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4 relative inline-block">
+            <FormattedMessage id="MedicalMap.title" />
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-primary/20"></div>
+          </h1>
 
-            <MapContainer />
-          </div>
+          <MapContainer />
 
           {/* 按钮组 */}
           <MapInfoSelect />
 
           {/* 提示区域 */}
-          <div className="bg-white rounded-xl shadow-lg p-6 my-8 border-l-4 border-primary bg-gradient-to-r from-primary/5 to-transparent">
+          <div className="bg-white rounded-xl shadow-lg p-6 mt-4 border-l-4 border-primary bg-gradient-to-r from-primary/5 to-transparent">
             <p className="font-semibold text-gray-900 mb-3">小提示:</p>
             <p className="text-gray-600 mb-2">
               由于就诊地图的统计难免有疏漏，部分可诊断ADHD/ASD的医院可能并没有被收录。建议先在自己本地三甲医院尝试就诊。
             </p>
             <p className="text-gray-600">
-              一种可以判断某医院是否可以就诊ADHD的方法是，直询该医院的药物价格公示，如果里面有哌甲酯或者托莫西汀等ADHD药物，那该医院一定能诊断ADHD（但不一定能诊断成人ADHD）。如果药物价格公示中不含哌甲酯和托莫西汀，也不代表该医院诊断不了ADHD（因为有的医院药物价格公示没有及时更新，几年前没有哌甲酯和托莫西汀，不代表现在也没有）。
+              一种可以判断某医院是否可以诊断ADHD的方法是，查询该院的药物价格公示，如果里面有哌甲酯或者托莫西汀等ADHD药物，通常意味着该医院可以诊断ADHD（但不一定能诊断成人ADHD）。另外即使药价公示里没有也不代表该医院不能诊断，因为有些医院药价公示更新不及时，几年前没有不代表现在也没有。
             </p>
           </div>
 
@@ -71,20 +84,5 @@ function MedicalMap() {
     </Layout>
   );
 }
-
-const MapContainer = () => {
-  const { dataType } = useContext(MedicalDataContext);
-
-  // 海外版不渲染地图
-  if (dataType === "abroad") {
-    return null;
-  }
-
-  return (
-    <div className="relative bg-white rounded-xl shadow-lg p-4 transition-all duration-300 hover:shadow-xl min-h-[500px]">
-      <MapChart />
-    </div>
-  );
-};
 
 export default MedicalMap;

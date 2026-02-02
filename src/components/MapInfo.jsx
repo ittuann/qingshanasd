@@ -8,7 +8,7 @@ const MapInfoSelect = () => {
   const { dataType, switchData } = useContext(MedicalDataContext);
 
   return (
-    <div className="flex justify-end">
+    <div className="flex justify-end mt-4">
       <div className="inline-flex bg-gray-50 rounded-xl space-x-3 p-2 shadow-lg border border-gray-200">
         <button
           onClick={() => switchData("domestic")}

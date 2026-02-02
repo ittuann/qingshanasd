@@ -37,7 +37,7 @@ class MapChart extends Component {
       backgroundColor: "transparent",
       title: {
         text: "ADHD/ASD可诊地图",
-        subtext: "注：地图可拖动和放大缩小",
+        subtext: "注：地图可拖动和放大",
         left: "center",
       },
       // 提示框组件

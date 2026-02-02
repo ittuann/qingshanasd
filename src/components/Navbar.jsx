@@ -30,9 +30,10 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="bg-white">
+      <nav className="bg-white relative z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between h-16">
+            {/* logo */}
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
                 <Image
@@ -42,6 +43,7 @@ class Navbar extends Component {
                   height={32}
                   className="mr-2"
                 />
+
                 <span className={`${pacifico.className} text-xl text-gray-900`}>
                   <FormattedMessage id="siteName" />
                 </span>
@@ -111,7 +113,7 @@ class Navbar extends Component {
 
           {/* 移动端菜单面板 */}
           {this.state.isMobileMenuOpen && (
-            <div className="md:hidden">
+            <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg border-t border-gray-100">
               <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col">
                 <Link
                   href="/"
