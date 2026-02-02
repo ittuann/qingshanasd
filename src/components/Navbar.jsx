@@ -41,6 +41,7 @@ class Navbar extends Component {
                   alt="logo"
                   width={32}
                   height={32}
+                  fetchPriority="high"
                   className="mr-2"
                 />
 

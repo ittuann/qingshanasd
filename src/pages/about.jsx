@@ -229,6 +229,7 @@ function About() {
               alt="logo"
               width={64}
               height={64}
+              fetchPriority="high"
               className="rounded-full"
             />
           </div>

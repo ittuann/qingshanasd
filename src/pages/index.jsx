@@ -181,7 +181,6 @@ function Index() {
                 alt="Qingshan Neuro Logo index"
                 width={128}
                 height={128}
-                priority={true}
                 fetchPriority="high"
                 className="rounded-full logo-drop-shadow-glow"
               />

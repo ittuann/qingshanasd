@@ -17,6 +17,7 @@ class Footer extends Component {
                   alt="logo"
                   width={32}
                   height={32}
+                  fetchPriority="high"
                   className="mr-2"
                 />
                 <span className="font-['Pacifico'] text-xl text-gray-900">
