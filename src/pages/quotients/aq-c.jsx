@@ -244,7 +244,7 @@ class AQC extends Component {
                 </Link>
               </p>
               <p className="text-xs text-gray-500 mt-1">
-                The Autism Spectrum Quotient: Children's Version (AQ-Child).
+                {"The Autism Spectrum Quotient: Children's Version (AQ-Child)."}
               </p>
               <p className="text-xs text-gray-500 mt-1">
                 Journal of Autism and Developmental Disorders Dec 7

@@ -15,7 +15,7 @@ const scales = [
     iconBg: "bg-orange-100",
     title: <FormattedMessage id="Index.scales.adhd.title" />,
     description: <FormattedMessage id="Index.scales.adhd.description" />,
-    tags: ["ADHD", <FormattedMessage id="Index.tag.adult" />],
+    tags: ["ADHD", <FormattedMessage key="adult" id="Index.tag.adult" />],
     link: "/quotients/adhd",
   },
   {
@@ -25,9 +25,9 @@ const scales = [
     title: <FormattedMessage id="Index.scales.aqa.title" />,
     description: <FormattedMessage id="Index.scales.aqa.description" />,
     tags: [
-      <FormattedMessage id="Index.tag.autism" />,
+      <FormattedMessage key="autism" id="Index.tag.autism" />,
       "AQ",
-      <FormattedMessage id="Index.tag.adult" />,
+      <FormattedMessage key="adult" id="Index.tag.adult" />,
     ],
     link: "/quotients/aq-a",
   },
@@ -46,7 +46,10 @@ const scales = [
     iconBg: "bg-yellow-100",
     title: <FormattedMessage id="Index.scales.oaq.title" />,
     description: <FormattedMessage id="Index.scales.oaq.description" />,
-    tags: [<FormattedMessage id="Index.tag.alexithymia" />, "OAQ"],
+    tags: [
+      <FormattedMessage key="alexithymia" id="Index.tag.alexithymia" />,
+      "OAQ",
+    ],
     link: "/quotients/oaq",
   },
   {
@@ -56,9 +59,9 @@ const scales = [
     title: <FormattedMessage id="Index.scales.aqc.title" />,
     description: <FormattedMessage id="Index.scales.aqc.description" />,
     tags: [
-      <FormattedMessage id="Index.tag.autism" />,
+      <FormattedMessage key="autism" id="Index.tag.autism" />,
       "AQ",
-      <FormattedMessage id="Index.tag.child" />,
+      <FormattedMessage key="child" id="Index.tag.child" />,
     ],
     link: "/quotients/aq-c",
   },
@@ -69,9 +72,9 @@ const scales = [
     title: <FormattedMessage id="Index.scales.aspie.title" />,
     description: <FormattedMessage id="Index.scales.aspie.description" />,
     tags: [
-      <FormattedMessage id="Index.tag.autism" />,
+      <FormattedMessage key="autism" id="Index.tag.autism" />,
       "AQ",
-      <FormattedMessage id="Index.tag.external" />,
+      <FormattedMessage key="external" id="Index.tag.external" />,
     ],
     link: "https://www.rdos.net/china/index.php?utm_source=qingshanasd.cn",
   },
@@ -81,7 +84,7 @@ const scales = [
     iconBg: "bg-teal-100",
     title: <FormattedMessage id="Index.scales.eq.title" />,
     description: <FormattedMessage id="Index.scales.eq.description" />,
-    tags: [<FormattedMessage id="Index.tag.empathy" />, "EQ"],
+    tags: [<FormattedMessage key="empathy" id="Index.tag.empathy" />, "EQ"],
     link: "/quotients/eq60",
   },
 ];

@@ -12,8 +12,6 @@ const QuestionResult = ({
   showModal,
   onClose,
 }) => {
-  if (!showModal) return null;
-
   // 图片下载功能
   const resultRef = useRef(null);
   const handleSaveAsImage = () => {
@@ -34,12 +32,14 @@ const QuestionResult = ({
         element.style.overflowY = originalStyle.overflowY;
 
         const link = document.createElement("a");
-        link.download = `result-${new Date().toLocaleString()}.png`;
+        link.download = `QingshanNeuro-Result-${new Date().toLocaleString()}.png`;
         link.href = canvas.toDataURL("image/png");
         link.click();
       });
     }
   };
+
+  if (!showModal) return null;
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">

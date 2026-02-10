@@ -5,6 +5,7 @@ import React, { Component } from "react";
 export default class Document extends Component {
   render() {
     return (
+      /* @case-police-disable */
       <Html lang="en">
         <Head>
           <Script id="msc" src="/assets/lib/msc.min.js" />

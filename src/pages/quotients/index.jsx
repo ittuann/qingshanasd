@@ -6,7 +6,7 @@ export default function Quotients() {
 
   useEffect(() => {
     router.push("/");
-  }, []);
+  }, [router]);
 
   return null;
 }

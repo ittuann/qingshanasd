@@ -13,7 +13,7 @@ export default function Custom404() {
     }, 3000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [router]);
 
   return (
     <Layout title="PageNotFound | 青衫 Neuro" description="页面未找到">

@@ -133,7 +133,7 @@ ${posts
     // 写入生成的RSS XML文件
     sitemap.writeOutputFiles(rss, "rss.xml");
   } catch (error) {
-    console.error("Err Rss feed Generating:", error);
+    console.error("Err RSS feed Generating:", error);
   }
 }
 
