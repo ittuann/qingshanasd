@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import * as echarts from "echarts";
 import { transformMedicalData } from "@/utils/dataTransform";
-import chinaGeoJson from "@/_data/100000_full.json";
+import chinaGeoJson from "@/_data/chinaGeoJson.json"; // https://github.com/BarbarossaWang/cn-atlas
 import { MedicalDataContext } from "@/context/MedicalDataContext";
 
 class MapChart extends Component {
@@ -18,7 +18,6 @@ class MapChart extends Component {
   }
 
   componentDidUpdate() {
-    const { currentData } = this.context;
     this.updateChart();
   }
 
@@ -71,6 +70,7 @@ class MapChart extends Component {
         {
           type: "map",
           map: "china",
+          nameProperty: "地名",
           name: "中国大陆地图",
           roam: true, // 缩放和平移
           selectedMode: false,
@@ -102,9 +102,6 @@ class MapChart extends Component {
             itemStyle: {
               areaColor: "#52B394",
             },
-          },
-          nameMap: {
-            台湾省: "台湾",
           },
           data: hospitalData.map((item) => ({
             name: item.name,

@@ -2852,7 +2852,10 @@
           "doctors": [
             {
               "name": "",
-              "capacity": [],
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
               "shares": [
                 {
                   "name": "台湾AS的生活经历：我的路程及我的需要",

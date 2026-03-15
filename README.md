@@ -18,6 +18,10 @@
 
 因为你我，这个世界终将丰富多彩
 
+Qingshan Neuro is a public welfare non-profit organization, dedicated to neurodiversity education, resources, and mutual assistance for neurodiversity, offering support to the neurodiverse community.
+
+Because of you and me, this world will be rich and colorful.
+
 ## 🛠️ Develop
 
 This website is built with [React](https://react.dev/) and powered by the [Next.js](https://nextjs.org/) framework, featuring responsive design through [Tailwind CSS](https://tailwindcss.com/) v4 and the [shadcn/ui](https://ui.shadcn.com/) component library.
