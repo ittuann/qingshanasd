@@ -130,6 +130,7 @@
   "quotients.info2": "本量表<strong>仅供筛查</strong>，<strong>不代表</strong>确诊或作为诊断依据",
   "quotients.cookieNotice": "* 页面会在您的本地浏览器中使用 Cookie 临时保存量表填写选项，并于2小时后自动",
   "quotients.cookieDelete": "删除",
+  "quotients.cookieOpenSource": "。网站代码开源在 ",
   "quotients.submit": "提交",
   "QuestionInfoAlert.title": "重要信息",
   "QuestionInfoAlert.description": "量表信息说明",

@@ -254,7 +254,15 @@ class AQA extends Component {
                 >
                   <FormattedMessage id="quotients.cookieDelete" />
                 </button>
-                。
+                <FormattedMessage id="quotients.cookieOpenSource" />
+                <Link
+                  href="https://github.com/ittuann/qingshanasd"
+                  target="_blank"
+                  className="underline hover:text-gray-600 transition-colors"
+                  aria-label="GitHub"
+                >
+                  GitHub
+                </Link>
               </p>
             </>
           }
