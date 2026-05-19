@@ -64,5 +64,10 @@
     "serve": "^14.2.4",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.2.9"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
   }
 }
