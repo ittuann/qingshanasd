@@ -22,8 +22,8 @@
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "format": "prettier --write '**/*.{js,jsx,mjs,ts,css,scss,html,json,jsonc,yaml,yml,md}'",
-    "format:check": "prettier --check '**/*.{js,jsx,mjs,ts,css,scss,html,json,jsonc,yaml,yml,md}'",
+    "format": "prettier --write '**/*.{js,jsx,mjs,ts,mts,css,scss,html,json,yaml,yml,toml,md}'",
+    "format:check": "prettier --check '**/*.{js,jsx,mjs,ts,mts,css,scss,html,json,yaml,yml,toml,md}'",
     "test": "jest",
     "test:watch": "jest --watch"
   },

@@ -72,7 +72,7 @@ Then you can open `http://localhost:3000` in your browser.
 
 ## 📜 License
 
-我们支持您将文章分享给更多的人，只需要带上我们的出处与链接即可！除特别说明外，文章作品均采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（CC BY-NC-ND 4.0）](https://github.com/ittuann/qingshanasd/blob/main/LICENSE-CC-BY-NC-ND)进行许可。
+我们支持您将文章分享给更多的人，只需要带上我们的出处与链接即可！除特别说明外，文章均采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（CC BY-NC-ND 4.0）](https://github.com/ittuann/qingshanasd/blob/main/LICENSE-CC-BY-NC-ND)进行许可。
 
 网站代码采用 [GNU Affero General Public License v3.0 (AGPL-3.0)](https://github.com/ittuann/qingshanasd/blob/main/LICENSE) 进行许可。
 
