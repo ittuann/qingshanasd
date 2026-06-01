@@ -8,25 +8,26 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
-
-# misc
-.DS_Store
-*.pem
-
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# output
+/out/
+/dist/
+
+# misc
+.DS_Store
+*.pem
+
+# testing
+/coverage
+
+# local env files (can opt-in for committing if needed)
+.env*.local
+.env
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
-
-# local import scratch files
-/_local/
