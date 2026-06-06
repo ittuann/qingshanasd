@@ -635,12 +635,27 @@
               "notes": ""
             },
             {
-              "name": "宋钊",
+              "name": "宋钊（已离职）",
               "capacity": [
                 "ASD"
               ],
               "shares": [],
               "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "重庆市妇幼保健院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "宋钊",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": "儿童保健科（儿童心理门诊）可咨询 ADHD/ASD 及成人 ADHD 就诊；有反馈提到院内可咨询专注达 18mg、27mg 相关开药情况，建议就诊前核对出诊与处方要求。"
             }
           ]
         }
