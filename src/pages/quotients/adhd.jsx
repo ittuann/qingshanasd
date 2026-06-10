@@ -164,27 +164,27 @@ class ADHD extends Component {
     let type, subType;
     if (scoreA <= 16) {
       if (scoreB <= 16) {
-        (type = "A"), (subType = "A");
+        ((type = "A"), (subType = "A"));
       } else if (scoreB <= 23) {
-        (type = "C"), (subType = "A");
+        ((type = "C"), (subType = "A"));
       } else {
-        (type = "C"), (subType = "B");
+        ((type = "C"), (subType = "B"));
       }
     } else if (scoreA <= 23) {
       if (scoreB <= 16) {
-        (type = "B"), (subType = "A");
+        ((type = "B"), (subType = "A"));
       } else if (scoreB <= 23) {
-        (type = "D"), (subType = "A");
+        ((type = "D"), (subType = "A"));
       } else {
-        (type = "E"), (subType = "A");
+        ((type = "E"), (subType = "A"));
       }
     } else {
       if (scoreB <= 16) {
-        (type = "B"), (subType = "B");
+        ((type = "B"), (subType = "B"));
       } else if (scoreB <= 23) {
-        (type = "E"), (subType = "B");
+        ((type = "E"), (subType = "B"));
       } else {
-        (type = "D"), (subType = "B");
+        ((type = "D"), (subType = "B"));
       }
     }
     return resultADHD[type][subType];
@@ -216,7 +216,7 @@ class ADHD extends Component {
                   }}
                 />
               </p>
-              <p className="text-gray-600 mt-2">
+              <p className="mt-2 text-gray-600">
                 <FormattedMessage
                   id="quotients.info2"
                   values={{
@@ -229,7 +229,7 @@ class ADHD extends Component {
         />
 
         <QuestionInfo
-          icon={<i className="ri-lightbulb-line text-xl text-primary"></i>}
+          icon={<i className="ri-lightbulb-line text-primary text-xl"></i>}
           iconBg="bg-green-100"
           content={
             <>
@@ -237,30 +237,30 @@ class ADHD extends Component {
                 href="https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247484259&idx=1&sn=c3aa8e8dbef9f5445212b1dfa2a31cd4"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs mt-1 text-gray-600 hover:text-gray-700 transition-colors underline"
+                className="mt-1 text-xs text-gray-600 underline transition-colors hover:text-gray-700"
               >
                 <FormattedMessage id="ADHD.referenceIntro" />
               </Link>
-              <p className="text-xs text-gray-600 mt-1">
+              <p className="mt-1 text-xs text-gray-600">
                 <FormattedMessage id="ADHD.reference" />
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="mt-1 text-xs text-gray-500">
                 <Link
                   href="https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/adhd/Old%20Versions/18Q-Chinese-Traditional.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                 >
                   18Q-Chinese-Traditional.pdf
                 </Link>{" "}
                 <FormattedMessage id="ADHD.reference1" /> Composite
                 International Diagnostic Interview
               </p>
-              <p className="text-xs text-gray-500 mt-2">
+              <p className="mt-2 text-xs text-gray-500">
                 <FormattedMessage id="quotients.cookieNotice" />
                 <button
                   onClick={this.clearAnswersCookie}
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                 >
                   <FormattedMessage id="quotients.cookieDelete" />
                 </button>
@@ -268,7 +268,7 @@ class ADHD extends Component {
                 <Link
                   href="https://github.com/ittuann/qingshanasd"
                   target="_blank"
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                   aria-label="GitHub"
                 >
                   GitHub
@@ -285,10 +285,10 @@ class ADHD extends Component {
         title={intl.formatMessage({ id: "ADHD.title" })}
         description={intl.formatMessage({ id: "ADHD.description" })}
       >
-        <div className="max-w-3xl mx-auto px-4 py-8">
-          <div className="bg-white rounded-lg shadow-sm p-8">
-            <div className="text-center mb-8">
-              <h1 className="text-2xl font-semibold text-gray-900 mb-4">
+        <div className="mx-auto max-w-3xl px-4 py-8">
+          <div className="rounded-lg bg-white p-8 shadow-sm">
+            <div className="mb-8 text-center">
+              <h1 className="mb-4 text-2xl font-semibold text-gray-900">
                 <FormattedMessage id="ADHD.pageTitle" />
               </h1>
 
@@ -318,7 +318,7 @@ class ADHD extends Component {
               <button
                 type="submit"
                 id="quotients-submit-adhd"
-                className="w-full bg-gradient-to-r from-green-600 to-indigo-600 text-white py-3 px-6 rounded-lg hover:from-green-600/90 hover:to-indigo-600/90 transition-all duration-200 shadow-lg shadow-green-600/20"
+                className="w-full rounded-lg bg-gradient-to-r from-green-600 to-indigo-600 px-6 py-3 text-white shadow-lg shadow-green-600/20 transition-all duration-200 hover:from-green-600/90 hover:to-indigo-600/90"
               >
                 <FormattedMessage id="quotients.submit" />
               </button>

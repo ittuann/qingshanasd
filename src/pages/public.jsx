@@ -38,8 +38,8 @@ export default function Resources() {
       title="电子版手册 | 青衫 Neuro"
       description="青衫 Neuro 电子版手册，提供多种神经多样性相关的指南和手册"
     >
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mx-auto max-w-7xl px-4 py-8">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {resources.map((resource, index) => (
             <CardCustom key={index} {...resource} />
           ))}

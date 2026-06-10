@@ -69,11 +69,11 @@ class BackToTop extends Component {
 
     return (
       <div className="fixed right-4 bottom-4 z-50">
-        <div className="relative w-10 h-10">
+        <div className="relative h-10 w-10">
           {isShowButton && visible && (
             <button
               onClick={this.scrollToTop}
-              className="absolute inset-0 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-secondary flex items-center justify-center z-10"
+              className="hover:bg-secondary absolute inset-0 z-10 flex items-center justify-center rounded-full bg-white/80 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl"
               aria-label="回到顶部"
             >
               <i className="ri-arrow-up-line text-xl text-gray-600" />
@@ -82,7 +82,7 @@ class BackToTop extends Component {
           {isShowProgress && visible && (
             // SVG 圆环进度条
             <svg
-              className="absolute transform -rotate-90 w-10 h-10 z-20 pointer-events-none"
+              className="pointer-events-none absolute z-20 h-10 w-10 -rotate-90 transform"
               viewBox={`0 0 ${size} ${size}`}
             >
               <circle

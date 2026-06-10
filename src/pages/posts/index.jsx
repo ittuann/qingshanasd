@@ -73,25 +73,25 @@ export default function PostsList({ posts }) {
       title="文章列表 | 青衫 Neuro"
       description="青衫 Neuro 所发布的文章列表"
     >
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <div className="mx-auto max-w-4xl px-4 py-12">
         {/* 标题 */}
-        <h1 className="text-4xl font-bold mb-3 text-center text-gray-900">
+        <h1 className="mb-3 text-center text-4xl font-bold text-gray-900">
           <FormattedMessage id="Posts.pageTitle" />
         </h1>
 
         {/* GitHub 链接 */}
-        <div className="flex justify-end mb-8">
+        <div className="mb-8 flex justify-end">
           <Link
             href="https://github.com/ittuann/qingshanasd/blob/main/src/pages/posts/"
             target="_blank"
-            className="flex items-center text-sm text-gray-600 hover:text-primary transition-colors mr-4"
+            className="hover:text-primary mr-4 flex items-center text-sm text-gray-600 transition-colors"
           >
             <i className="ri-github-fill mr-1"></i>View on GitHub
           </Link>
           <Link
             href="https://github.com/search?q=repo%3Aittuann%2Fqingshanasd+path%3A%2F%5Esrc%5C%2Fpages%5C%2Fposts%5C%2F%2F+&type=code"
             target="_blank"
-            className="flex items-center text-sm text-gray-600 hover:text-primary transition-colors mr-4"
+            className="hover:text-primary mr-4 flex items-center text-sm text-gray-600 transition-colors"
           >
             <i className="ri-menu-search-line mr-1"></i>Search on GitHub
           </Link>
@@ -103,22 +103,22 @@ export default function PostsList({ posts }) {
           {currentPosts.map((post) => (
             <article
               key={post.slug}
-              className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-gray-100 hover:border-primary/20 transform hover:-translate-y-1"
+              className="hover:border-primary/20 transform rounded-2xl border border-gray-100 bg-white p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               {/* 文章链接 */}
-              <Link href={`/posts/${post.slug}`} className="block group">
+              <Link href={`/posts/${post.slug}`} className="group block">
                 {/* 文章标题 */}
-                <h2 className="text-2xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors duration-300">
+                <h2 className="group-hover:text-primary mb-3 text-2xl font-semibold text-gray-900 transition-colors duration-300">
                   {post.metadata.title}
                   {post.metadata.pin !== undefined && (
-                    <span className="inline-flex items-center ml-2 px-2 py-0.5 rounded-full text-xs bg-primary/10 text-primary">
+                    <span className="bg-primary/10 text-primary ml-2 inline-flex items-center rounded-full px-2 py-0.5 text-xs">
                       <i className="ri-pushpin-fill mr-1"></i>
                     </span>
                   )}
                 </h2>
 
                 {/* 文章描述 */}
-                <p className="text-gray-600 mb-4 line-clamp-2 group-hover:text-gray-800 transition-colors duration-300">
+                <p className="mb-4 line-clamp-2 text-gray-600 transition-colors duration-300 group-hover:text-gray-800">
                   {post.metadata.description}
                 </p>
 
@@ -136,7 +136,7 @@ export default function PostsList({ posts }) {
                       </span>
                     )}
                   </p>
-                  <span className="text-primary text-sm group-hover:translate-x-1 transition-transform duration-300 hidden group-hover:inline-flex items-center">
+                  <span className="text-primary hidden items-center text-sm transition-transform duration-300 group-hover:inline-flex group-hover:translate-x-1">
                     阅读全文 <i className="ri-arrow-right-line ml-1"></i>
                   </span>
                 </div>
@@ -147,7 +147,7 @@ export default function PostsList({ posts }) {
 
         {/* 分页导航 */}
         {totalPages > 1 && (
-          <div className="flex justify-center mt-12 mb-8">
+          <div className="mt-12 mb-8 flex justify-center">
             <nav className="flex items-center">
               {/* 上一页按钮 */}
               <button
@@ -155,10 +155,10 @@ export default function PostsList({ posts }) {
                   currentPage > 1 && handlePageChange(currentPage - 1)
                 }
                 disabled={currentPage === 1}
-                className={`px-3 py-2 mx-1 rounded-md ${
+                className={`mx-1 rounded-md px-3 py-2 ${
                   currentPage === 1
-                    ? "text-gray-400 cursor-not-allowed"
-                    : "text-gray-700 hover:bg-primary/10 hover:text-primary"
+                    ? "cursor-not-allowed text-gray-400"
+                    : "hover:bg-primary/10 hover:text-primary text-gray-700"
                 } transition-colors duration-300`}
               >
                 <i className="ri-arrow-left-s-line"></i>
@@ -171,10 +171,10 @@ export default function PostsList({ posts }) {
                   <button
                     key={i}
                     onClick={() => handlePageChange(i + 1)}
-                    className={`w-10 h-10 mx-1 rounded-full ${
+                    className={`mx-1 h-10 w-10 rounded-full ${
                       currentPage === i + 1
                         ? "bg-primary text-white"
-                        : "bg-gray-100 text-gray-700 hover:bg-primary/10 hover:text-primary"
+                        : "hover:bg-primary/10 hover:text-primary bg-gray-100 text-gray-700"
                     } transition-colors duration-300`}
                   >
                     {i + 1}
@@ -188,10 +188,10 @@ export default function PostsList({ posts }) {
                   currentPage < totalPages && handlePageChange(currentPage + 1)
                 }
                 disabled={currentPage === totalPages}
-                className={`px-3 py-2 mx-1 rounded-md ${
+                className={`mx-1 rounded-md px-3 py-2 ${
                   currentPage === totalPages
-                    ? "text-gray-400 cursor-not-allowed"
-                    : "text-gray-700 hover:bg-primary/10 hover:text-primary"
+                    ? "cursor-not-allowed text-gray-400"
+                    : "hover:bg-primary/10 hover:text-primary text-gray-700"
                 } transition-colors duration-300`}
               >
                 下一页
@@ -201,7 +201,7 @@ export default function PostsList({ posts }) {
           </div>
         )}
 
-        <div className="flex justify-end mt-8">
+        <div className="mt-8 flex justify-end">
           <Link href="/rss.xml" target="_blank" className="mr-4">
             <i className="ri-rss-fill mr-1"></i>RSS
           </Link>

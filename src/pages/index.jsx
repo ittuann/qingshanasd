@@ -135,28 +135,28 @@ function Index() {
       </Head>
       {/* Banner Section */}
       <section
-        className="max-w-6xl mx-auto w-full px-4 py-12"
+        className="mx-auto w-full max-w-6xl px-4 py-12"
         aria-labelledby="main-heading"
       >
         <div className="container">
-          <header className="flex flex-col-reverse md:flex-row items-center md:justify-between">
+          <header className="flex flex-col-reverse items-center md:flex-row md:justify-between">
             {/* Content */}
             <div className="text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl font-extrabold text-pretty md:text-balance mt-2 md:mt-3 pb-2 text-primary">
+              <h1 className="text-primary mt-2 pb-2 text-4xl font-extrabold text-pretty md:mt-3 md:text-5xl md:text-balance">
                 <FormattedMessage id="siteName" />
               </h1>
-              <h2 className="text-3xl md:text-4xl font-bold text-pretty md:text-balance mt-2 md:mt-3 pb-2 text-transparent bg-gradient-to-r from-slate-500 via-emerald-500 to-accent bg-clip-text">
+              <h2 className="to-accent mt-2 bg-gradient-to-r from-slate-500 via-emerald-500 bg-clip-text pb-2 text-3xl font-bold text-pretty text-transparent md:mt-3 md:text-4xl md:text-balance">
                 <FormattedMessage id="subtitle" />
               </h2>
-              <h3 className="text-lg md:text-xl font-semibold text-pretty md:text-balance mt-2 md:mt-3 pb-2 text-foreground/80">
+              <h3 className="text-foreground/80 mt-2 pb-2 text-lg font-semibold text-pretty md:mt-3 md:text-xl md:text-balance">
                 <FormattedMessage id="slogan" />
               </h3>
 
-              <div className="flex flex-wrap mt-4 gap-4 justify-center md:justify-start">
+              <div className="mt-4 flex flex-wrap justify-center gap-4 md:justify-start">
                 <Button
                   asChild
                   size="lg"
-                  className="font-medium hover:scale-105 rounded-full"
+                  className="rounded-full font-medium hover:scale-105"
                 >
                   <Link href="/medical-map">
                     <FormattedMessage id="Navbar.medicalMap" />
@@ -166,7 +166,7 @@ function Index() {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="font-medium hover:scale-105 rounded-full"
+                  className="rounded-full font-medium hover:scale-105"
                 >
                   <Link href="/about">
                     <FormattedMessage id="Navbar.about" />
@@ -185,7 +185,7 @@ function Index() {
                 width={128}
                 height={128}
                 fetchPriority="high"
-                className="rounded-full logo-drop-shadow-glow"
+                className="logo-drop-shadow-glow rounded-full"
               />
             </figure>
           </header>
@@ -193,8 +193,8 @@ function Index() {
       </section>
 
       {/* Scales Section */}
-      <section className="max-w-7xl mx-auto px-4" aria-labelledby="scales">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="mx-auto max-w-7xl px-4" aria-labelledby="scales">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {scales.map((scale, index) => (
             <CardCustom key={index} {...scale} />
           ))}

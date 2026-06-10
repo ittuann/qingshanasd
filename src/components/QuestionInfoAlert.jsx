@@ -27,7 +27,7 @@ function QuestionInfoAlert({ content, defaultOpen = true }) {
           </DialogDescription>
         </DialogHeader>
 
-        <div className="space-y-4 max-h-[60vh] overflow-y-auto pr-2">
+        <div className="max-h-[60vh] space-y-4 overflow-y-auto pr-2">
           {content}
         </div>
 

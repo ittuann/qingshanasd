@@ -12,7 +12,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 const MapChart = dynamic(() => import("@/components/MapChart"), {
   ssr: false,
   loading: () => (
-    <div className="flex items-center justify-center h-[500px]">
+    <div className="flex h-[500px] items-center justify-center">
       <div className="text-lg text-gray-600">
         <i className="ri-road-map-line text-primary"></i>
         <FormattedMessage id="MedicalMap.loading" />
@@ -32,7 +32,7 @@ const MapContainer = () => {
   }
 
   return (
-    <div className="relative bg-white rounded-xl shadow-lg p-4 transition-all duration-300 hover:shadow-xl min-h-[500px]">
+    <div className="relative min-h-[500px] rounded-xl bg-white p-4 shadow-lg transition-all duration-300 hover:shadow-xl">
       <MapChart />
     </div>
   );
@@ -47,11 +47,11 @@ function MedicalMap() {
       description={intl.formatMessage({ id: "MedicalMap.description" })}
     >
       <MedicalDataProvider>
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="mx-auto max-w-7xl px-4 py-8">
           {/* 标题区域 */}
-          <h1 className="text-3xl font-bold text-gray-900 mb-4 relative inline-block">
+          <h1 className="relative mb-4 inline-block text-3xl font-bold text-gray-900">
             <FormattedMessage id="MedicalMap.title" />
-            <div className="absolute bottom-0 left-0 w-full h-1 bg-primary/20"></div>
+            <div className="bg-primary/20 absolute bottom-0 left-0 h-1 w-full"></div>
           </h1>
 
           <MapContainer />
@@ -60,9 +60,9 @@ function MedicalMap() {
           <MapInfoSelect />
 
           {/* 提示区域 */}
-          <div className="bg-white rounded-xl shadow-lg p-6 mt-4 border-l-4 border-primary bg-gradient-to-r from-primary/5 to-transparent">
-            <p className="font-semibold text-gray-900 mb-3">小提示:</p>
-            <p className="text-gray-600 mb-2">
+          <div className="border-primary from-primary/5 mt-4 rounded-xl border-l-4 bg-white bg-gradient-to-r to-transparent p-6 shadow-lg">
+            <p className="mb-3 font-semibold text-gray-900">小提示:</p>
+            <p className="mb-2 text-gray-600">
               由于就诊地图的统计难免有疏漏，部分可诊断ADHD/ASD的医院可能并没有被收录。建议先在自己本地三甲医院尝试就诊。
             </p>
             <p className="text-gray-600">

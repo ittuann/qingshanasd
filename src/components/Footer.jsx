@@ -7,11 +7,11 @@ import { FormattedMessage } from "react-intl";
 class Footer extends Component {
   render() {
     return (
-      <footer className="bg-white mt-8">
-        <div className="max-w-7xl mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <footer className="mt-8 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-12">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
             <div>
-              <div className="flex items-center mb-4">
+              <div className="mb-4 flex items-center">
                 <Image
                   src="/assets/img/logo.webp"
                   alt="logo"
@@ -24,26 +24,26 @@ class Footer extends Component {
                   <FormattedMessage id="siteName" />
                 </span>
               </div>
-              <p className="text-gray-500 text-sm">
+              <p className="text-sm text-gray-500">
                 <FormattedMessage id="Footer.description" />
               </p>
               <Link
                 href="https://qingshanasd.cn"
-                className="text-gray-500 hover:text-primary transition-colors duration-300 text-sm inline-flex items-center mt-1"
+                className="hover:text-primary mt-1 inline-flex items-center text-sm text-gray-500 transition-colors duration-300"
               >
-                <i className="ri-earth-line text-sm mr-1"></i>
+                <i className="ri-earth-line mr-1 text-sm"></i>
                 qingshanasd.cn
               </Link>
             </div>
             <div>
-              <p className="font-medium text-gray-900 mb-4">
+              <p className="mb-4 font-medium text-gray-900">
                 <FormattedMessage id="Footer.resources" />
               </p>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/"
-                    className="text-gray-500 hover:text-gray-900 text-sm"
+                    className="text-sm text-gray-500 hover:text-gray-900"
                   >
                     <FormattedMessage id="Footer.selfTest" />
                   </Link>
@@ -51,7 +51,7 @@ class Footer extends Component {
                 <li>
                   <Link
                     href="/medical-map"
-                    className="text-gray-500 hover:text-gray-900 text-sm"
+                    className="text-sm text-gray-500 hover:text-gray-900"
                   >
                     <FormattedMessage id="Footer.medicalMap" />
                   </Link>
@@ -59,7 +59,7 @@ class Footer extends Component {
                 <li>
                   <Link
                     href="/posts/"
-                    className="text-gray-500 hover:text-gray-900 text-sm"
+                    className="text-sm text-gray-500 hover:text-gray-900"
                   >
                     <FormattedMessage id="Footer.posts" />
                   </Link>
@@ -67,14 +67,14 @@ class Footer extends Component {
               </ul>
             </div>
             <div>
-              <p className="font-medium text-gray-900 mb-4">
+              <p className="mb-4 font-medium text-gray-900">
                 <FormattedMessage id="Footer.about" />
               </p>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/about"
-                    className="text-gray-500 hover:text-gray-900 text-sm"
+                    className="text-sm text-gray-500 hover:text-gray-900"
                   >
                     <FormattedMessage id="Footer.aboutUs" />
                   </Link>
@@ -82,7 +82,7 @@ class Footer extends Component {
                 <li>
                   <Link
                     href="/terms"
-                    className="text-gray-500 hover:text-gray-900 text-sm"
+                    className="text-sm text-gray-500 hover:text-gray-900"
                   >
                     <FormattedMessage id="Footer.terms" />
                   </Link>
@@ -90,14 +90,14 @@ class Footer extends Component {
               </ul>
             </div>
             <div>
-              <p className="font-medium text-gray-900 mb-4">
+              <p className="mb-4 font-medium text-gray-900">
                 <FormattedMessage id="Footer.contact" />
               </p>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="mailto:qingshan.aspie@gmail.com"
-                    className="text-gray-500 hover:text-red-600 transition-colors"
+                    className="text-gray-500 transition-colors hover:text-red-600"
                     aria-label="Official Email"
                   >
                     <i className="ri-mail-fill mr-1"></i>
@@ -109,7 +109,7 @@ class Footer extends Component {
                     href="https://www.zhihu.com/people/QingshanAspie"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-500 hover:text-blue-600 transition-colors"
+                    className="text-gray-500 transition-colors hover:text-blue-600"
                     aria-label="Zhihu"
                   >
                     <i className="ri-zhihu-line mr-1"></i>
@@ -120,7 +120,7 @@ class Footer extends Component {
                   <Link
                     href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIyMzgyMjY5NQ%3D%3D&hid=1"
                     target="_blank"
-                    className="text-gray-500 hover:text-green-600 transition-colors"
+                    className="text-gray-500 transition-colors hover:text-green-600"
                     aria-label="WeChat Public Account"
                   >
                     <i className="ri-wechat-fill mr-1"></i>
@@ -131,7 +131,7 @@ class Footer extends Component {
                   <Link
                     href="https://github.com/ittuann/qingshanasd"
                     target="_blank"
-                    className="text-gray-500 hover:text-black transition-colors"
+                    className="text-gray-500 transition-colors hover:text-black"
                     aria-label="GitHub"
                   >
                     <i className="ri-github-fill mr-1"></i>
@@ -141,17 +141,17 @@ class Footer extends Component {
               </ul>
             </div>
           </div>
-          <div className="border-t mt-12 pt-8">
+          <div className="mt-12 border-t pt-8">
             <div className="flex flex-col items-center space-y-4">
-              <p className="text-center text-gray-500 text-sm">
+              <p className="text-center text-sm text-gray-500">
                 <FormattedMessage id="Footer.version" />: 1.1.7
               </p>
-              <p className="text-center text-gray-500 text-sm">
-                © {new Date().getFullYear()} <FormattedMessage id="siteName" />
-                . All rights reserved.
+              <p className="text-center text-sm text-gray-500">
+                © {new Date().getFullYear()} <FormattedMessage id="siteName" />.
+                All rights reserved.
               </p>
               <div className="flex items-center space-x-2">
-                <p className="text-center text-gray-500 text-sm">
+                <p className="text-center text-sm text-gray-500">
                   <FormattedMessage id="Footer.license" />{" "}
                   <Link
                     href="https://creativecommons.org/licenses/by-nc-nd/4.0/"

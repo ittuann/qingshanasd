@@ -115,7 +115,7 @@ class EQ60 extends Component {
               <p className="text-gray-600">
                 <FormattedMessage id="EQ60.info1" />
               </p>
-              <p className="text-gray-600 mt-2">
+              <p className="mt-2 text-gray-600">
                 <FormattedMessage
                   id="quotients.info2"
                   values={{
@@ -128,30 +128,30 @@ class EQ60 extends Component {
         />
 
         <QuestionInfo
-          icon={<i className="ri-lightbulb-line text-xl text-primary"></i>}
+          icon={<i className="ri-lightbulb-line text-primary text-xl"></i>}
           iconBg="bg-green-100"
           content={
             <>
               <p className="text-xs text-gray-600">
                 <FormattedMessage id="EQ60.reference" />
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="mt-1 text-xs text-gray-500">
                 <Link
                   href="https://pubmed.ncbi.nlm.nih.gov/15162935/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                 >
                   The Empathy Quotient: An Investigation of Adults with Asperger
                   Syndrome or High Functioning Autism, and Normal Sex
                   Differences
                 </Link>
               </p>
-              <p className="text-xs text-gray-500 mt-2">
+              <p className="mt-2 text-xs text-gray-500">
                 <FormattedMessage id="quotients.cookieNotice" />
                 <button
                   onClick={this.clearAnswersCookie}
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                 >
                   <FormattedMessage id="quotients.cookieDelete" />
                 </button>
@@ -159,7 +159,7 @@ class EQ60 extends Component {
                 <Link
                   href="https://github.com/ittuann/qingshanasd"
                   target="_blank"
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                   aria-label="GitHub"
                 >
                   GitHub
@@ -176,10 +176,10 @@ class EQ60 extends Component {
         title={intl.formatMessage({ id: "EQ60.title" })}
         description={intl.formatMessage({ id: "EQ60.description" })}
       >
-        <div className="max-w-3xl mx-auto px-4 py-8">
-          <div className="bg-white rounded-lg shadow-sm p-8">
+        <div className="mx-auto max-w-3xl px-4 py-8">
+          <div className="rounded-lg bg-white p-8 shadow-sm">
             {/* 信息 */}
-            <div className="text-center mb-8">
+            <div className="mb-8 text-center">
               <h1 className="text-2xl font-semibold text-gray-900">
                 <FormattedMessage id="EQ60.pageTitle" />
               </h1>
@@ -209,7 +209,7 @@ class EQ60 extends Component {
               <button
                 type="submit"
                 id="quotients-submit-eq60"
-                className="w-full bg-gradient-to-r from-green-600 to-indigo-600 text-white py-3 px-6 rounded-lg hover:from-green-600/90 hover:to-indigo-600/90 transition-all duration-200 shadow-lg shadow-green-600/20"
+                className="w-full rounded-lg bg-gradient-to-r from-green-600 to-indigo-600 px-6 py-3 text-white shadow-lg shadow-green-600/20 transition-all duration-200 hover:from-green-600/90 hover:to-indigo-600/90"
               >
                 <FormattedMessage id="quotients.submit" />
               </button>

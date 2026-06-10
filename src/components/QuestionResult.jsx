@@ -42,27 +42,27 @@ const QuestionResult = ({
   if (!showModal) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50">
+    <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="fixed inset-0 bg-black/60" onClick={onClose}></div>
       <div
         ref={resultRef}
-        className="bg-white rounded-lg max-w-md w-full mx-4 relative z-10 p-6 max-h-[90vh] overflow-y-auto"
+        className="relative z-10 mx-4 max-h-[90vh] w-full max-w-md overflow-y-auto rounded-lg bg-white p-6"
       >
         {/* 量表结果标题 */}
-        <div className="flex justify-between items-center mb-4">
+        <div className="mb-4 flex items-center justify-between">
           <div>
             <div className="text-xl font-semibold text-gray-900">
               <FormattedMessage id="QuestionResult.title" />
             </div>
             {questionTitle && (
-              <div className="text-sm text-gray-500 mt-0.5">
+              <div className="mt-0.5 text-sm text-gray-500">
                 {questionTitle}
               </div>
             )}
           </div>
           <div id="ignore-image" className="flex items-center">
             <button
-              className="text-gray-400 hover:text-gray-500 mr-2"
+              className="mr-2 text-gray-400 hover:text-gray-500"
               onClick={handleSaveAsImage}
             >
               <i className="ri-download-line text-xl"></i>
@@ -84,26 +84,26 @@ const QuestionResult = ({
 
           {/* 量表结论 */}
           <div className="border-t border-gray-200">
-            <div className="flex items-center mt-3">
-              <i className="ri-mental-health-line text-primary text-xl mr-2"></i>
+            <div className="mt-3 flex items-center">
+              <i className="ri-mental-health-line text-primary mr-2 text-xl"></i>
               <div className="text-lg font-semibold">
                 <FormattedMessage id="QuestionResult.resultTitle" />
               </div>
             </div>
-            <p className="text-gray-600 bg-gray-50 p-4 mt-3 rounded-lg">
+            <p className="mt-3 rounded-lg bg-gray-50 p-4 text-gray-600">
               {result}
             </p>
           </div>
 
           {/* 注意事项 */}
-          <div className="bg-yellow-50 p-4 rounded-lg">
-            <div className="flex items-center mb-2">
-              <i className="ri-information-line text-yellow-500 mr-2"></i>
+          <div className="rounded-lg bg-yellow-50 p-4">
+            <div className="mb-2 flex items-center">
+              <i className="ri-information-line mr-2 text-yellow-500"></i>
               <span className="text-sm font-medium text-yellow-800">
                 <FormattedMessage id="QuestionResult.noticeTitle" />
               </span>
             </div>
-            <div className="text-sm text-yellow-700 space-y-1">
+            <div className="space-y-1 text-sm text-yellow-700">
               <p>
                 <FormattedMessage
                   id="quotients.info1"
@@ -125,13 +125,13 @@ const QuestionResult = ({
 
           {/* 时间信息 */}
           <div id="image-footer" className="pt-1">
-            <div className="flex justify-between items-center text-sm text-gray-500">
+            <div className="flex items-center justify-between text-sm text-gray-500">
               <div>
                 <div>
                   {new Date().toLocaleString()} (
                   {Intl.DateTimeFormat().resolvedOptions().timeZone})
                 </div>
-                <div className="text-xs text-gray-400 mt-1">
+                <div className="mt-1 text-xs text-gray-400">
                   <FormattedMessage id="siteName" /> qingshanasd.cn
                 </div>
               </div>

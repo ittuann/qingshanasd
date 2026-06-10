@@ -160,7 +160,7 @@ class BPD extends Component {
                   }}
                 />
               </p>
-              <p className="text-gray-600 mt-2">
+              <p className="mt-2 text-gray-600">
                 <FormattedMessage
                   id="quotients.info2"
                   values={{
@@ -168,7 +168,7 @@ class BPD extends Component {
                   }}
                 />
               </p>
-              <p className="text-gray-600 mt-2">
+              <p className="mt-2 text-gray-600">
                 <FormattedMessage id="BPD.info" />
               </p>
             </>
@@ -176,39 +176,39 @@ class BPD extends Component {
         />
 
         <QuestionInfo
-          icon={<i className="ri-lightbulb-line text-xl text-primary"></i>}
+          icon={<i className="ri-lightbulb-line text-primary text-xl"></i>}
           iconBg="bg-green-100"
           content={
             <>
               <p className="text-xs text-gray-600">
                 <FormattedMessage id="BPD.reference" />
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="mt-1 text-xs text-gray-500">
                 <Link
                   href="https://www.zi-mannheim.de/fileadmin/user_upload/downloads/forschung/PSM_downloads/BSL-23_taiwanesisch.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                 >
                   BSL-23.pdf
                 </Link>
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="mt-1 text-xs text-gray-500">
                 Yang, H., Lei, X., Zhong, M., Zhou, Q., Ling, Y., Jungkunz, M.,
                 & Yi, J. (2018). Psychometric properties of the Chinese version
                 of the brief borderline symptom list in undergraduate students
                 and clinical patients. Frontiers in psychology, 9, 605.
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="mt-1 text-xs text-gray-500">
                 Bohus, M., Limberger, M. F., Frank, U., Chapman, A. L., Kühler,
                 T., & Stieglitz, R. D. (2007). sychometric properties of the
                 borderline symptom list (BSL). Psychopathology, 40(2), 126-132.
               </p>
-              <p className="text-xs text-gray-500 mt-2">
+              <p className="mt-2 text-xs text-gray-500">
                 <FormattedMessage id="quotients.cookieNotice" />
                 <button
                   onClick={this.clearAnswersCookie}
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                 >
                   <FormattedMessage id="quotients.cookieDelete" />
                 </button>
@@ -216,7 +216,7 @@ class BPD extends Component {
                 <Link
                   href="https://github.com/ittuann/qingshanasd"
                   target="_blank"
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                   aria-label="GitHub"
                 >
                   GitHub
@@ -233,10 +233,10 @@ class BPD extends Component {
         title={intl.formatMessage({ id: "BPD.title" })}
         description={intl.formatMessage({ id: "BPD.description" })}
       >
-        <div className="max-w-3xl mx-auto px-4 py-8">
-          <div className="bg-white rounded-lg shadow-sm p-8">
+        <div className="mx-auto max-w-3xl px-4 py-8">
+          <div className="rounded-lg bg-white p-8 shadow-sm">
             {/* 信息 */}
-            <div className="text-center mb-8">
+            <div className="mb-8 text-center">
               <h1 className="text-2xl font-semibold text-gray-900">
                 <FormattedMessage id="BPD.pageTitle" />
               </h1>
@@ -266,7 +266,7 @@ class BPD extends Component {
               <button
                 type="submit"
                 id="quotients-submit-bpd"
-                className="w-full bg-gradient-to-r from-green-600 to-indigo-600 text-white py-3 px-6 rounded-lg hover:from-green-600/90 hover:to-indigo-600/90 transition-all duration-200 shadow-lg shadow-green-600/20"
+                className="w-full rounded-lg bg-gradient-to-r from-green-600 to-indigo-600 px-6 py-3 text-white shadow-lg shadow-green-600/20 transition-all duration-200 hover:from-green-600/90 hover:to-indigo-600/90"
               >
                 <FormattedMessage id="quotients.submit" />
               </button>
@@ -288,9 +288,9 @@ class BPD extends Component {
           />
 
           {/* 危机干预 */}
-          <div className="mt-8 p-6 bg-white rounded-lg shadow-sm">
+          <div className="mt-8 rounded-lg bg-white p-6 shadow-sm">
             <div className="border-l-4 border-red-500 pl-4">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              <h3 className="mb-4 text-xl font-semibold text-gray-900">
                 <FormattedMessage id="BPD.crisisTitle" />
               </h3>
               <div className="space-y-4">
@@ -299,7 +299,7 @@ class BPD extends Component {
                     href="https://mp.weixin.qq.com/s/pRYTYnuvUvlJNNn-bVagcQ"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-medium text-gray-800 mb-2 hover:text-primary underline"
+                    className="hover:text-primary mb-2 text-lg font-medium text-gray-800 underline"
                   >
                     <FormattedMessage id="BPD.crisisHotline" />
                   </Link>
@@ -309,7 +309,7 @@ class BPD extends Component {
                     href="https://mp.weixin.qq.com/s/f2bpVY437pUO-tp0Ibgn9A"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-medium text-gray-800 mb-2 hover:text-primary underline"
+                    className="hover:text-primary mb-2 text-lg font-medium text-gray-800 underline"
                   >
                     <FormattedMessage id="BPD.crisisCPR" />
                   </Link>

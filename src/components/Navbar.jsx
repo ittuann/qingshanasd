@@ -30,9 +30,9 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="bg-white relative z-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between h-16">
+      <nav className="relative z-50 bg-white">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="flex h-16 justify-between">
             {/* logo */}
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
@@ -52,7 +52,7 @@ class Navbar extends Component {
             </div>
 
             {/* 移动端菜单按钮 */}
-            <div className="md:hidden flex items-center">
+            <div className="flex items-center md:hidden">
               <button
                 onClick={this.toggleMobileMenu}
                 className="text-gray-500 hover:text-purple-400"
@@ -66,7 +66,7 @@ class Navbar extends Component {
             </div>
 
             {/* 桌面端菜单 */}
-            <div className="hidden md:flex items-center space-x-6">
+            <div className="hidden items-center space-x-6 md:flex">
               <Link href="/" className={this.isActive("/")}>
                 <FormattedMessage id="Navbar.quotients" />
               </Link>
@@ -95,7 +95,7 @@ class Navbar extends Component {
                 <Link
                   href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIyMzgyMjY5NQ%3D%3D&hid=1"
                   target="_blank"
-                  className="text-gray-500 hover:text-green-600 transition-colors"
+                  className="text-gray-500 transition-colors hover:text-green-600"
                   aria-label="WeChat Public Account"
                 >
                   <i className="ri-wechat-fill text-xl"></i>
@@ -103,7 +103,7 @@ class Navbar extends Component {
                 <Link
                   href="https://github.com/ittuann/qingshanasd"
                   target="_blank"
-                  className="text-gray-500 hover:text-black transition-colors"
+                  className="text-gray-500 transition-colors hover:text-black"
                   aria-label="GitHub"
                 >
                   <i className="ri-github-fill text-xl"></i>
@@ -114,8 +114,8 @@ class Navbar extends Component {
 
           {/* 移动端菜单面板 */}
           {this.state.isMobileMenuOpen && (
-            <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg border-t border-gray-100">
-              <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col">
+            <div className="absolute top-16 left-0 w-full border-t border-gray-100 bg-white shadow-lg md:hidden">
+              <div className="flex flex-col space-y-1 px-2 pt-2 pb-3">
                 <Link
                   href="/"
                   className={`block px-3 py-2 ${this.isActive("/")}`}
@@ -149,7 +149,7 @@ class Navbar extends Component {
                   <Link
                     href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIyMzgyMjY5NQ%3D%3D&hid=1"
                     target="_blank"
-                    className="text-gray-500 hover:text-green-600 transition-colors"
+                    className="text-gray-500 transition-colors hover:text-green-600"
                     aria-label="微信公众号"
                   >
                     <i className="ri-wechat-fill text-2xl"></i>
@@ -157,7 +157,7 @@ class Navbar extends Component {
                   <Link
                     href="https://github.com/ittuann/qingshanasd"
                     target="_blank"
-                    className="text-gray-500 hover:text-black transition-colors"
+                    className="text-gray-500 transition-colors hover:text-black"
                     aria-label="GitHub"
                   >
                     <i className="ri-github-fill text-2xl"></i>

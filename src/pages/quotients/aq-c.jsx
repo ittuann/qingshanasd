@@ -202,10 +202,10 @@ class AQC extends Component {
                   }}
                 />
               </p>
-              <p className="text-gray-600 mt-2">
+              <p className="mt-2 text-gray-600">
                 <FormattedMessage id="AQC.info2" />
               </p>
-              <p className="text-gray-600 mt-2">
+              <p className="mt-2 text-gray-600">
                 <FormattedMessage
                   id="quotients.info2"
                   values={{
@@ -218,7 +218,7 @@ class AQC extends Component {
         />
 
         <QuestionInfo
-          icon={<i className="ri-lightbulb-line text-xl text-primary"></i>}
+          icon={<i className="ri-lightbulb-line text-primary text-xl"></i>}
           iconBg="bg-green-100"
           content={
             <>
@@ -226,37 +226,37 @@ class AQC extends Component {
                 href="https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247483843&idx=1&sn=75b507e4e1e0fb6295123639b653c29e"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs mt-1 text-gray-600 hover:text-gray-700 transition-colors underline"
+                className="mt-1 text-xs text-gray-600 underline transition-colors hover:text-gray-700"
               >
                 <FormattedMessage id="AQC.referenceIntro" />
               </Link>
-              <p className="text-xs text-gray-600 mt-1">
+              <p className="mt-1 text-xs text-gray-600">
                 <FormattedMessage id="AQC.reference" />
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="mt-1 text-xs text-gray-500">
                 <Link
                   href="https://www.ncbi.nlm.nih.gov/pubmed/18064550?ordinalpos=2&itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_RVDocSum"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                 >
                   Auyeung B, Baron-Cohen S, Wheelwright S, Allison C. (2007)
                 </Link>
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="mt-1 text-xs text-gray-500">
                 {"The Autism Spectrum Quotient: Children's Version (AQ-Child)."}
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="mt-1 text-xs text-gray-500">
                 Journal of Autism and Developmental Disorders Dec 7
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="mt-1 text-xs text-gray-500">
                 <FormattedMessage id="AQC.reference1" />
               </p>
-              <p className="text-xs text-gray-500 mt-2">
+              <p className="mt-2 text-xs text-gray-500">
                 <FormattedMessage id="quotients.cookieNotice" />
                 <button
                   onClick={this.clearAnswersCookie}
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                 >
                   <FormattedMessage id="quotients.cookieDelete" />
                 </button>
@@ -264,7 +264,7 @@ class AQC extends Component {
                 <Link
                   href="https://github.com/ittuann/qingshanasd"
                   target="_blank"
-                  className="underline hover:text-gray-600 transition-colors"
+                  className="underline transition-colors hover:text-gray-600"
                   aria-label="GitHub"
                 >
                   GitHub
@@ -281,10 +281,10 @@ class AQC extends Component {
         title={intl.formatMessage({ id: "AQC.title" })}
         description={intl.formatMessage({ id: "AQC.description" })}
       >
-        <div className="max-w-3xl mx-auto px-4 py-8">
-          <div className="bg-white rounded-lg shadow-sm p-8">
+        <div className="mx-auto max-w-3xl px-4 py-8">
+          <div className="rounded-lg bg-white p-8 shadow-sm">
             {/* 信息 */}
-            <div className="text-center mb-8">
+            <div className="mb-8 text-center">
               <h1 className="text-2xl font-semibold text-gray-900">
                 <FormattedMessage id="AQC.pageTitle" />
               </h1>
@@ -314,7 +314,7 @@ class AQC extends Component {
               <button
                 type="submit"
                 id="quotients-submit-aqc"
-                className="w-full bg-gradient-to-r from-green-600 to-indigo-600 text-white py-3 px-6 rounded-lg hover:from-green-600/90 hover:to-indigo-600/90 transition-all duration-200 shadow-lg shadow-green-600/20"
+                className="w-full rounded-lg bg-gradient-to-r from-green-600 to-indigo-600 px-6 py-3 text-white shadow-lg shadow-green-600/20 transition-all duration-200 hover:from-green-600/90 hover:to-indigo-600/90"
               >
                 <FormattedMessage id="quotients.submit" />
               </button>

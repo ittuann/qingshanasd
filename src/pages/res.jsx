@@ -115,13 +115,13 @@ export default function Resources() {
       title={intl.formatMessage({ id: "Res.title" })}
       description={intl.formatMessage({ id: "Res.description" })}
     >
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-semibold mb-8 relative inline-block">
+      <div className="mx-auto max-w-7xl px-4 py-8">
+        <h1 className="relative mb-8 inline-block text-3xl font-semibold">
           <FormattedMessage id="Res.heading" />
-          <div className="absolute bottom-0 left-0 w-full h-1 bg-primary/20"></div>
+          <div className="bg-primary/20 absolute bottom-0 left-0 h-1 w-full"></div>
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {resources.map((resource, index) => (
             <CardCustom key={index} {...resource} />
           ))}

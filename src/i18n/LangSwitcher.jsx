@@ -17,14 +17,14 @@ export default function LangSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center text-gray-500 hover:text-primary"
+        className="hover:text-primary flex items-center text-gray-500"
         aria-label="Language Switcher"
       >
         <i className="ri-translate-ai-2 text-xl"></i>
       </button>
 
       {isOpen && (
-        <div className="absolute mt-2 z-50 md:transform md:-translate-x-1/2 md:left-1/2 left-0">
+        <div className="absolute left-0 z-50 mt-2 md:left-1/2 md:-translate-x-1/2 md:transform">
           <Select
             value={locale}
             onValueChange={(value) => {

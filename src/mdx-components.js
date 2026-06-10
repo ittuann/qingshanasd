@@ -40,7 +40,7 @@ export function useMDXComponents(components) {
     wrapper: ({ children }) => {
       return (
         <Layout title={"青衫 Neuro 文章"}>
-          <div className="max-w-4xl mx-auto px-4 py-8">
+          <div className="mx-auto max-w-4xl px-4 py-8">
             {/* Title */}
             {/* <h1 className="text-4xl font-bold mb-4 text-gray-900">
               {post?.metadata?.title}
@@ -81,59 +81,59 @@ export function useMDXComponents(components) {
     h1: (props) => (
       <h1
         {...props}
-        className="text-4xl font-extrabold tracking-tight text-balance scroll-m-20 mt-8 mb-4"
+        className="mt-8 mb-4 scroll-m-20 text-4xl font-extrabold tracking-tight text-balance"
       />
     ),
     h2: (props) => (
       <h2
         {...props}
-        className="text-3xl font-bold tracking-tight text-balance scroll-m-20 first:mt-0 mt-6 mb-3"
+        className="mt-6 mb-3 scroll-m-20 text-3xl font-bold tracking-tight text-balance first:mt-0"
       />
     ),
     h3: (props) => (
       <h3
         {...props}
-        className="text-2xl font-semibold tracking-tight scroll-m-20 mt-4 mb-2"
+        className="mt-4 mb-2 scroll-m-20 text-2xl font-semibold tracking-tight"
       />
     ),
     h4: (props) => (
       <h4
         {...props}
-        className="text-xl font-semibold tracking-tight scroll-m-20 mt-2 mb-1"
+        className="mt-2 mb-1 scroll-m-20 text-xl font-semibold tracking-tight"
       />
     ),
     h5: (props) => (
       <h5
         {...props}
-        className="text-lg font-semibold tracking-tight scroll-m-20 mt-1 mb-1"
+        className="mt-1 mb-1 scroll-m-20 text-lg font-semibold tracking-tight"
       />
     ),
     h6: (props) => (
       <h6
         {...props}
-        className="text-base font-semibold tracking-tight scroll-m-20 mt-1 mb-1"
+        className="mt-1 mb-1 scroll-m-20 text-base font-semibold tracking-tight"
       />
     ),
-    p: (props) => <p {...props} className="leading-relaxed mb-4" />,
+    p: (props) => <p {...props} className="mb-4 leading-relaxed" />,
     li: (props) => <li {...props} className="mb-2" />,
-    ul: (props) => <ul {...props} className="list-disc ml-6 mt-2" />,
-    ol: (props) => <ol {...props} className="list-decimal ml-6 mt-2" />,
+    ul: (props) => <ul {...props} className="mt-2 ml-6 list-disc" />,
+    ol: (props) => <ol {...props} className="mt-2 ml-6 list-decimal" />,
     blockquote: (props) => (
       <blockquote
         {...props}
-        className="border-l-4 border-gray-300 pl-6 italic mt-6"
+        className="mt-6 border-l-4 border-gray-300 pl-6 italic"
       />
     ),
     code: (props) => (
       <code
         {...props}
-        className="bg-gray-100 rounded px-1 py-1 font-mono font-semibold text-sm"
+        className="rounded bg-gray-100 px-1 py-1 font-mono text-sm font-semibold"
       />
     ),
     pre: (props) => (
       <pre
         {...props}
-        className="bg-gray-100 rounded p-4 overflow-x-auto mb-4 font-mono"
+        className="mb-4 overflow-x-auto rounded bg-gray-100 p-4 font-mono"
       />
     ),
     br: () => <Separator />,
@@ -141,7 +141,7 @@ export function useMDXComponents(components) {
     del: (props) => <del {...props} className="text-gray-500" />,
     sup: (props) => <sup {...props} className="text-xs text-gray-600" />,
     table: (props) => (
-      <div className="overflow-x-auto overflow-y-auto my-6">
+      <div className="my-6 overflow-x-auto overflow-y-auto">
         <table
           {...props}
           className="table-auto border-collapse rounded text-sm"
@@ -153,17 +153,17 @@ export function useMDXComponents(components) {
     tr: (props) => (
       <tr
         {...props}
-        className="even:bg-muted hover:bg-gray-300 transition-colors"
+        className="even:bg-muted transition-colors hover:bg-gray-300"
       />
     ),
     th: (props) => (
       <th
         {...props}
-        className="px-4 py-3 font-medium text-left text-gray-700 border-b border-gray-200"
+        className="border-b border-gray-200 px-4 py-3 text-left font-medium text-gray-700"
       />
     ),
     td: (props) => (
-      <td {...props} className="px-4 py-3 border-b border-gray-100" />
+      <td {...props} className="border-b border-gray-100 px-4 py-3" />
     ),
     CardCustom: CardCustom,
     ...components,

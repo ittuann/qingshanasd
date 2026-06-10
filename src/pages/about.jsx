@@ -56,9 +56,9 @@ const CooperationItem = ({ data }) => {
 
   return (
     <div
-      className={`bg-white border rounded-lg transition-all duration-200 overflow-hidden ${
+      className={`overflow-hidden rounded-lg border bg-white transition-all duration-200 ${
         isOpen
-          ? `shadow-sm border-green-800 ring-1 ring-green-50`
+          ? `border-green-800 shadow-sm ring-1 ring-green-50`
           : `border-slate-100 hover:border-green-600`
       }`}
     >
@@ -66,14 +66,14 @@ const CooperationItem = ({ data }) => {
         type="button"
         onClick={() => setIsOpen((v) => !v)}
         aria-expanded={isOpen}
-        className="w-full flex items-center justify-between p-4 text-left group select-none"
+        className="group flex w-full items-center justify-between p-4 text-left select-none"
       >
-        <div className="flex items-center gap-3 min-w-0">
+        <div className="flex min-w-0 items-center gap-3">
           <div
-            className={`flex-shrink-0 p-2 rounded-md ${
+            className={`flex-shrink-0 rounded-md p-2 ${
               data.type === "research"
-                ? "text-indigo-600 bg-indigo-50"
-                : "text-emerald-600 bg-emerald-50"
+                ? "bg-indigo-50 text-indigo-600"
+                : "bg-emerald-50 text-emerald-600"
             }`}
           >
             <i
@@ -85,18 +85,18 @@ const CooperationItem = ({ data }) => {
             ></i>
           </div>
 
-          <div className="flex flex-col min-w-0">
-            <span className="font-bold text-slate-800 group-hover:text-slate-900 text-base">
+          <div className="flex min-w-0 flex-col">
+            <span className="text-base font-bold text-slate-800 group-hover:text-slate-900">
               {data.name}
             </span>
-            <span className="text-xs text-slate-400 font-medium flex items-center gap-1">
+            <span className="flex items-center gap-1 text-xs font-medium text-slate-400">
               <FormattedMessage id="About.cooperation.readDetail" />
             </span>
           </div>
         </div>
 
         <ChevronDown
-          className={`w-5 h-5 text-slate-300 transition-transform duration-300 ${
+          className={`h-5 w-5 text-slate-300 transition-transform duration-300 ${
             isOpen ? "rotate-180 text-slate-500" : "group-hover:text-slate-400"
           }`}
         />
@@ -109,8 +109,8 @@ const CooperationItem = ({ data }) => {
         }`}
       >
         <div className="overflow-hidden">
-          <div className="px-4 pb-4 pt-0">
-            <div className="h-px w-full bg-slate-50 mb-3" />
+          <div className="px-4 pt-0 pb-4">
+            <div className="mb-3 h-px w-full bg-slate-50" />
             <div className="flex flex-wrap gap-2">
               {data.coop.map((item, idx) => (
                 <a
@@ -118,10 +118,10 @@ const CooperationItem = ({ data }) => {
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-50 border border-slate-100 hover:bg-white hover:border-slate-300 hover:shadow-sm text-xs text-slate-600 hover:text-green-700 rounded-full transition-all duration-200"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-slate-100 bg-slate-50 px-3 py-1.5 text-xs text-slate-600 transition-all duration-200 hover:border-slate-300 hover:bg-white hover:text-green-700 hover:shadow-sm"
                 >
                   {item.name}
-                  <i className="ri-external-link-line w-3 h-3 opacity-50"></i>
+                  <i className="ri-external-link-line h-3 w-3 opacity-50"></i>
                 </a>
               ))}
             </div>
@@ -139,18 +139,18 @@ const CooperationList = ({ items, maxItems = 9 }) => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl mx-auto">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
         {displayedItems.map((item, index) => (
           <CooperationItem key={index} data={item} />
         ))}
       </div>
 
       {shouldShowButton && (
-        <div className="flex justify-center mt-4">
+        <div className="mt-4 flex justify-center">
           <button
             type="button"
             onClick={() => setIsExpanded(!isExpanded)}
-            className="group inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-slate-500 hover:text-slate-800 transition-colors"
+            className="group inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-slate-500 transition-colors hover:text-slate-800"
           >
             <span>
               {isExpanded ? (
@@ -163,7 +163,7 @@ const CooperationList = ({ items, maxItems = 9 }) => {
               )}
             </span>
             <ChevronDown
-              className={`w-4 h-4 transition-transform duration-200 ${
+              className={`h-4 w-4 transition-transform duration-200 ${
                 isExpanded ? "rotate-180" : ""
               }`}
             />
@@ -220,10 +220,10 @@ function About() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </Head>
-      <div className="max-w-7xl mx-auto px-4 py-4">
+      <div className="mx-auto max-w-7xl px-4 py-4">
         {/* 标题部分 */}
         <header className={`mb-4 transition-opacity duration-700`}>
-          <div className="flex items-center justify-center mb-4">
+          <div className="mb-4 flex items-center justify-center">
             <Image
               src="/assets/img/logo.webp"
               alt="logo"
@@ -234,39 +234,39 @@ function About() {
             />
           </div>
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
+            <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
               <FormattedMessage
                 id="About.title"
                 defaultMessage="关于青衫 Neuro"
               />
             </h1>
             <div className="mt-8 flex justify-center">
-              <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full"></div>
+              <div className="from-primary to-accent h-1 w-20 rounded-full bg-gradient-to-r"></div>
             </div>
           </div>
         </header>
 
         {/* 创始人介绍部分 */}
-        <section className="flex justify-center mb-8">
-          <div className="flex flex-col md:flex-row items-center max-w-5xl gap-16">
-            <div className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-r rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+        <section className="mb-8 flex justify-center">
+          <div className="flex max-w-5xl flex-col items-center gap-16 md:flex-row">
+            <div className="group relative">
+              <div className="absolute -inset-2 rounded-2xl bg-gradient-to-r opacity-20 blur transition duration-300 group-hover:opacity-40"></div>
               <Image
                 src="/assets/img/qingshan.jpg"
                 alt="view"
                 width={200}
                 height={250}
-                className="rounded-xl relative shadow-lg hover:scale-[1.01] transition-transform duration-300"
+                className="relative rounded-xl shadow-lg transition-transform duration-300 hover:scale-[1.01]"
               />
             </div>
             <div className="flex-1">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="mb-6 text-3xl font-bold text-gray-900">
                 <FormattedMessage id="About.founderTitle" />
               </h2>
-              <p className="text-gray-600 mb-6 text-lg">
+              <p className="mb-6 text-lg text-gray-600">
                 <FormattedMessage id="About.founderDescription" />
               </p>
-              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+              <p className="mb-8 text-lg leading-relaxed text-gray-600">
                 <FormattedMessage id="About.founderInfo" />
               </p>
             </div>
@@ -274,13 +274,13 @@ function About() {
         </section>
 
         {/* 贡献者部分 */}
-        <section className="bg-gradient-to-b from-white to-gray-50 rounded-3xl shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-3xl py-8 px-8 mb-16">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-4">
-              <h2 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl mb-4">
+        <section className="hover:shadow-3xl mb-16 rounded-3xl border border-gray-100 bg-gradient-to-b from-white to-gray-50 px-8 py-8 shadow-lg transition-all duration-300">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-4 text-center">
+              <h2 className="mb-4 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl">
                 <FormattedMessage id="About.contributor" />
               </h2>
-              <p className="max-w-3xl mx-auto text-center text-gray-600 mb-6">
+              <p className="mx-auto mb-6 max-w-3xl text-center text-gray-600">
                 <FormattedMessage id="About.contributorDescription" />
               </p>
             </div>
@@ -296,8 +296,8 @@ function About() {
                     target=""
                     className="block h-full"
                   >
-                    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all p-8 text-center border border-gray-100 h-full">
-                      <div className="flex items-center justify-center mx-auto rounded-full mb-6">
+                    <div className="h-full rounded-xl border border-gray-100 bg-white p-8 text-center shadow-md transition-all hover:shadow-xl">
+                      <div className="mx-auto mb-6 flex items-center justify-center rounded-full">
                         <Image
                           src={`${contributor.icon}`}
                           alt={`${contributor.name}`}
@@ -306,11 +306,11 @@ function About() {
                           className="rounded-full"
                         />
                       </div>
-                      <h3 className="text-lg font-bold text-gray-900 break-words">
+                      <h3 className="text-lg font-bold break-words text-gray-900">
                         {contributor.name}
                       </h3>
-                      <div className="w-12 h-1 break-words bg-gradient-to-r from-primary to-teal-500 mx-auto my-3 rounded-full"></div>
-                      <h4 className="text-sm text-gray-500 mt-2">
+                      <div className="from-primary mx-auto my-3 h-1 w-12 rounded-full bg-gradient-to-r to-teal-500 break-words"></div>
+                      <h4 className="mt-2 text-sm text-gray-500">
                         {contributor.role}
                       </h4>
                     </div>
@@ -319,7 +319,7 @@ function About() {
               ))}
             </div>
 
-            <div className="text-center mt-6">
+            <div className="mt-6 text-center">
               <p className="text-gray-600">
                 <FormattedMessage id="About.contributorNote" />
               </p>
@@ -329,25 +329,25 @@ function About() {
               <Link
                 href="https://github.com/ittuann/qingshanasd"
                 target="_blank"
-                className="group inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-accent transition-all duration-300"
+                className="group bg-primary hover:bg-accent inline-flex items-center rounded-lg px-6 py-3 font-medium text-white transition-all duration-300"
               >
                 <span className="flex items-center">
-                  <i className="ri-sparkling-line mr-2 group-hover:rotate-360 transition-transform duration-500"></i>
+                  <i className="ri-sparkling-line mr-2 transition-transform duration-500 group-hover:rotate-360"></i>
                   <FormattedMessage id="About.viewOnGithub" />
                 </span>
-                <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-500"></i>
+                <i className="ri-arrow-right-line ml-2 transition-transform duration-500 group-hover:translate-x-1"></i>
               </Link>
             </div>
           </div>
         </section>
 
         {/* 研究合作部分 */}
-        <section className="bg-gradient-to-b from-white to-gray-50 rounded-3xl shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-3xl py-8 px-8 mb-16">
-          <div className="text-center mb-4">
-            <h2 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl mb-6">
+        <section className="hover:shadow-3xl mb-16 rounded-3xl border border-gray-100 bg-gradient-to-b from-white to-gray-50 px-8 py-8 shadow-lg transition-all duration-300">
+          <div className="mb-4 text-center">
+            <h2 className="mb-6 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl">
               <FormattedMessage id="About.research.title" />
             </h2>
-            <p className="max-w-3xl mx-auto text-center text-gray-600">
+            <p className="mx-auto max-w-3xl text-center text-gray-600">
               <FormattedMessage id="About.research.description" />
             </p>
           </div>
@@ -358,12 +358,12 @@ function About() {
         </section>
 
         {/* 媒体报道部分 */}
-        <section className="bg-gradient-to-b from-white to-gray-50 rounded-3xl shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-3xl py-8 px-8 mb-16">
-          <div className="text-center mb-4">
-            <h2 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl mb-6">
+        <section className="hover:shadow-3xl mb-16 rounded-3xl border border-gray-100 bg-gradient-to-b from-white to-gray-50 px-8 py-8 shadow-lg transition-all duration-300">
+          <div className="mb-4 text-center">
+            <h2 className="mb-6 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 md:text-4xl">
               <FormattedMessage id="About.media.title" />
             </h2>
-            <p className="max-w-3xl mx-auto text-center text-gray-600">
+            <p className="mx-auto max-w-3xl text-center text-gray-600">
               <FormattedMessage id="About.media.description" />
             </p>
           </div>
@@ -374,15 +374,15 @@ function About() {
         </section>
 
         {/* 财务公示部分 */}
-        <section className="bg-gradient-to-b from-white to-gray-50 rounded-3xl shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-3xl py-8 px-8 mb-16">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
+        <section className="hover:shadow-3xl mb-16 rounded-3xl border border-gray-100 bg-gradient-to-b from-white to-gray-50 px-8 py-8 shadow-lg transition-all duration-300">
+          <h2 className="mb-8 text-center text-3xl font-bold text-gray-900">
             <span className="relative">
               <FormattedMessage id="About.financial.title" />
-              <span className="absolute bottom-1 left-0 w-full h-2 bg-secondary -z-10"></span>
+              <span className="bg-secondary absolute bottom-1 left-0 -z-10 h-2 w-full"></span>
             </span>
           </h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-gray-600 mb-8 text-center text-lg leading-relaxed">
+          <div className="mx-auto max-w-3xl">
+            <p className="mb-8 text-center text-lg leading-relaxed text-gray-600">
               <FormattedMessage id="About.financial.description" />
             </p>
             <div className="flex justify-center">
@@ -390,12 +390,12 @@ function About() {
                 href="https://docs.qq.com/sheet/DT05BclBnZk9CYmhx"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-accent transition duration-300"
+                className="group bg-primary hover:bg-accent inline-flex items-center rounded-lg px-6 py-3 font-medium text-white transition duration-300"
               >
                 <span>
                   <FormattedMessage id="About.financial.view" />
                 </span>
-                <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform"></i>
+                <i className="ri-arrow-right-line ml-2 transition-transform group-hover:translate-x-1"></i>
               </Link>
             </div>
           </div>

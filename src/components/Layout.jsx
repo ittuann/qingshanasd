@@ -86,10 +86,10 @@ export default function Layout({
       </Head>
 
       <div
-        className={`${noto.className} bg-zinc-50 min-h-screen flex flex-col`}
+        className={`${noto.className} flex min-h-screen flex-col bg-zinc-50`}
       >
         <Navbar />
-        <main className="flex-grow text-autospace [scrollbar-gutter:stable]">
+        <main className="text-autospace flex-grow [scrollbar-gutter:stable]">
           {children}
         </main>
         <Footer />
