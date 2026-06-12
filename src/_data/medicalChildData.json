@@ -562,6 +562,20 @@
               "notes": "青少年儿童心理，学习困难门诊。"
             }
           ]
+        },
+        {
+          "name": "湖南省人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "喻妍",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": "仅接诊儿童ADHD"
+            }
+          ]
         }
       ]
     },
