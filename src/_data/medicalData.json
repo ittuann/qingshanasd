@@ -646,7 +646,8 @@
             {
               "name": "耿峰",
               "capacity": [
-                "ADHD"
+                "ADHD",
+                "ASD"
               ],
               "shares": [
                 {
@@ -1947,6 +1948,14 @@
             },
             {
               "name": "王岚",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": "专注达和托莫西汀可开。"
+            },
+            {
+              "name": "郭新字",
               "capacity": [
                 "ADHD"
               ],
