@@ -1,0 +1,25 @@
+# QingShan Neuro Website
+
+> This is the official website for QingShan Neuro organization, a public welfare non-profit organization, dedicated to neurodiversity resources, education, and mutual assistance for neurodiversity, offering support to the neurodiverse community.
+
+This website is completely open-source and licensed under the AGPL 3.0 license. You can view details at [GitHub/ittuann/qingshanasd](https://github.com/ittuann/qingshanasd).
+
+## Core Pages
+
+- [Index](https://qingshanasd.cn/): The homepage of the QingShan Neuro website, providing introduction and test quotients scale for neurodiversity.
+- [About](https://qingshanasd.cn/about): Full information about the QingShan Neuro organization, including its Maintainers, Research Collaboration, Media Coverage and transparent Financial Disclosure.
+- [Medical Map](https://qingshanasd.cn/medical-map/): A map of medical resources for neurodiverse individuals, including hospitals, doctors, and experience sharing.
+
+## Quotients
+
+- [Adult ADHD Self-Report Scale (ASRS)](https://qingshanasd.cn/quotients/adhd/): A test to assess the likelihood of ADHD in individuals.
+- [Adult Autism Quotient (AQ)](https://qingshanasd.cn/quotients/aq-a/): A test to assess the likelihood of autism spectrum disorder in individuals.
+- [Borderline Personality Disorder Scale (BSL-23)](https://qingshanasd.cn/quotients/bpd/): A test to assess the likelihood of borderline personality disorder in individuals.
+- [OAQ G2 Alexithymia Test Scale](https://qingshanasd.cn/quotients/oaq/): A test to assess the likelihood of alexithymia in individuals.
+- [Child Autism Quotient (AQ)](https://qingshanasd.cn/quotients/aq-c/): A test to assess the likelihood of autism spectrum disorder in children.
+- [Aspie-Quiz Test Scale](https://www.rdos.net/china/index.php?utm_source=qingshanasd.cn): Outlink to the Aspie-Quiz test scale for assessing autism spectrum disorder.
+- [Empathy Quotient (EQ) Test Scale](https://qingshanasd.cn/quotients/eq60/): A test to assess the likelihood of empathy in individuals.
+
+## Resources
+
+- [Open Source Code (AGPL 3.0)](https://github.com/ittuann/qingshanasd): The GitHub repository hosting the source code for this website.
