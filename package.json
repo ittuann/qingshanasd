@@ -41,7 +41,7 @@
     "html2canvas-pro": "^1.5.11",
     "js-cookie": "^3.0.7",
     "lucide-react": "^0.507.0",
-    "next": "15.5.18",
+    "next": "15.5.21",
     "react": "19.2.6",
     "react-dom": "19.2.6",
     "react-intl": "^7.1.11",
