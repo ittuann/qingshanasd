@@ -161,6 +161,15 @@
                 }
               ],
               "notes": ""
+            },
+            {
+              "name": "付作册",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+              ],
+              "notes": ""
             }
           ]
         },
@@ -541,6 +550,28 @@
           ]
         },
         {
+          "name": "四川大学华西第二医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "潘舒娅",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "胡霄",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": "极具同理心，会向患者普及神经多样性等观念，态度友善。"
+            }
+          ]
+        },
+        {
           "name": "成都四医院",
           "notes": "",
           "doctors": [
@@ -579,14 +610,6 @@
               ],
               "shares": [],
               "notes": ""
-            },
-            {
-              "name": "胡霄",
-              "capacity": [
-                "ADHD"
-              ],
-              "shares": [],
-              "notes": "极具同理心，会向患者普及神经多样性等观念，态度友善。"
             },
             {
               "name": "朱敏",
@@ -883,14 +906,6 @@
           "name": "青岛妇女儿童医院",
           "notes": "",
           "doctors": [
-            {
-              "name": "冀永娟",
-              "capacity": [
-                "ADHD"
-              ],
-              "shares": [],
-              "notes": "可开专注达。"
-            },
             {
               "name": "谭歆",
               "capacity": [
@@ -1542,7 +1557,7 @@
                 "ADHD"
               ],
               "shares": [],
-              "notes": ""
+              "notes": "佛山三院张杏莲医生无法确诊单独18岁成年之后的患者，因为没有量表，想要确诊必须得有家长陪同。"
             }
           ]
         },
@@ -2556,6 +2571,22 @@
               "notes": ""
             },
             {
+              "name": "龚潇湘",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
+              "name": "罗学荣",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            },
+            {
               "name": "⻩春香",
               "capacity": [
                 "ADHD"
@@ -2598,6 +2629,34 @@
               "notes": "无排班"
             }
           ]
+        },
+        {
+          "name": "湖南省第二人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "蒋铁平",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
+        },
+        {
+          "name": "常德市第一人民医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "孙小焕",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [],
+              "notes": ""
+            }
+          ]
         }
       ]
     },
@@ -2610,6 +2669,15 @@
           "doctors": [
             {
               "name": "李韵",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [],
+              "notes": "学习障碍门诊"
+            },
+            {
+              "name": "丁丽君",
               "capacity": [
                 "ADHD",
                 "ASD"
