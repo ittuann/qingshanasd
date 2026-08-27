@@ -2,7 +2,7 @@
 
 > This is the official website for QingShan Neuro organization, a public welfare non-profit organization, dedicated to neurodiversity resources, education, and mutual assistance for neurodiversity, offering support to the neurodiverse community.
 
-This website is completely open-source and licensed under the AGPL 3.0 license. You can view details at [GitHub/ittuann/qingshanasd](https://github.com/ittuann/qingshanasd).
+QingShan Neuro website is completely open-source and licensed under the AGPL 3.0 license. You can view details at [GitHub/ittuann/qingshanasd](https://github.com/ittuann/qingshanasd).
 
 ## Core Pages
 
@@ -22,4 +22,4 @@ This website is completely open-source and licensed under the AGPL 3.0 license. 
 
 ## Resources
 
-- [Open Source Code (AGPL 3.0)](https://github.com/ittuann/qingshanasd): The GitHub repository hosting the source code for this website.
+- [Open Source Code (AGPL 3.0)](https://github.com/ittuann/qingshanasd): The GitHub repository hosting the source code for QingShan Neuro website.
