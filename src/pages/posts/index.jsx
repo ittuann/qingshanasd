@@ -47,7 +47,7 @@ export async function getStaticProps() {
  */
 export default function PostsList({ posts }) {
   // 分页相关状态
-  const postsPerPage = 20;
+  const postsPerPage = 30;
   const [currentPage, setCurrentPage] = useState(1);
 
   // 计算总页数
