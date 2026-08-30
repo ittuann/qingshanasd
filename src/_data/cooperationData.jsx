@@ -34,24 +34,40 @@ const cooperationData = [
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
-        data: "2025-02-16",
-        url: "https://mp.weixin.qq.com/s/ycSjPzJpPo_34xveSTpNXw",
+        data: "2026-08-25",
+        url: "https://mp.weixin.qq.com/s/sflH2wqE9ixsn2ExXxsecw",
       },
       {
         name: <FormattedMessage id="About.cooperation.read" />,
         data: "2025-11-17",
         url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247566018&idx=1&sn=7b3e02916bd898725037c4d8a08db5c8",
       },
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        data: "2025-02-16",
+        url: "https://mp.weixin.qq.com/s/ycSjPzJpPo_34xveSTpNXw",
+      },
     ],
   },
   {
-    name: <FormattedMessage id="About.research.projects.bupt" />,
+    name: <FormattedMessage id="About.research.projects.sysu3" />,
     type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
-        data: "2025-04-21",
-        url: "https://mp.weixin.qq.com/s/ubtULQqS9SXj2XV6H_K9Zw",
+        data: "2024-05-24",
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247520054&idx=1&sn=8b95eedd2a4d09e52ee508a34636d27d",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.research.projects.zju" />,
+    type: "research",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        data: "2026-03-24",
+        url: "https://mp.weixin.qq.com/s/xMkKwjqR8gUdyRH_HJkmeg",
       },
     ],
   },
@@ -67,24 +83,24 @@ const cooperationData = [
     ],
   },
   {
-    name: <FormattedMessage id="About.research.projects.xiamenXianyue" />,
+    name: <FormattedMessage id="About.research.projects.unimelb" />,
     type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
-        data: "2025-04-14",
-        url: "https://mp.weixin.qq.com/s/EiglerYoRcORF5rzMqjDMQ",
+        data: "2026-04-08",
+        url: "https://mp.weixin.qq.com/s/zghFCUHVKWWmhKJBif0Lww",
       },
     ],
   },
   {
-    name: <FormattedMessage id="About.research.projects.sysu3" />,
+    name: <FormattedMessage id="About.research.projects.bch" />,
     type: "research",
     coop: [
       {
         name: <FormattedMessage id="About.cooperation.read" />,
-        data: "2024-05-24",
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247520054&idx=1&sn=8b95eedd2a4d09e52ee508a34636d27d",
+        data: "2026-04-03",
+        url: "https://mp.weixin.qq.com/s/W640QaFJfjGI9w7tsnic4Q",
       },
     ],
   },
@@ -111,17 +127,6 @@ const cooperationData = [
     ],
   },
   {
-    name: <FormattedMessage id="About.research.projects.sichuanNormal" />,
-    type: "research",
-    coop: [
-      {
-        name: <FormattedMessage id="About.cooperation.read" />,
-        data: "2024-09-05",
-        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247524324&idx=1&sn=c478dff3a8138c5992c95136d4dc3633",
-      },
-    ],
-  },
-  {
     name: <FormattedMessage id="About.research.projects.hrbmu" />,
     type: "research",
     coop: [
@@ -129,6 +134,61 @@ const cooperationData = [
         name: <FormattedMessage id="About.cooperation.read" />,
         data: "2024-04-27",
         url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247518880&idx=1&sn=f49da0953c63aaeb04651b2811017fa2",
+      },
+    ],
+  },
+  {
+    name: <FormattedMessage id="About.research.projects.hsfoundation" />,
+    type: "research",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        data: "2026-05-26",
+        url: "https://mp.weixin.qq.com/s/qD3WC3vCCgAIz_FdSwkSIg",
+      },
+    ],
+  },
+  {
+    name: "澳门大学",
+    type: "overflow-not-display",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        data: "2026-01-05",
+        url: "https://mp.weixin.qq.com/s/erIOjFr8Rw-l0Ld4sdsJqw",
+      },
+    ],
+  },
+  {
+    name: "厦门市仙岳医院",
+    type: "overflow-not-display",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        data: "2025-04-14",
+        url: "https://mp.weixin.qq.com/s/EiglerYoRcORF5rzMqjDMQ",
+      },
+    ],
+  },
+  {
+    name: "北京邮电大学",
+    type: "overflow-not-display",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        data: "2025-04-21",
+        url: "https://mp.weixin.qq.com/s/ubtULQqS9SXj2XV6H_K9Zw",
+      },
+    ],
+  },
+  {
+    name: "四川师范大学",
+    type: "overflow-not-display",
+    coop: [
+      {
+        name: <FormattedMessage id="About.cooperation.read" />,
+        data: "2024-09-05",
+        url: "https://mp.weixin.qq.com/s?__biz=MzIyMzgyMjY5NQ==&mid=2247524324&idx=1&sn=c478dff3a8138c5992c95136d4dc3633",
       },
     ],
   },
