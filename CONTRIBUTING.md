@@ -1,8 +1,8 @@
 # Contributing Guidelines
 
-We're thrilled that you're interested in contributing to this open-source project! Thank you!
+I appreciate your interest in making this project better. Thank you for considering contributing!
 
-Below you can find some guidance on how to be most effective when contributing to the project.
+By following these guidelines, you can help us maintain a healthy and productive open-source community. To ensure a smooth collaboration, please take a moment to read the following guidelines before getting started.
 
 ## Before Getting Started
 
@@ -13,14 +13,14 @@ Below you can find some guidance on how to be most effective when contributing t
 
 ### Contributing Process
 
-- If you want to make non-trivial changes:
+- If you want to make changes that aren't minor:
 
 1. Please always begin by opening an issue or starting a discussion to outline your proposed changes before writing your code.
-2. Before opening a new issue, please searching the existing issues and pull requests, to review whether your concern has already been reported or is being addressed, which helps prevent duplicate and saves you time.
+2. Before opening a new issue, please check the Issues tracker and Pull Requests, to review if there's an existing issue or discussion related to it. If your concern has already been reported or is being addressed, this will prevent duplication and save you time.
 3. Describe the changes you want to make in the issue or discussion.
 4. Await maintainer feedback before starting code development.
 
-This will give us opportunity to flag any considerations you should be aware of before you spend time developing, ensuring your time and effort are well-directed.
+This will give us the opportunity to flag any considerations you should be aware of before you spend time developing, ensuring your time and effort are well-directed.
 
 - For minor changes (e.g., typo fixes, small documentation updates):
 
@@ -75,13 +75,15 @@ Build for production:
 pnpm build
 ```
 
-Now you're all setup and can start implementing your changes.
-
 To preview the built static site:
 
 ```bash
 pnpm serve
 ```
+
+Now you're all setup and can start implementing your changes.
+
+After completing your changes, please rerun the build command `pnpm build` to review the changes.
 
 4. Preview
 
@@ -91,9 +93,29 @@ Preview in development:
 pnpm dev
 ```
 
-After completing your changes, please rerun the build command `pnpm build` to check the code.
+5. Checks
+
+```bash
+pnpm format
+
+pnpm lint
+
+pnpm build
+```
 
 When all that's done, it's time to submit a pull request to upstream and fill out the title and body appropriately.
+
+## AI-Assisted Contributions
+
+We're not opposed to using AI tools to help write or review code. However, you must understand and review every change you submit. You are responsible for anything you submit, however it was produced, and we are responsible for anything we merge and release; we hold a high bar for both.
+
+A person has to be in the loop. Don't wire a bot or agent up to open pull requests, issues, or discussions on your behalf.
+
+PRs that appear to have been submitted without human review — e.g., irrelevant code, duplicate logic, or comments that don't match the implementation — may be directly closed. If we misjudge something you wrote, just say so. We'll take you at your word. We would much rather occasionally reopen something we misjudged than treat everyone who posts here as a suspect.
+
+## Credits
+
+This documentation was inspired by the contributing guidelines for [cloudflare/workers-sdk](https://github.com/cloudflare/workers-sdk/blob/main/CONTRIBUTING.md).
 
 - License
 
@@ -102,3 +124,5 @@ When you contribute code, you affirm that the contribution is your original work
 ## Thank You
 
 Your contributions to open source, large or small, make great projects like this possible. Thank you for taking the time to contribute.
+
+Happy contributing!
