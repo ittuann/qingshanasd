@@ -1,5 +1,7 @@
-User-agent: *
-Content-Signal: ai-train=yes, search=yes, ai-input=yes
+User-Agent: *
+Allow: /
+
+User-Agent: __usage_ai-training
 Allow: /
 
 Sitemap: https://qingshanasd.cn/sitemap.xml

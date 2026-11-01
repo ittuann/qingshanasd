@@ -48,6 +48,10 @@ export default function Layout({
         />
         <meta name="apple-mobile-web-app-title" content="青衫 Neuro" />
         <link rel="manifest" href="/site.webmanifest" />
+        <meta
+          name="content-signal"
+          content="ai-train=yes, search=yes, ai-input=yes"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="青衫 Neuro" />
         <meta property="og:title" content="青衫 Neuro" />
