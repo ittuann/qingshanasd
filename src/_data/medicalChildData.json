@@ -315,6 +315,21 @@
               "notes": ""
             }
           ]
+        },
+        {
+          "name": "深圳市妇幼保健院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "马月娇",
+              "capacity": [
+                "ADHD"
+              ],
+              "shares": [
+              ],
+              "notes": ""
+            }
+          ]
         }
       ]
     },
@@ -409,6 +424,27 @@
                 }
               ],
               "notes": ""
+            }
+          ]
+        }
+      ]
+    },
+      {
+      "area": "山西省",
+      "hospitals": [
+        {
+          "name": "山西医科大学第一医院",
+          "notes": "",
+          "doctors": [
+            {
+              "name": "李改智",
+              "capacity": [
+                "ADHD",
+                "ASD"
+              ],
+              "shares": [
+              ],
+              "notes": "可以确诊孤独症和ADHD，不过对下诊断比较谨慎。"
             }
           ]
         }
